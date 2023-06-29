@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Let me introduce myself</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="./images/ksmile.ico">
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Let me introduce myself</div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Old Portfolio</a></li>
+					<li><a href="newPortfolio.html">New Portfolio</a></li>
+					<li><a href="elements.html">참고용 도구</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Sed amet nulla</p>
+						<h2>Elements</h2>
+					</header>
+				</div>
+			</section>
+
+            <py-script>
+                from js import console
+
+                # html ID "input_text"와 "output_text" 와 연결된 객체 생성
+                input_text = Element("input_text")
+                output_text = Element("output_text")
+
+                console.log('input_text >> ', input_text)
+          
+                # html 에서 생성한 ID "add_text" 의 버튼이 눌렸을 때 호출될 pys-onClick 인자로 설정된 함수 생성
+                def function_add_text(*args):
+                  # output_text 객체의 text 값을 input_text의 값으로 지정
+                  output_text.element.innerText = input_text.value
+                  console.log(input_text.value)
+                  # 함수가 실행된 후 input_text의 값을 초기화
+                  input_text.clear()
+              </py-script>    
+              <main class = "container">
+                <h1 id = "output_text"></h1>
+                <div>
+                  <input id = "input_text" type="text" placeholder="텍스트를 입력하세요">
+                  <button id = "add_text" pys-onClick ="function_add_text">Click</button>
+                </div> 
+              </main>    
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<div class="copyright">
+			created by khs</a>.
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <!-- <script src="assets/js/movieRecommend.js"></script> -->
+            
+	</body>
+</html>
