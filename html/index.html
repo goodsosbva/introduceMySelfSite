@@ -11,8 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="icon" href="./images/ksmile.ico" />
-        <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
     </head>
     <body>
         <!-- Header -->
@@ -29,97 +27,106 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="generic.html">Old Portfolio</a></li>
                 <li><a href="newPortfolio.html">New Portfolio</a></li>
-                <!-- <li><a href="elements.html">참고용 도구</a></li> -->
             </ul>
         </nav>
 
         <!-- Banner -->
+        <!-- Banner -->
         <section class="banner full">
+            <!-- 저의 소개 -->
             <article>
-                <img src="images/slide01.jpg" alt="khs" />
-                <div class="inner">
+                <img src="images/slide01.jpg" alt="khs" style="object-fit: cover; height: 50vh; width: 100%;" />
+                <div class="inner" style="color: #fff; text-align: center; padding: 40px;">
                     <header>
-                        <p>저의 소개합니다! 😁</p>
-                        </br>
-                        <li style="font-size: 15px; text-align: left;">안녕하세요! 저는 정말 개발이 재밌어서 개발일을 시작한 1년차 개발자 권현성입니다.</li></br>
-                        <li style="font-size: 15px; text-align: left;">저는 개발을 하면서 매사에 이게 맞는지 저게 맞는지를 생각하면서 개발을 좋아하기에 어떤일을 할 때 꼼꼼히 알아보는 성격을 가지고 있습니다.</li></br>
-                        <li style="font-size: 15px;text-align: left;">항상 내가 짠 코드보다 더 좋은 방법은 없을까? 고민하면서 다른 사람이 저랑 비슷하게 짠 코드를 참고 하고, 더 좋다고 판단되면 흡수하는 형식으로 저의 개발 능력을 기릅니다.</li></br>
-                        
+                        <p style="font-size: 36px; font-weight: bold; margin-bottom: 20px; line-height: 1.2;">저의 소개합니다! 😁</p>
+                        <div style="background: rgba(0, 0, 0, 0.6); padding: 30px; border-radius: 10px; max-width: 800px; margin: auto; text-align: left;">
+                            <p style="font-size: 18px; line-height: 1.8;">
+                                안녕하세요! 저는 정말 개발이 재밌어서 시작한 2년차 개발자 권현성입니다.<br>
+                                항상 더 나은 결과를 위해 배우고 도전하며, 창의적인 접근과 열정을 바탕으로 성장하고 있습니다.<br>
+                                새로운 기술을 탐구하며 효율적인 방법을 찾는 것을 좋아합니다.
+                            </p>
+                        </div>
                     </header>
                 </div>
             </article>
+
+            <!-- 기술 스택 -->
             <article>
-                <img src="images/slide02.jpg" alt="react" />
-                <div class="inner">
-                    <header>
-                        <p>기술 스택 😎 </p>
-                        </br>
-                        <ul><a>Frontend</a>
-                          <li style="font-size: 15px; text-align: left;">Html, css, JavaScript, TypeScript</li>
-                          <li style="font-size: 15px; text-align: left;">Next.js, React, Vue.js</li>
-                          <li style="font-size: 15px; text-align: left;">Pinia, Redux, MobX</li>
-                        </ul>
-                        <ul><a>Backend</a>
-                          <li style="font-size: 15px; text-align: left;">Express.js, Java, python</li>
-                        </ul>
-                        <ul><a>DB</a>
-                          <li style="font-size: 15px; text-align: left;">MongoDB, MySQL</li>
-                        </ul>
-                        <ul><a>Tools</a>
-                          <li style="font-size: 15px; text-align: left;">vsCode, pyCharm, vim</li>
-                          <li style="font-size: 15px; text-align: left;">Git, Jira & Wiki Confluence, Slack</li>
-                        </ul>
+                <img src="images/slide02.jpg" alt="react" style="object-fit: cover; height: 50vh; width: 100%;" />
+                <div class="inner" style="color: #fff; text-align: center; padding: 40px;">
+                    <header style="margin-bottom: 30px;">
+                        <p style="font-size: 36px; font-weight: bold; line-height: 1.2;">기술 스택 😎</p>
                     </header>
+                    <div style="background: rgba(0, 0, 0, 0.6); padding: 30px; border-radius: 10px; max-width: 800px; margin: auto; text-align: left;">
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Frontend</p>
+                            <p style="font-size: 18px; line-height: 1.8; margin: 0;">HTML, CSS, JavaScript, TypeScript, Next.js, React, Vue.js, Pinia, Redux, MobX</p>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Backend</p>
+                            <p style="font-size: 18px; line-height: 1.8; margin: 0;">Express.js, Java, Python</p>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Database</p>
+                            <p style="font-size: 18px; line-height: 1.8; margin: 0;">MongoDB, MySQL</p>
+                        </div>
+                        <div>
+                            <p style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Tools</p>
+                            <p style="font-size: 18px; line-height: 1.8; margin: 0;">VSCode, PyCharm, IntelliJ, Git, Slack, Jira & Wiki Confluence, Bitbucket</p>
+                        </div>
+                    </div>
                 </div>
             </article>
+
+            <!-- 경력 -->
             <article>
-                <img src="images/slide03.jpg" alt="redux" />
-                <div class="inner">
-                    <header>
-                        <p style="font-size: 35px; text-align: center;">경력 🫡</p>
-                        </br>
-                        <ul style="font-size: 35px; text-align: left;"><a>뉴스젤리: 개발팀-프렌트엔드</a>
-                          <li style="font-size: 35px; text-align: left;">2022.12 ~ 2023.02</li>
-                        </ul>
-                        <ul style="font-size: 35px; text-align: left;"><a>카랑: 개발부서-웹팀</a>
-                          <li style="font-size: 35px; text-align: left;">2022.02 ~ 현재</li>
-                        </ul>
+                <img src="images/slide03.jpg" alt="redux" style="object-fit: cover; height: 50vh; width: 100%;" />
+                <div class="inner" style="color: #fff; text-align: center; padding: 40px;">
+                    <header style="margin-bottom: 30px;">
+                        <p style="font-size: 36px; font-weight: bold; line-height: 1.2;">경력 🫡</p>
                     </header>
+                    <div style="background: rgba(0, 0, 0, 0.6); padding: 30px; border-radius: 10px; max-width: 800px; margin: auto; text-align: left;">
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">뉴스젤리</p>
+                            <p style="font-size: 18px; line-height: 1.8; margin: 0;">개발팀 - 프론트엔드 (2022.12 ~ 2023.02)</p>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">카랑</p>
+                            <p style="font-size: 18px; line-height: 1.8; margin: 0;">개발부서 - 웹팀 (2022.02 ~ 2023.06)</p>
+                        </div>
+                        <div>
+                            <p style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">오케스트로</p>
+                            <p style="font-size: 18px; line-height: 1.8; margin: 0;">플랫폼공통개발팀 - 프론트엔드 (2023.09 ~ 현재)</p>
+                        </div>
+                    </div>
                 </div>
             </article>
+
+            <!-- 자격증 -->
             <article>
-                <img src="images/slide04.jpg" alt="js" />
-                <div class="inner">
-                    <header>
-                      <p style="font-size: 35px; text-align: center;">교육 🫡</p>
-                      </br>
-                      <ul style="font-size: 35px; text-align: left;"><a>강원대 컴퓨터과확과</a>
-                        <li style="font-size: 35px; text-align: left;">2019.03 ~ 2021.02</li>
-                      </ul>
-                      <ul style="font-size: 35px; text-align: left;"><a>엘리스 양재 AI 웹 개발 부트 캠프</a>
-                        <li style="font-size: 35px; text-align: left;">2022.07 ~ 2022.11</li>
-                      </ul>
+                <img src="images/slide04.jpg" alt="certifications" style="object-fit: cover; height: 50vh; width: 100%;" />
+                <div class="inner" style="color: #fff; text-align: center; padding: 40px;">
+                    <header style="margin-bottom: 30px;">
+                        <p style="font-size: 36px; font-weight: bold; line-height: 1.2;">자격증 😁</p>
                     </header>
-                </div>
-            </article>
-            <article>
-                <img src="images/slide05.jpg" alt="next.js" />
-                <div class="inner">
-                    <header>
-                      <p>사이트 이용 안내</p>
-                      </br>
-                      <ul><a>현재 페이지</a>
-                        <li style="text-align: left;">저를 설명하는 간단한 몇줄의 글과 아래는 저의 블로그 및 깃허브 주소 마지막으로는 제가 만든 사이드 프로젝트들을 이미지로 간단하게 보여주고 있습니다.</li>
-                      </ul>
-                      <ul><a>메뉴바</a>
-                        <li style="text-align: left;">오래전에 만든 포트폴리오랑 최근에 만든 포트폴리오를 구분하여 프로젝트에 대해 설명했습니다.</li>
-                      </ul>
-                    </header>
+                    <div style="background: rgba(0, 0, 0, 0.6); padding: 30px; border-radius: 10px; max-width: 800px; margin: auto; text-align: left;">
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">정보처리기사</p>
+                            <p style="font-size: 18px; line-height: 1.8; margin: 0;">한국산업인력공단 (취득일: 2022.06)</p>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">리눅스 마스터 2급</p>
+                            <p style="font-size: 18px; line-height: 1.8; margin: 0;">정보통신기술자격검정 (취득일: 2023.08)</p>
+                        </div>
+                        <div>
+                            <p style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">네트워크 관리사 2급</p>
+                            <p style="font-size: 18px; line-height: 1.8; margin: 0;">한국정보통신자격협회 (취득일: 2024.12)</p>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
 
-        <!-- One -->
         <section id="one" class="wrapper style2">
             <div class="inner">
                 <div class="grid-style">
@@ -193,7 +200,7 @@
                     </div>
                     <div>
                         <div class="image fit">
-                            <a href="#"><img src="images/yoga.jpg" alt="" /></a>
+                            <a href="#"><img style="height: 264px" src="images/yoga.jpg" alt="" /></a>
                         </div>
                     </div>
                     <div>
@@ -203,7 +210,7 @@
                     </div>
                     <div>
                         <div class="image fit">
-                            <a href="#"><img src="images/semantle2.png" alt="" /></a>
+                            <a href="#"><img style="height: 264px" src="images/semantle2.png" alt="" /></a>
                         </div>
                     </div>
                 </div>
