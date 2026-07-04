@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko" data-theme="light">
     <head>
         <meta charset="utf-8" />
@@ -6,7 +6,7 @@
         <title>권현성 | Frontend Developer Portfolio</title>
         <meta
             name="description"
-            content="4년차 프론트엔드 개발자 권현성의 포트폴리오 사이트입니다. React, Vue.js, JavaScript 전문가"
+            content="화면 흐름과 코드 구조를 함께 다루는 프론트엔드 개발자 권현성의 자기소개 사이트입니다."
         />
 
         <!-- Fonts -->
@@ -21,6 +21,197 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/modern-v2.css" />
         <link rel="icon" href="./images/ksmile.ico" />
+        <style>
+            :root {
+                --bg-primary: #f6f9ff;
+                --bg-secondary: #ffffff;
+                --text-primary: #171a1f;
+                --text-secondary: #626a75;
+                --accent-primary: #2563eb;
+                --accent-secondary: #0284c7;
+                --border-color: #d7e3f5;
+                --card-bg: #ffffff;
+                --shadow-soft: 0 16px 40px rgba(30, 64, 175, 0.1);
+            }
+
+            body {
+                background: var(--bg-primary);
+                color: var(--text-primary);
+                letter-spacing: 0;
+            }
+
+            .nav-modern {
+                border-bottom: 1px solid rgba(215, 227, 245, 0.9);
+                background: rgba(246, 249, 255, 0.92);
+                backdrop-filter: blur(16px);
+            }
+
+            .hero,
+            .story-section,
+            .skills-section,
+            .portfolio-section,
+            .experience-section,
+            .contact-section {
+                background: var(--bg-primary);
+            }
+
+            .hero-background,
+            .hero-gradient,
+            .hero-particles,
+            .scroll-indicator {
+                display: none;
+            }
+
+            .hero {
+                min-height: 86vh;
+            }
+
+            .hero-title {
+                letter-spacing: 0;
+            }
+
+            .hero-description,
+            .section-subtitle,
+            .story-text p,
+            .portfolio-description,
+            .job-description {
+                color: var(--text-secondary);
+            }
+
+            .hero-badge,
+            .section-badge,
+            .portfolio-link,
+            .contact-label {
+                color: var(--accent-primary);
+            }
+
+            .cta-primary {
+                background: var(--accent-primary);
+                box-shadow: none;
+            }
+
+            .social-link,
+            .story-item,
+            .skill-category,
+            .portfolio-card,
+            .timeline-content,
+            .education-item,
+            .contact-info {
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                background: var(--card-bg);
+                box-shadow: none;
+            }
+
+            .story-item {
+                padding: 24px;
+            }
+
+            .story-icon {
+                background: #eaf2ff;
+                color: var(--accent-primary);
+                font-size: 13px;
+                font-weight: 900;
+            }
+
+            .section-header h2,
+            .hero-title {
+                color: var(--text-primary);
+            }
+
+            .skill-tag {
+                border: 1px solid var(--border-color);
+                background: #f8fbff;
+                color: #334155;
+            }
+
+            .accent-dot {
+                color: var(--accent-primary);
+            }
+
+            .contact-content {
+                display: block;
+            }
+
+            .contact-info {
+                max-width: 760px;
+                margin: 0 auto;
+                padding: 28px;
+            }
+
+            .contact-description {
+                margin-bottom: 22px;
+            }
+
+            .contact-closing {
+                margin-top: 24px;
+                padding-top: 24px;
+                border-top: 1px solid var(--border-color);
+                color: var(--text-secondary);
+                line-height: 1.8;
+            }
+
+            .hero-cta {
+                display: inline-flex;
+                flex-direction: row !important;
+                flex-wrap: wrap;
+                gap: 6px;
+                align-items: center;
+                width: fit-content;
+                padding: 6px;
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                background: #fff;
+            }
+
+            .hero-link {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 38px;
+                padding: 8px 12px;
+                border: 0;
+                border-radius: 6px;
+                background: transparent;
+                color: var(--text-primary);
+                font-size: 14px;
+                font-weight: 800;
+                text-decoration: none;
+            }
+
+            .hero-link.primary {
+                border-color: var(--accent-primary);
+                background: var(--accent-primary);
+                color: #fff;
+            }
+
+            .job-points {
+                display: grid;
+                gap: 10px;
+                padding: 0;
+                margin: 14px 0 0;
+                list-style: none;
+                color: var(--text-secondary);
+            }
+
+            .job-points strong {
+                display: inline-block;
+                min-width: 64px;
+                color: var(--accent-primary);
+                font-size: 13px;
+            }
+
+            @media (max-width: 560px) {
+                .hero-cta {
+                    justify-content: center;
+                    width: 100%;
+                }
+
+                .hero-link {
+                    width: auto !important;
+                }
+            }
+        </style>
     </head>
     <body>
         <!-- Navigation -->
@@ -34,8 +225,8 @@
                     <a href="#intro" class="nav-link">소개</a>
                     <a href="#story" class="nav-link">성장</a>
                     <a href="#skills" class="nav-link">기술</a>
+                    <a href="career-portfolio.html" class="nav-link">전문성</a>
                     <a href="#experience" class="nav-link">경력</a>
-                    <a href="#portfolio" class="nav-link">포트폴리오</a>
                     <a href="#contact" class="nav-link">연락</a>
                 </div>
                 <div class="nav-actions">
@@ -54,31 +245,16 @@
             </div>
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge">Frontend Developer</div>
-                    <h1 class="hero-title">안녕하세요! 👋 저는 프론트 개발자 권현성입니다</h1>
+                    <div class="hero-badge">좋아서 시작해 깊게 파고드는 Frontend Developer</div>
+                    <h1 class="hero-title">화면 흐름과 코드 구조를 함께 다루는 프론트엔드 개발자입니다</h1>
                     <p class="hero-description">
-                        사용자 경험을 최우선으로 생각하는 4년차 프론트엔드 개발자입니다.<br />
-                        React와 Vue.js를 활용한 현대적인 웹 애플리케이션 개발에 전문성을 가지고 있으며,<br />
-                        끊임없는 학습과 도전을 통해 더 나은 개발자로 성장하고 있습니다.
+                        Vue·React·TypeScript로 운영 화면의 상태, API 연동, 공통 UI를 구현합니다.<br />
+                        사용자가 보는 흐름과 팀이 유지할 코드를 같이 봅니다.
                     </p>
                     <div class="hero-cta">
-                        <button class="cta-primary" onclick="scrollToSection('skills')">
-                            더 알아보기
-                            <span class="cta-arrow">→</span>
-                        </button>
-                        <div class="social-links">
-                            <a href="https://github.com/goodsosbva" class="social-link" target="_blank" rel="noopener">
-                                <span>GitHub</span>
-                            </a>
-                            <a
-                                href="https://goodsosbva.tistory.com/"
-                                class="social-link"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                <span>Blog</span>
-                            </a>
-                        </div>
+                        <a class="hero-link primary" href="career-portfolio.html">전문성 보기</a>
+                        <a class="hero-link" href="https://github.com/goodsosbva" target="_blank" rel="noopener">GitHub</a>
+                        <a class="hero-link" href="https://goodsosbva.tistory.com/" target="_blank" rel="noopener">Blog</a>
                     </div>
                 </div>
             </div>
@@ -161,45 +337,43 @@
                     <div class="section-badge">02 기술 스택</div>
                     <h2>TECHNICAL<br />SKILLS<span class="accent-dot">.</span></h2>
                     <p class="section-subtitle">
-                        현대적인 웹 기술을 활용하여<br />
-                        사용자 중심의 애플리케이션을 개발합니다.
+                        실무와 공개 프로젝트에서<br />
+                        실제로 다뤄 온 기술입니다.
                     </p>
                 </div>
 
                 <div class="skills-showcase">
                     <div class="skill-tags-section">
-                        <div class="skill-category" data-category="language">
-                            <h3 class="category-title">언어</h3>
+                        <div class="skill-category" data-category="frontend-core">
+                            <h3 class="category-title">프론트엔드 기본</h3>
                             <div class="skill-tags">
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">C</span>
-                                <span class="skill-tag">Java</span>
                                 <span class="skill-tag">JavaScript</span>
                                 <span class="skill-tag">TypeScript</span>
-                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
                             </div>
                         </div>
                         <div class="skill-category" data-category="framework">
-                            <h3 class="category-title">프레임워크 & 라이브러리</h3>
+                            <h3 class="category-title">프레임워크</h3>
                             <div class="skill-tags">
+                                <span class="skill-tag">Vue 3</span>
+                                <span class="skill-tag">Vue.js</span>
                                 <span class="skill-tag">React</span>
                                 <span class="skill-tag">Next.js</span>
-                                <span class="skill-tag">Vue.js</span>
-                                <span class="skill-tag">ExpressJS</span>
-                                <span class="skill-tag">Node.js</span>
                             </div>
                         </div>
                         <div class="skill-category" data-category="state">
-                            <h3 class="category-title">상태 관리 & 검증</h3>
+                            <h3 class="category-title">상태 관리와 폼</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">Pinia</span>
-                                <span class="skill-tag">@tanstack/vue-query</span>
+                                <span class="skill-tag">TanStack Query</span>
+                                <span class="skill-tag">React Query</span>
                                 <span class="skill-tag">Vee-Validate</span>
                                 <span class="skill-tag">Yup</span>
                             </div>
                         </div>
                         <div class="skill-category" data-category="ui">
-                            <h3 class="category-title">UI 라이브러리</h3>
+                            <h3 class="category-title">UI와 데이터 표현</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">Ant Design Vue</span>
                                 <span class="skill-tag">Storybook</span>
@@ -208,145 +382,32 @@
                             </div>
                         </div>
                         <div class="skill-category" data-category="build">
-                            <h3 class="category-title">빌드 & 도구</h3>
+                            <h3 class="category-title">빌드 & 아키텍처</h3>
                             <div class="skill-tags">
-                                <span class="skill-tag">Webpack</span>
-                                <span class="skill-tag">Module Federation</span>
                                 <span class="skill-tag">Vite</span>
-                                <span class="skill-tag">Docker</span>
-                                <span class="skill-tag">Kubernetes</span>
-                                <span class="skill-tag">모노레포</span>
-                                <span class="skill-tag">CI/CD</span>
+                                <span class="skill-tag">Webpack 5</span>
+                                <span class="skill-tag">Module Federation</span>
+                                <span class="skill-tag">npm Workspaces</span>
                             </div>
                         </div>
-                        <div class="skill-category" data-category="database">
-                            <h3 class="category-title">데이터베이스</h3>
+                        <div class="skill-category" data-category="tooling">
+                            <h3 class="category-title">테스트 자동화</h3>
                             <div class="skill-tags">
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Playwright</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">tsx</span>
                             </div>
                         </div>
                         <div class="skill-category" data-category="infra">
-                            <h3 class="category-title">인프라 & 클라우드</h3>
+                            <h3 class="category-title">기반 지식</h3>
                             <div class="skill-tags">
-                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Docker</span>
                                 <span class="skill-tag">Kubernetes</span>
                                 <span class="skill-tag">Linux</span>
-                            </div>
-                        </div>
-                        <div class="skill-category" data-category="version">
-                            <h3 class="category-title">버전 관리</h3>
-                            <div class="skill-tags">
                                 <span class="skill-tag">Git</span>
-                                <span class="skill-tag">GitHub</span>
-                                <span class="skill-tag">Bitbucket</span>
+                                <span class="skill-tag">SQLD</span>
+                                <span class="skill-tag">CKA</span>
                             </div>
-                        </div>
-                        <div class="skill-category" data-category="collaboration">
-                            <h3 class="category-title">협업 도구</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Jira</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">04 포트폴리오</div>
-                    <h2>RECENT<br />PROJECTS<span class="accent-dot">.</span></h2>
-                    <p class="section-subtitle">
-                        실무 경험을 바탕으로 제작한<br />
-                        다양한 웹 애플리케이션 프로젝트들입니다.
-                    </p>
-                </div>
-                <div class="portfolio-list">
-                    <div class="portfolio-card">
-                        <div class="portfolio-card-content">
-                            <h3>꼬맨틀 리팩토링</h3>
-                            <p class="portfolio-description">바닐라 JavaScript → Vue.js 마이그레이션</p>
-                            <p class="portfolio-tech">Vue.js, Pinia</p>
-                            <a
-                                href="https://github.com/goodsosbva/semantle_refactoring_project"
-                                class="portfolio-link"
-                                target="_blank"
-                                rel="noopener"
-                                >GitHub 저장소 보기 →</a
-                            >
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="portfolio-card-content">
-                            <h3>YogAI</h3>
-                            <p class="portfolio-description">요가 AI 코칭 웹사이트</p>
-                            <p class="portfolio-tech">React, Express.js</p>
-                            <a
-                                href="https://github.com/goodsosbva/YogAI"
-                                class="portfolio-link"
-                                target="_blank"
-                                rel="noopener"
-                                >GitHub 저장소 보기 →</a
-                            >
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="portfolio-card-content">
-                            <h3>KHS-mini-community</h3>
-                            <p class="portfolio-description">커뮤니티 토이 프로젝트</p>
-                            <p class="portfolio-tech">TypeScript</p>
-                            <a
-                                href="https://github.com/goodsosbva/KHS-mini-community"
-                                class="portfolio-link"
-                                target="_blank"
-                                rel="noopener"
-                                >GitHub 저장소 보기 →</a
-                            >
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="portfolio-card-content">
-                            <h3>모듈 페더레이션</h3>
-                            <p class="portfolio-description">Vite + Webpack Module Federation</p>
-                            <p class="portfolio-tech">TypeScript, 모노레포</p>
-                            <a
-                                href="https://github.com/goodsosbva/--vite-webpack"
-                                class="portfolio-link"
-                                target="_blank"
-                                rel="noopener"
-                                >GitHub 저장소 보기 →</a
-                            >
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="portfolio-card-content">
-                            <h3>Node.js 백엔드</h3>
-                            <p class="portfolio-description">노드 백엔드 사이드 프로젝트</p>
-                            <p class="portfolio-tech">TypeScript, Node.js</p>
-                            <a
-                                href="https://github.com/goodsosbva/Node_Backend"
-                                class="portfolio-link"
-                                target="_blank"
-                                rel="noopener"
-                                >GitHub 저장소 보기 →</a
-                            >
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="portfolio-card-content">
-                            <h3>scoreLibrary</h3>
-                            <p class="portfolio-description">도서관 시스템 사이트 (대출/반납, 도서 신청 기능)</p>
-                            <p class="portfolio-tech">Vue.js, TypeScript, SCSS</p>
-                            <a
-                                href="https://github.com/goodsosbva/scoreLibray"
-                                class="portfolio-link"
-                                target="_blank"
-                                rel="noopener"
-                                >GitHub 저장소 보기 →</a
-                            >
                         </div>
                     </div>
                 </div>
@@ -357,24 +418,29 @@
         <section id="experience" class="experience-section">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-badge">05 경력사항</div>
+                    <div class="section-badge">03 경력사항</div>
                     <h2>WORK<br />EXPERIENCE<span class="accent-dot">.</span></h2>
                     <p class="section-subtitle">
-                        4년간의 프론트엔드 개발 경험과<br />
-                        다양한 프로젝트를 통한 성장 과정입니다.
+                        회사명보다 어떤 도메인의 화면을 맡았는지<br />
+                        먼저 보이게 정리했습니다.
                     </p>
                     <div class="experience-timeline">
                         <div class="timeline-item active">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <div class="company-info">
-                                    <h3>오케스트로</h3>
-                                    <span class="position">플랫공통개발부 · 사원</span>
+                                    <h3>오케스트로 · 클라우드 관리 플랫폼</h3>
+                                    <span class="position">Frontend Developer · 클라우드 콘솔</span>
                                     <span class="period">2023.09 ~ 현재 (재직중)</span>
-                                    <span class="tech-stack">프론트엔드 개발</span>
+                                    <span class="tech-stack">Vue 3 · TypeScript · TanStack Query</span>
                                     <p class="job-description">
-                                        React 기반 웹 애플리케이션 개발 및 유지보수를 담당하고 있습니다.
+                                        클라우드 플랫폼 콘솔에서 생성·조회·수정·상태 확인이 이어지는 운영 화면을 맡았습니다.
                                     </p>
+                                    <ul class="job-points">
+                                        <li><strong>도메인</strong> 클라우드 자원 생성, 모니터링 알람, 인프라 장비 관리</li>
+                                        <li><strong>화면</strong> 프로비저닝 생성 흐름, 알람 정책 생성·수정, 알람 로그 조회·통계, 장비 등록·조회</li>
+                                        <li><strong>기여</strong> 동적 폼, 검색·필터·페이지네이션, 상세 패널, 권한·로딩·빈 값 상태, 공통 테이블·버튼 개선</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -382,11 +448,18 @@
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <div class="company-info">
-                                    <h3>카수리</h3>
-                                    <span class="position">사원/팀원</span>
+                                    <h3>카수리 · 출장정비 예약 관리</h3>
+                                    <span class="position">Frontend Developer · 예약/작업 배정 화면</span>
                                     <span class="period">2023.02 ~ 2023.08 (7개월)</span>
-                                    <span class="tech-stack">프론트엔드 개발</span>
-                                    <p class="job-description">웹 프론트엔드 개발 및 UI/UX 개선 작업을 수행했습니다.</p>
+                                    <span class="tech-stack">JavaScript · HTML5 · CSS3</span>
+                                    <p class="job-description">
+                                        고객이 원하는 시간과 장소로 방문정비를 신청하는 서비스의 예약 관리 화면을 구현했습니다.
+                                    </p>
+                                    <ul class="job-points">
+                                        <li><strong>도메인</strong> 출장정비 예약, 예약 조회, 작업 배정, 고객 요청 확인</li>
+                                        <li><strong>화면</strong> 예약 목록, 예약 상세, 고객 요청 사항, 차량 정보, 일정, 작업 상태 표시</li>
+                                        <li><strong>기여</strong> 프레임워크 의존 없이 JavaScript, HTML, CSS로 목록·상세·상태 화면의 기본 구조 구현</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -394,11 +467,16 @@
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <div class="company-info">
-                                    <h3>뉴스젤리</h3>
-                                    <span class="position">개발 · 사원/팀원</span>
+                                    <h3>뉴스젤리 · 데이터 시각화 서비스</h3>
+                                    <span class="position">Frontend Developer · 데이터 화면 경험</span>
                                     <span class="period">2022.12 ~ 2023.01 (2개월)</span>
-                                    <span class="tech-stack">프론트엔드 개발</span>
-                                    <p class="job-description">프론트엔드 개발 업무를 담당했습니다.</p>
+                                    <span class="tech-stack">Frontend · Data Visualization</span>
+                                    <p class="job-description">데이터를 차트와 대시보드로 설명하는 서비스 환경에서 프론트엔드 개발을 경험했습니다.</p>
+                                    <ul class="job-points">
+                                        <li><strong>도메인</strong> 맞춤형 데이터 시각화, 대시보드, 인터랙티브 시각화 콘텐츠</li>
+                                        <li><strong>화면</strong> 데이터가 많은 화면에서 정보 구조와 시각적 전달이 중요한 제품 환경 경험</li>
+                                        <li><strong>의미</strong> 이후 운영 화면을 만들 때 데이터 상태와 화면 표현을 함께 보는 기준이 되었습니다.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -409,7 +487,7 @@
                     <h3>학력 및 자격증</h3>
                     <div class="education-grid">
                         <div class="education-item">
-                            <div class="edu-icon">🎓</div>
+                            <div class="edu-icon">01</div>
                             <div class="edu-content">
                                 <h4>강원대학교(춘천)</h4>
                                 <p>컴퓨터공학 전공</p>
@@ -418,18 +496,19 @@
                             </div>
                         </div>
                         <div class="education-item">
-                            <div class="edu-icon">📜</div>
+                            <div class="edu-icon">02</div>
                             <div class="edu-content">
                                 <h4>자격증</h4>
                                 <ul class="cert-list">
                                     <li>정보처리기사 (2021.08)</li>
                                     <li>리눅스마스터2급 (2023.07)</li>
                                     <li>SQL개발자(SQLD) (2025.04)</li>
+                                    <li>CKA (2026.01)</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="education-item">
-                            <div class="edu-icon">🏆</div>
+                            <div class="edu-icon">03</div>
                             <div class="edu-content">
                                 <h4>수상 및 감사장</h4>
                                 <ul class="cert-list">
@@ -440,12 +519,11 @@
                             </div>
                         </div>
                         <div class="education-item">
-                            <div class="edu-icon">📚</div>
+                            <div class="edu-icon">04</div>
                             <div class="edu-content">
                                 <h4>교육 및 활동</h4>
                                 <ul class="activity-list">
                                     <li>지식인자원봉사 (2021.01 ~ 2022.05)</li>
-                                    <li>udemy 교육이수 (2022.02 ~ 2022.08)</li>
                                     <li>엘리스 양재 SW 교육 (2022.09 ~ 2022.11)</li>
                                 </ul>
                             </div>
@@ -459,69 +537,33 @@
         <section id="contact" class="contact-section">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-badge">06 연락처</div>
-                    <h2>GET IN<br />TOUCH<span class="accent-dot">.</span></h2>
+                    <div class="section-badge">04 마무리</div>
+                    <h2>CONTACT<span class="accent-dot">.</span></h2>
                     <p class="section-subtitle">
-                        새로운 프로젝트나 협업 기회에 대해<br />
-                        언제든지 편하게 연락해 주세요.
+                        포트폴리오를 읽어주셔서 감사합니다.<br />
+                        연락은 이메일로 부탁드립니다.
                     </p>
                 </div>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>연락처 정보</h3>
+                        <h3>연락</h3>
                         <p class="contact-description">
-                            빠른 응답을 위해 이메일로 연락주시면<br />
-                            24시간 내에 답변드리겠습니다.
+                            이력서, 포트폴리오, 면접 일정과 관련된 연락은 이메일로 부탁드립니다.
                         </p>
                         <div class="contact-details">
                             <div class="contact-item">
                                 <span class="contact-label">이메일</span>
-                                <span class="contact-value">goo*******@naver.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <span class="contact-label">전화</span>
-                                <span class="contact-value">010-****-8549</span>
+                                <span class="contact-value">goodsosbva@naver.com</span>
                             </div>
                             <div class="contact-item">
                                 <span class="contact-label">위치</span>
                                 <span class="contact-value">경기 파주시</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="contact-form">
-                        <form class="modern-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <input type="text" id="name" name="name" required />
-                                    <label for="name">성함</label>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" id="email" name="email" required />
-                                    <label for="email">이메일</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="subject" name="subject" required />
-                                <label for="subject">제목</label>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                                <label for="message">메시지를 입력하세요</label>
-                            </div>
-                            <button type="submit" class="submit-btn">전송</button>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="social-footer">
-                    <div class="social-links-footer">
-                        <a href="https://github.com/goodsosbva" target="_blank" rel="noopener">GitHub</a>
-                        <a href="https://goodsosbva.tistory.com/" target="_blank" rel="noopener">Blog</a>
-                        <a href="https://www.facebook.com/profile.php?id=100028564943110" target="_blank" rel="noopener"
-                            >Facebook</a
-                        >
-                        <a href="https://www.instagram.com/khs7019/?hl=ko" target="_blank" rel="noopener">Instagram</a>
+                        <p class="contact-closing">
+                            좋아서 시작한 개발을 깊게 파고들고 싶습니다.<br />
+                            화면은 사용자가 덜 헤매게, 코드는 다음 수정이 덜 막히게 남기는 개발자가 되겠습니다.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -531,23 +573,7 @@
         <footer class="footer-modern">
             <div class="footer-content">
                 <div class="footer-info">
-                    <p>&copy; 2024 권현성. All rights reserved.</p>
-                </div>
-                <div class="footer-social">
-                    <a
-                        href="https://www.facebook.com/profile.php?id=100028564943110"
-                        class="footer-link"
-                        target="_blank"
-                        rel="noopener"
-                        >Facebook</a
-                    >
-                    <a
-                        href="https://www.instagram.com/khs7019/?hl=ko"
-                        class="footer-link"
-                        target="_blank"
-                        rel="noopener"
-                        >Instagram</a
-                    >
+                    <p>&copy; 2026 권현성. Frontend Developer Portfolio.</p>
                 </div>
             </div>
         </footer>
