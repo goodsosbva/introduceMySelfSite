@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-theme="light">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,6 +14,10 @@
                 --bg: #f6f9ff;
                 --surface: #ffffff;
                 --surface-2: #eaf2ff;
+                --header-bg: rgba(246, 249, 255, 0.92);
+                --panel-head-bg: #f1f6ff;
+                --tag-bg: #f8fbff;
+                --tag-text: #334155;
                 --text: #171a1f;
                 --muted: #626a75;
                 --line: #d7e3f5;
@@ -22,6 +26,24 @@
                 --warn: #4f46e5;
                 --radius: 8px;
                 --shadow: 0 16px 40px rgba(30, 64, 175, 0.1);
+            }
+
+            [data-theme="dark"] {
+                color-scheme: dark;
+                --bg: #0b1220;
+                --surface: #111827;
+                --surface-2: #172554;
+                --header-bg: rgba(11, 18, 32, 0.92);
+                --panel-head-bg: #0f1b33;
+                --tag-bg: rgba(37, 99, 235, 0.18);
+                --tag-text: #dbeafe;
+                --text: #e5edf8;
+                --muted: #a8b3c7;
+                --line: rgba(96, 165, 250, 0.32);
+                --accent: #60a5fa;
+                --accent-2: #38bdf8;
+                --warn: #818cf8;
+                --shadow: none;
             }
 
             * {
@@ -73,7 +95,7 @@
                 top: 0;
                 z-index: 10;
                 border-bottom: 1px solid rgba(215, 227, 245, 0.9);
-                background: rgba(246, 249, 255, 0.92);
+                background: var(--header-bg);
                 backdrop-filter: blur(16px);
             }
 
@@ -92,8 +114,29 @@
                 gap: 16px;
             }
 
+            .nav-brand-group {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                white-space: nowrap;
+            }
+
             .brand {
                 font-weight: 900;
+            }
+
+            .back-link {
+                padding: 6px 10px;
+                border: 1px solid var(--line);
+                border-radius: var(--radius);
+                color: var(--muted);
+                font-size: 13px;
+                font-weight: 800;
+            }
+
+            .back-link:hover {
+                background: var(--surface-2);
+                color: var(--text);
             }
 
             .nav-links {
@@ -221,7 +264,7 @@
                 gap: 12px;
                 padding: 14px 16px;
                 border-bottom: 1px solid var(--line);
-                background: #f1f6ff;
+                background: var(--panel-head-bg);
                 color: var(--muted);
                 font-size: 13px;
             }
@@ -362,8 +405,8 @@
                 padding: 5px 8px;
                 border: 1px solid var(--line);
                 border-radius: 999px;
-                background: #f8fbff;
-                color: #334155;
+                background: var(--tag-bg);
+                color: var(--tag-text);
                 font-size: 12px;
                 font-weight: 700;
             }
@@ -452,7 +495,10 @@
         <a class="skip-link" href="#content">본문으로 바로가기</a>
         <header class="site-header">
             <nav class="nav" aria-label="주요 메뉴">
-                <a class="brand" href="#top">권현성</a>
+                <div class="nav-brand-group">
+                    <a class="brand" href="#top">권현성</a>
+                    <a class="back-link" href="index.html">← 자기소개</a>
+                </div>
                 <div class="nav-links">
                     <a href="#about">정체성</a>
                     <a href="#strengths">핵심 역량</a>
@@ -635,7 +681,7 @@
                             <dl class="detail-list">
                                 <div>
                                     <dt>역할</dt>
-                                    <dd>Vanilla JavaScript, HTML, CSS 기반 화면 구현</dd>
+                                    <dd>React 기반 화면 구현</dd>
                                 </div>
                                 <div>
                                     <dt>화면</dt>
@@ -689,7 +735,7 @@
                     </article>
                     <article class="case-card">
                         <p class="label">Case 03</p>
-                        <h3>공통 UI 품질 개선</h3>
+                        <h3>공통 컴포넌트 개선</h3>
                         <p>테이블과 버튼 문제를 개별 화면의 임시 처리로 두지 않고 공통 컴포넌트로 개선했습니다.</p>
                         <ul>
                             <li>컬럼 리사이즈, 컬럼 표시 제어, 고정 컬럼, 정렬 상태를 개선</li>
@@ -707,10 +753,10 @@
                 </div>
                 <div class="grid-3">
                     <article class="project-card">
-                        <h3>Module Federation Lab</h3>
-                        <p>반복 작업이 아니라 아키텍처 실험입니다. Vite host와 Webpack remote를 연결해 런타임 번들 경계를 확인했습니다.</p>
+                        <h3>CityWatch FE Lab</h3>
+                        <p>도시 안전 모니터링 화면을 Next host, analytics remote, realtime server, shared UI/type 패키지로 나눠 실험한 FE 랩입니다.</p>
                         <a
-                            href="https://github.com/goodsosbva/--vite-webpack"
+                            href="https://github.com/goodsosbva/citywatch-fe-lab"
                             target="_blank"
                             rel="noopener"
                             >GitHub 보기</a
@@ -753,5 +799,6 @@
         <footer>
             <span>&copy; 2026 권현성. Frontend Developer Portfolio.</span>
         </footer>
+        <script src="assets/js/theme-v2.js"></script>
     </body>
 </html>
