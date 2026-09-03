@@ -1,398 +1,605 @@
 <!doctype html>
-<html lang="ko" data-theme="light">
+<html lang="ko">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>권현성 | Frontend Developer Portfolio</title>
-        <meta
-            name="description"
-            content="화면 흐름과 코드 구조를 함께 다루는 프론트엔드 개발자 권현성의 자기소개 사이트입니다."
-        />
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
-
-        <!-- Styles -->
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/modern-v2.css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="icon" href="./images/ksmile.ico" />
+        <meta name="description" content="권현성의 프론트엔드 개발자 포트폴리오" />
+        <title>권현성 — Frontend Developer</title>
+        <style>
+            :root {
+                --bg: #0b0d10;
+                --panel: #12161b;
+                --text: #f2f4f7;
+                --muted: #9ba5b2;
+                --line: #27303a;
+                --accent: #c8f36a;
+                --max: 1120px;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                margin: 0;
+                background: var(--bg);
+                color: var(--text);
+                font:
+                    16px/1.7 -apple-system,
+                    BlinkMacSystemFont,
+                    'Segoe UI',
+                    'Noto Sans KR',
+                    sans-serif;
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            a:focus-visible {
+                outline: 3px solid var(--accent);
+                outline-offset: 4px;
+            }
+            .skip {
+                position: fixed;
+                top: 12px;
+                left: 12px;
+                z-index: 3;
+                transform: translateY(-150%);
+                padding: 8px 12px;
+                background: var(--accent);
+                color: #0b0d10;
+                font-weight: 800;
+            }
+            .skip:focus {
+                transform: none;
+            }
+            .wrap {
+                width: min(var(--max), calc(100% - 40px));
+                margin: auto;
+            }
+            .header {
+                position: sticky;
+                top: 0;
+                z-index: 2;
+                border-bottom: 1px solid var(--line);
+                background: rgba(11, 13, 16, 0.88);
+                backdrop-filter: blur(14px);
+            }
+            .nav {
+                min-height: 72px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 24px;
+            }
+            .logo {
+                font-weight: 900;
+                letter-spacing: -0.04em;
+            }
+            .logo span {
+                color: var(--accent);
+            }
+            .links {
+                display: flex;
+                gap: 24px;
+                color: var(--muted);
+                font-size: 14px;
+            }
+            .links a:hover {
+                color: var(--accent);
+            }
+            .hero {
+                min-height: calc(100vh - 72px);
+                display: grid;
+                grid-template-columns: 1.3fr 0.7fr;
+                align-items: center;
+                gap: 64px;
+                padding: 88px 0 100px;
+            }
+            .kicker {
+                margin: 0 0 20px;
+                color: var(--accent);
+                font-size: 14px;
+                font-weight: 800;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+            }
+            .hero h1 {
+                max-width: 760px;
+                margin: 0 0 28px;
+                font-size: clamp(42px, 7vw, 88px);
+                line-height: 1.03;
+                letter-spacing: -0.07em;
+            }
+            .hero h1 em {
+                color: var(--accent);
+                font-style: normal;
+            }
+            .lead {
+                max-width: 650px;
+                margin: 0 0 32px;
+                color: var(--muted);
+                font-size: 19px;
+            }
+            .actions {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 46px;
+                padding: 10px 16px;
+                border: 1px solid var(--line);
+                border-radius: 999px;
+                font-weight: 800;
+            }
+            .button:hover {
+                border-color: var(--accent);
+                color: var(--accent);
+            }
+            .button.primary {
+                border-color: var(--accent);
+                background: var(--accent);
+                color: #0b0d10;
+            }
+            .orbit {
+                position: relative;
+                min-height: 360px;
+                display: grid;
+                place-items: center;
+            }
+            .orbit:before,
+            .orbit:after {
+                content: '';
+                position: absolute;
+                border: 1px solid var(--line);
+                border-radius: 50%;
+            }
+            .orbit:before {
+                width: 300px;
+                height: 300px;
+            }
+            .orbit:after {
+                width: 210px;
+                height: 210px;
+                border-color: #45515e;
+            }
+            .stamp {
+                position: relative;
+                width: 150px;
+                height: 150px;
+                display: grid;
+                place-items: center;
+                border-radius: 50%;
+                background: var(--accent);
+                color: #0b0d10;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 950;
+                line-height: 1.15;
+                transform: rotate(-9deg);
+            }
+            .stamp small {
+                display: block;
+                font-size: 11px;
+                letter-spacing: 0.08em;
+            }
+            .orbit b {
+                position: absolute;
+                color: var(--muted);
+                font-size: 12px;
+            }
+            .orbit b:nth-child(2) {
+                top: 16%;
+                right: 2%;
+            }
+            .orbit b:nth-child(3) {
+                bottom: 12%;
+                left: 0;
+            }
+            .orbit b:nth-child(4) {
+                bottom: 3%;
+                right: 15%;
+            }
+            section {
+                padding: 104px 0;
+                border-top: 1px solid var(--line);
+            }
+            .section-head {
+                display: grid;
+                grid-template-columns: 0.7fr 1.3fr;
+                gap: 32px;
+                margin-bottom: 48px;
+            }
+            .section-no {
+                margin: 4px 0;
+                color: var(--accent);
+                font-size: 13px;
+                font-weight: 900;
+                letter-spacing: 0.1em;
+            }
+            .section-head h2 {
+                margin: 0;
+                font-size: clamp(32px, 5vw, 58px);
+                line-height: 1.05;
+                letter-spacing: -0.06em;
+            }
+            .section-head p {
+                max-width: 560px;
+                margin: 0;
+                color: var(--muted);
+                font-size: 18px;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 14px;
+            }
+            .card {
+                padding: 28px;
+                border: 1px solid var(--line);
+                background: var(--panel);
+                border-radius: 18px;
+            }
+            .card:hover {
+                border-color: #51616f;
+            }
+            .card h3 {
+                margin: 0 0 10px;
+                font-size: 20px;
+                letter-spacing: -0.03em;
+            }
+            .card p {
+                margin: 0;
+                color: var(--muted);
+            }
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 7px;
+                padding: 0;
+                margin: 24px 0 0;
+                list-style: none;
+            }
+            .tags li {
+                padding: 3px 9px;
+                border: 1px solid var(--line);
+                border-radius: 999px;
+                color: #c4ccd5;
+                font-size: 12px;
+            }
+            .work {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+            }
+            .work .card {
+                min-height: 270px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .label {
+                color: var(--accent);
+                font-size: 12px;
+                font-weight: 900;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+            }
+            .work h3 {
+                font-size: 28px;
+            }
+            .arrow {
+                color: var(--accent);
+                font-size: 24px;
+            }
+            .timeline {
+                display: grid;
+                gap: 0;
+            }
+            .job {
+                display: grid;
+                grid-template-columns: 220px 1fr;
+                gap: 32px;
+                padding: 28px 0;
+                border-top: 1px solid var(--line);
+            }
+            .job:last-child {
+                border-bottom: 1px solid var(--line);
+            }
+            .job time {
+                color: var(--muted);
+                font-size: 14px;
+            }
+            .job h3 {
+                margin: 0 0 8px;
+                font-size: 22px;
+            }
+            .job p {
+                margin: 0;
+                color: var(--muted);
+            }
+            .contact {
+                display: flex;
+                align-items: end;
+                justify-content: space-between;
+                gap: 32px;
+            }
+            .contact h2 {
+                max-width: 680px;
+                margin: 0;
+                font-size: clamp(34px, 6vw, 72px);
+                line-height: 1.05;
+                letter-spacing: -0.06em;
+            }
+            .email {
+                color: var(--accent);
+                font-size: 18px;
+                font-weight: 800;
+            }
+            .footer {
+                padding: 28px 0 48px;
+                color: var(--muted);
+                font-size: 13px;
+            }
+            @media (max-width: 760px) {
+                .links {
+                    display: none;
+                }
+                .hero {
+                    grid-template-columns: 1fr;
+                    min-height: auto;
+                    padding: 72px 0 80px;
+                }
+                .orbit {
+                    min-height: 280px;
+                }
+                .orbit:before {
+                    width: 230px;
+                    height: 230px;
+                }
+                .orbit:after {
+                    width: 160px;
+                    height: 160px;
+                }
+                .section-head,
+                .work {
+                    grid-template-columns: 1fr;
+                }
+                .grid {
+                    grid-template-columns: 1fr;
+                }
+                .job {
+                    grid-template-columns: 1fr;
+                    gap: 8px;
+                }
+                .contact {
+                    display: block;
+                }
+                .email {
+                    display: inline-block;
+                    margin-top: 28px;
+                }
+            }
+            @media (prefers-reduced-motion: reduce) {
+                html {
+                    scroll-behavior: auto;
+                }
+            }
+        </style>
     </head>
     <body>
-        <!-- Navigation -->
-        <nav class="nav-modern">
-            <div class="nav-container">
-                <div class="nav-brand">
-                    <span class="brand-text">권현성</span>
-                    <span class="brand-subtitle">Frontend Developer</span>
+        <a class="skip" href="#main">본문으로 바로가기</a>
+        <header class="header">
+            <nav class="nav wrap" aria-label="주요 메뉴">
+                <a class="logo" href="#top">HS<span>.</span></a>
+                <div class="links">
+                    <a href="#about">정체성</a><a href="#work">대표 경험</a><a href="#skills">기술</a
+                    ><a href="#career">경력</a><a href="#contact">연락</a>
                 </div>
-                <div class="nav-menu">
-                    <a href="#intro" class="nav-link">소개</a>
-                    <a href="#story" class="nav-link">성장</a>
-                    <a href="#skills" class="nav-link">기술</a>
-                    <a href="career-portfolio.html" class="nav-link">전문성</a>
-                    <a href="#experience" class="nav-link">경력</a>
-                    <a href="#contact" class="nav-link">연락</a>
-                </div>
-                <div class="nav-actions">
-                    <button id="themeToggle" class="theme-toggle" aria-label="테마 전환">
-                        <span class="theme-icon">🌙</span>
-                    </button>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <section id="intro" class="hero">
-            <div class="hero-background">
-                <div class="hero-gradient"></div>
-                <div class="hero-particles"></div>
-            </div>
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-badge">좋아서 시작해 깊게 파고드는 Frontend Developer</div>
-                    <h1 class="hero-title">화면 흐름과 코드 구조를 함께 다루는 프론트엔드 개발자입니다</h1>
-                    <p class="hero-description">
-                        Vue·React·TypeScript로 운영 화면의 상태, API 연동, 공통 UI를 구현합니다.<br />
-                        사용자가 보는 흐름과 팀이 유지할 코드를 같이 봅니다.
+            </nav>
+        </header>
+        <main id="main">
+            <section id="top" class="hero wrap" aria-labelledby="hero-title">
+                <div>
+                    <p class="kicker">Frontend Developer · 권현성</p>
+                    <h1 id="hero-title">화면의 흐름과<br /><em>코드의 구조</em>를 같이 봅니다.</h1>
+                    <p class="lead">
+                        Vue·React·TypeScript로 클라우드 프로비저닝과 모니터링 같은 운영 화면을 구현합니다. 사용자가 덜
+                        헤매고, 다음 수정이 덜 막히는 제품을 만듭니다.
                     </p>
-                    <div class="hero-cta">
-                        <a class="hero-link primary" href="career-portfolio.html">전문성 보기</a>
-                        <a class="hero-link" href="https://github.com/goodsosbva" target="_blank" rel="noopener">GitHub</a>
-                        <a class="hero-link" href="https://goodsosbva.tistory.com/" target="_blank" rel="noopener">Blog</a>
+                    <div class="actions">
+                        <a class="button primary" href="#work">대표 경험 보기</a
+                        ><a class="button" href="https://github.com/goodsosbva" target="_blank" rel="noopener"
+                            >GitHub ↗</a
+                        ><a class="button" href="https://goodsosbva.tistory.com/" target="_blank" rel="noopener"
+                            >Blog ↗</a
+                        >
                     </div>
                 </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="scroll-dot"></div>
-            </div>
-        </section>
-
-        <!-- Story Section -->
-        <section id="story" class="story-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">01 성장 스토리</div>
-                    <h2>MY<br />STORY<span class="accent-dot">.</span></h2>
-                    <p class="section-subtitle">
-                        개발자로의 여정과<br />
-                        지속적인 성장의 이야기입니다.
-                    </p>
+                <div class="orbit" aria-label="개발 철학">
+                    <div class="stamp">좋아서<br />깊게<br />파고듭니다<small>BUILD WITH CARE</small></div>
+                    <b>UI STATE</b><b>DATA FLOW</b><b>COMMON UI</b>
                 </div>
-                <div class="story-content">
-                    <div class="story-item">
-                        <div class="story-icon">🎯</div>
-                        <div class="story-text">
-                            <h3>시작</h3>
+            </section>
+            <section id="about">
+                <div class="wrap">
+                    <div class="section-head">
+                        <p class="section-no">01 / IDENTITY</p>
+                        <div>
+                            <h2>복잡한 운영 화면을<br />단단하게.</h2>
                             <p>
-                                어렸을 때, 저 역시 대부분의 아이들처럼 장래 희망에 대해 명확히 정하지 못했던 시기가
-                                있었습니다. 그러던 중 우연히 우리나라 축구 경기를 보게 되었고, 한 선수가 행복과 슬픔
-                                같은 감정을 온전히 드러내며 뛰는 모습을 보았습니다. 그 장면을 보며 "저 선수는 정말
-                                축구를 사랑해서 하는구나"라는 깊은 감동을 받았습니다.
-                            </p>
-                            <p>
-                                이후 저도 그런 진심 어린 희로애락을 느낄 수 있는 직업을 가지고 싶다는 생각을 하게
-                                되었고, 다양한 직업을 탐구하는 과정에서 결국 '개발자'라는 직업을 알게 되었고, 이 길을
-                                가기로 결심했습니다.
+                                생성 폼부터 목록, 상세, 필터, 권한, 에러 상태까지, 실제 서비스가 버텨야 하는 지점을
+                                놓치지 않습니다. 화면을 만드는 일과 구조를 정리하는 일을 하나의 책임으로 봅니다.
                             </p>
                         </div>
                     </div>
-                    <div class="story-item">
-                        <div class="story-icon">💻</div>
-                        <div class="story-text">
-                            <h3>개발자로서의 삶</h3>
-                            <p>
-                                저는 개발을 단순한 직업이 아니라 좋아서 선택했습니다. 매일 새롭게 배워가며 성장할 수
-                                있다는 점이 매력적이었고, 더 나아가 제 기술이 사용자들에게 실질적인 가치를 전달할 수
-                                있다는 점에서 보람을 느낍니다.
-                            </p>
-                            <p>
-                                취업 이후, 클라우드 서비스 카탈로그 및 클라우드 프로비저닝 공통 개발팀에서 프론트엔드
-                                개발자로서 경력을 쌓고 있습니다. 이 과정에서 저는 단순히 기술을 구현하는 데 그치지 않고,
-                                안정적이고 확장 가능한 시스템을 설계하는 것이 프론트엔드 개발의 중요한 역할이라는 것을
-                                깨달았습니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="story-item">
-                        <div class="story-icon">🚀</div>
-                        <div class="story-text">
-                            <h3>성장과 비전</h3>
-                            <p>
-                                프로젝트를 진행하며 복잡한 요구사항과 예상치 못한 문제들을 자주 마주했습니다. 그러나
-                                이를 해결하기 위해 문제의 본질을 분석하고, 동료들과 협력하여 최적의 방안을 찾는 과정을
-                                통해 한 단계씩 성장할 수 있었습니다.
-                            </p>
-                            <p>
-                                특히, 멀티 클라우드 환경에서 클라우드 자원을 관리하기 위한 인터페이스를 설계하고
-                                구현하며, 팀의 목표 달성을 위한 기술적 기여를 할 수 있었습니다. 이러한 경험은 제가
-                                기술적 역량뿐 아니라, 팀 내에서 효과적으로 소통하고 협력하며 문제를 해결하는 능력을
-                                키우는 데 큰 도움을 주었습니다.
-                            </p>
-                        </div>
+                    <div class="grid">
+                        <article class="card">
+                            <h3>상태를 설계합니다</h3>
+                            <p>로딩, 빈 값, 실패, 권한, 삭제 이후의 흐름을 화면 언어로 명확히 나눕니다.</p>
+                        </article>
+                        <article class="card">
+                            <h3>데이터를 연결합니다</h3>
+                            <p>검색 조건, 페이지네이션, 캐시, 재조회를 API와 맞물리는 흐름으로 구현합니다.</p>
+                        </article>
+                        <article class="card">
+                            <h3>반복을 줄입니다</h3>
+                            <p>테이블, 버튼, 필터, 태그를 공통 컴포넌트로 만들어서 팀의 다음 작업을 가볍게 합니다.</p>
+                        </article>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">02 기술 스택</div>
-                    <h2>TECHNICAL<br />SKILLS<span class="accent-dot">.</span></h2>
-                    <p class="section-subtitle">
-                        실무와 공개 프로젝트에서<br />
-                        실제로 다뤄 온 기술입니다.
-                    </p>
-                </div>
-
-                <div class="skills-showcase">
-                    <div class="skill-tags-section">
-                        <div class="skill-category" data-category="frontend-core">
-                            <h3 class="category-title">프론트엔드 기본</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">TypeScript</span>
-                                <span class="skill-tag">HTML5</span>
-                                <span class="skill-tag">CSS3</span>
-                            </div>
-                        </div>
-                        <div class="skill-category" data-category="framework">
-                            <h3 class="category-title">프레임워크</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Vue 3</span>
-                                <span class="skill-tag">Vue.js</span>
-                                <span class="skill-tag">React</span>
-                                <span class="skill-tag">Next.js</span>
-                            </div>
-                        </div>
-                        <div class="skill-category" data-category="state">
-                            <h3 class="category-title">상태 관리와 폼</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Pinia</span>
-                                <span class="skill-tag">TanStack Query</span>
-                                <span class="skill-tag">React Query</span>
-                                <span class="skill-tag">Vee-Validate</span>
-                                <span class="skill-tag">Yup</span>
-                            </div>
-                        </div>
-                        <div class="skill-category" data-category="ui">
-                            <h3 class="category-title">UI와 데이터 표현</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Ant Design Vue</span>
-                                <span class="skill-tag">Storybook</span>
-                                <span class="skill-tag">Chart.js</span>
-                                <span class="skill-tag">CodeMirror</span>
-                            </div>
-                        </div>
-                        <div class="skill-category" data-category="build">
-                            <h3 class="category-title">빌드 & 아키텍처</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Vite</span>
-                                <span class="skill-tag">Webpack 5</span>
-                                <span class="skill-tag">Module Federation</span>
-                                <span class="skill-tag">npm Workspaces</span>
-                            </div>
-                        </div>
-                        <div class="skill-category" data-category="tooling">
-                            <h3 class="category-title">테스트 자동화</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Playwright</span>
-                                <span class="skill-tag">Node.js</span>
-                                <span class="skill-tag">tsx</span>
-                            </div>
-                        </div>
-                        <div class="skill-category" data-category="infra">
-                            <h3 class="category-title">기반 지식</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Docker</span>
-                                <span class="skill-tag">Kubernetes</span>
-                                <span class="skill-tag">Linux</span>
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">SQLD</span>
-                                <span class="skill-tag">CKA</span>
-                            </div>
+            </section>
+            <section id="work">
+                <div class="wrap">
+                    <div class="section-head">
+                        <p class="section-no">02 / SELECTED WORK</p>
+                        <div>
+                            <h2>업무뿐만 아니라<br />일상에서도 프로젝트를 이어갑니다.</h2>
+                            <p>실무에서 맡은 문제와, 그 문제를 어떤 프론트엔드 책임으로 풀었는지 정리했습니다.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">03 경력사항</div>
-                    <h2>WORK<br />EXPERIENCE<span class="accent-dot">.</span></h2>
-                    <p class="section-subtitle">
-                        회사명보다 어떤 도메인의 화면을 맡았는지<br />
-                        먼저 보이게 정리했습니다.
-                    </p>
-                    <div class="experience-timeline">
-                        <div class="timeline-item active">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <div class="company-info">
-                                    <h3>오케스트로 · 클라우드 관리 플랫폼</h3>
-                                    <span class="position">Frontend Developer · 클라우드 콘솔</span>
-                                    <span class="period">2023.09 ~ 현재 (재직중)</span>
-                                    <span class="tech-stack">Vue 3 · TypeScript · TanStack Query</span>
-                                    <p class="job-description">
-                                        클라우드 플랫폼 콘솔에서 생성·조회·수정·상태 확인이 이어지는 운영 화면을 맡았습니다.
-                                    </p>
-                                    <ul class="job-points">
-                                        <li><strong>도메인</strong> 클라우드 자원 생성, 모니터링 알람, 인프라 장비 관리</li>
-                                        <li><strong>화면</strong> 프로비저닝 생성 흐름, 알람 정책 생성·수정, 알람 로그 조회·통계, 장비 등록·조회</li>
-                                        <li><strong>기여</strong> 동적 폼, 검색·필터·페이지네이션, 상세 패널, 권한·로딩·빈 값 상태, 공통 테이블·버튼 개선</li>
-                                    </ul>
-                                </div>
+                    <div class="work">
+                        <article class="card">
+                            <div>
+                                <p class="label">Frontend 협업 프로젝트</p>
+                                <h3>프로비저닝, 모니터링, 인프라 관리</h3>
+                                <p>
+                                    Vue 3·TypeScript 기반 운영 콘솔에서 동적 생성 폼, 알람 정책, 로그 조회·통계, 장비
+                                    등록,조회 화면과 클라두으 프로비저닝을 구현했습니다.
+                                </p>
                             </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <div class="company-info">
-                                    <h3>카수리 · 출장정비 예약 관리</h3>
-                                    <span class="position">Frontend Developer · 예약/작업 배정 화면</span>
-                                    <span class="period">2023.02 ~ 2023.08 (7개월)</span>
-                                    <span class="tech-stack">JavaScript · HTML5 · CSS3</span>
-                                    <p class="job-description">
-                                        고객이 원하는 시간과 장소로 방문정비를 신청하는 서비스의 예약 관리 화면을 구현했습니다.
-                                    </p>
-                                    <ul class="job-points">
-                                        <li><strong>도메인</strong> 출장정비 예약, 예약 조회, 작업 배정, 고객 요청 확인</li>
-                                        <li><strong>화면</strong> 예약 목록, 예약 상세, 고객 요청 사항, 차량 정보, 일정, 작업 상태 표시</li>
-                                        <li><strong>기여</strong> 프레임워크 의존 없이 JavaScript, HTML, CSS로 목록·상세·상태 화면의 기본 구조 구현</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <div class="company-info">
-                                    <h3>뉴스젤리 · 데이터 시각화 서비스</h3>
-                                    <span class="position">Frontend Developer · 데이터 화면 경험</span>
-                                    <span class="period">2022.12 ~ 2023.01 (2개월)</span>
-                                    <span class="tech-stack">Frontend · Data Visualization</span>
-                                    <p class="job-description">데이터를 차트와 대시보드로 설명하는 서비스 환경에서 프론트엔드 개발을 경험했습니다.</p>
-                                    <ul class="job-points">
-                                        <li><strong>도메인</strong> 맞춤형 데이터 시각화, 대시보드, 인터랙티브 시각화 콘텐츠</li>
-                                        <li><strong>화면</strong> 데이터가 많은 화면에서 정보 구조와 시각적 전달이 중요한 제품 환경 경험</li>
-                                        <li><strong>의미</strong> 이후 운영 화면을 만들 때 데이터 상태와 화면 표현을 함께 보는 기준이 되었습니다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="education-section">
-                    <h3>학력 및 자격증</h3>
-                    <div class="education-grid">
-                        <div class="education-item">
-                            <div class="edu-icon">01</div>
-                            <div class="edu-content">
-                                <h4>강원대학교(춘천)</h4>
-                                <p>컴퓨터공학 전공</p>
-                                <span class="edu-period">2021.02 졸업</span>
-                            </div>
-                        </div>
-                        <div class="education-item">
-                            <div class="edu-icon">02</div>
-                            <div class="edu-content">
-                                <h4>자격증</h4>
-                                <ul class="cert-list">
-                                    <li>정보처리기사 (2021.08)</li>
-                                    <li>리눅스마스터2급 (2023.07)</li>
-                                    <li>SQL개발자(SQLD) (2025.04)</li>
-                                    <li>CKA (2026.01)</li>
+                            <div>
+                                <ul class="tags">
+                                    <li>Vue 3</li>
+                                    <li>TypeScript</li>
+                                    <li>Pinia</li>
+                                    <li>TanStack Query</li>
+                                    <li>Playwright</li>
+                                    <li>Monorepo</li>
+                                    <li>Vite</li>
+                                    <li>WebPack</li>
+                                    <li>Module Federation</li>
                                 </ul>
+                                <span class="arrow">↗</span>
                             </div>
-                        </div>
-                        <div class="education-item">
-                            <div class="edu-icon">03</div>
-                            <div class="edu-content">
-                                <h4>수상 및 감사장</h4>
-                                <ul class="cert-list">
-                                    <li>
-                                        2025년 전자정부표준프레임워크 기여도 감사장 (2025.10) 
-                                    </br>
-                                    </br>
-                                        사용자 관점의 개선 제안으로 표준프레임워크의 품질 향상 및 활성화에 기여
-                                    </li>
+                        </article>
+                        <article class="card">
+                            <div>
+                                <p class="label">Frontend 사이드 프로젝트</p>
+                                <h3>구조와 도구를 직접 검증하는 실험</h3>
+                                <p>
+                                    CityWatch FE Lab, Common Tester, AI PR Review Agent를 통해 Module Federation,
+                                    Playwright, 리뷰 자동화 흐름을 작게 검증했습니다.
+                                </p>
+                            </div>
+                            <div>
+                                <ul class="tags">
+                                    <li>React</li>
+                                    <li>Next.js</li>
+                                    <li>Playwright</li>
+                                    <li>Module Federation</li>
                                 </ul>
+                                <span class="arrow">↗</span>
                             </div>
-                        </div>
-                        <div class="education-item">
-                            <div class="edu-icon">04</div>
-                            <div class="edu-content">
-                                <h4>교육 및 활동</h4>
-                                <ul class="activity-list">
-                                    <li>지식인자원봉사 (2021.01 ~ 2022.05)</li>
-                                    <li>엘리스 양재 SW 교육 (2022.09 ~ 2022.11)</li>
-                                </ul>
-                            </div>
-                        </div>
+                        </article>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">04 마무리</div>
-                    <h2>CONTACT<span class="accent-dot">.</span></h2>
-                    <p class="section-subtitle">
-                        포트폴리오를 읽어주셔서 감사합니다.<br />
-                        연락은 이메일로 부탁드립니다.
+                    <p style="margin: 24px 0 0">
+                        <a class="button" href="career-portfolio.html">포트폴리오 보기 →</a>
                     </p>
                 </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>연락</h3>
-                        <p class="contact-description">
-                            이력서, 포트폴리오, 면접 일정과 관련된 연락은 이메일로 부탁드립니다.
-                        </p>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <span class="contact-label">이메일</span>
-                                <span class="contact-value">goodsosbva@naver.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <span class="contact-label">위치</span>
-                                <span class="contact-value">경기 파주시</span>
-                            </div>
+            </section>
+            <section id="skills">
+                <div class="wrap">
+                    <div class="section-head">
+                        <p class="section-no">03 / TOOLKIT</p>
+                        <div>
+                            <h2>필요하다면,<br />내 분야가 아니더라도 깊게 파고들어 학습합니다.</h2>
                         </div>
-                        <p class="contact-closing">
-                            좋아서 시작한 개발을 깊게 파고들고 싶습니다.<br />
-                            화면은 사용자가 덜 헤매게, 코드는 다음 수정이 덜 막히게 남기는 개발자가 되겠습니다.
-                        </p>
+                    </div>
+                    <div class="grid">
+                        <article class="card">
+                            <h3>Core</h3>
+                            <ul class="tags">
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
+                        </article>
+                        <article class="card">
+                            <h3>Framework & State</h3>
+                            <ul class="tags">
+                                <li>Vue 3</li>
+                                <li>React</li>
+                                <li>Pinia</li>
+                                <li>TanStack Query</li>
+                                <li>Redux</li>
+                            </ul>
+                        </article>
+                        <article class="card">
+                            <h3>Quality & Structure</h3>
+                            <ul class="tags">
+                                <li>Playwright</li>
+                                <li>Storybook</li>
+                                <li>Module Federation</li>
+                                <li>GitLab CI/CD</li>
+                            </ul>
+                        </article>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer-modern">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <p>&copy; 2026 권현성. Frontend Developer Portfolio.</p>
+            </section>
+            <section id="career">
+                <div class="wrap">
+                    <div class="section-head">
+                        <p class="section-no">04 / CAREER</p>
+                        <div>
+                            <h2>꾸준함으로,<br />경력을 이어나가고 있습니다.</h2>
+                            <p>현장에서 얻은 문제의식을 개인 프로젝트와 기술 블로그로 다시 검증합니다.</p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <article class="job">
+                            <time>2023.09 — 현재</time>
+                            <div>
+                                <h3>오케스트로, Frontend Developer</h3>
+                                <p>
+                                    클라우드 서비스 카탈로그 및 클라우드 프로비저닝 공통 개발팀. 운영 화면, API 연동,
+                                    공통 UI를 담당했습니다.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="job">
+                            <time>2023.02 — 2023.08</time>
+                            <div>
+                                <h3>카수리, Frontend Developer</h3>
+                                <p>출장정비 예약 관리 서비스에서 예약 조회, 상세, 작업 배정 화면을 개발했습니다.</p>
+                            </div>
+                        </article>
+                        <article class="job">
+                            <time>2017 ~ </time>
+                            <div>
+                                <h3>평소 꾸준히 공부합니다</h3>
+                                <p>
+                                    정보처리기사, 리눅스마스터 2급, SQLD, CKA를 취득하며 프론트엔드와 제품 개발에 필요한
+                                    기반을 넓혀왔습니다.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
-        </footer>
-
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/theme-v2.js"></script>
-        <script src="assets/js/app.js"></script>
+            </section>
+            <section id="contact">
+                <div class="wrap contact">
+                    <h2>좋아서 시작한 개발을<br /><span style="color: var(--accent)">더 깊게</span> 파고듭니다.</h2>
+                    <a class="email" href="mailto:goodsosbva@naver.com">goodsosbva@naver.com ↗</a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer wrap">© 2026 권현성. Frontend Developer Portfolio.</footer>
     </body>
 </html>
