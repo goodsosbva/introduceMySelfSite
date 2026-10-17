@@ -1,0 +1,219 @@
+- generic [ref=f4e3]:
+  - region "top of page"
+  - generic [ref=f4e10]:
+    - banner [ref=f4e11]:
+      - generic [ref=f4e17]:
+        - generic:
+          - generic:
+            - heading [level=6] [ref=f4e20]:
+              - link "R" [ref=f4e21] [cursor=pointer]:
+                - /url: https://www.wix.com/templatesko/uxui-designer-res-ko
+            - navigation "사이트" [ref=f4e23]:
+              - list [ref=f4e24]:
+                - listitem [ref=f4e25] [cursor=pointer]:
+                  - link [ref=f4e26]:
+                    - /url: https://www.wix.com/templatesko/uxui-designer-res-ko
+                    - paragraph [ref=f4e29]: 메인
+                - listitem [ref=f4e30] [cursor=pointer]:
+                  - link [ref=f4e31]:
+                    - /url: https://www.wix.com/templatesko/uxui-designer-res-ko
+                    - paragraph [ref=f4e34]: 요약
+                - listitem [ref=f4e35] [cursor=pointer]:
+                  - link [ref=f4e36]:
+                    - /url: https://www.wix.com/templatesko/uxui-designer-res-ko
+                    - paragraph [ref=f4e39]: 경력사항
+                - listitem [ref=f4e40] [cursor=pointer]:
+                  - link [ref=f4e41]:
+                    - /url: https://www.wix.com/templatesko/uxui-designer-res-ko/blank-1
+                    - paragraph [ref=f4e44]: 포트폴리오
+                - listitem [ref=f4e45] [cursor=pointer]:
+                  - link [ref=f4e46]:
+                    - /url: https://www.wix.com/templatesko/uxui-designer-res-ko
+                    - paragraph [ref=f4e49]: 문의
+    - main [ref=f4e50]:
+      - generic [ref=f4e55]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=f4e65]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading "I'M" [level=1] [ref=f4e70]
+                      - heading "a UX/UI DESIGNER." [level=1] [ref=f4e71]
+                    - generic:
+                      - heading "한 차원 다른 UX/UI 디자이너 및" [level=5] [ref=f4e72]
+                      - heading "웹개발자를 찾으십니까?" [level=5] [ref=f4e73]
+              - generic [ref=f4e77]:
+                - generic:
+                  - generic:
+                    - generic [ref=f4e86]:
+                      - generic:
+                        - generic:
+                          - generic [ref=f4e91]:
+                            - generic:
+                              - generic:
+                                - heading "R" [level=2] [ref=f4e95]
+                                - generic:
+                                  - paragraph [ref=f4e96]: "*여기를 클릭해 내용을 입력하세요. 마우스로 텍스트 상자의 위치와 크기를"
+                                  - paragraph [ref=f4e97]: 변경하고, 텍스트 에디터에서 글꼴과 색상을 선택해 보세요. 다양한 한글 글꼴을
+                                  - paragraph [ref=f4e98]:
+                                    - generic [ref=f4e99]: 사용하려면, 글꼴 언어를 한국어로 지정하세요. 나만의 콘텐츠, 나만의 스타일을
+                                  - paragraph [ref=f4e100]:
+                                    - generic [ref=f4e101]: 위한 나만의 홈페이지를 완성해 보세요!
+                                - link "이력서 다운로드" [ref=f4e103] [cursor=pointer]:
+                                  - /url: https://62e05e77-4f14-473a-8e2b-2dbbc08cfc9d.filesusr.com/ugd/faf5a4_3ca8daf5cc2c4f3eab694fd5892f23e6.pdf
+                          - heading "01 전문성을 약속합니다!" [level=3] [ref=f4e105]:
+                            - generic [ref=f4e106]: "01"
+                            - text: 전문성을 약속합니다!
+                          - heading "지난 10년간 쌓아온 전문성을 확인하세요." [level=5] [ref=f4e107]
+                          - paragraph [ref=f4e109]: WORDPRESS
+                          - paragraph [ref=f4e111]: 75%
+                          - paragraph [ref=f4e112]: DRUPAL
+                          - paragraph [ref=f4e114]: 70%
+                          - paragraph [ref=f4e115]: WIX
+                          - paragraph [ref=f4e117]: 95%
+                          - paragraph [ref=f4e118]: PHOTOSHOP
+                          - paragraph [ref=f4e120]: 85%
+                          - paragraph [ref=f4e121]: ILLUSTRATOR
+                          - paragraph [ref=f4e123]: 80%
+                          - paragraph [ref=f4e124]: JAVASCRIPT
+                          - paragraph [ref=f4e126]: 85%
+                          - paragraph [ref=f4e127]: HTML & CSS
+                          - paragraph [ref=f4e129]: 80%
+                    - region "요약"
+              - generic [ref=f4e130]:
+                - generic:
+                  - generic:
+                    - generic [ref=f4e139]:
+                      - generic:
+                        - generic:
+                          - heading "02 포트폴리오" [level=3] [ref=f4e144]:
+                            - generic [ref=f4e145]: "02"
+                            - text: 포트폴리오
+                          - heading [level=5] [ref=f4e146]:
+                            - link "최근 프로젝트 보기 >" [ref=f4e150] [cursor=pointer]:
+                              - /url: https://www.wix.com/templatesko/uxui-designer-res-ko/blank-1
+                          - region [ref=f4e157]:
+                            - generic [ref=f4e160]:
+                              - img "image"
+                          - heading "03 경력사항" [level=3] [ref=f4e172]:
+                            - generic [ref=f4e173]: "03"
+                            - text: 경력사항
+                          - paragraph [ref=f4e174]: 2035-2035
+                          - heading "WISBOOM" [level=5] [ref=f4e175]
+                          - generic:
+                            - paragraph [ref=f4e176]:
+                              - generic [ref=f4e177]: + 경력사항
+                            - paragraph [ref=f4e179]:
+                              - generic [ref=f4e180]: "*여기를 클릭해 내용을 입력하세요. 마우스로"
+                            - paragraph [ref=f4e181]:
+                              - generic [ref=f4e182]: 텍스트 상자의 위치와 크기를 변경하고, 텍스트 에디터에서 글꼴과 색상을 선택해 보세요.
+                          - paragraph [ref=f4e183]: 2035-2035
+                          - heading "GDV" [level=5] [ref=f4e184]
+                          - generic:
+                            - paragraph [ref=f4e185]:
+                              - generic [ref=f4e186]: + 경력사항
+                            - paragraph [ref=f4e188]:
+                              - generic [ref=f4e189]: "*여기를 클릭해 내용을 입력하세요. 마우스로"
+                            - paragraph [ref=f4e190]:
+                              - generic [ref=f4e191]: 텍스트 상자의 위치와 크기를 변경하고, 텍스트 에디터에서 글꼴과 색상을 선택해 보세요.
+                          - paragraph [ref=f4e192]: 2035-2035
+                          - paragraph [ref=f4e219]: 2035-2035
+                          - heading "HOP!" [level=5] [ref=f4e220]
+                          - generic:
+                            - paragraph [ref=f4e221]:
+                              - generic [ref=f4e222]: + 경력사항
+                            - paragraph [ref=f4e224]:
+                              - generic [ref=f4e225]: "*여기를 클릭해 내용을 입력하세요. 마우스로"
+                            - paragraph [ref=f4e226]:
+                              - generic [ref=f4e227]: 텍스트 상자의 위치와 크기를 변경하고, 텍스트 에디터에서 글꼴과 색상을 선택해 보세요.
+                          - paragraph [ref=f4e228]: 2035-2035
+                          - heading "SNAP UP" [level=5] [ref=f4e229]
+                          - generic:
+                            - paragraph [ref=f4e230]:
+                              - generic [ref=f4e231]: + 경력사항
+                            - paragraph [ref=f4e233]:
+                              - generic [ref=f4e234]: "*여기를 클릭해 내용을 입력하세요. 마우스로"
+                            - paragraph [ref=f4e235]:
+                              - generic [ref=f4e236]: 텍스트 상자의 위치와 크기를 변경하고, 텍스트 에디터에서 글꼴과 색상을 선택해 보세요.
+                          - paragraph [ref=f4e237]: 2035-2035
+                          - heading "BLUE APP" [level=5] [ref=f4e238]
+                          - generic:
+                            - paragraph [ref=f4e239]:
+                              - generic [ref=f4e240]: + 경력사항
+                            - paragraph [ref=f4e242]:
+                              - generic [ref=f4e243]: "*여기를 클릭해 내용을 입력하세요. 마우스로"
+                            - paragraph [ref=f4e244]:
+                              - generic [ref=f4e245]: 텍스트 상자의 위치와 크기를 변경하고, 텍스트 에디터에서 글꼴과 색상을 선택해 보세요.
+                          - heading "MARBLE" [level=5] [ref=f4e246]
+                          - generic:
+                            - paragraph [ref=f4e247]:
+                              - generic [ref=f4e248]: + 경력사항
+                            - paragraph [ref=f4e250]:
+                              - generic [ref=f4e251]: "*여기를 클릭해 내용을 입력하세요. 마우스로"
+                            - paragraph [ref=f4e252]:
+                              - generic [ref=f4e253]: 텍스트 상자의 위치와 크기를 변경하고, 텍스트 에디터에서 글꼴과 색상을 선택해 보세요.
+                    - region "문의"
+                    - region "포트폴리오"
+                    - region "경력사항"
+              - generic [ref=f4e273]:
+                - generic:
+                  - generic:
+                    - heading "문의하기" [level=5] [ref=f4e275]
+                    - generic:
+                      - paragraph [ref=f4e276]:
+                        - generic [ref=f4e277]: "*여기를 클릭해 내용을 입력하세요."
+                      - paragraph [ref=f4e279]:
+                        - generic [ref=f4e280]: 마우스로 텍스트 상자의 위치와 크기를 변경하고, 텍스트 에디터에서 글꼴과
+                      - paragraph [ref=f4e282]:
+                        - generic [ref=f4e283]: 색상을 선택해 보세요.
+                      - paragraph [ref=f4e285]
+                      - paragraph [ref=f4e286]:
+                        - link "info@mysite.com" [ref=f4e289] [cursor=pointer]:
+                          - /url: mailto:info@mysite.com
+                      - paragraph [ref=f4e290]:
+                        - generic [ref=f4e291]: 080-000-0000
+                    - generic [ref=f4e293]:
+                      - generic:
+                        - generic:
+                          - textbox "이름" [ref=f4e296]
+                          - textbox "이메일" [ref=f4e299]
+                          - textbox "전화번호" [ref=f4e302]
+                          - textbox [ref=f4e304]:
+                            - /placeholder: 메시지를 입력하세요.
+                          - button "제출" [ref=f4e306] [cursor=pointer]
+                    - list "SNS 모음" [ref=f4e309]:
+                      - listitem [ref=f4e310]:
+                        - link "White LinkedIn Icon" [ref=f4e311] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/wix-com
+                          - img "White LinkedIn Icon" [ref=f4e312]
+                      - listitem [ref=f4e313]:
+                        - link "White Tumblr Icon" [ref=f4e314] [cursor=pointer]:
+                          - /url: http://www.tumblr.com
+                          - img "White Tumblr Icon" [ref=f4e315]
+                      - listitem [ref=f4e316]:
+                        - link "White Twitter Icon" [ref=f4e317] [cursor=pointer]:
+                          - /url: http://www.twitter.com/wix
+                          - img "White Twitter Icon" [ref=f4e318]
+                      - listitem [ref=f4e319]:
+                        - link "White Instagram Icon" [ref=f4e320] [cursor=pointer]:
+                          - /url: http://instagram.com/wix
+                          - img "White Instagram Icon" [ref=f4e321]
+                      - listitem [ref=f4e322]:
+                        - link "White Facebook Icon" [ref=f4e323] [cursor=pointer]:
+                          - /url: http://www.facebook.com/wix
+                          - img "White Facebook Icon" [ref=f4e324]
+    - contentinfo [ref=f4e325]:
+      - generic [ref=f4e329]:
+        - generic:
+          - generic:
+            - heading [level=6] [ref=f4e332]:
+              - link "R" [ref=f4e333] [cursor=pointer]:
+                - /url: https://www.wix.com/templatesko/uxui-designer-res-ko
+            - paragraph [ref=f4e334]:
+              - generic [ref=f4e335]:
+                - text: © 2035 Proudly created with
+                - link "Wix.com" [ref=f4e337] [cursor=pointer]:
+                  - /url: http://www.wix.com/?utm_campaign=vir_created_with
+  - region "bottom of page"

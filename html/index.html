@@ -3,17 +3,17 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="권현성의 프론트엔드 개발자 포트폴리오" />
+        <meta name="description" content="프론트엔드 개발자 권현성의 소개와 구현 사례" />
         <title>권현성 — Frontend Developer</title>
         <style>
             :root {
-                --bg: #0b0d10;
-                --panel: #12161b;
-                --text: #f2f4f7;
-                --muted: #9ba5b2;
-                --line: #27303a;
-                --accent: #c8f36a;
-                --max: 1120px;
+                --ink: #101827;
+                --slate: #525d72;
+                --paper: #edf0f2;
+                --text: #f5f7fa;
+                --muted: #cbd2dc;
+                --accent: #bdd8ff;
+                --width: 1120px;
             }
             * {
                 box-sizing: border-box;
@@ -23,10 +23,10 @@
             }
             body {
                 margin: 0;
-                background: var(--bg);
+                background: var(--ink);
                 color: var(--text);
                 font:
-                    16px/1.7 -apple-system,
+                    16px/1.6 -apple-system,
                     BlinkMacSystemFont,
                     'Segoe UI',
                     'Noto Sans KR',
@@ -41,353 +41,376 @@
                 outline-offset: 4px;
             }
             .skip {
-                position: fixed;
-                top: 12px;
-                left: 12px;
-                z-index: 3;
-                transform: translateY(-150%);
-                padding: 8px 12px;
+                position: absolute;
+                left: 16px;
+                top: -60px;
+                z-index: 10;
+                padding: 10px 14px;
                 background: var(--accent);
-                color: #0b0d10;
-                font-weight: 800;
+                color: var(--ink);
             }
             .skip:focus {
-                transform: none;
+                top: 16px;
             }
             .wrap {
-                width: min(var(--max), calc(100% - 40px));
+                width: min(var(--width), calc(100% - 48px));
                 margin: auto;
             }
+            .hero-shell {
+                min-height: 675px;
+                position: relative;
+                overflow: hidden;
+                background: linear-gradient(116deg, #4b566d 0%, #3f4c63 53%, #28364d 100%);
+            }
+            .hero-shell::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: radial-gradient(
+                    circle at 78% 40%,
+                    transparent 0 18%,
+                    rgba(16, 24, 39, 0.1) 43%,
+                    rgba(16, 24, 39, 0.32) 100%
+                );
+                pointer-events: none;
+            }
             .header {
-                position: sticky;
-                top: 0;
+                position: relative;
                 z-index: 2;
-                border-bottom: 1px solid var(--line);
-                background: rgba(11, 13, 16, 0.88);
-                backdrop-filter: blur(14px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+                background: #4b566d;
             }
             .nav {
-                min-height: 72px;
+                min-height: 84px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                gap: 24px;
+                gap: 28px;
             }
-            .logo {
+            .brand {
+                font-size: 24px;
                 font-weight: 900;
-                letter-spacing: -0.04em;
+                letter-spacing: -0.08em;
             }
-            .logo span {
+            .brand span,
+            .accent {
                 color: var(--accent);
             }
             .links {
                 display: flex;
-                gap: 24px;
-                color: var(--muted);
+                flex-wrap: wrap;
+                gap: 28px;
                 font-size: 14px;
+                font-weight: 700;
             }
             .links a:hover {
                 color: var(--accent);
             }
             .hero {
-                min-height: calc(100vh - 72px);
-                display: grid;
-                grid-template-columns: 1.3fr 0.7fr;
+                min-height: 675px;
+                position: relative;
+                z-index: 1;
+                display: flex;
                 align-items: center;
-                gap: 64px;
-                padding: 88px 0 100px;
             }
-            .kicker {
+            .hero-copy {
+                position: relative;
+                z-index: 2;
+                max-width: 780px;
+                padding: 74px 0 94px;
+            }
+            .eyebrow {
                 margin: 0 0 20px;
                 color: var(--accent);
                 font-size: 14px;
-                font-weight: 800;
-                letter-spacing: 0.08em;
-                text-transform: uppercase;
+                font-weight: 900;
+                letter-spacing: 0.14em;
             }
             .hero h1 {
+                margin: 0;
+                font-size: clamp(84px, 11vw, 148px);
+                line-height: 0.95;
+                letter-spacing: -0.105em;
+            }
+            .promise {
                 max-width: 760px;
-                margin: 0 0 28px;
-                font-size: clamp(42px, 7vw, 88px);
-                line-height: 1.03;
-                letter-spacing: -0.07em;
-            }
-            .hero h1 em {
-                color: var(--accent);
-                font-style: normal;
-            }
-            .lead {
-                max-width: 650px;
-                margin: 0 0 32px;
-                color: var(--muted);
-                font-size: 19px;
+                margin: 30px 0 12px;
+                font-size: clamp(29px, 3.8vw, 48px);
+                line-height: 1.28;
+                font-weight: 800;
+                letter-spacing: -0.06em;
             }
             .actions {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 10px;
+                gap: 12px;
+                margin-top: 32px;
             }
             .button {
                 display: inline-flex;
                 align-items: center;
-                justify-content: center;
-                min-height: 46px;
-                padding: 10px 16px;
-                border: 1px solid var(--line);
-                border-radius: 999px;
+                min-height: 48px;
+                padding: 10px 18px;
+                border: 1px solid rgba(255, 255, 255, 0.65);
+                border-radius: 3px;
                 font-weight: 800;
-            }
-            .button:hover {
-                border-color: var(--accent);
-                color: var(--accent);
             }
             .button.primary {
                 border-color: var(--accent);
                 background: var(--accent);
-                color: #0b0d10;
+                color: var(--ink);
             }
-            .orbit {
-                position: relative;
-                min-height: 360px;
+            .button:hover {
+                transform: translateY(-2px);
+            }
+            .monogram {
+                position: absolute;
+                right: -125px;
+                bottom: -115px;
+                width: 560px;
+                height: 560px;
                 display: grid;
                 place-items: center;
-            }
-            .orbit:before,
-            .orbit:after {
-                content: '';
-                position: absolute;
-                border: 1px solid var(--line);
+                border: 1px solid rgba(255, 255, 255, 0.18);
                 border-radius: 50%;
+                color: rgba(255, 255, 255, 0.11);
+                font-size: 245px;
+                font-weight: 900;
+                letter-spacing: -0.14em;
+                transform: rotate(-16deg);
+                user-select: none;
             }
-            .orbit:before {
-                width: 300px;
-                height: 300px;
+            section:not(.hero) {
+                padding: 96px 0;
             }
-            .orbit:after {
-                width: 210px;
-                height: 210px;
-                border-color: #45515e;
-            }
-            .stamp {
-                position: relative;
-                width: 150px;
-                height: 150px;
-                display: grid;
-                place-items: center;
-                border-radius: 50%;
-                background: var(--accent);
-                color: #0b0d10;
-                text-align: center;
-                font-size: 20px;
-                font-weight: 950;
-                line-height: 1.15;
-                transform: rotate(-9deg);
-            }
-            .stamp small {
-                display: block;
-                font-size: 11px;
-                letter-spacing: 0.08em;
-            }
-            .orbit b {
-                position: absolute;
-                color: var(--muted);
-                font-size: 12px;
-            }
-            .orbit b:nth-child(2) {
-                top: 16%;
-                right: 2%;
-            }
-            .orbit b:nth-child(3) {
-                bottom: 12%;
-                left: 0;
-            }
-            .orbit b:nth-child(4) {
-                bottom: 3%;
-                right: 15%;
-            }
-            section {
-                padding: 104px 0;
-                border-top: 1px solid var(--line);
+            .work-section {
+                background: #283247;
             }
             .section-head {
-                display: grid;
-                grid-template-columns: 0.7fr 1.3fr;
-                gap: 32px;
-                margin-bottom: 48px;
+                display: flex;
+                align-items: end;
+                justify-content: space-between;
+                gap: 28px;
+                margin-bottom: 35px;
             }
             .section-no {
-                margin: 4px 0;
+                margin: 0 0 10px;
                 color: var(--accent);
                 font-size: 13px;
                 font-weight: 900;
-                letter-spacing: 0.1em;
+                letter-spacing: 0.13em;
             }
             .section-head h2 {
                 margin: 0;
-                font-size: clamp(32px, 5vw, 58px);
-                line-height: 1.05;
+                font-size: clamp(32px, 5vw, 56px);
+                line-height: 1.1;
                 letter-spacing: -0.06em;
             }
-            .section-head p {
-                max-width: 560px;
-                margin: 0;
-                color: var(--muted);
-                font-size: 18px;
-            }
-            .grid {
+            .work-grid {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 14px;
             }
-            .card {
-                padding: 28px;
-                border: 1px solid var(--line);
-                background: var(--panel);
-                border-radius: 18px;
-            }
-            .card:hover {
-                border-color: #51616f;
-            }
-            .card h3 {
-                margin: 0 0 10px;
-                font-size: 20px;
-                letter-spacing: -0.03em;
-            }
-            .card p {
-                margin: 0;
-                color: var(--muted);
-            }
-            .tags {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 7px;
-                padding: 0;
-                margin: 24px 0 0;
-                list-style: none;
-            }
-            .tags li {
-                padding: 3px 9px;
-                border: 1px solid var(--line);
-                border-radius: 999px;
-                color: #c4ccd5;
-                font-size: 12px;
-            }
-            .work {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 14px;
-            }
-            .work .card {
-                min-height: 270px;
+            .work-card {
+                min-height: 275px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                padding: 28px;
+                border: 1px solid rgba(255, 255, 255, 0.17);
+                background: #354056;
             }
-            .label {
+            .work-card .number {
+                margin: 0 0 32px;
                 color: var(--accent);
-                font-size: 12px;
+                font-size: 13px;
                 font-weight: 900;
-                letter-spacing: 0.1em;
-                text-transform: uppercase;
             }
-            .work h3 {
-                font-size: 28px;
+            .work-card h3 {
+                margin: 0 0 18px;
+                font-size: 23px;
+                line-height: 1.35;
+                letter-spacing: -0.04em;
             }
-            .arrow {
+            .work-card p:last-child {
+                margin: auto 0 0;
+                color: var(--muted);
+                font-size: 15px;
+            }
+            .more {
+                display: inline-block;
+                margin-top: 26px;
                 color: var(--accent);
-                font-size: 24px;
+                font-weight: 800;
+            }
+            .more:hover {
+                text-decoration: underline;
+            }
+            .career-section {
+                background: var(--slate);
             }
             .timeline {
-                display: grid;
-                gap: 0;
+                border-top: 1px solid rgba(255, 255, 255, 0.23);
             }
             .job {
                 display: grid;
-                grid-template-columns: 220px 1fr;
-                gap: 32px;
-                padding: 28px 0;
-                border-top: 1px solid var(--line);
-            }
-            .job:last-child {
-                border-bottom: 1px solid var(--line);
+                grid-template-columns: 195px 1fr 1.3fr;
+                align-items: baseline;
+                gap: 24px;
+                padding: 25px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.23);
             }
             .job time {
-                color: var(--muted);
+                color: var(--accent);
                 font-size: 14px;
+                font-weight: 800;
             }
             .job h3 {
-                margin: 0 0 8px;
+                margin: 0;
                 font-size: 22px;
             }
             .job p {
                 margin: 0;
                 color: var(--muted);
             }
+            .job .career-link {
+                display: inline-block;
+                margin-top: 8px;
+                color: var(--accent);
+                font-weight: 800;
+            }
+            .job .career-link:hover {
+                text-decoration: underline;
+            }
+            .skills-section {
+                background: #202b3e;
+            }
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            .tags li {
+                padding: 10px 16px;
+                border: 1px solid rgba(255, 255, 255, 0.26);
+                color: var(--text);
+                font-weight: 700;
+            }
+            .contact-section {
+                background: var(--ink);
+            }
             .contact {
                 display: flex;
                 align-items: end;
                 justify-content: space-between;
-                gap: 32px;
+                gap: 25px;
             }
             .contact h2 {
-                max-width: 680px;
                 margin: 0;
-                font-size: clamp(34px, 6vw, 72px);
-                line-height: 1.05;
+                font-size: clamp(34px, 5vw, 60px);
+                line-height: 1.14;
                 letter-spacing: -0.06em;
             }
             .email {
                 color: var(--accent);
                 font-size: 18px;
                 font-weight: 800;
+                white-space: nowrap;
             }
             .footer {
-                padding: 28px 0 48px;
-                color: var(--muted);
+                padding: 25px 0 40px;
+                border-top: 1px solid rgba(255, 255, 255, 0.14);
+                color: #a9b3c3;
                 font-size: 13px;
             }
-            @media (max-width: 760px) {
+            @media (max-width: 900px) {
+                .work-grid {
+                    grid-template-columns: 1fr;
+                }
+                .work-card {
+                    min-height: 0;
+                }
+                .work-card .number {
+                    margin-bottom: 16px;
+                }
+                .work-card p:last-child {
+                    margin-top: 0;
+                }
+                .job {
+                    grid-template-columns: 150px 1fr;
+                }
+                .job p {
+                    grid-column: 2;
+                }
+                .monogram {
+                    right: -235px;
+                    opacity: 0.65;
+                }
+            }
+            @media (max-width: 640px) {
+                .wrap {
+                    width: min(var(--width), calc(100% - 36px));
+                }
+                .hero-shell {
+                    min-height: 620px;
+                }
+                .nav {
+                    min-height: 68px;
+                }
                 .links {
+                    gap: 13px;
+                    font-size: 12px;
+                }
+                .links a:nth-child(3) {
                     display: none;
                 }
                 .hero {
-                    grid-template-columns: 1fr;
-                    min-height: auto;
-                    padding: 72px 0 80px;
+                    min-height: 620px;
                 }
-                .orbit {
-                    min-height: 280px;
+                .hero-copy {
+                    padding: 55px 0 70px;
                 }
-                .orbit:before {
-                    width: 230px;
-                    height: 230px;
+                .hero h1 {
+                    font-size: clamp(76px, 19vw, 116px);
                 }
-                .orbit:after {
-                    width: 160px;
-                    height: 160px;
+                .promise {
+                    margin-top: 24px;
+                }
+                .monogram {
+                    width: 390px;
+                    height: 390px;
+                    right: -220px;
+                    bottom: -65px;
+                    font-size: 160px;
+                }
+                section:not(.hero) {
+                    padding: 72px 0;
                 }
                 .section-head,
-                .work {
-                    grid-template-columns: 1fr;
-                }
-                .grid {
-                    grid-template-columns: 1fr;
-                }
-                .job {
-                    grid-template-columns: 1fr;
-                    gap: 8px;
-                }
                 .contact {
                     display: block;
                 }
+                .job {
+                    grid-template-columns: 1fr;
+                    gap: 3px;
+                }
+                .job p {
+                    grid-column: 1;
+                }
                 .email {
                     display: inline-block;
-                    margin-top: 28px;
+                    margin-top: 25px;
+                    white-space: normal;
                 }
             }
             @media (prefers-reduced-motion: reduce) {
                 html {
                     scroll-behavior: auto;
+                }
+                .button:hover {
+                    transform: none;
                 }
             }
         </style>
@@ -396,245 +419,137 @@
         <a class="skip" href="#main">본문으로 바로가기</a>
         <header class="header">
             <nav class="nav wrap" aria-label="주요 메뉴">
-                <a class="logo" href="#top">HS<span>.</span></a>
+                <a class="brand" href="#top">KHS<span>.</span></a>
                 <div class="links">
-                    <a href="#about">정체성</a><a href="#work">대표 경험</a><a href="#skills">기술</a
-                    ><a href="#career">경력</a><a href="#contact">연락</a>
+                    <a href="#work">작업</a><a href="#career">경력</a><a href="#skills">기술</a
+                    ><a href="#contact">연락</a>
                 </div>
             </nav>
         </header>
         <main id="main">
-            <section id="top" class="hero wrap" aria-labelledby="hero-title">
-                <div>
-                    <p class="kicker">Frontend Developer · 권현성</p>
-                    <h1 id="hero-title">화면의 흐름과<br /><em>코드의 구조</em>를 같이 봅니다.</h1>
-                    <p class="lead">사용자의 자연스러운 예측이, 예측 가능한 코드 구조로 이어지는 개발을 합니다.</p>
-                    <div class="actions">
-                        <a class="button primary" href="#work">대표 경험 보기</a
-                        ><a class="button" href="https://github.com/goodsosbva" target="_blank" rel="noopener"
-                            >GitHub ↗</a
-                        ><a class="button" href="https://goodsosbva.tistory.com/" target="_blank" rel="noopener"
-                            >Blog ↗</a
-                        >
-                    </div>
-                </div>
-                <div class="orbit" aria-label="개발 철학">
-                    <div class="stamp">좋아서<br />깊게<br />파고듭니다<small>BUILD WITH CARE</small></div>
-                    <b>UI STATE</b><b>DATA FLOW</b><b>COMMON UI</b>
-                </div>
-            </section>
-            <section id="about">
-                <div class="wrap">
-                    <div class="section-head">
-                        <p class="section-no">01 / IDENTITY</p>
-                        <div>
-                            <h2>
-                                보이는 흐름은 <span style="color: var(--accent)">자연</span>스럽게,<br />숨은 구조는
-                                <span style="color: var(--accent)">예측</span> 가능하게.
-                            </h2>
-                            <!-- 대안: 복잡성은 뒤로 감추고, / 명확함만 남깁니다. -->
+            <div class="hero-shell" id="top">
+                <section class="hero wrap" aria-labelledby="hero-title">
+                    <div class="hero-copy">
+                        <p class="eyebrow">FRONTEND DEVELOPER</p>
+                        <h1 id="hero-title">권현성<span class="accent">.</span></h1>
+                        <p class="promise">
+                            복잡한 운영 화면을<br /><span class="accent">예측 가능한 코드 구조</span>로 만듭니다.
+                        </p>
+                        <div class="actions">
+                            <a class="button primary" href="#work">구현 사례 보기</a
+                            ><a class="button" href="mailto:goodsosbva@naver.com">연락하기</a>
                         </div>
                     </div>
-                    <div class="grid">
-                        <article class="card">
-                            <h3>빈틈없는 상태(State) 설계</h3>
-                            <p>
-                                로딩, 빈 화면, 에러, 권한 부족 등 모든 엣지(Edge) 케이스를 제어합니다. 어떤 예외
-                                상황에서도 사용자가 당황하지 않고 다음 행동을 자연스럽게 유추할 수 있도록 화면 언어로
-                                안내합니다.
-                            </p>
-                        </article>
-                        <article class="card">
-                            <h3>단절 없는 데이터 동기화</h3>
-                            <p>
-                                복잡한 검색 조건, 페이지네이션, 캐싱 처리가 API 통신과 톱니바퀴처럼 맞물리게 구현합니다.
-                                데이터의 변화가 화면의 흐름과 정확히 일치하여, 예기치 못한 사이드 이펙트를 차단합니다.
-                            </p>
-                        </article>
-                        <article class="card">
-                            <h3>수정을 열어두는 컴포넌트</h3>
-                            <p>
-                                반복되는 UI 요소들을 일관된 규칙의 컴포넌트로 묶어냅니다. 훗날 팀원이 새로운 요구사항을
-                                마주했을 때, 코드를 헤집지 않고도 다음 수정 위치를 명확히 예측할 수 있도록 구조를
-                                남깁니다.
-                            </p>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <section id="work">
+                    <div class="monogram" aria-hidden="true">HS</div>
+                </section>
+            </div>
+            <section class="work-section" id="work" aria-labelledby="work-title">
                 <div class="wrap">
                     <div class="section-head">
-                        <p class="section-no">02 / SELECTED WORK</p>
                         <div>
-                            <h2>실제 서비스에서<br />예측 가능한 개발했습니다.</h2>
+                            <p class="section-no">01 / WORK</p>
+                            <h2 id="work-title">고친 문제 세 가지</h2>
                         </div>
                     </div>
-                    <div class="work">
-                        <article class="card">
-                            <div>
-                                <p class="label">Frontend 개발</p>
-                                <h3>복잡한 클라우드 운영 흐름을<br />예측 가능한 화면으로 구현했습니다.</h3>
-                                <p>
-                                    금융,공공기관용 클라우드 관리 플랫폼에서 자원 생성부터 조회, 모니터링과 오류
-                                    대응까지 이어지는 운영 화면을 사용자, 관리자 모두 자연스럽게 이루어지도록
-                                    구현했습니다
-                                </p>
-                            </div>
-                            <div>
-                                <!-- <ul class="tags">
-                                    <li>Vue 3</li>
-                                    <li>TypeScript</li>
-                                    <li>Pinia</li>
-                                    <li>TanStack Query</li>
-                                </ul> -->
-                                <!-- <span class="arrow">↗</span> -->
-                            </div>
+                    <div class="work-grid">
+                        <article class="work-card">
+                            <p class="number">01 / TABLE</p>
+                            <h3>사이즈를 조절해도<br />폭이 튀지 않게</h3>
+                            <p>브라우저가 그린 헤더 폭을 측정해 컬럼 상태와 colgroup에 함께 반영했습니다.</p>
                         </article>
-                        <article class="card">
-                            <div>
-                                <p class="label">AI & 개발 자동화</p>
-
-                                <h3>반복되는 검증 과정을<br />개발 도구로 만들어서 자동화 했습니다.</h3>
-
-                                <p>
-                                    기획 문서를 기반으로 테스트를 생성하고, Pull Request의 변경 내용을 분석하는 도구를
-                                    직접 구현하여 반복적인 검증은 AI에게 맡기고, 중요한 부분만 사람이 하도록 했습니다.
-                                </p>
-                            </div>
-                            <div>
-                                <!-- <ul class="tags">
-                                    <li>Next.js</li>
-                                    <li>Playwright</li>
-                                    <li>Module Federation</li>
-                                    <li>Monorepo</li>
-                                    <li>Node.js</li>
-                                    <li>MCP</li>
-                                </ul> -->
-                                <!-- <span class="arrow">↗</span> -->
-                            </div>
+                        <article class="work-card">
+                            <p class="number">02 / DATA</p>
+                            <h3>보지 않는 화면의<br />API 요청은 멈추도록</h3>
+                            <p>화면의 활성 상태를 로그 Query의 enabled 조건에 연결했습니다.</p>
+                        </article>
+                        <article class="work-card">
+                            <p class="number">03 / ERROR</p>
+                            <h3>한 화면의 오류가<br />앱 전체로 번지지 않게</h3>
+                            <p>Boundary로 오류를 격리하고 경로가 바뀌면 오류 상태를 초기화했습니다.</p>
                         </article>
                     </div>
-                    <p style="margin: 24px 0 0">
-                        <a class="button" href="career-portfolio.html">포트폴리오 보기 →</a>
-                    </p>
+                    <a class="more" href="career-portfolio.html">세 사례의 구현 과정 보기 →</a>
                 </div>
             </section>
-            <section id="skills">
+            <section class="career-section" id="career" aria-labelledby="career-title">
                 <div class="wrap">
                     <div class="section-head">
-                        <p class="section-no">03 / TOOLKIT</p>
                         <div>
-                            <h2>필요하다면,<br />저의 분야가 아니더라도 깊게 파고들어 학습합니다.</h2>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <article class="card">
-                            <h3>Core</h3>
-                            <ul class="tags">
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>SCSS</li>
-                                <li>Node.js</li>
-                                <li>React</li>
-                                <li>Next.js</li>
-                                <li>Vue 3</li>
-                            </ul>
-                        </article>
-                        <article class="card">
-                            <h3>Frameworke</h3>
-                            <ul class="tags">
-                                <li>Pinia</li>
-                                <li>TanStack Query</li>
-                                <li>Vue Router</li>
-                                <li>Redux</li>
-                                <li>Recoil</li>
-                                <li>Mobex</li>
-                            </ul>
-                        </article>
-                        <article class="card">
-                            <h3>Quality & Structure</h3>
-                            <ul class="tags">
-                                <li>Playwright</li>
-                                <li>Storybook</li>
-                                <li>Module Federation</li>
-                                <li>GitHub CI/CD</li>
-                                <li>Vitest</li>
-                                <li>Monorepo</li>
-                                <li>Nx</li>
-                                <li>Docker</li>
-                                <li>Kubernetes</li>
-                                <li>Vite</li>
-                                <li>Webpack</li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <section id="career">
-                <div class="wrap">
-                    <div class="section-head">
-                        <p class="section-no">04 / CAREER</p>
-                        <div>
-                            <h2>꾸준함으로,<br />경력을 이어나가고 있습니다.</h2>
+                            <p class="section-no">02 / CAREER</p>
+                            <h2 id="career-title">경력</h2>
                         </div>
                     </div>
                     <div class="timeline">
                         <article class="job">
                             <time>2023.09 — 현재</time>
-                            <div>
-                                <h3>오케스트로, Frontend Developer</h3>
-                                <p>Kubernetes, OpenShift, AWS 등 클라우드 프로비저닝 개발을 했습니다.</p>
-                                <p>
-                                    알람 정책을 통해 운영자가 자원 상태 변화와 발생 이력을 한 화면에서 확인할 수 있도록
-                                    했습니다.
-                                </p>
-                                <p>공통 컴포넌트 설계로 반복적인 개발 방지와 일관된 디자인 구현했습니다.</p>
-                                <p>
-                                    모듈 페더레이션, 모노레포를 이용해서 팀간의 코드를 분리해서 독립적인 개발을 할 수
-                                    있게 했습니다.
-                                </p>
-                            </div>
+                            <h3>오케스트로</h3>
+                            <p>
+                                금융 및 공공기관용 클라우드 관리 플랫폼의 프론트엔드를 개발하고 있습니다.<br /><a
+                                    class="career-link"
+                                    href="career-okestro.html"
+                                    >오케스트로 상세 보기 →</a
+                                >
+                            </p>
                         </article>
                         <article class="job">
                             <time>2023.02 — 2023.08</time>
-                            <div>
-                                <h3>카수리, Frontend Developer</h3>
-                                <p>출장정비 예약 관리 서비스에서 예약 조회, 상세, 작업 배정 화면을 개발했습니다.</p>
-                            </div>
+                            <h3>카수리</h3>
+                            <p>
+                                출장정비 예약 관리 화면 개발<br /><a class="career-link" href="career-casuri.html"
+                                    >카수리 상세 보기 →</a
+                                >
+                            </p>
                         </article>
                         <article class="job">
                             <time>2022.12 — 2023.01</time>
-                            <div>
-                                <h3>뉴스젤리, Frontend Intern</h3>
-                                <p>
-                                    Vanilla JavaScript 기반 화면을 Vue 구조로 마이그레이션하고, 중복 UI와 로직을 재사용
-                                    가능한 컴포넌트로 분리했습니다.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="job">
-                            <time>2017 ~ </time>
-                            <div>
-                                <h3>평소 꾸준히 공부합니다</h3>
-                                <p>
-                                    정보처리기사, 리눅스마스터, SQLD, CKA를 취득하며 프론트엔드 개발과 그 외의 기반을
-                                    넓혀왔습니다.
-                                </p>
-                            </div>
+                            <h3>뉴스젤리</h3>
+                            <p>
+                                Vanilla JavaScript 화면의 Vue 전환<br /><a
+                                    class="career-link"
+                                    href="career-newsjelly.html"
+                                    >뉴스젤리 상세 보기 →</a
+                                >
+                            </p>
                         </article>
                     </div>
                 </div>
             </section>
-            <section id="contact">
+            <section class="skills-section" id="skills" aria-labelledby="skills-title">
+                <div class="wrap">
+                    <div class="section-head">
+                        <div>
+                            <p class="section-no">03 / TECH STACK</p>
+                            <h2 id="skills-title">기술 스택</h2>
+                        </div>
+                    </div>
+                    <ul class="tags">
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Vue 3</li>
+                        <li>Next.js</li>
+                        <li>Monorepo</li>
+                        <li>Module Federation</li>
+                        <li>FSD</li>
+                        <li>SSR</li>
+                        <li>RAG</li>
+                        <li>LangChain</li>
+                        <li>MCP</li>
+                        <li>Function Calling</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contact-section" id="contact" aria-labelledby="contact-title">
                 <div class="wrap contact">
-                    <h2>좋아서 시작한 개발을<br /><span style="color: var(--accent)">더 깊게</span> 파고듭니다.</h2>
+                    <div>
+                        <p class="section-no">04 / CONTACT</p>
+                        <h2 id="contact-title">
+                            함께 일할 이야기가 있다면<br /><span class="accent">연락 주세요.</span>
+                        </h2>
+                    </div>
                     <a class="email" href="mailto:goodsosbva@naver.com">goodsosbva@naver.com ↗</a>
                 </div>
             </section>
         </main>
-        <footer class="footer wrap">© 2026 권현성. Frontend Developer Portfolio.</footer>
+        <footer class="footer wrap">© 2026 권현성. Frontend Developer.</footer>
     </body>
 </html>
