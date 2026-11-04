@@ -1,88 +1,15 @@
-<!doctype html>
-<html lang="ko">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="권현성의 오케스트로, 카수리, 뉴스젤리 실무 경력" />
-    <title>권현성 | 실무 경력</title>
-    <link rel="stylesheet" href="career-portfolio.css" />
-</head>
-<body>
-    <a class="skip" href="#okestro">경력으로 바로가기</a>
-    <header class="header">
-        <nav class="nav wrap" aria-label="주요 메뉴">
-            <a class="brand" href="index.html">KHS<span>.</span></a>
-            <div class="nav-links">
-                <a href="#okestro">오케스트로</a><a href="#casuri">카수리</a><a href="#newsjelly">뉴스젤리</a><a href="career-portfolio.html">포트폴리오</a><a class="back" href="index.html">메인으로</a>
-            </div>
-        </nav>
-    </header>
-    <div class="wrap page-return page-return-top"><a class="page-return-link" href="index.html">← 메인으로 돌아가기</a></div>
-    <main>
-        <section class="hero">
-            <div class="wrap">
-                <p class="role">FRONTEND DEVELOPER / CAREER</p>
-                <h1><span class="name">회사에서 한 일.</span>맡은 화면과<br /><span class="accent">구현 범위</span>를 기록합니다.</h1>
-                <p class="lead">오케스트로, 카수리, 뉴스젤리에서 담당한 기능과 역할을 정리했습니다.</p>
-                <div class="hero-points" aria-label="경력 회사">
-                    <a href="#okestro"><span>01</span>오케스트로</a><a href="#casuri"><span>02</span>카수리</a><a href="#newsjelly"><span>03</span>뉴스젤리</a>
-                </div>
-            </div>
-        </section>
-        <section id="okestro">
-            <div class="wrap">
-                <div class="section-intro"><p class="eyebrow">01 / CAREER / CLOUD PLATFORM</p><h2>오케스트로</h2><p>2023.09 - 현재 | Frontend Developer | 클라우드 관리 플랫폼</p><p>자원 생성, 알람 관리, 장비 관리 화면에 필요한 UI를 공통 컴포넌트로 만들어 화면 간 동작의 일관성을 맞췄습니다.</p></div>
-                <div class="career-grid">
-                    <div>
-                        <h3>자원 유형별 생성 폼</h3>
-                        <p class="lead">유형마다 달라지는 생성 폼을 공통 컴포넌트로 만들어 입력 흐름의 일관성을 확보했습니다.</p>
-                        <div class="mini-flow">
-                            <p><strong>문제</strong> 자원 유형과 생성 및 수정 모드에 따라 입력 항목, 기본값, 검증 조건, 제출 데이터가 달랐습니다.</p>
-                            <p><strong>구현</strong> 공통 폼 컴포넌트에서 선택한 유형과 작업 모드를 기준으로 이 조건들을 분기했습니다.</p>
-                            <p><strong>동작 결과</strong> 화면의 입력 구조는 같은 규칙을 따르면서 각 유형과 모드에 맞는 값이 제출되도록 했습니다.</p>
-                        </div>
-                    </div>
-                    <div class="scope">
-                        <article><h3>모니터링</h3><ul class="scope-list"><li>알람 정책 생성 및 수정</li><li>로그 조회와 통계 화면을 공통 컴포넌트로 구현</li><li>기간, 심각도, 플랫폼, 자원 유형을 API 검색 조건에 연결</li></ul></article>
-                        <article><h3>인프라 관리</h3><ul class="scope-list"><li>장비 등록 및 조회</li><li>권한, 로딩, 결과 없음, 오류 상태 구분</li><li>공통 테이블과 버튼 개선으로 화면별 상태 표시 통일</li></ul></article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="casuri">
-            <div class="wrap">
-                <div class="section-intro"><p class="eyebrow">02 / CAREER / RESERVATION</p><h2>카수리</h2><p>2023.02 - 2023.08 | Frontend Developer | 출장정비 예약 페이지</p><p>반복되는 예약 UI를 아토믹 패턴으로 구성해 서비스가 달라도 같은 방식으로 탐색하고 예약할 수 있게 했습니다.</p></div>
-                <div class="career-grid">
-                    <div>
-                        <h3>서비스가 달라도 일관된 예약 화면</h3>
-                        <p class="lead">엔진오일과 배터리, 국산차와 수입차처럼 선택지는 달라도 고객이 서비스를 비교하고 예약으로 이동하는 방식은 같아야 했습니다.</p>
-                        <div class="mini-flow">
-                            <p><strong>구현</strong> 버튼과 입력 요소를 작은 컴포넌트로 만들고, 이를 서비스 카드와 예약 선택 영역으로 조합해 페이지를 구성했습니다.</p>
-                            <p><strong>동작 결과</strong> 서비스별 정보는 달리 보여주면서 카드 구조와 예약 진입 흐름은 같은 규칙으로 유지했습니다.</p>
-                        </div>
-                    </div>
-                    <div class="scope">
-                        <article><h3>아토믹 패턴 적용</h3><ul class="scope-list"><li>버튼과 입력 요소를 기본 단위로 구성</li><li>기본 요소를 서비스 카드로 조합</li><li>카드를 예약 선택 영역에 배치해 페이지 구성</li></ul></article>
-                        <article><h3>화면에 드러나는 일관성</h3><ul class="scope-list"><li>엔진오일과 배터리 카드에 같은 정보 구조 적용</li><li>서비스 종류와 관계없이 같은 순서로 선택</li><li>예약으로 이동하는 방식 통일</li></ul></article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="newsjelly">
-            <div class="wrap">
-                <div class="section-intro"><p class="eyebrow">03 / CAREER / DATA VISUALIZATION</p><h2>뉴스젤리</h2><p>2022.12 - 2023.01 | Frontend Intern | 꼬맨틀 단어 유사도 게임</p><p>꼬맨틀의 HTML, CSS, JavaScript 구현을 Vue로 리팩토링했습니다.</p></div>
-                <div class="details">
-                    <article><h3>기존 사용자 흐름</h3><p>추측 단어를 입력하고 정답과의 유사도 점수와 순위를 확인합니다. 플레이 기록과 추측 이력도 확인할 수 있습니다.</p></article>
-                    <article><h3>Vue로 전환</h3><p>기존 화면의 UI와 동작을 기능별 Vue 컴포넌트로 나누고, 반복되는 부분을 재사용할 수 있게 정리했습니다.</p></article>
-                    <article><h3>동작 결과</h3><p>단어 입력부터 유사도 결과와 플레이 기록 확인까지 기존 게임 흐름을 Vue 구조로 옮겼습니다.</p></article>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="wrap contact"><div><p class="eyebrow">CONTACT</p><h2>함께 일할 이야기가 있다면</h2></div><a class="email" href="mailto:goodsosbva@naver.com">goodsosbva@naver.com →</a></div>
-        </section>
-    </main>
-    <div class="wrap page-return page-return-bottom"><a class="page-return-link" href="index.html">← 메인으로 돌아가기</a></div>
-    <footer class="wrap">© 2026 권현성. Frontend Career.</footer>
-</body>
-</html>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>실무 경력 | 권현성</title><meta name="description" content="권현성의 프론트엔드 경력과 구현 기록"><link rel="stylesheet" href="career-portfolio.css"><link rel="stylesheet" href="assets/renewal.css?v=20261103-3"></head><body class="inner"><a class="skip" href="#main">본문으로 바로가기</a><header class="header"><nav class="nav wrap" aria-label="주요 메뉴"><a class="brand" href="index.html">KHS<span>.</span></a><div class="nav-links"><a href="index.html#work">작업</a><a href="index.html#career">경력</a><a href="index.html#skills">기술</a><a href="index.html#contact">연락</a></div></nav></header><main id="main" tabindex="-1"><section class="hero"><div class="wrap"><p class="eyebrow">FRONTEND DEVELOPER / CAREER</p><h1>어떤 서비스의<br><span class="accent">어떤 화면을 만들었는지.</span></h1><p class="lead">클라우드 관리, 출장정비 예약, 단어 게임에서 담당한 화면과 구현을 소개합니다.</p><nav class="company-jumps" aria-label="회사별 경력"><a href="#okestro">오케스트로 ↓</a><a href="#casuri">카수리 ↓</a><a href="#newsjelly">뉴스젤리 ↓</a></nav></div></section>
+<section id="okestro"><div class="wrap"><p class="eyebrow">01 / CLOUD PLATFORM</p><h2>오케스트로</h2><p class="period">2023.09 — 현재 / Frontend Developer</p><h3 class="service-title">클라우드 자원과 운영 상태를 관리하는 화면</h3><p class="intro-copy">Vue 3와 TypeScript로 모니터링, 인프라 관리와 서비스 카탈로그 신청 화면을 개발했습니다. 여러 업무 화면이 함께 사용하는 테이블과 버튼의 공통 UI TF에도 참여했습니다.</p>
+<figure class="service-map"><figcaption>담당 서비스의 화면 구성도 / 설명용 재구성</figcaption><div class="service-map-grid">
+<div class="service-map-card"><span class="map-number">01 / MONITORING</span><h4>모니터링</h4><div class="schematic-screen"><div class="screen-tabs"><span>로그 조회</span><span>알람 정책</span></div><div class="filter-pills"><span>기간</span><span>심각도</span><span>자원 유형</span></div><div class="schematic-row"><span>이벤트</span><span>발생 시각</span><span>상태</span></div><div class="placeholder-row" aria-hidden="true"><i></i><i></i><i></i></div><div class="placeholder-row" aria-hidden="true"><i></i><i></i><i></i></div></div><p>조건별 로그 조회와 통계, 알람 정책 생성 및 수정</p><ol class="screen-flow"><li>조회 조건 선택</li><li>로그 및 통계 확인</li></ol></div>
+<div class="service-map-card"><span class="map-number">02 / INFRASTRUCTURE</span><h4>인프라 관리</h4><div class="schematic-screen"><div class="screen-tabs"><span>장비 목록</span><span>등록 / 수정</span></div><div class="schematic-row"><span>장비 유형</span><span>장비 정보</span></div><div class="schematic-row"><span>HOST</span><span class="bar" aria-hidden="true"></span></div><div class="schematic-row"><span>SWITCH</span><span class="bar" aria-hidden="true"></span></div><div class="schematic-row"><span>STORAGE</span><span class="bar" aria-hidden="true"></span></div></div><p>장비 목록과 상태 조회, 유형별 등록 및 수정 폼</p><ol class="screen-flow"><li>유형 선택</li><li>정보 입력 및 저장</li></ol></div>
+<div class="service-map-card"><span class="map-number">03 / SERVICE CATALOG</span><h4>서비스 카탈로그</h4><div class="schematic-screen"><div class="screen-tabs"><span>자원 신청</span></div><div class="schematic-field"><span>신청 유형</span><span class="bar" aria-hidden="true"></span></div><div class="schematic-field"><span>유형별 입력 항목</span><span class="bar" aria-hidden="true"></span></div><div class="schematic-field"><span>첨부와 승인 절차</span><span class="bar" aria-hidden="true"></span></div></div><p>신청 유형에 따른 입력 항목과 검증, 제출 흐름</p><ol class="screen-flow"><li>유형 및 정보 입력</li><li>검증 후 제출</li></ol></div>
+</div></figure>
+<div class="shared-bridge"><div><span class="label">공통 UI TF</span><h3>여러 업무 화면에서 같은 테이블과 버튼 사용</h3><p>프로젝트의 로그 조회와 인프라 장비 목록에서 같은 공통 테이블을 사용합니다. 화면별 데이터와 컬럼은 달리 전달하고, 기본 표시와 조작 방식은 공통으로 관리합니다.</p></div><div class="bridge-targets"><span>로그 조회</span><span>인프라 장비 목록</span><strong>공통 테이블</strong></div></div>
+<div class="role-strip"><div><h4>화면 개발</h4><p>모니터링, 인프라 관리, 자원 생성 및 수정과 카탈로그 신청</p></div><div><h4>공통 구현</h4><p>테이블과 버튼 개발 및 개선, 모노레포 설정과 패키지 분리 기여</p></div><div><h4>팀 내 사용</h4><p>Storybook 사용 가이드, 모니터링과 거버넌스 다국어 적용 참여</p></div></div>
+<p class="tech">Vue 3 / TypeScript / Ant Design Vue / pnpm / Nx / Storybook</p></div></section>
+<section id="casuri"><div class="wrap"><p class="eyebrow">02 / RESERVATION</p><h2>카수리</h2><p class="period">2023.02 — 2023.08 / Frontend Developer</p><h3 class="service-title">정비 서비스를 선택하고 예약으로 이어지는 화면</h3><p class="intro-copy">엔진오일과 배터리 등 출장정비 서비스의 선택 화면을 개발했습니다. 반복되는 버튼과 입력 요소를 서비스 카드와 예약 선택 영역으로 조합했습니다.</p>
+<div class="career-showcase"><figure class="reservation-map"><figcaption>서비스 선택과 예약 진입 / 설명용 재구성</figcaption><div class="reservation-options"><div><span class="map-number">SERVICE 01</span><h4>엔진오일</h4><p>서비스 정보 확인</p><span class="diagram-link">서비스 선택 →</span></div><div><span class="map-number">SERVICE 02</span><h4>배터리</h4><p>서비스 정보 확인</p><span class="diagram-link">서비스 선택 →</span></div></div><div class="reservation-entry"><span aria-hidden="true">↓</span><strong>선택한 서비스의 예약 화면으로</strong></div></figure>
+<div class="role-panel"><h4>담당한 구현</h4><ul><li>버튼과 입력 요소를 기본 컴포넌트로 구성</li><li>기본 요소를 서비스 카드와 예약 선택 영역으로 조합</li><li>서비스별 정보는 달리 표시하고 카드 구조와 예약 진입 방식은 통일</li></ul><p class="tech">컴포넌트 구성 / 아토믹 패턴</p></div></div></div></section>
+<section id="newsjelly"><div class="wrap"><p class="eyebrow">03 / WORD GAME</p><h2>뉴스젤리</h2><p class="period">2022.12 — 2023.01 / Frontend Intern</p><h3 class="service-title">꼬맨틀의 기존 화면을 Vue로 전환</h3><p class="intro-copy">추측 단어를 입력하고 정답과의 유사도를 확인하는 게임입니다. 기존 HTML, CSS, JavaScript 화면을 기능별 Vue 컴포넌트로 나누는 작업을 진행했습니다.</p>
+<div class="career-showcase"><figure class="result-figure archive-figure"><a href="assets/semantle-archive.png"><img src="assets/semantle-archive.png" alt="꼬맨틀 게임 화면: 추측 단어 입력란과 유사도 안내" width="628" height="381" loading="lazy"></a><figcaption>꼬맨틀 게임 화면</figcaption></figure><div class="role-panel"><h4>유지한 사용자 흐름</h4><ol class="component-flow"><li><strong>단어 입력</strong><span>추측 단어를 입력하고 제출</span></li><li><strong>유사도 결과</strong><span>정답과의 점수와 순위 확인</span></li><li><strong>추측 이력</strong><span>플레이 기록과 이전 입력 확인</span></li></ol><h4>담당한 구현</h4><p>기존 UI와 동작을 기능별 컴포넌트로 나누고, 입력부터 결과와 기록 확인까지의 흐름을 Vue 구조로 옮겼습니다.</p><p class="tech">Vue / JavaScript / HTML / CSS</p><a class="text-link" href="https://github.com/goodsosbva/semantle_refactoring_project">관련 구현 저장소 ↗</a></div></div></div></section></main><footer class="wrap site-footer">© 2026 권현성. Frontend Developer.<a href="index.html">메인으로 ↑</a></footer></body></html>
