@@ -1,0 +1,41 @@
+:root {
+  color-scheme: light;
+  --ink: #102849;
+  --muted: #596b82;
+  --line: #d8e2ed;
+  --blue: #cde4ff;
+  --accent: #387ed4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font-family: Pretendard,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  line-height: 1.65;
+  word-break: keep-all;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,button:focus-visible,input:focus-visible {
+  outline: 3px solid #3e81d5;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
