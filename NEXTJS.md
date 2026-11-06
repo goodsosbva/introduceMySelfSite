@@ -5,7 +5,6 @@
 ## 실행
 
 ```bash
-cd nextjs-portfolio
 pnpm install --frozen-lockfile
 pnpm dev
 ```
