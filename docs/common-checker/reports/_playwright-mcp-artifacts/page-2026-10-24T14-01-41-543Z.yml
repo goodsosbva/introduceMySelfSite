@@ -1,0 +1,81 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - navigation "주요 메뉴" [ref=f3e4]:
+        - link "관제 홈" [ref=f3e5] [cursor=pointer]:
+          - /url: /?xray=off
+        - link "사고 목록" [ref=f3e6] [cursor=pointer]:
+          - /url: /incidents?xray=off
+        - link "사고 등록" [ref=f3e7] [cursor=pointer]:
+          - /url: /incidents/new?xray=off
+        - link "지도 관제" [ref=f3e8] [cursor=pointer]:
+          - /url: /map?xray=off
+        - link "3D 위험 구역" [ref=f3e9] [cursor=pointer]:
+          - /url: /risk-3d?xray=off
+        - link "실시간 피드" [ref=f3e10] [cursor=pointer]:
+          - /url: /realtime?xray=off
+        - link "대량 관제" [ref=f3e11] [cursor=pointer]:
+          - /url: /performance?xray=off
+        - link "구현 상태" [ref=f3e12] [cursor=pointer]:
+          - /url: /status?xray=off
+      - generic [ref=f3e14]:
+        - generic [ref=f3e15]: X-Ray
+        - combobox "X-Ray 관점" [ref=f3e16]:
+          - option "X-Ray만 끄기" [selected]
+          - option "전체"
+          - option "FSD-style"
+          - option "Module Federation"
+          - option "Monorepo"
+          - option "OpenLayers"
+          - option "R3F / Three.js"
+          - option "WebSocket / Polling"
+          - option "REST API"
+          - option "Redux"
+          - option "Zod Validation"
+          - option "Large Data Performance"
+          - option "SSR / Hydration"
+  - main [ref=f3e17]:
+    - generic [ref=f3e19]:
+      - paragraph [ref=f3e20]: Map Control
+      - heading "지도 사고 관제" [level=1] [ref=f3e21]
+    - region "지도 사고 관제" [ref=f3e22]:
+      - generic [ref=f3e23]:
+        - article [ref=f3e24]:
+          - generic [ref=f3e25]: 지도 사고
+          - strong [ref=f3e26]: "0"
+        - article [ref=f3e27]:
+          - generic [ref=f3e28]: 대응 필요
+          - strong [ref=f3e29]: "0"
+        - article [ref=f3e30]:
+          - generic [ref=f3e31]: 심각 위험
+          - strong [ref=f3e32]: "0"
+        - article [ref=f3e33]:
+          - generic [ref=f3e34]: 영향 인원
+          - strong [ref=f3e35]: "0"
+      - generic [ref=f3e36]:
+        - region [ref=f3e37]:
+          - generic [ref=f3e38]:
+            - generic [ref=f3e39]:
+              - heading "사고 위치 지도" [level=2] [ref=f3e40]
+              - generic [ref=f3e41]: loading
+            - generic [ref=f3e42]: Redux 필터 0
+          - paragraph [ref=f3e43]:
+            - generic [ref=f3e44]: 검색 전체
+            - generic [ref=f3e45]: 심각도 all
+            - generic [ref=f3e46]: 상태 all
+            - generic [ref=f3e47]: 지역 all
+          - status [ref=f3e48]: REST API에서 지도 사고 데이터를 불러오는 중입니다.
+          - generic "서울 사고 위치 지도" [ref=f3e49]:
+            - generic [ref=f3e50]:
+              - generic:
+                - generic [ref=f3e52]:
+                  - button "+" [ref=f3e53]
+                  - button "–" [ref=f3e54]
+                - button "i" [ref=f3e56]
+        - complementary [ref=f3e57]:
+          - generic [ref=f3e58]:
+            - heading "선택 사고" [level=2] [ref=f3e59]
+            - generic [ref=f3e60]: 선택 없음
+          - status [ref=f3e61]: 지도 마커나 아래 사고 버튼을 선택하면 상세 요약이 표시됩니다.
+          - generic "지도 사고 선택 목록"
+  - alert [ref=f3e62]

@@ -1,0 +1,127 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - paragraph [ref=e5]: COMMON TESTER 2.0.0
+    - heading "테스트 실행 작업 공간" [level=1] [ref=e6]
+    - paragraph [ref=e7]: 문서 근거로 테스트 계획을 만들고 검토한 뒤 로컬 앱에서 실행합니다.
+  - region [ref=e8]:
+    - generic [ref=e9]:
+      - heading "문서 관리" [level=2] [ref=e10]
+      - generic [ref=e11]: .docx, .md, .txt / 버전별 저장
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - text: 문서 ID
+        - textbox "문서 ID" [ref=e14]:
+          - /placeholder: service-policy
+      - generic [ref=e15]:
+        - text: 버전
+        - textbox "버전" [ref=e16]: 1.0.0
+      - generic [ref=e17]:
+        - text: 제목
+        - textbox "제목" [ref=e18]
+      - generic [ref=e19]:
+        - text: 파일
+        - button "파일" [ref=e20]
+      - button "문서 등록" [ref=e21] [cursor=pointer]
+    - paragraph [ref=e22]: "등록된 문서: 가입 예제 정책 v1 (3문단)"
+  - region [ref=e23]:
+    - generic [ref=e24]:
+      - heading "새 실행" [level=2] [ref=e25]
+      - generic [ref=e26]: 검색 상위 5문단, 고정 워크플로
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - text: 문서 버전
+        - combobox "문서 버전" [ref=e29]:
+          - option "가입 예제 정책 / v1" [selected]
+      - generic [ref=e30]:
+        - text: 로컬 앱 URL
+        - textbox "로컬 앱 URL" [ref=e31]: http://127.0.0.1:5173
+      - generic [ref=e32]:
+        - text: 테스트 수
+        - spinbutton "테스트 수" [ref=e33]: "6"
+      - button "계획 생성" [ref=e34] [cursor=pointer]
+      - generic [ref=e35]:
+        - text: 검사 목적
+        - textbox "검사 목적" [ref=e36]:
+          - /placeholder: "예: 회원가입 입력값과 오류 안내 검증"
+  - generic [ref=e37]:
+    - region [ref=e38]:
+      - heading "최근 실행" [level=2] [ref=e39]
+      - list [ref=e40]:
+        - listitem [ref=e41]:
+          - button "올바른 이메일 가입 완료와 이메일 미입력 제출 방지를 각각 확인 signup-example / v1 통과" [pressed] [ref=e42] [cursor=pointer]:
+            - strong [ref=e43]: 올바른 이메일 가입 완료와 이메일 미입력 제출 방지를 각각 확인
+            - generic [ref=e44]: signup-example / v1
+            - generic [ref=e45]: 통과
+    - region [ref=e46]:
+      - generic [ref=e47]:
+        - heading "실행 상세" [level=2] [ref=e48]
+        - generic [ref=e49]: 통과
+      - generic [ref=e50]:
+        - term [ref=e51]: 대상
+        - definition [ref=e52]: http://127.0.0.1:8765/signup.html
+        - term [ref=e53]: 문서
+        - definition [ref=e54]: signup-example / v1
+        - term [ref=e55]: 요청 수
+        - definition [ref=e56]: 2개
+        - term [ref=e57]: 현재 단계
+        - definition [ref=e58]: 결과
+      - generic [ref=e59]:
+        - heading "고정 워크플로" [level=3] [ref=e60]
+        - paragraph [ref=e61]: 검색 → 화면 확인 → 명세 생성 → 검증 → 승인 대기 → 실행 → 결과
+      - generic [ref=e62]:
+        - heading "검색된 문서 근거" [level=3] [ref=e63]
+        - list [ref=e64]:
+          - listitem [ref=e65]:
+            - strong [ref=e66]: signup-example:v1:3
+            - paragraph [ref=e67]: 올바른 이메일을 입력하고 가입하기를 누르면 "가입 완료" 메시지가 표시된다.
+          - listitem [ref=e68]:
+            - strong [ref=e69]: signup-example:v1:2
+            - paragraph [ref=e70]: 이메일 입력은 필수다. 비어 있으면 브라우저의 필수 입력 검증이 제출을 막는다.
+          - listitem [ref=e71]:
+            - strong [ref=e72]: signup-example:v1:1
+            - paragraph [ref=e73]: "# 가입 정책 v1"
+      - generic [ref=e74]:
+        - heading "테스트 계획 (2개)" [level=3] [ref=e75]
+        - article [ref=e76]:
+          - heading "올바른 이메일로 가입 완료 메시지 표시" [level=4] [ref=e77]
+          - paragraph [ref=e78]: case-1 / 정상 / 출처 signup-example:v1:3
+          - heading "동작" [level=5] [ref=e79]
+          - list [ref=e80]:
+            - listitem [ref=e81]:
+              - text: "fill label: 이메일"
+              - code [ref=e82]: user@example.com
+            - listitem [ref=e83]: "click role: button|가입하기"
+          - heading "기대 결과" [level=5] [ref=e84]
+          - list [ref=e85]:
+            - listitem [ref=e86]:
+              - text: "text css: body"
+              - code [ref=e87]: 가입 완료
+        - article [ref=e88]:
+          - heading "이메일 미입력 시 제출 방지" [level=4] [ref=e89]
+          - paragraph [ref=e90]: case-2 / 결함 / 출처 signup-example:v1:2
+          - heading "동작" [level=5] [ref=e91]
+          - list [ref=e92]:
+            - listitem [ref=e93]: "fill label: 이메일"
+            - listitem [ref=e94]: "click role: button|가입하기"
+          - heading "기대 결과" [level=5] [ref=e95]
+          - list [ref=e96]:
+            - listitem [ref=e97]: "visible label: 이메일"
+      - generic [ref=e98]:
+        - heading "실행 결과" [level=3] [ref=e99]
+        - paragraph [ref=e100]: 통과 2개 / 실패 0개
+        - link "생성된 Playwright 코드" [ref=e102] [cursor=pointer]:
+          - /url: /api/runs/b2ecbafb-43fc-43d6-8516-8294e88f98fb/files/generated_test.py
+        - article [ref=e103]:
+          - heading "올바른 이메일로 가입 완료 메시지 표시" [level=4] [ref=e104]
+          - paragraph [ref=e105]: 통과 / 정상
+          - link [ref=e107] [cursor=pointer]:
+            - /url: /api/runs/b2ecbafb-43fc-43d6-8516-8294e88f98fb/files/case-001-passed.png
+            - text: 완료 캡처
+            - img "올바른 이메일로 가입 완료 메시지 표시 화면 캡처" [ref=e108]
+        - article [ref=e109]:
+          - heading "이메일 미입력 시 제출 방지" [level=4] [ref=e110]
+          - paragraph [ref=e111]: 통과 / 결함
+          - link [ref=e113] [cursor=pointer]:
+            - /url: /api/runs/b2ecbafb-43fc-43d6-8516-8294e88f98fb/files/case-002-passed.png
+            - text: 완료 캡처
+            - img "이메일 미입력 시 제출 방지 화면 캡처" [ref=e114]

@@ -1,0 +1,193 @@
+- generic [active] [ref=f3e1]:
+  - link "사례로 바로가기" [ref=f3e2] [cursor=pointer]:
+    - /url: "#cases"
+  - banner [ref=f3e3]:
+    - navigation "주요 메뉴" [ref=f3e4]:
+      - link "KHS." [ref=f3e5] [cursor=pointer]:
+        - /url: index.html
+      - generic [ref=f3e6]:
+        - link "포트폴리오" [ref=f3e7] [cursor=pointer]:
+          - /url: "#cases"
+        - link "실무 경력" [ref=f3e8] [cursor=pointer]:
+          - /url: career-experience.html
+        - link "메인으로" [ref=f3e9] [cursor=pointer]:
+          - /url: index.html
+  - link "← 메인으로 돌아가기" [ref=f3e11] [cursor=pointer]:
+    - /url: index.html
+  - main [ref=f3e12]:
+    - generic [ref=f3e14]:
+      - paragraph [ref=f3e15]: FRONTEND DEVELOPER
+      - heading "권현성. 복잡한 운영 화면을 예측 가능한 코드 구조로 만듭니다." [level=1] [ref=f3e16]:
+        - generic [ref=f3e17]: 권현성.
+        - text: 복잡한 운영 화면을예측 가능한 코드 구조로 만듭니다.
+      - paragraph [ref=f3e18]: 입력과 데이터, 오류가 만나는 지점을 나누고 검증합니다. 클라우드 관리 플랫폼에서 다룬 세 가지 구현 사례를 담았습니다.
+      - generic "핵심 구현 주제" [ref=f3e19]:
+        - generic [ref=f3e20]:
+          - generic [ref=f3e21]: "01"
+          - text: 입력의 일관성
+        - generic [ref=f3e22]:
+          - generic [ref=f3e23]: "02"
+          - text: 요청의 생명주기
+        - generic [ref=f3e24]:
+          - generic [ref=f3e25]: "03"
+          - text: 오류의 격리
+    - generic [ref=f3e27]:
+      - generic [ref=f3e28]:
+        - paragraph [ref=f3e29]: 01 / SELECTED WORK
+        - heading "고친 문제 세 가지" [level=2] [ref=f3e30]
+        - paragraph [ref=f3e31]: 무엇을 만들었는지에서 한 걸음 더 들어가, 어떤 흐름을 바꿨는지 설명합니다.
+      - navigation "구현 사례 선택" [ref=f3e32]:
+        - link "01 / TABLE 폭이 튀지 않게 원인 저장된 컬럼 너비와 브라우저가 그린 헤더 폭이 달랐습니다. 변경 헤더 실측값을 컬럼 상태와 colgroup에 반영했습니다. 구현 과정 보기 →" [ref=f3e33] [cursor=pointer]:
+          - /url: "#case-1"
+          - text: 01 / TABLE
+          - heading "폭이 튀지 않게" [level=3] [ref=f3e34]
+          - paragraph [ref=f3e35]:
+            - strong [ref=f3e36]: 원인
+            - text: 저장된 컬럼 너비와 브라우저가 그린 헤더 폭이 달랐습니다.
+          - paragraph [ref=f3e37]:
+            - strong [ref=f3e38]: 변경
+            - text: 헤더 실측값을 컬럼 상태와 colgroup에 반영했습니다.
+          - generic [ref=f3e39]: 구현 과정 보기 →
+        - link "02 / DATA 숨은 요청은 멈추도록 원인 KeepAlive로 남은 로그 Query가 창 포커스 복귀 시 재조회됐습니다. 변경 화면 활성 상태를 Query의 enabled 조건에 연결했습니다. 구현 과정 보기 →" [ref=f3e40] [cursor=pointer]:
+          - /url: "#case-2"
+          - text: 02 / DATA
+          - heading "숨은 요청은 멈추도록" [level=3] [ref=f3e41]
+          - paragraph [ref=f3e42]:
+            - strong [ref=f3e43]: 원인
+            - text: KeepAlive로 남은 로그 Query가 창 포커스 복귀 시 재조회됐습니다.
+          - paragraph [ref=f3e44]:
+            - strong [ref=f3e45]: 변경
+            - text: 화면 활성 상태를 Query의 enabled 조건에 연결했습니다.
+          - generic [ref=f3e46]: 구현 과정 보기 →
+        - link "03 / ERROR 오류가 번지지 않게 원인 하위 화면의 렌더링 오류가 부모 레이아웃으로 전파될 수 있었습니다. 변경 Vue의 오류 포착 훅으로 Error Boundary를 직접 구현했습니다. 구현 과정 보기 →" [ref=f3e47] [cursor=pointer]:
+          - /url: "#case-3"
+          - text: 03 / ERROR
+          - heading "오류가 번지지 않게" [level=3] [ref=f3e48]
+          - paragraph [ref=f3e49]:
+            - strong [ref=f3e50]: 원인
+            - text: 하위 화면의 렌더링 오류가 부모 레이아웃으로 전파될 수 있었습니다.
+          - paragraph [ref=f3e51]:
+            - strong [ref=f3e52]: 변경
+            - text: Vue의 오류 포착 훅으로 Error Boundary를 직접 구현했습니다.
+          - generic [ref=f3e53]: 구현 과정 보기 →
+      - generic [ref=f3e54]:
+        - strong [ref=f3e55]: 관점
+        - paragraph [ref=f3e56]: 브라우저의 실제 동작을 기준으로 상태와 흐름을 정리합니다.
+    - generic [ref=f3e58]:
+      - generic [ref=f3e59]:
+        - paragraph [ref=f3e60]: 02 / CASE 01 / CMP TABLE
+        - heading "컬럼을 다시 잡을 때, 갑자기 튀지 않게" [level=2] [ref=f3e61]
+        - paragraph [ref=f3e62]: 공통 테이블의 컬럼을 줄였다 늘린 뒤, 다음 드래그에서 폭이 갑자기 달라지던 문제를 다뤘습니다.
+      - generic [ref=f3e63]:
+        - strong [ref=f3e64]: 문제 원인
+        - paragraph [ref=f3e65]: 컬럼 상태에 저장된 너비와 브라우저가 가용 공간과 폭 제약을 적용해 그린 헤더 너비가 달랐습니다. 다음 드래그가 화면에 보이는 폭이 아닌 이전 상태값에서 시작해 컬럼이 튀었습니다.
+      - generic "컬럼 너비 보정 흐름" [ref=f3e66]:
+        - article [ref=f3e67]:
+          - heading "01 렌더링 완료" [level=3] [ref=f3e68]
+          - paragraph [ref=f3e69]: 브라우저가 분배한 헤더 폭
+        - article [ref=f3e70]:
+          - heading "02 DOM 실측" [level=3] [ref=f3e71]
+          - paragraph [ref=f3e72]: getBoundingClientRect().width
+        - article [ref=f3e73]:
+          - heading "03 제약 보정" [level=3] [ref=f3e74]
+          - paragraph [ref=f3e75]: 최소, 최대 폭 범위에 맞춤
+        - article [ref=f3e76]:
+          - heading "04 동시 반영" [level=3] [ref=f3e77]
+          - paragraph [ref=f3e78]: colgroup과 컬럼 상태
+      - generic [ref=f3e79]:
+        - article [ref=f3e80]:
+          - heading "재현 조건" [level=3] [ref=f3e81]
+          - paragraph [ref=f3e82]: 가용 폭, 고정 컬럼, 선택 컬럼, 액션 컬럼과 최소, 최대 폭 제약이 함께 적용되면 선언한 너비와 실제 헤더 너비가 달라졌습니다.
+        - article [ref=f3e83]:
+          - heading "해결 판단" [level=3] [ref=f3e84]
+          - paragraph [ref=f3e85]: 상태값만 다시 계산해서는 브라우저가 분배한 폭을 알 수 없었습니다. 마지막 헤더 행의 실측 너비를 기준으로 삼았습니다.
+        - article [ref=f3e86]:
+          - heading "바뀐 동작" [level=3] [ref=f3e87]
+          - paragraph [ref=f3e88]: 측정한 폭을 보정해 상태와 colgroup에 함께 반영했습니다. 다음 드래그가 화면에 보이는 너비에서 시작됩니다.
+      - code [ref=f3e90]: const widths = headerCells.map((th) => th.getBoundingClientRect().width); applyDomMeasuredWidthsToAllCols(columns, colgroup, widths, state);
+      - generic "사용 기술" [ref=f3e91]:
+        - generic [ref=f3e92]: Vue 3
+        - generic [ref=f3e93]: TypeScript
+        - generic [ref=f3e94]: Ant Design Vue
+        - generic [ref=f3e95]: DOM Measurement
+        - generic [ref=f3e96]: colgroup
+    - generic [ref=f3e98]:
+      - generic [ref=f3e99]:
+        - paragraph [ref=f3e100]: 03 / CASE 02 / DATA LIFECYCLE
+        - heading "화면은 남기고, 보이지 않는 요청만 멈추기" [level=2] [ref=f3e101]
+        - paragraph [ref=f3e102]: KeepAlive로 보관된 로그 화면이 창 포커스 복귀 시에도 API 요청을 이어가던 상황입니다.
+      - generic [ref=f3e103]:
+        - strong [ref=f3e104]: 문제 원인
+        - paragraph [ref=f3e105]: KeepAlive가 로그 화면을 제거하지 않아 Query 구독자가 남아 있었습니다. 화면이 보이지 않아도 창 포커스 복귀 시 재조회가 실행됐습니다.
+      - generic [ref=f3e106]:
+        - strong [ref=f3e107]: 시도 후 되돌림
+        - paragraph [ref=f3e108]: "전역 refetchOnWindowFocus: false는 보이는 로그 화면의 포커스 복귀 최신화도 중단시켜 되돌렸습니다."
+      - generic "로그 요청 제어 흐름" [ref=f3e109]:
+        - article [ref=f3e110]:
+          - heading "화면 생명주기" [level=3] [ref=f3e111]
+          - paragraph [ref=f3e112]: onActivated / onDeactivated
+        - article [ref=f3e113]:
+          - heading "활성 상태 저장" [level=3] [ref=f3e114]
+          - paragraph [ref=f3e115]: Pinia의 isLogPageActive
+        - article [ref=f3e116]:
+          - heading "Query 요청 권한" [level=3] [ref=f3e117]
+          - paragraph [ref=f3e118]: enabled에 활성 상태 연결
+      - generic [ref=f3e119]:
+        - article [ref=f3e120]:
+          - heading "인시던트 화면" [level=3] [ref=f3e121]
+          - paragraph [ref=f3e122]: 숨은 로그 요청은 멈추고, 현재 화면의 포커스 재조회는 유지합니다.
+        - article [ref=f3e123]:
+          - heading "로그 화면 복귀" [level=3] [ref=f3e124]
+          - paragraph [ref=f3e125]: 보관된 캐시를 먼저 보여주고, stale 상태라면 다시 조회합니다.
+        - article [ref=f3e126]:
+          - heading "판단의 기준" [level=3] [ref=f3e127]
+          - paragraph [ref=f3e128]: 캐시 존재 여부와 현재 화면의 요청 권한을 분리했습니다.
+      - code [ref=f3e130]: "onActivated(() => logStore.setLogPageActive(true)); onDeactivated(() => logStore.setLogPageActive(false)); useQuery({ enabled: computed(() => logStore.isLogPageActive) });"
+      - generic "사용 기술" [ref=f3e131]:
+        - generic [ref=f3e132]: Vue 3
+        - generic [ref=f3e133]: TanStack Query
+        - generic [ref=f3e134]: Pinia
+        - generic [ref=f3e135]: Vue Router
+        - generic [ref=f3e136]: KeepAlive
+    - generic [ref=f3e138]:
+      - generic [ref=f3e139]:
+        - paragraph [ref=f3e140]: 04 / CASE 03 / ERROR CONTAINMENT
+        - heading "한 화면의 오류가 앱 전체를 멈추지 않게" [level=2] [ref=f3e141]
+        - paragraph [ref=f3e142]: Vue에는 바로 사용할 수 있는 내장 Error Boundary 컴포넌트가 없어, 페이지 단위 경계를 직접 구현했습니다.
+      - generic [ref=f3e143]:
+        - strong [ref=f3e144]: 문제 원인
+        - paragraph [ref=f3e145]: 하위 컴포넌트의 렌더링 오류가 부모 방향으로 전파되는데, 페이지 안에서 오류를 멈출 경계가 없어 RootLayout과 공통 내비게이션까지 영향을 줄 수 있었습니다.
+      - generic [ref=f3e146]:
+        - strong [ref=f3e147]: APP / RootLayout + 공통 내비게이션
+        - generic [ref=f3e148]:
+          - generic [ref=f3e149]:
+            - text: 직접 구현한 ERROR BOUNDARY
+            - paragraph [ref=f3e150]: 하위 화면의 오류와 발생 맥락을 보관
+          - generic [ref=f3e151]:
+            - text: 전파 중단
+            - paragraph [ref=f3e152]: 공통 레이아웃까지 번지는 경로를 차단
+      - generic [ref=f3e153]:
+        - article [ref=f3e154]:
+          - heading "01 포착" [level=3] [ref=f3e155]
+          - paragraph [ref=f3e156]: Vue의 onErrorCaptured로 하위 컴포넌트 오류와 발생 맥락을 받아 오류 상태로 보관합니다.
+        - article [ref=f3e157]:
+          - heading "02 격리" [level=3] [ref=f3e158]
+          - paragraph [ref=f3e159]: 오류 전파를 멈춰 한 페이지의 실패가 RootLayout과 공통 내비게이션에 영향을 주는 경로를 차단합니다.
+        - article [ref=f3e160]:
+          - heading "03 회복" [level=3] [ref=f3e161]
+          - paragraph [ref=f3e162]: 경로가 바뀌면 오류 상태를 초기화해 이전 화면의 실패가 다음 화면에 남지 않게 합니다.
+      - generic "사용 기술" [ref=f3e163]:
+        - generic [ref=f3e164]: Vue 3
+        - generic [ref=f3e165]: Composition API
+        - generic [ref=f3e166]: Vue Router
+        - generic [ref=f3e167]: KeepAlive
+        - generic [ref=f3e168]: Error Handling
+    - generic [ref=f3e170]:
+      - generic [ref=f3e171]:
+        - paragraph [ref=f3e172]: CONTACT
+        - heading "함께 일할 이야기가 있다면" [level=2] [ref=f3e173]
+      - link "goodsosbva@naver.com →" [ref=f3e174] [cursor=pointer]:
+        - /url: mailto:goodsosbva@naver.com
+  - link "← 메인으로 돌아가기" [ref=f3e176] [cursor=pointer]:
+    - /url: index.html
+  - contentinfo [ref=f3e177]: © 2026 권현성. Frontend Portfolio.

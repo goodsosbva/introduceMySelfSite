@@ -1,0 +1,146 @@
+- main [ref=f2e3]:
+  - generic [ref=f2e4]:
+    - paragraph [ref=f2e5]: COMMON TESTER 2.0.0
+    - heading "테스트 실행 작업 공간" [level=1] [ref=f2e6]
+    - paragraph [ref=f2e7]: 문서 근거로 테스트 계획을 만들고 검토한 뒤 로컬 앱에서 실행합니다.
+  - region [ref=f2e8]:
+    - generic [ref=f2e9]:
+      - heading "문서 관리" [level=2] [ref=f2e10]
+      - generic [ref=f2e11]: .docx, .md, .txt / 버전별 저장
+    - generic [ref=f2e12]:
+      - generic [ref=f2e13]:
+        - text: 문서 ID
+        - textbox "문서 ID" [ref=f2e14]:
+          - /placeholder: service-policy
+      - generic [ref=f2e15]:
+        - text: 버전
+        - textbox "버전" [ref=f2e16]: 1.0.0
+      - generic [ref=f2e17]:
+        - text: 제목
+        - textbox "제목" [ref=f2e18]
+      - generic [ref=f2e19]:
+        - text: 파일
+        - button "파일" [ref=f2e20]
+      - button "문서 등록" [ref=f2e21] [cursor=pointer]
+    - paragraph [ref=f2e22]: "등록된 문서: 가입 예제 정책 v1 (3문단)"
+  - region [ref=f2e23]:
+    - generic [ref=f2e24]:
+      - heading "새 실행" [level=2] [ref=f2e25]
+      - generic [ref=f2e26]: 로컬 다국어 임베딩, 코사인 유사도, 상위 5문단
+    - generic [ref=f2e27]:
+      - generic [ref=f2e28]:
+        - text: 문서 버전
+        - combobox "문서 버전" [ref=f2e29]:
+          - option "가입 예제 정책 / v1" [selected]
+      - generic [ref=f2e30]:
+        - text: 로컬 앱 URL
+        - textbox "로컬 앱 URL" [ref=f2e31]:
+          - /placeholder: http://127.0.0.1:8765/signup.html
+          - text: http://127.0.0.1:8765/signup.html
+      - generic [ref=f2e32]:
+        - text: 테스트 수
+        - spinbutton "테스트 수" [ref=f2e33]: "1"
+      - button "계획 생성" [ref=f2e34] [cursor=pointer]
+      - generic [ref=f2e35]:
+        - text: 검사 목적
+        - textbox "검사 목적" [ref=f2e36]:
+          - /placeholder: "예: 회원가입 입력값과 오류 안내 검증"
+          - text: 올바른 이메일 입력 후 가입 완료 메시지를 확인
+  - generic [ref=f2e37]:
+    - region [ref=f2e38]:
+      - heading "최근 실행" [level=2] [ref=f2e39]
+      - list [ref=f2e40]:
+        - listitem [ref=f2e122]:
+          - button "올바른 이메일 입력 후 가입 완료 메시지를 확인 signup-example / v1 통과" [pressed] [ref=f2e151] [cursor=pointer]:
+            - strong [ref=f2e124]: 올바른 이메일 입력 후 가입 완료 메시지를 확인
+            - generic [ref=f2e125]: signup-example / v1
+            - generic [ref=f2e126]: 통과
+        - listitem [ref=f2e127]:
+          - button "빈 이메일 입력 시 제출이 차단되는지 확인 signup-example / v1 거절" [ref=f2e128] [cursor=pointer]:
+            - strong [ref=f2e129]: 빈 이메일 입력 시 제출이 차단되는지 확인
+            - generic [ref=f2e130]: signup-example / v1
+            - generic [ref=f2e131]: 거절
+        - listitem [ref=f2e41]:
+          - button "올바른 이메일 가입 완료 메시지를 확인 signup-example / v1 통과" [ref=f2e42] [cursor=pointer]:
+            - strong [ref=f2e43]: 올바른 이메일 가입 완료 메시지를 확인
+            - generic [ref=f2e44]: signup-example / v1
+            - generic [ref=f2e45]: 통과
+        - listitem [ref=f2e46]:
+          - button "올바른 이메일 가입 완료와 이메일 미입력 제출 방지를 각각 확인 signup-example / v1 통과" [ref=f2e47] [cursor=pointer]:
+            - strong [ref=f2e48]: 올바른 이메일 가입 완료와 이메일 미입력 제출 방지를 각각 확인
+            - generic [ref=f2e49]: signup-example / v1
+            - generic [ref=f2e50]: 통과
+        - listitem [ref=f2e51]:
+          - button "올바른 이메일 가입 완료와 이메일 미입력 제출 방지를 각각 확인 signup-example / v1 통과" [ref=f2e52] [cursor=pointer]:
+            - strong [ref=f2e53]: 올바른 이메일 가입 완료와 이메일 미입력 제출 방지를 각각 확인
+            - generic [ref=f2e54]: signup-example / v1
+            - generic [ref=f2e55]: 통과
+        - listitem [ref=f2e56]:
+          - button "올바른 이메일 가입 완료와 이메일 미입력 제출 방지를 각각 확인 signup-example / v1 실패" [ref=f2e57] [cursor=pointer]:
+            - strong [ref=f2e58]: 올바른 이메일 가입 완료와 이메일 미입력 제출 방지를 각각 확인
+            - generic [ref=f2e59]: signup-example / v1
+            - generic [ref=f2e60]: 실패
+        - listitem [ref=f2e61]:
+          - button "올바른 이메일 가입 완료와 이메일 미입력 제출 방지를 각각 확인 signup-example / v1 통과" [ref=f2e62] [cursor=pointer]:
+            - strong [ref=f2e63]: 올바른 이메일 가입 완료와 이메일 미입력 제출 방지를 각각 확인
+            - generic [ref=f2e64]: signup-example / v1
+            - generic [ref=f2e65]: 통과
+    - region [ref=f2e66]:
+      - generic [ref=f2e67]:
+        - heading "실행 상세" [level=2] [ref=f2e68]
+        - generic [ref=f2e69]: 통과
+      - generic [ref=f2e70]:
+        - term [ref=f2e71]: 대상
+        - definition [ref=f2e72]: http://127.0.0.1:8765/signup.html
+        - term [ref=f2e73]: 문서
+        - definition [ref=f2e74]: signup-example / v1
+        - term [ref=f2e75]: 요청 수
+        - definition [ref=f2e76]: 1개
+        - term [ref=f2e77]: 현재 단계
+        - definition [ref=f2e78]: 결과
+      - generic [ref=f2e79]:
+        - heading "고정 워크플로" [level=3] [ref=f2e80]
+        - paragraph [ref=f2e81]: 검색 → 화면 확인 → 명세 생성 → 검증 → 승인 대기 → 실행 → 결과
+        - group [ref=f2e82]:
+          - generic "확인한 화면 요소 (3개)" [ref=f2e83]
+      - generic [ref=f2e84]:
+        - heading "검색된 문서 근거" [level=3] [ref=f2e85]
+        - list [ref=f2e86]:
+          - listitem [ref=f2e87]:
+            - strong [ref=f2e88]: signup-example:v1:3
+            - paragraph [ref=f2e89]: 올바른 이메일을 입력하고 가입하기를 누르면 "가입 완료" 메시지가 표시된다.
+          - listitem [ref=f2e90]:
+            - strong [ref=f2e91]: signup-example:v1:2
+            - paragraph [ref=f2e92]: 이메일 입력은 필수다. 비어 있으면 브라우저의 필수 입력 검증이 제출을 막는다.
+          - listitem [ref=f2e93]:
+            - strong [ref=f2e94]: signup-example:v1:1
+            - paragraph [ref=f2e95]: "# 가입 정책 v1"
+      - generic [ref=f2e96]:
+        - heading "테스트 계획 (1개)" [level=3] [ref=f2e97]
+        - article [ref=f2e132]:
+          - heading "올바른 이메일로 가입 완료 메시지 확인" [level=4] [ref=f2e133]
+          - paragraph [ref=f2e134]: signup-success-email / 정상 / 출처 signup-example:v1:3
+          - heading "동작" [level=5] [ref=f2e135]
+          - list [ref=f2e136]:
+            - listitem [ref=f2e137]:
+              - text: "fill label: 이메일"
+              - code [ref=f2e138]: user@example.com
+            - listitem [ref=f2e139]: "click role: button|가입하기"
+          - heading "기대 결과" [level=5] [ref=f2e140]
+          - list [ref=f2e141]:
+            - listitem [ref=f2e142]: "visible css: #message"
+            - listitem [ref=f2e143]:
+              - text: "text css: #message"
+              - code [ref=f2e144]: 가입 완료
+      - generic [ref=f2e152]:
+        - heading "실행 결과" [level=3] [ref=f2e153]
+        - paragraph [ref=f2e154]: 통과 1개 / 실패 0개
+        - link "생성된 Playwright 코드" [ref=f2e156] [cursor=pointer]:
+          - /url: /api/runs/60250c6d-8b80-4c8a-8784-e22647315fb2/files/generated_test.py
+        - article [ref=f2e157]:
+          - heading "올바른 이메일로 가입 완료 메시지 확인" [level=4] [ref=f2e158]
+          - paragraph [ref=f2e159]: 통과 / 정상
+          - link [ref=f2e161] [cursor=pointer]:
+            - /url: /api/runs/60250c6d-8b80-4c8a-8784-e22647315fb2/files/case-001-passed.png
+            - text: 완료 캡처
+            - img "올바른 이메일로 가입 완료 메시지 확인 화면 캡처" [ref=f2e162]

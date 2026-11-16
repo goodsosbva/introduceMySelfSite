@@ -1,0 +1,883 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e9]:
+      - heading "Navigation Menu" [level=2] [ref=e10]
+      - generic [ref=e11]:
+        - link "Homepage" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e16]:
+          - navigation "Global" [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - button "Platform" [ref=e21] [cursor=pointer]
+              - listitem [ref=e24]:
+                - button "Solutions" [ref=e26] [cursor=pointer]
+              - listitem [ref=e29]:
+                - button "Resources" [ref=e31] [cursor=pointer]
+              - listitem [ref=e34]:
+                - button "Open Source" [ref=e36] [cursor=pointer]
+              - listitem [ref=e39]:
+                - button "Enterprise" [ref=e41] [cursor=pointer]
+              - listitem [ref=e44]:
+                - link "Pricing" [ref=e45] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=e46]:
+            - button "Search or jump to, type / to search" [ref=e48] [cursor=pointer]
+            - generic [ref=e54]:
+              - link "Sign in" [ref=e56] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fbeyond-sw-camp%2Fbe09-1st-5DBDBDeep-Ureca
+              - link "Sign up" [ref=e59] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=beyond-sw-camp%2Fbe09-1st-5DBDBDeep-Ureca
+              - button "Appearance settings" [ref=e62] [cursor=pointer]
+  - main [ref=e69]:
+    - generic "Global navigation menu" [ref=e72]:
+      - navigation "Breadcrumbs" [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "beyond-sw-camp" [ref=e78] [cursor=pointer]:
+              - /url: /beyond-sw-camp
+          - listitem [ref=e80]:
+            - link "be09-1st-5DBDBDeep-Ureca" [ref=e81] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca
+      - heading "Repository navigation" [level=2] [ref=e84]
+      - navigation "Repository" [ref=e85]:
+        - list [ref=e86]:
+          - listitem [ref=e87]:
+            - link "Code" [ref=e88] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca
+          - listitem [ref=e93]:
+            - link "Issues" [ref=e94] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/issues
+          - listitem [ref=e100]:
+            - link "Pull requests" [ref=e101] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/pulls
+          - listitem [ref=e106]:
+            - link "Actions" [ref=e107] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/actions
+          - listitem [ref=e112]:
+            - link "Projects" [ref=e113] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/projects
+          - listitem [ref=e118]:
+            - link "Security and quality" [ref=e119] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/security
+          - listitem [ref=e124]:
+            - link "Insights" [ref=e125] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/pulse
+    - generic [ref=e142]:
+      - generic [ref=e146]:
+        - generic [ref=e149]:
+          - img "beyond-sw-camp" [ref=e150]
+          - generic "be09-1st-5DBDBDeep-Ureca" [ref=e151]:
+            - strong [ref=e152]:
+              - link "be09-1st-5DBDBDeep-Ureca" [ref=e153] [cursor=pointer]:
+                - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca
+          - generic [ref=e154]: Public
+        - list [ref=e156]:
+          - listitem [ref=e157]:
+            - link "You must be signed in to change notification settings" [ref=e158] [cursor=pointer]:
+              - /url: /login?return_to=%2Fbeyond-sw-camp%2Fbe09-1st-5DBDBDeep-Ureca
+              - generic [ref=e159]: Notifications
+          - listitem [ref=e161]:
+            - link "You must be signed in to fork a repository" [ref=e162] [cursor=pointer]:
+              - /url: /login?return_to=%2Fbeyond-sw-camp%2Fbe09-1st-5DBDBDeep-Ureca
+              - generic [ref=e164]:
+                - text: Fork
+                - generic [aria-hidden] [ref=e165]: "3"
+                - generic [ref=e166]: (3)
+          - listitem [ref=e167]:
+            - link "Star (0)" [ref=e168] [cursor=pointer]:
+              - /url: /login?return_to=%2Fbeyond-sw-camp%2Fbe09-1st-5DBDBDeep-Ureca
+              - generic [ref=e170]:
+                - text: Star
+                - generic [aria-hidden] [ref=e171]: "0"
+                - generic [ref=e172]: (0)
+      - generic [ref=e173]:
+        - generic [ref=e176]:
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - button "main branch" [ref=e180] [cursor=pointer]:
+                - generic [ref=e181]: main
+              - generic [ref=e185]:
+                - link [ref=e186] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/branches
+                  - generic [ref=e189]:
+                    - strong [ref=e190]: "3"
+                    - text: Branches
+                - link [ref=e191] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/tags
+                  - generic [ref=e194]:
+                    - strong [ref=e195]: "0"
+                    - text: Tags
+            - generic [ref=e196]:
+              - combobox "Go to file" [ref=e204]
+              - button "Code" [ref=e205] [cursor=pointer]
+          - generic [ref=e208]:
+            - generic [ref=e209]:
+              - generic [ref=e211]:
+                - heading "Latest commit" [level=2] [ref=e212]
+                - generic [ref=e213]:
+                  - generic [ref=e215]:
+                    - link [ref=e216] [cursor=pointer]:
+                      - /url: /Bang1999
+                      - img "Bang1999" [ref=e217]
+                    - link "commits by Bang1999" [ref=e218] [cursor=pointer]:
+                      - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/commits?author=Bang1999
+                      - text: Bang1999
+                  - generic [ref=e219]:
+                    - link "Update README.md" [ref=e222] [cursor=pointer]:
+                      - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/commit/9d305ca1cdb385a7f949934a08f95e5f0500ca7a
+                    - button "Open commit details" [ref=e223] [cursor=pointer]
+                - generic [ref=e226]:
+                  - generic [ref=e228]:
+                    - link "Commit 9d305ca" [ref=e229] [cursor=pointer]:
+                      - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/commit/9d305ca1cdb385a7f949934a08f95e5f0500ca7a
+                      - text: 9d305ca
+                    - text: ·
+                    - generic "Jul 9, 2024, 2:31 PM GMT+9" [ref=e230]: Jul 9, 20242 years ago
+                  - generic [ref=e231]:
+                    - heading "History" [level=2] [ref=e232]
+                    - link "212 Commits" [ref=e233] [cursor=pointer]:
+                      - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/commits/main/
+              - heading "Folders and files" [level=2] [ref=e236]
+              - table "Folders and files" [ref=e238]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message"
+                    - columnheader "Last commit date"
+                - rowgroup [ref=e239]:
+                  - row [ref=e240]:
+                    - cell [ref=e241]:
+                      - link ".github/ISSUE_TEMPLATE, (Directory)" [ref=e248] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/tree/main/.github/ISSUE_TEMPLATE
+                        - text: .github/ISSUE_TEMPLATE
+                    - cell [ref=e249]:
+                      - link "Update issue templates" [ref=e252] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/commit/423b779bcae5ce097564f1ba88a414fd47c576c7
+                    - cell "Jul 9, 20242 years ago" [ref=e253]
+                  - row [ref=e255]:
+                    - cell [ref=e256]:
+                      - link "docs, (Directory)" [ref=e263] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/tree/main/docs
+                        - text: docs
+                    - cell [ref=e264]:
+                      - link "README.md 수정" [ref=e267] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/commit/c675ab9ec262cc0319f2663bb0b82c6cadea2139
+                    - cell "Jul 9, 20242 years ago" [ref=e268]
+                  - row [ref=e270]:
+                    - cell [ref=e271]:
+                      - link "sample_data, (Directory)" [ref=e278] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/tree/main/sample_data
+                        - text: sample_data
+                    - cell [ref=e279]:
+                      - link "add img" [ref=e282] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/commit/89cfdb3cbc87dc175d04ed945c1ceacdb0c4939b
+                    - cell "Jul 9, 20242 years ago" [ref=e283]
+                  - row [ref=e285]:
+                    - cell [ref=e286]:
+                      - link "src, (Directory)" [ref=e293] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/tree/main/src
+                        - text: src
+                    - cell [ref=e294]:
+                      - link "논리, 물리 모델링 추가" [ref=e297] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/commit/a34766729cba581008988825eb68a3ee56f6699d
+                    - cell "Jul 9, 20242 years ago" [ref=e298]
+                  - row [ref=e300]:
+                    - cell [ref=e301]:
+                      - link "LICENSE, (File)" [ref=e308] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/blob/main/LICENSE
+                        - text: LICENSE
+                    - cell [ref=e309]:
+                      - link "Initial commit" [ref=e312] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/commit/2a40f60bc81687a1f7f12407e94e40d552575e9a
+                    - cell "Jul 2, 20242 years ago" [ref=e313]
+                  - row [ref=e315]:
+                    - cell [ref=e316]:
+                      - link "README.md, (File)" [ref=e323] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/blob/main/README.md
+                        - text: README.md
+                    - cell [ref=e324]:
+                      - link "Update README.md" [ref=e327] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/commit/9d305ca1cdb385a7f949934a08f95e5f0500ca7a
+                    - cell "Jul 9, 20242 years ago" [ref=e328]
+            - generic [ref=e331]:
+              - generic [ref=e332]:
+                - heading "Repository files navigation" [level=2] [ref=e333]
+                - navigation "Repository files" [ref=e334]:
+                  - list [ref=e335]:
+                    - listitem [ref=e336]:
+                      - link "README" [ref=e337] [cursor=pointer]:
+                        - /url: "#"
+                    - listitem [ref=e342]:
+                      - link "MIT license" [ref=e343] [cursor=pointer]:
+                        - /url: "#"
+                - button "Outline" [ref=e348] [cursor=pointer]
+              - article [ref=e352]:
+                - paragraph [ref=e353]:
+                  - link [ref=e354] [cursor=pointer]:
+                    - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/blob/main/sample_data/img/banner.png
+                - generic [ref=e355]:
+                  - heading "URECA" [level=1] [ref=e356]
+                  - 'link "Permalink: URECA" [ref=e357] [cursor=pointer]':
+                    - /url: "#ureca"
+                - paragraph [ref=e360]: "| Your Recommended Cafe"
+                - generic [ref=e361]:
+                  - heading "🌱 TEAM" [level=4] [ref=e362]
+                  - 'link "Permalink: 🌱 TEAM" [ref=e363] [cursor=pointer]':
+                    - /url: "#-team"
+                - paragraph [ref=e366]:
+                  - link "😺전기범" [ref=e367] [cursor=pointer]:
+                    - /url: https://github.com/woodart8
+                  - link "🐕조제훈" [ref=e368] [cursor=pointer]:
+                    - /url: https://github.com/JoJeHuni
+                  - link "🐢방동호" [ref=e369] [cursor=pointer]:
+                    - /url: https://github.com/Bang1999
+                  - link "🦎최해관" [ref=e370] [cursor=pointer]:
+                    - /url: https://github.com/Haegwan-Choe
+                  - link "🐈이효진" [ref=e371] [cursor=pointer]:
+                    - /url: https://github.com/jinjin0528
+                - generic [ref=e372]:
+                  - heading "기술 스택" [level=4] [ref=e373]
+                  - 'link "Permalink: 기술 스택" [ref=e374] [cursor=pointer]':
+                    - /url: "#기술-스택"
+                - paragraph [ref=e377]:
+                  - link [ref=e378] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/46a636891304add5c56002797914e099fde5f71375eea914b87e6553a6e1377a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7562756e74752d6f72616e67653f7374796c653d666f722d7468652d6261646765266c6f676f3d7562756e7475
+                    - img "Ubuntu" [ref=e379]
+                  - link [ref=e380] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/1d1ab64032f5c8d27cf5897d8a8efd58a02cf41cbaa3e299bd4fc922fe73d1d5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c696e75782d626c61636b3f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e7578
+                    - img "linux" [ref=e381]
+                  - link [ref=e382] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/247ecddcbfefae97c0e371ac1577b6b16f821fb05f0181b591a6c4beaee04f6f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6d6172696164622d677261793f7374796c653d666f722d7468652d6261646765266c6f676f3d6d617269616462
+                    - img "mariadb" [ref=e383]
+                  - link [ref=e384] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/0c123f699a13e842f525fc67de54ca2239c0cd04dc92c199a01404296c8413a3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6d7973716c2d3434373941313f7374796c653d666f722d7468652d6261646765266c6f676f3d6d7973716c266c6f676f436f6c6f723d7768697465
+                - generic [ref=e386]:
+                  - heading "협업 툴" [level=4] [ref=e387]
+                  - 'link "Permalink: 협업 툴" [ref=e388] [cursor=pointer]':
+                    - /url: "#협업-툴"
+                - paragraph [ref=e391]:
+                  - link [ref=e392] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/e9b449ad3e40ee0a399a5cc62d4e5f504b2ac6f86a173ff674cbc04e415068c4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769742d4630353033323f7374796c653d666f722d7468652d6261646765266c6f676f3d676974266c6f676f436f6c6f723d7768697465
+                    - img "git" [ref=e393]
+                  - link [ref=e394] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/1bf494fcc215280f5962d6398c7893cd5af6e01f52c33f4ecef063148dab197f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769746875622d3138313731373f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465
+                    - img "github" [ref=e395]
+                  - link [ref=e396] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/c7a15796f7fd0b9174b85b2003e7b7d1f2abbc1e7caf7d78e14a7284778786e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6e6f74696f6e2d3030303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d6e6f74696f6e266c6f676f436f6c6f723d7768697465
+                    - img "notion" [ref=e397]
+                  - link [ref=e398] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/8c2650b812f1d0b94aedfe2fa90406de1adbd6aa840e97d3dc4501bcbdc6b345/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646973636f72642d3538363546323f7374796c653d666f722d7468652d6261646765266c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465
+                    - img "discord" [ref=e399]
+                - generic [ref=e400]:
+                  - heading "전체 프로젝트 일정" [level=3] [ref=e401]
+                  - 'link "Permalink: 전체 프로젝트 일정" [ref=e402] [cursor=pointer]':
+                    - /url: "#전체-프로젝트-일정"
+                - group [ref=e405]:
+                  - 'generic "프로젝트 일정 : 2024년 07월 01일 ~ 2024년 07월 09일(WBS)" [ref=e406] [cursor=pointer]'
+                - generic [ref=e407]:
+                  - heading "목차" [level=3] [ref=e408]
+                  - 'link "Permalink: 목차" [ref=e409] [cursor=pointer]':
+                    - /url: "#목차"
+                - list [ref=e412]:
+                  - listitem [ref=e413]:
+                    - link "1. 프로젝트 개요" [ref=e414] [cursor=pointer]:
+                      - /url: "#1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94"
+                  - listitem [ref=e415]:
+                    - link "2. 국내외 유사 서비스와 차별성" [ref=e416] [cursor=pointer]:
+                      - /url: "#2-%EA%B5%AD%EB%82%B4%EC%99%B8-%EC%9C%A0%EC%82%AC-%EC%84%9C%EB%B9%84%EC%8A%A4%EC%99%80-%EC%B0%A8%EB%B3%84%EC%84%B1"
+                  - listitem [ref=e417]:
+                    - link "3. 프로젝트 설계" [ref=e418] [cursor=pointer]:
+                      - /url: "#3-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%84%A4%EA%B3%84"
+                  - listitem [ref=e419]:
+                    - link "4. 프로젝트 수행 결과" [ref=e420] [cursor=pointer]:
+                      - /url: "#4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%88%98%ED%96%89-%EA%B2%B0%EA%B3%BC"
+                  - listitem [ref=e421]:
+                    - link "5. 프로젝트 수행 체계" [ref=e422] [cursor=pointer]:
+                      - /url: "#5-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%88%98%ED%96%89-%EC%B2%B4%EA%B3%84"
+                  - listitem [ref=e423]:
+                    - link "6. 팀 회고" [ref=e424] [cursor=pointer]:
+                      - /url: "#6-%ED%8C%80-%ED%9A%8C%EA%B3%A0"
+                  - listitem [ref=e425]:
+                    - link "7. 참고문헌" [ref=e426] [cursor=pointer]:
+                      - /url: "#7-%EC%B0%B8%EA%B3%A0%EB%AC%B8%ED%97%8C"
+                - separator [ref=e427]
+                - generic [ref=e428]:
+                  - heading "1. 프로젝트 개요" [level=2] [ref=e429]
+                  - 'link "Permalink: 1. 프로젝트 개요" [ref=e430] [cursor=pointer]':
+                    - /url: "#1-프로젝트-개요"
+                - generic [ref=e433]:
+                  - heading "1.1 프로젝트 소개" [level=3] [ref=e434]
+                  - 'link "Permalink: 1.1 프로젝트 소개" [ref=e435] [cursor=pointer]':
+                    - /url: "#11-프로젝트-소개"
+                - table [ref=e439]:
+                  - rowgroup [ref=e440]:
+                    - row [ref=e441]:
+                      - columnheader [ref=e442]:
+                        - link [ref=e443] [cursor=pointer]:
+                          - /url: https://private-user-images.githubusercontent.com/122279082/346488205-131890fa-734c-4b28-b077-1b8b8c5efbdb.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI5OTAzMTksIm5iZiI6MTc5Mjk5MDAxOSwicGF0aCI6Ii8xMjIyNzkwODIvMzQ2NDg4MjA1LTEzMTg5MGZhLTczNGMtNGIyOC1iMDc3LTFiOGI4YzVlZmJkYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAyNlQwNDQ2NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YzIxYjBlZTdkOTlmNzVlMTMzMjE2M2ZkZmZhYzQ1ZDgwM2I3MDliNDk2ZjI3Yjg3NzkzZmJkZDhhNzUyNjM3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.hng3PGJPc8YkrBPoK7JOjtrbZerd7meQ4ukP0KE_UpA
+                          - img "Untitled (4)" [ref=e444]
+                      - columnheader [ref=e445]:
+                        - link [ref=e446] [cursor=pointer]:
+                          - /url: https://private-user-images.githubusercontent.com/122279082/346488283-36c4ac70-0fbc-445b-83bf-baf423aa17b5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI5OTAzMTksIm5iZiI6MTc5Mjk5MDAxOSwicGF0aCI6Ii8xMjIyNzkwODIvMzQ2NDg4MjgzLTM2YzRhYzcwLTBmYmMtNDQ1Yi04M2JmLWJhZjQyM2FhMTdiNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAyNlQwNDQ2NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01ZTgyMTg0NzEzNWE0OWQ4NTlhNmIwZTk0YTdhYTIxNjFmMTlkMmI0YTkxOGI5MWFjZDk4M2NkZGM5YTcyZTBhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.hym3KKxNXMvHdF2BBZ4dwjyvuTfE62hpw2KsQoYnkhg
+                          - img "Untitled (5)" [ref=e447]
+                - paragraph [ref=e448]:
+                  - strong [ref=e449]: 처음 가는 카페에서 어떤 음료를 마실지 고민하시는 모든 분들!
+                - paragraph [ref=e450]: ✔️ 유레카에서 여러 음료의 조합 정보를 서로 공유하며 꿀팁을 얻어가세요!
+                - paragraph [ref=e451]: ✔️ 분산되어 있는 카페 정보들을 한 눈에 볼 수 있습니다.
+                - paragraph [ref=e452]: ✔️ 가게 별 베스트 메뉴는 다르죠! 서로의 추천으로 메뉴 별 맛집을 찾아가세요.
+                - separator [ref=e453]
+                - generic [ref=e454]:
+                  - heading "1.2 프로젝트 배경" [level=3] [ref=e455]
+                  - 'link "Permalink: 1.2 프로젝트 배경" [ref=e456] [cursor=pointer]':
+                    - /url: "#12-프로젝트-배경"
+                - group [ref=e459]:
+                  - generic "국내 카페 산업 현황" [ref=e460] [cursor=pointer]
+                - group [ref=e461]:
+                  - generic "개인 카페의 경쟁력 부족" [ref=e462] [cursor=pointer]
+                - group [ref=e463]:
+                  - generic "경쟁력 확보 방안과 본 프로젝트의 목표" [ref=e464] [cursor=pointer]
+                - separator [ref=e465]
+                - generic [ref=e466]:
+                  - heading "2. 국내외 유사 서비스와 차별성" [level=2] [ref=e467]
+                  - 'link "Permalink: 2. 국내외 유사 서비스와 차별성" [ref=e468] [cursor=pointer]':
+                    - /url: "#2-국내외-유사-서비스와-차별성"
+                - generic [ref=e471]:
+                  - heading "2.1 관련 서비스" [level=3] [ref=e472]
+                  - 'link "Permalink: 2.1 관련 서비스" [ref=e473] [cursor=pointer]':
+                    - /url: "#21-관련-서비스"
+                - group [ref=e476]:
+                  - generic "배달의 민족, 요기요, 쿠팡" [ref=e477] [cursor=pointer]
+                - group [ref=e478]:
+                  - generic "스타벅스" [ref=e479] [cursor=pointer]
+                - group [ref=e480]:
+                  - generic "메가커피" [ref=e481] [cursor=pointer]
+                - group [ref=e482]:
+                  - generic "투썸" [ref=e483] [cursor=pointer]
+                - group [ref=e484]:
+                  - generic "빽다방" [ref=e485] [cursor=pointer]
+                - group [ref=e486]:
+                  - generic "패스오더" [ref=e487] [cursor=pointer]
+                - separator [ref=e488]
+                - generic [ref=e489]:
+                  - heading "2.2 차별성" [level=3] [ref=e490]
+                  - 'link "Permalink: 2.2 차별성" [ref=e491] [cursor=pointer]':
+                    - /url: "#22-차별성"
+                - table [ref=e495]:
+                  - rowgroup [ref=e496]:
+                    - row [ref=e497]:
+                      - columnheader "기능\\서비스" [ref=e498]
+                      - columnheader "“유레카(URECA)”" [ref=e499]
+                      - columnheader "스타벅스" [ref=e500]
+                      - columnheader "메가커피" [ref=e501]
+                      - columnheader "배달의 민족" [ref=e502]
+                  - rowgroup [ref=e503]:
+                    - row [ref=e504]:
+                      - cell "즐겨찾기 저장" [ref=e505]
+                      - cell "O" [ref=e506]
+                      - cell "O" [ref=e507]
+                      - cell "X" [ref=e508]
+                      - cell "△(매장만 찜)" [ref=e509]
+                    - row [ref=e510]:
+                      - cell "리뷰" [ref=e511]
+                      - cell "O" [ref=e512]
+                      - cell "△(기업 자체 설문)" [ref=e513]
+                      - cell "X" [ref=e514]
+                      - cell "O" [ref=e515]
+                    - row [ref=e516]:
+                      - cell "카페 홍보" [ref=e517]
+                      - cell "O(위치 기반 노출)" [ref=e518]
+                      - cell "△(자사 홍보)" [ref=e519]
+                      - cell "△(자사 홍보)" [ref=e520]
+                      - cell "O(일정 요금 지불 후 상단 노출)" [ref=e521]
+                    - row [ref=e522]:
+                      - cell "각 메뉴의 리뷰 공유" [ref=e523]
+                      - cell "O" [ref=e524]
+                      - cell "X" [ref=e525]
+                      - cell "X" [ref=e526]
+                      - cell "O" [ref=e527]
+                    - row [ref=e528]:
+                      - cell "다양한 매장 입점" [ref=e529]
+                      - cell "O" [ref=e530]
+                      - cell "X" [ref=e531]
+                      - cell "X" [ref=e532]
+                      - cell "O" [ref=e533]
+                - separator [ref=e534]
+                - generic [ref=e535]:
+                  - heading "3. 프로젝트 설계" [level=2] [ref=e536]
+                  - 'link "Permalink: 3. 프로젝트 설계" [ref=e537] [cursor=pointer]':
+                    - /url: "#3-프로젝트-설계"
+                - generic [ref=e540]:
+                  - heading "3.1 FLOW CHARTS" [level=3] [ref=e541]
+                  - 'link "Permalink: 3.1 FLOW CHARTS" [ref=e542] [cursor=pointer]':
+                    - /url: "#31-flow-charts"
+                - paragraph [ref=e545]:
+                  - link [ref=e546] [cursor=pointer]:
+                    - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/blob/main/sample_data/img/flowchart.png
+                    - img "image" [ref=e547]
+                - separator [ref=e548]
+                - generic [ref=e549]:
+                  - heading "3.2 프로젝트 요구사항" [level=3] [ref=e550]
+                  - 'link "Permalink: 3.2 프로젝트 요구사항" [ref=e551] [cursor=pointer]':
+                    - /url: "#32-프로젝트-요구사항"
+                - group [ref=e554]:
+                  - generic "일반 회원" [ref=e555] [cursor=pointer]
+                - group [ref=e556]:
+                  - generic "사업자" [ref=e557] [cursor=pointer]
+                - group [ref=e558]:
+                  - generic "관리자" [ref=e559] [cursor=pointer]
+                - paragraph [ref=e560]:
+                  - link "요구사항 명세서 바로가기" [ref=e561] [cursor=pointer]:
+                    - /url: https://github.com/beyond09-DBDBDeep/Ureca/blob/main/docs/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C.pdf
+                - separator [ref=e562]
+                - generic [ref=e563]:
+                  - heading "3.3 주요기능" [level=3] [ref=e564]
+                  - 'link "Permalink: 3.3 주요기능" [ref=e565] [cursor=pointer]':
+                    - /url: "#33-주요기능"
+                - generic [ref=e568]:
+                  - heading "1) 일반 회원" [level=4] [ref=e569]
+                  - 'link "Permalink: 1) 일반 회원" [ref=e570] [cursor=pointer]':
+                    - /url: "#1-일반-회원"
+                - list [ref=e573]:
+                  - listitem [ref=e574]: 매장 검색
+                  - listitem [ref=e575]: 즐겨찾기
+                  - listitem [ref=e576]: 리뷰
+                - generic [ref=e577]:
+                  - heading "2) 사업자" [level=4] [ref=e578]
+                  - 'link "Permalink: 2) 사업자" [ref=e579] [cursor=pointer]':
+                    - /url: "#2-사업자"
+                - list [ref=e582]:
+                  - listitem [ref=e583]: 매장 관리
+                  - listitem [ref=e584]: 메뉴 관리(등록, 수정, 삭제)
+                  - listitem [ref=e585]: 리뷰에 대한 코멘트
+                - generic [ref=e586]:
+                  - heading "3) 관리자" [level=4] [ref=e587]
+                  - 'link "Permalink: 3) 관리자" [ref=e588] [cursor=pointer]':
+                    - /url: "#3-관리자"
+                - list [ref=e591]:
+                  - listitem [ref=e592]: 회원 관리
+                  - listitem [ref=e593]: 매장 관리
+                - separator [ref=e594]
+                - generic [ref=e595]:
+                  - heading "3.4 데이터베이스 모델링" [level=3] [ref=e596]
+                  - 'link "Permalink: 3.4 데이터베이스 모델링" [ref=e597] [cursor=pointer]':
+                    - /url: "#34-데이터베이스-모델링"
+                - generic [ref=e600]:
+                  - heading "(1) 개념 모델" [level=4] [ref=e601]
+                  - 'link "Permalink: (1) 개념 모델" [ref=e602] [cursor=pointer]':
+                    - /url: "#1-개념-모델"
+                - paragraph [ref=e605]:
+                  - link [ref=e606] [cursor=pointer]:
+                    - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/blob/main/sample_data/img/conModel.png
+                    - img "image" [ref=e607]
+                - generic [ref=e608]:
+                  - heading "(2) 논리 모델" [level=4] [ref=e609]
+                  - 'link "Permalink: (2) 논리 모델" [ref=e610] [cursor=pointer]':
+                    - /url: "#2-논리-모델"
+                - paragraph [ref=e613]:
+                  - link [ref=e614] [cursor=pointer]:
+                    - /url: https://private-user-images.githubusercontent.com/122279082/346757483-62afb728-22c9-496c-a815-15f17f2e8244.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI5OTAzMTksIm5iZiI6MTc5Mjk5MDAxOSwicGF0aCI6Ii8xMjIyNzkwODIvMzQ2NzU3NDgzLTYyYWZiNzI4LTIyYzktNDk2Yy1hODE1LTE1ZjE3ZjJlODI0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAyNlQwNDQ2NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zOGVjZWI4MTg3Njg5MGVmNDcwZWU2OGUwN2FiMDAzZmUwYmNlODJhMmRkMWUzYmIyYTc4NmE0NDQzOGFiNDZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.sw4QlajBbanycr6bAgsaLVIn3Q7qT7MZz4VfcMovM2g
+                    - img "image" [ref=e615]
+                - generic [ref=e616]:
+                  - heading "(3) 물리 모델" [level=4] [ref=e617]
+                  - 'link "Permalink: (3) 물리 모델" [ref=e618] [cursor=pointer]':
+                    - /url: "#3-물리-모델"
+                - paragraph [ref=e621]:
+                  - link [ref=e622] [cursor=pointer]:
+                    - /url: https://private-user-images.githubusercontent.com/122279082/346757449-3892aba9-30cc-4f7f-b90c-f50c1d962a61.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI5OTAzMTksIm5iZiI6MTc5Mjk5MDAxOSwicGF0aCI6Ii8xMjIyNzkwODIvMzQ2NzU3NDQ5LTM4OTJhYmE5LTMwY2MtNGY3Zi1iOTBjLWY1MGMxZDk2MmE2MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAyNlQwNDQ2NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02M2E0ZDM1NjBlOGQyMmIwYTZjMTU4M2U1YzUwYzM1MmU4Yjk5MzdiNDU2YTI3MjBhYjgxMjgyMDc5OWU3ODIyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.beb0MAxup-cejFhEge32zLgQcnXrHwTZvPYdBY8_tD4
+                    - img "image" [ref=e623]
+                - separator [ref=e624]
+                - generic [ref=e625]:
+                  - heading "4. 프로젝트 수행 결과" [level=2] [ref=e626]
+                  - 'link "Permalink: 4. 프로젝트 수행 결과" [ref=e627] [cursor=pointer]':
+                    - /url: "#4-프로젝트-수행-결과"
+                - generic [ref=e630]:
+                  - heading "4.1 테스트 케이스 문서" [level=3] [ref=e631]
+                  - 'link "Permalink: 4.1 테스트 케이스 문서" [ref=e632] [cursor=pointer]':
+                    - /url: "#41-테스트-케이스-문서"
+                - paragraph [ref=e635]:
+                  - link [ref=e636] [cursor=pointer]:
+                    - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/blob/main/sample_data/img/testCase.png
+                - paragraph [ref=e638]:
+                  - link "테스트 케이스 문서 바로가기" [ref=e639] [cursor=pointer]:
+                    - /url: https://github.com/beyond09-DBDBDeep/Ureca/blob/main/docs/testCase.xlsx
+                - separator [ref=e640]
+                - generic [ref=e641]:
+                  - heading "4.2 테스트 결과" [level=3] [ref=e642]
+                  - 'link "Permalink: 4.2 테스트 결과" [ref=e643] [cursor=pointer]':
+                    - /url: "#42-테스트-결과"
+                - group [ref=e646]:
+                  - generic "회원" [ref=e647] [cursor=pointer]
+                - separator [ref=e648]
+                - group [ref=e649]:
+                  - generic "사업자" [ref=e650] [cursor=pointer]
+                - separator [ref=e651]
+                - group [ref=e652]:
+                  - generic "관리자" [ref=e653] [cursor=pointer]
+                - separator [ref=e654]
+                - generic [ref=e655]:
+                  - heading "5. 프로젝트 수행 체계" [level=2] [ref=e656]
+                  - 'link "Permalink: 5. 프로젝트 수행 체계" [ref=e657] [cursor=pointer]':
+                    - /url: "#5-프로젝트-수행-체계"
+                - generic [ref=e660]:
+                  - heading "5.1 팀원 인적사항" [level=3] [ref=e661]
+                  - 'link "Permalink: 5.1 팀원 인적사항" [ref=e662] [cursor=pointer]':
+                    - /url: "#51-팀원-인적사항"
+                - table [ref=e666]:
+                  - rowgroup [ref=e667]:
+                    - row [ref=e668]:
+                      - columnheader "이름" [ref=e669]
+                      - columnheader "전공" [ref=e670]
+                      - columnheader "희망직무" [ref=e671]
+                      - columnheader "MBTI" [ref=e672]
+                      - columnheader "Email" [ref=e673]
+                  - rowgroup [ref=e674]:
+                    - row [ref=e675]:
+                      - cell "전기범" [ref=e676]
+                      - cell "소프트웨어학부" [ref=e677]
+                      - cell "웹 풀스택 개발자" [ref=e678]
+                      - cell "INFJ" [ref=e679]
+                      - cell [ref=e680]:
+                        - link "kibeom1145@gmail.com" [ref=e681] [cursor=pointer]:
+                          - /url: mailto:kibeom1145@gmail.com
+                    - row [ref=e682]:
+                      - cell "조제훈" [ref=e683]
+                      - cell "컴퓨터공학부" [ref=e684]
+                      - cell "백엔드 개발자" [ref=e685]
+                      - cell "ESFJ" [ref=e686]
+                      - cell [ref=e687]:
+                        - link "cho9759@inu.ac.kr" [ref=e688] [cursor=pointer]:
+                          - /url: mailto:cho9759@inu.ac.kr
+                    - row [ref=e689]:
+                      - cell "최해관" [ref=e690]
+                      - cell "불교학부/융합소프트웨어" [ref=e691]
+                      - cell "PM / 백엔드 개발자" [ref=e692]
+                      - cell "ENTJ" [ref=e693]
+                      - cell [ref=e694]:
+                        - link "kkhagwan@naver.com" [ref=e695] [cursor=pointer]:
+                          - /url: mailto:kkhagwan@naver.com
+                    - row [ref=e696]:
+                      - cell "이효진" [ref=e697]
+                      - cell "국어국문학과/컴퓨터공학과" [ref=e698]
+                      - cell "데이터 보안 / 백엔드 개발자" [ref=e699]
+                      - cell "INFJ" [ref=e700]
+                      - cell [ref=e701]:
+                        - link "jin12lee@naver.com" [ref=e702] [cursor=pointer]:
+                          - /url: mailto:jin12lee@naver.com
+                    - row [ref=e703]:
+                      - cell "방동호" [ref=e704]
+                      - cell "모바일시스템공학과" [ref=e705]
+                      - cell "백엔드 개발자" [ref=e706]
+                      - cell "INFP" [ref=e707]
+                      - cell [ref=e708]:
+                        - link "bangdh1593@gmail.com" [ref=e709] [cursor=pointer]:
+                          - /url: mailto:bangdh1593@gmail.com
+                - separator [ref=e710]
+                - generic [ref=e711]:
+                  - heading "5.2 프로젝트 수행 방법" [level=3] [ref=e712]
+                  - 'link "Permalink: 5.2 프로젝트 수행 방법" [ref=e713] [cursor=pointer]':
+                    - /url: "#52-프로젝트-수행-방법"
+                - paragraph [ref=e716]:
+                  - link [ref=e717] [cursor=pointer]:
+                    - /url: https://private-user-images.githubusercontent.com/105059540/346594999-6f2c805a-dbc8-467c-bcf6-f977c26e2d0a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI5OTAzMTksIm5iZiI6MTc5Mjk5MDAxOSwicGF0aCI6Ii8xMDUwNTk1NDAvMzQ2NTk0OTk5LTZmMmM4MDVhLWRiYzgtNDY3Yy1iY2Y2LWY5NzdjMjZlMmQwYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAyNlQwNDQ2NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNTg0Njg1MzJmMTNlMDI5NzBmZDE0YzExMGI3ZTI0YmJkOGZlNmY1ODE1OWZhOGQ0NTBiNzcyNDA1MjNiMmQ1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.CpApJosZKdwjAk_tveU48k_T_zfEsgHhAAQKQC85Hqo
+                    - img "image" [ref=e718]
+                - paragraph [ref=e719]: Ubuntu Linux를 이용하여 DB 서버를 Master-Slave 형태로 Replication하였고,
+                - paragraph [ref=e720]: 권한 설정을 통해 Slave는 SELECT만 처리하게 하고, 나머지 쿼리는 Master가 처리하게 하여 서버의 부하를 줄였다.
+                - separator [ref=e721]
+                - generic [ref=e722]:
+                  - heading "5.2.1 Ubuntu 리눅스에 mariadb 서버 구축" [level=3] [ref=e723]
+                  - 'link "Permalink: 5.2.1 Ubuntu 리눅스에 mariadb 서버 구축" [ref=e724] [cursor=pointer]':
+                    - /url: "#521-ubuntu-리눅스에-mariadb-서버-구축"
+                - generic [ref=e727]:
+                  - heading "Virtual Box / Ubuntu Linux 실행하여 Replication 서버 구축" [level=4] [ref=e728]
+                  - 'link "Permalink: Virtual Box / Ubuntu Linux 실행하여 Replication 서버 구축" [ref=e729] [cursor=pointer]':
+                    - /url: "#virtual-box--ubuntu-linux-실행하여-replication-서버-구축"
+                - blockquote [ref=e732]:
+                  - paragraph [ref=e733]: "-Master(INSERT, UPDATE, DELETE) -Slave(SELECT)"
+                - generic [ref=e734]:
+                  - heading "master 환경 설정 단계" [level=4] [ref=e735]
+                  - 'link "Permalink: master 환경 설정 단계" [ref=e736] [cursor=pointer]':
+                    - /url: "#master-환경-설정-단계"
+                - list [ref=e739]:
+                  - listitem [ref=e740]:
+                    - code [ref=e741]: master
+                    - text: mariaDB 설정 파일 수정
+                - list [ref=e742]:
+                  - listitem [ref=e743]:
+                    - text: 1.1 주석 처리 된
+                    - code [ref=e744]: log_bin, expire_logs_days, max_binlog_size
+                    - text: 항목 주석 제거
+                  - listitem [ref=e745]:
+                    - code [ref=e746]: bind-adress = 0.0.0.0
+                    - text: 으로 수정
+                  - listitem [ref=e747]: Write and Quit
+                - list [ref=e748]:
+                  - listitem [ref=e749]: mariaDB 재 시작
+                  - listitem [ref=e750]:
+                    - code [ref=e751]: slave
+                    - text: 에서 접속 할 계정 권한 설정
+                  - listitem [ref=e752]:
+                    - code [ref=e753]: master
+                    - text: 의 status에서 file과 position 정보 조회
+                - generic [ref=e754]:
+                  - heading "slave 환경 설정 단계" [level=3] [ref=e755]
+                  - 'link "Permalink: slave 환경 설정 단계" [ref=e756] [cursor=pointer]':
+                    - /url: "#slave-환경-설정-단계"
+                - list [ref=e759]:
+                  - listitem [ref=e760]:
+                    - code [ref=e761]: slave
+                    - text: mariaDB 설정 파일 수정
+                - list [ref=e762]:
+                  - listitem [ref=e763]:
+                    - text: 아래로 스크롤하여
+                    - code [ref=e764]: "[mysqld]"
+                    - text: 하단에
+                    - code [ref=e765]: server-id = n
+                    - text: ","
+                    - code [ref=e766]: relay_log = mysql-relay-bin
+                    - text: ","
+                    - code [ref=e767]: log_slave_updates = 1
+                    - text: ","
+                    - code [ref=e768]: read_only = 1
+                    - text: 를 작성
+                    - code [ref=e769]: "n"
+                    - text: 은 상황에 따라 변경
+                - list [ref=e770]:
+                  - listitem [ref=e771]: mariaDB 재 시작
+                  - listitem [ref=e772]:
+                    - code [ref=e773]: slave
+                    - text: 멈추기
+                  - listitem [ref=e774]:
+                    - code [ref=e775]: change master to master_host = ‘master IP주소’, master_port = 3306, master_user = ‘master’, master_password = ‘master’, master_log_file = ‘master의 file’, master_log_pos=’master 의 position’;
+                    - text: 작성
+                  - listitem [ref=e776]:
+                    - code [ref=e777]: slave
+                    - text: 시작
+                  - listitem [ref=e778]:
+                    - code [ref=e779]: show slave status \G;
+                    - text: 로 slave 상태 확인
+                - generic [ref=e780]:
+                  - heading "slave에서 INSERT 이벤트 방지를 위한 설정" [level=3] [ref=e781]
+                  - 'link "Permalink: slave에서 INSERT 이벤트 방지를 위한 설정" [ref=e782] [cursor=pointer]':
+                    - /url: "#slave에서-insert-이벤트-방지를-위한-설정"
+                - list [ref=e785]:
+                  - listitem [ref=e786]:
+                    - code [ref=e787]: slave
+                    - text: 서버의
+                    - code [ref=e788]: read-only
+                    - text: 옵션 적용 관련
+                - generic [ref=e789]:
+                  - generic [ref=e790]:
+                    - generic [ref=e791]: "-- slave 서버에서 slave의 root계정으로 root를 제외한 계정의 user 유저 권한 삭제"
+                    - text: update mysql.user set super_priv=
+                    - generic [ref=e792]: "'N'"
+                    - text: where user <>
+                    - generic [ref=e793]: "'root'"
+                    - text: ; flush privileges;
+                    - generic [ref=e794]: "-- HeidiSQL에 slave가 접속중이라면 HeidiSQL에서 접속 해제 후 다시 접속"
+                  - button "Copy code to clipboard" [ref=e796] [cursor=pointer]
+                - generic [ref=e800]:
+                  - link [ref=e801] [cursor=pointer]:
+                    - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/blob/main/sample_data/img/masterSlave.png
+                  - paragraph [ref=e803]: Master & Slave
+                - generic [ref=e804]:
+                  - link [ref=e805] [cursor=pointer]:
+                    - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/blob/main/sample_data/img/readOnly.png
+                  - paragraph [ref=e807]: READ ONLY
+                - generic [ref=e808]:
+                  - heading "구축된 Server 정보" [level=4] [ref=e809]
+                  - 'link "Permalink: 구축된 Server 정보" [ref=e810] [cursor=pointer]':
+                    - /url: "#구축된-server-정보"
+                - generic [ref=e813]:
+                  - link [ref=e814] [cursor=pointer]:
+                    - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/blob/main/sample_data/img/serverInfo.png
+                  - paragraph [ref=e816]: 구축된 서버 정보
+                - blockquote [ref=e817]:
+                  - generic [ref=e818]:
+                    - heading "master_Ureca" [level=4] [ref=e819]
+                    - 'link "Permalink: master_Ureca" [ref=e820] [cursor=pointer]':
+                      - /url: "#master_ureca"
+                  - list [ref=e823]:
+                    - listitem [ref=e824]: "HOST IP: 192.168.0.20"
+                    - listitem [ref=e825]: "Port: 3306"
+                - blockquote [ref=e826]:
+                  - generic [ref=e827]:
+                    - heading "slave_Ureca(Replication)" [level=4] [ref=e828]
+                    - 'link "Permalink: slave_Ureca(Replication)" [ref=e829] [cursor=pointer]':
+                      - /url: "#slave_urecareplication"
+                  - list [ref=e832]:
+                    - listitem [ref=e833]: "HOST IP: 192.168.0.41"
+                    - listitem [ref=e834]: "Port: 3306"
+                - separator [ref=e835]
+                - generic [ref=e836]:
+                  - heading "6. 팀 회고" [level=2] [ref=e837]
+                  - 'link "Permalink: 6. 팀 회고" [ref=e838] [cursor=pointer]':
+                    - /url: "#6-팀-회고"
+                - generic [ref=e841]:
+                  - heading "😺전기범" [level=4] [ref=e842]
+                  - 'link "Permalink: 😺전기범" [ref=e843] [cursor=pointer]':
+                    - /url: "#전기범"
+                - blockquote [ref=e846]:
+                  - paragraph [ref=e847]: "조제훈 : 기본적인 개념에 대해서 잘 알고 계셔서 프로젝트를 진행하는데 팀원들에게도 많은 도움을 주셨고, 이끌어 가주신 팀원 중 한 분입니다. 흐름에 대해 여러 번 고민하고 최선책을 찾아 응용하는 자세가 좋았습니다. 개선이 필요한 점에 대해 미리 공유해주시기만 한다면 더욱 팀 프로젝트를 진행하는데 팀원 간 소통에 도움이 될 수 있을 것 같습니다!"
+                  - paragraph [ref=e848]: "최해관 : 프로젝트의 전체적인 흐름을 잡을 수 있도록 기본 개념을 바탕으로 항상 상세히 설명해주셨습니다. 하나의 기능에 대해 상세히 분석하고 충돌되는 부분을 조언해주셔서 감사했습니다."
+                  - paragraph [ref=e849]: "이효진 : 알고 있는 게 많아서 의견도 많이 내시고 주도적이신 모습 너무 좋았습니다. 프로젝트에 있어서나 공부에 있어서 많은 도움을 주셔서 감사합니다."
+                  - paragraph [ref=e850]: "방동호 : 아이디어를 가장 많이 내셨지만, 제가 그 아이디어들을 모두 제대로 이해하지 못해서 계속 여쭤봐도 짜증 내지 않고, 어떻게 하면 더 확실하게 알려줄지 고민하며 여러 예시를 들어가며 설명해주셔서 감사했습니다."
+                - generic [ref=e851]:
+                  - heading "🐕조제훈" [level=4] [ref=e852]
+                  - 'link "Permalink: 🐕조제훈" [ref=e853] [cursor=pointer]':
+                    - /url: "#조제훈"
+                - blockquote [ref=e856]:
+                  - paragraph [ref=e857]: "전기범 : 논리적, 물리적 모델링이 중간에 변경될 때마다 바로바로 수정해 주셔서 감사합니다. 고생 많으셨습니다."
+                  - paragraph [ref=e858]: "최해관 : 아이디어 뱅크 역할을 너무 잘 해내셨고, 변경사항 수정 같은 번거로운 작업을 항상 도맡아 해주셨습니다. 모두가 집에 간 뒤에도 남아서 구현할 기능의 바탕을 미리 만들어주셔서 감사합니다."
+                  - paragraph [ref=e859]: "이효진 : 프로젝트에 있어서 항상 주도적이고 조원들에게도 친절한 모습 너무 좋았습니다. 모르는 부분에 대해 항상 친절하게 알려주셔서 너무 감사했습니다!"
+                  - paragraph [ref=e860]: "방동호 : 조가 된 첫 날부터 편하게 질문을 계속 해도 친절하게 이해가 될 때까지 답해주셔서, 덕분에 수업 과정 또는 프로젝트 진행 과정에서 가끔 따라가지 못했던 부분들을 도와주셔서 감사합니다."
+                - generic [ref=e861]:
+                  - heading "🦎최해관" [level=4] [ref=e862]
+                  - 'link "Permalink: 🦎최해관" [ref=e863] [cursor=pointer]':
+                    - /url: "#최해관"
+                - blockquote [ref=e866]:
+                  - paragraph [ref=e867]: "전기범 : 프로젝트 중에 아이디어를 낼 때마다 긍정적으로 반응해주셔서 힘이 났습니다. 감사합니다."
+                  - paragraph [ref=e868]: "조제훈 : 이전에 직접 경험했던 것을 함께 이야기하며 프로젝트를 하며 잘 나아갈 수 있게 정보 공유를 해주셨고, 팀원 간 소통에 경청하고 의견도 많이 내주셨습니다. 해결책에 대해서도 논의할 때도 도움을 많이 주셨습니다!"
+                  - paragraph [ref=e869]: "이효진 : 5조의 긍정맨이십니다! 항상 적극적인 자세와 조의 밝은 분위기를 책임 지시는 모습 감사했습니다."
+                  - paragraph [ref=e870]: "방동호 : 먼저, 제 짝꿍이라 그런지 다른 분들보다는 더 많이 오래 지낸 느낌이 없지 않아 있네요. 그래서 다른 분들보다 감사한 점이 더 많아요. 특히 제가 수업 시간에 이해가 안 되는 부분들을 하브루타 시간뿐만 아니라 쉬는 시간 중간중간에 해결해 주시고, 혹시 모르는 게 있더라도 같이 찾아봐 주셔서 수업을 따라가는 데 있어 너무나 편안했습니다. 정말 감사했습니다."
+                - generic [ref=e871]:
+                  - heading "🐈이효진" [level=4] [ref=e872]
+                  - 'link "Permalink: 🐈이효진" [ref=e873] [cursor=pointer]':
+                    - /url: "#이효진"
+                - blockquote [ref=e876]:
+                  - paragraph [ref=e877]: "전기범 : 맡은 부분이 난이도가 있었음에도 포기하지 않고 끝까지 해결하려는 모습을 보며 저도 많은 자극을 받았습니다. 감사합니다."
+                  - paragraph [ref=e878]: "조제훈 : 프로젝트 진행 사항을 우선적으로 확실히 깨닫기 위해 2번, 3번 다시 보고 이해하면서 생긴 궁금증을 이야기하시면서 미처 놓쳤던 부분에 대해 캐치해주신다든지 함께 하려고 노력하시는 모습이 좋았습니다. 자신감을 더욱 가지셔도 좋을거 같고 더 많은 질문하는 것도 좋을 것 같습니다!"
+                  - paragraph [ref=e879]: "최해관 : 모두의 이야기를 잘 경청해주시고 이야기 중간마다 문제점을 확실히 파악해주시는 모습이 본받고 싶었습니다. 감사합니다."
+                  - paragraph [ref=e880]: "방동호 : 프로젝트 진행 과정에서 팀원들 모두의 이야기를 들어주시고, 중간중간에 모두가 놓친 부분을 캐치하시는 모습을 보며 가끔씩 '우와~!' 했습니다. 그런 부분을 보며 많이 배워갑니다."
+                - generic [ref=e881]:
+                  - heading "🐢방동호" [level=4] [ref=e882]
+                  - 'link "Permalink: 🐢방동호" [ref=e883] [cursor=pointer]':
+                    - /url: "#방동호"
+                - blockquote [ref=e886]:
+                  - paragraph [ref=e887]: "전기범 : 질문에 관해 설명을 해드리면서 저도 개념을 다시 한번 공부해 볼 수 있었습니다. 감사합니다."
+                  - paragraph [ref=e888]: "조제훈 : 개념부터 차근차근 반복 학습하는게 정말 보기 좋았고, 궁금한걸 알려고 부끄러워하는 것이 아닌 질문도 많이 하시고 노력하시는 모습도 좋았습니다. 팀플하는 동안 의견도 열심히 내주시고 뭐 하나 허투루 넘기지 않으려는 자세가 좋았습니다!"
+                  - paragraph [ref=e889]: "최해관 : 이해 안가는 부분에 대해 저와 이야기를 많이 나누었는데 그 과정에서 제가 잘못 알고 있던 것도 바로잡으며 많은 공부가 되었습니다. 프로젝트를 진행하다보면 전체 흐름과 맞지 않게 진행이 될 때가 있는데 그 때마다 중요한 문제점을 간파하고 의견을 내주셔서 바른 길로 갈 수 있었습니다. 감사합니다."
+                  - paragraph [ref=e890]: "이효진 : 항상 배우려는 자세와 궁금한 것엔 적극적으로 물어보시는 것을 보고 많이 배울 수 있었습니다. 계속 물어보시면서 좋은 의견 내주시면서 많은 도움이 되었어요. 감사합니다."
+                - separator [ref=e891]
+                - generic [ref=e892]:
+                  - heading "7. 참고 문헌" [level=2] [ref=e893]
+                  - 'link "Permalink: 7. 참고 문헌" [ref=e894] [cursor=pointer]':
+                    - /url: "#7-참고-문헌"
+                - list [ref=e897]:
+                  - listitem [ref=e898]:
+                    - text: "<그림 1> :"
+                    - link "https://www.loud.kr/article/successcase/79001" [ref=e899] [cursor=pointer]:
+                      - /url: https://www.loud.kr/article/successcase/79001
+                  - listitem [ref=e900]:
+                    - text: "<그림 2> :"
+                    - link "https://www.loud.kr/article/successcase/79001" [ref=e901] [cursor=pointer]:
+                      - /url: https://www.loud.kr/article/successcase/79001
+                  - listitem [ref=e902]:
+                    - text: "<그림 3> :"
+                    - link "https://www.loud.kr/article/successcase/79001" [ref=e903] [cursor=pointer]:
+                      - /url: https://www.loud.kr/article/successcase/79001
+                  - listitem [ref=e904]:
+                    - link "https://www.sisajournal.com/news/articleView.html?idxno=250943" [ref=e905] [cursor=pointer]:
+                      - /url: https://www.sisajournal.com/news/articleView.html?idxno=250943
+                    - strong [ref=e906]: ", 2022.11.21"
+        - generic [ref=e909]:
+          - generic [ref=e910]:
+            - heading "About" [level=2] [ref=e911]
+            - paragraph [ref=e912]: 😺전기범, 🐕조제훈, 🐢방동호, 🦎최해관, 🐈이효진
+            - heading "Resources" [level=3] [ref=e913]
+            - link "Readme" [ref=e915] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+            - link "MIT license" [ref=e919] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+            - generic [ref=e922]:
+              - generic [ref=e923]:
+                - link "Activity" [ref=e925] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/activity
+                - link "Custom properties" [ref=e929] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/custom-properties
+              - generic [ref=e932]:
+                - heading "Stars" [level=3] [ref=e933]
+                - generic [ref=e935]:
+                  - strong [ref=e938]: "0"
+                  - text: stars
+                - heading "Watchers" [level=3] [ref=e939]
+                - generic [ref=e941]:
+                  - strong [ref=e944]: "0"
+                  - text: watching
+                - heading "Forks" [level=3] [ref=e945]
+                - link [ref=e947] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/forks
+                  - strong [ref=e951]: "3"
+                  - text: forks
+            - link "Report repository" [ref=e953] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fbeyond-sw-camp%2Fbe09-1st-5DBDBDeep-Ureca&report=beyond-sw-camp+%28user%29
+          - generic [ref=e954]:
+            - heading [level=2] [ref=e955]:
+              - link "Releases" [ref=e957] [cursor=pointer]:
+                - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/releases
+            - generic [ref=e958]: No releases published
+          - generic [ref=e959]:
+            - heading "Contributors (5)" [level=2] [ref=e960]:
+              - generic [ref=e961]:
+                - link "Contributors" [ref=e962] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be09-1st-5DBDBDeep-Ureca/graphs/contributors
+                - generic [aria-hidden] [ref=e963]: "5"
+                - generic [ref=e964]: (5)
+            - list [ref=e965]:
+              - listitem [ref=e966]:
+                - link [ref=e967] [cursor=pointer]:
+                  - /url: /Bang1999
+                  - img "@Bang1999" [ref=e968]
+              - listitem [ref=e969]:
+                - link [ref=e970] [cursor=pointer]:
+                  - /url: /JoJeHuni
+                  - img "@JoJeHuni" [ref=e971]
+              - listitem [ref=e972]:
+                - link [ref=e973] [cursor=pointer]:
+                  - /url: /woodart8
+                  - img "@woodart8" [ref=e974]
+              - listitem [ref=e975]:
+                - link [ref=e976] [cursor=pointer]:
+                  - /url: /jinjin0528
+                  - img "@jinjin0528" [ref=e977]
+              - listitem [ref=e978]:
+                - link [ref=e979] [cursor=pointer]:
+                  - /url: /Haegwan-Choe
+                  - img "@Haegwan-Choe" [ref=e980]
+  - contentinfo [ref=e982]:
+    - heading "Footer" [level=2] [ref=e983]
+    - generic [ref=e984]:
+      - generic [ref=e985]:
+        - link "GitHub Homepage" [ref=e986] [cursor=pointer]:
+          - /url: https://github.com
+        - generic [ref=e989]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e990]:
+        - heading "Footer navigation" [level=3] [ref=e991]
+        - list "Footer navigation" [ref=e992]:
+          - listitem [ref=e993]:
+            - link "Terms" [ref=e994] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e995]:
+            - link "Privacy" [ref=e996] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e997]:
+            - link "Security" [ref=e998] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e999]:
+            - link "Status" [ref=e1000] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e1001]:
+            - link "Community" [ref=e1002] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e1003]:
+            - link "Docs" [ref=e1004] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e1005]:
+            - link "Contact" [ref=e1006] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e1007]:
+            - button "Manage cookies" [ref=e1009] [cursor=pointer]
+          - listitem [ref=e1010]:
+            - button "Do not share my personal information" [ref=e1012] [cursor=pointer]

@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2910" viewBox="0 0 1440 2910">
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f9fd"/><stop offset="1" stop-color="#eaf1fb"/></linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1d3556" flood-opacity=".07"/></filter>
+  </defs>
+  <rect width="1440" height="2540" fill="#fff"/>
+  <g font-family="Arial, 'Malgun Gothic', sans-serif" fill="#102849">
+    <text x="130" y="78" font-size="14" font-weight="700" letter-spacing="3" fill="#5b7594">SELECTED WORK</text>
+    <text x="126" y="174" font-size="82" font-weight="750" letter-spacing="-4">Projects<tspan fill="#80b4ed">.</tspan></text>
+    <text x="130" y="220" font-size="19" fill="#596b82">프론트엔드에서 플랫폼 운영까지, 해결한 일을 보여줍니다.</text>
+    <text x="1198" y="85" font-size="12" fill="#7a899d">PROJECTS &amp; CASE STUDIES</text>
+
+    <g transform="translate(130 264)">
+      <rect width="220" height="42" rx="21" fill="#fff" stroke="#d8e2ed"/><text x="23" y="27" font-size="14" fill="#596b82">Frontend</text>
+      <rect x="232" width="220" height="42" rx="21" fill="#eaf1ff" stroke="#b8c9ee"/><circle cx="254" cy="21" r="4" fill="#4166d5"/><text x="268" y="27" font-size="14" fill="#3159bc" font-weight="700">Beyond Frontend</text>
+      <text x="1098" y="26" font-size="12" fill="#7a899d">BEYOND FRONTEND</text>
+    </g>
+
+    <!-- Platform case one -->
+    <g filter="url(#shadow)"><rect x="112" y="338" width="1216" height="366" rx="18" fill="#fff" stroke="#e2e8f0"/></g>
+    <rect x="136" y="362" width="480" height="318" rx="12" fill="url(#wash)"/>
+    <text x="162" y="397" font-size="11" font-weight="700" letter-spacing="1.5" fill="#5b7594">WORKFLOW / IMAGE PATCH</text>
+    <text x="162" y="427" font-size="17" font-weight="700">폐쇄망 이미지 패치 흐름</text>
+    <line x1="210" y1="511" x2="535" y2="511" stroke="#b7c9e2" stroke-width="2"/>
+    <path d="m525 505 10 6-10 6" fill="none" stroke="#7893b8" stroke-width="2"/>
+    <g>
+      <rect x="158" y="462" width="112" height="100" rx="10" fill="#fff" stroke="#d9e3ef"/>
+      <circle cx="214" cy="488" r="13" fill="#eaf1ff"/><path d="M208 488h12m-9-4 9 4-9 4" fill="none" stroke="#4166d5" stroke-width="1.5"/>
+      <text x="214" y="527" text-anchor="middle" font-size="12" font-weight="700">이미지 반입</text><text x="214" y="546" text-anchor="middle" font-size="9" fill="#7a899d">검증된 아티팩트</text>
+      <rect x="316" y="462" width="112" height="100" rx="10" fill="#fff" stroke="#d9e3ef"/>
+      <circle cx="372" cy="488" r="13" fill="#eaf1ff"/><path d="M366 488h12m-4-4 4 4-4 4" fill="none" stroke="#4166d5" stroke-width="1.5"/>
+      <text x="372" y="527" text-anchor="middle" font-size="12" font-weight="700">워크로드 교체</text><text x="372" y="546" text-anchor="middle" font-size="9" fill="#7a899d">배포 대상 반영</text>
+      <rect x="474" y="462" width="112" height="100" rx="10" fill="#fff" stroke="#d9e3ef"/>
+      <circle cx="530" cy="488" r="13" fill="#e9f6ef"/><path d="m524 488 4 4 8-9" fill="none" stroke="#278354" stroke-width="1.7"/>
+      <text x="530" y="527" text-anchor="middle" font-size="12" font-weight="700">상태 확인</text><text x="530" y="546" text-anchor="middle" font-size="9" fill="#7a899d">정상화 또는 롤백</text>
+    </g>
+    <rect x="158" y="590" width="428" height="64" rx="8" fill="#fff" stroke="#e0e7f0"/>
+    <text x="178" y="616" font-size="10" fill="#7a899d">확인 항목</text><text x="178" y="637" font-size="12" fill="#405570">이미지 버전  /  배포 상태  /  서비스 응답</text>
+    <text x="660" y="386" font-size="11" font-weight="700" letter-spacing="1.2" fill="#4166d5">01 / KUBERNETES OPERATIONS</text>
+    <text x="660" y="436" font-size="31" font-weight="700" letter-spacing="-1">폐쇄망 Kubernetes 이미지 패치</text>
+    <text x="660" y="474" font-size="16" fill="#596b82">이미지 반입부터 워크로드 교체, 배포 상태 확인과</text>
+    <text x="660" y="500" font-size="16" fill="#596b82">필요 시 롤백까지 이어지는 운영 흐름을 정리합니다.</text>
+    <g transform="translate(660 530)">
+      <rect width="107" height="31" rx="15" fill="#edf3fc"/><text x="17" y="20" font-size="12" fill="#456184">Kubernetes</text>
+      <rect x="117" width="64" height="31" rx="15" fill="#edf3fc"/><text x="134" y="20" font-size="12" fill="#456184">Linux</text>
+      <rect x="191" width="133" height="31" rx="15" fill="#edf3fc"/><text x="207" y="20" font-size="12" fill="#456184">Container Image</text>
+    </g>
+    <line x1="660" y1="590" x2="1278" y2="590" stroke="#e4eaf2"/>
+    <text x="660" y="625" font-size="13" fill="#405570">담당 범위와 검증 결과는 상세 사례에서 공개 가능한 증거로 설명</text>
+    <text x="660" y="667" font-size="13" font-weight="700" fill="#356fae">운영 흐름 자세히 보기 <tspan font-size="19">↗</tspan></text>
+
+    <!-- Platform case two -->
+    <g filter="url(#shadow)"><rect x="112" y="730" width="1216" height="366" rx="18" fill="#fff" stroke="#e2e8f0"/></g>
+    <rect x="136" y="754" width="480" height="318" rx="12" fill="#f7f9fc"/>
+    <text x="162" y="789" font-size="11" font-weight="700" letter-spacing="1.5" fill="#5b7594">WORKFLOW / GITOPS RECOVERY</text>
+    <text x="162" y="819" font-size="17" font-weight="700">저장소 연결부터 배포 복구까지</text>
+    <rect x="162" y="851" width="190" height="64" rx="8" fill="#fff" stroke="#d9e3ef"/>
+    <circle cx="185" cy="883" r="11" fill="#f2edff"/><path d="M181 883h8m-4-4v8" stroke="#7952b3" stroke-width="1.5"/>
+    <text x="206" y="879" font-size="11" font-weight="700">Git 저장소</text><text x="206" y="898" font-size="9" fill="#7a899d">연결 및 동기화 점검</text>
+    <path d="M360 883h38m-8-5 8 5-8 5" fill="none" stroke="#91a4bf" stroke-width="1.6"/>
+    <rect x="410" y="851" width="180" height="64" rx="8" fill="#fff" stroke="#d9e3ef"/>
+    <circle cx="433" cy="883" r="11" fill="#f0edff"/><path d="M428 883h10m-3-4 4 4-4 4" fill="none" stroke="#6b5bc7" stroke-width="1.4"/>
+    <text x="454" y="879" font-size="11" font-weight="700">Argo CD</text><text x="454" y="898" font-size="9" fill="#7a899d">배포 상태 확인</text>
+    <path d="M500 918v20H251v12m0 0 0 10m0-10-5 6m5-6 5 6" fill="none" stroke="#b8c7da" stroke-width="1.5"/>
+    <rect x="162" y="962" width="190" height="64" rx="8" fill="#fff" stroke="#d9e3ef"/>
+    <circle cx="185" cy="994" r="11" fill="#eaf3ff"/><path d="M179 994h12m-6-6v12" stroke="#4166d5" stroke-width="1.4"/>
+    <text x="206" y="990" font-size="11" font-weight="700">Harbor</text><text x="206" y="1009" font-size="9" fill="#7a899d">이미지 Pull 오류 점검</text>
+    <path d="M360 994h38m-8-5 8 5-8 5" fill="none" stroke="#91a4bf" stroke-width="1.6"/>
+    <rect x="410" y="962" width="180" height="64" rx="8" fill="#fff" stroke="#d9e3ef"/>
+    <circle cx="433" cy="994" r="11" fill="#e9f6ef"/><path d="m428 994 4 4 7-8" fill="none" stroke="#278354" stroke-width="1.5"/>
+    <text x="454" y="990" font-size="11" font-weight="700">클러스터</text><text x="454" y="1009" font-size="9" fill="#7a899d">정상 배포 확인</text>
+    <text x="660" y="778" font-size="11" font-weight="700" letter-spacing="1.2" fill="#4166d5">02 / DEPLOYMENT &amp; INCIDENT RESPONSE</text>
+    <text x="660" y="828" font-size="31" font-weight="700" letter-spacing="-1">GitOps 배포 장애 대응</text>
+    <text x="660" y="866" font-size="16" fill="#596b82">Argo CD 저장소 연결과 Harbor 이미지 Pull 문제를</text>
+    <text x="660" y="892" font-size="16" fill="#596b82">분석하고 기술지원으로 배포를 복구한 흐름입니다.</text>
+    <g transform="translate(660 922)">
+      <rect width="107" height="31" rx="15" fill="#edf3fc"/><text x="17" y="20" font-size="12" fill="#456184">Kubernetes</text>
+      <rect x="117" width="78" height="31" rx="15" fill="#edf3fc"/><text x="133" y="20" font-size="12" fill="#456184">Argo CD</text>
+      <rect x="205" width="70" height="31" rx="15" fill="#edf3fc"/><text x="222" y="20" font-size="12" fill="#456184">Harbor</text>
+    </g>
+    <line x1="660" y1="982" x2="1278" y2="982" stroke="#e4eaf2"/>
+    <text x="660" y="1017" font-size="13" fill="#405570">장애 분석, 복구 조치와 확인 결과를 상세에서 정리</text>
+    <text x="660" y="1059" font-size="13" font-weight="700" fill="#356fae">장애 대응 자세히 보기 <tspan font-size="19">↗</tspan></text>
+
+    <!-- Technical support and documentation -->
+    <g filter="url(#shadow)"><rect x="112" y="1122" width="1216" height="286" rx="18" fill="#fff" stroke="#e2e8f0"/></g>
+    <rect x="136" y="1146" width="480" height="238" rx="12" fill="#f7f9fc"/>
+    <text x="162" y="1180" font-size="11" font-weight="700" letter-spacing="1.4" fill="#5b7594">RUNBOOKS / TECHNICAL SUPPORT</text>
+    <text x="162" y="1210" font-size="16" font-weight="700">실행 가능한 운영 기록</text>
+    <g>
+      <rect x="163" y="1235" width="118" height="112" rx="8" fill="#fff" stroke="#dce5ef"/>
+      <path d="M181 1254h76M181 1265h65M181 1287h68M181 1298h49" stroke="#bac9dc" stroke-width="3" stroke-linecap="round"/>
+      <rect x="181" y="1312" width="43" height="18" rx="9" fill="#edf2ff"/><text x="202" y="1324" text-anchor="middle" font-size="7" fill="#4166d5">GUIDE</text>
+      <rect x="306" y="1235" width="118" height="112" rx="8" fill="#fff" stroke="#dce5ef"/>
+      <path d="M324 1254h76M324 1265h65M324 1287h68M324 1298h49" stroke="#bac9dc" stroke-width="3" stroke-linecap="round"/>
+      <rect x="324" y="1312" width="43" height="18" rx="9" fill="#fff3e5"/><text x="345" y="1324" text-anchor="middle" font-size="7" fill="#a66d18">REPORT</text>
+      <rect x="449" y="1235" width="142" height="112" rx="8" fill="#fff" stroke="#dce5ef"/>
+      <path d="M467 1254h98M467 1265h81M467 1287h95M467 1298h68" stroke="#bac9dc" stroke-width="3" stroke-linecap="round"/>
+      <rect x="467" y="1312" width="56" height="18" rx="9" fill="#e9f6ef"/><text x="495" y="1324" text-anchor="middle" font-size="7" fill="#278354">SUPPORT</text>
+    </g>
+    <text x="162" y="1368" font-size="10" fill="#7a899d">패치 절차 · 장애 보고 · 재현과 복구 기록</text>
+    <text x="660" y="1168" font-size="11" font-weight="700" letter-spacing="1.2" fill="#4166d5">03 / TECHNICAL SUPPORT</text>
+    <text x="660" y="1218" font-size="30" font-weight="700" letter-spacing="-1">운영 가이드와 기술지원</text>
+    <text x="660" y="1254" font-size="15" fill="#596b82">폐쇄망 패치 절차와 배포 복구 내용을 현장에서 따라갈</text>
+    <text x="660" y="1279" font-size="15" fill="#596b82">수 있는 가이드와 기술지원 보고서로 정리합니다.</text>
+    <g transform="translate(660 1301)">
+      <rect width="91" height="29" rx="14" fill="#edf3fc"/><text x="16" y="19" font-size="11" fill="#456184">Runbook</text>
+      <rect x="101" width="154" height="29" rx="14" fill="#edf3fc"/><text x="117" y="19" font-size="11" fill="#456184">Incident Report</text>
+      <rect x="265" width="149" height="29" rx="14" fill="#edf3fc"/><text x="281" y="19" font-size="11" fill="#456184">Technical Support</text>
+    </g>
+    <text x="660" y="1370" font-size="13" font-weight="700" fill="#356fae">문서와 지원 사례 자세히 보기 <tspan font-size="19">↗</tspan></text>
+
+    <!-- Skills -->
+    <text x="130" y="1505" font-size="14" font-weight="700" letter-spacing="3" fill="#5b7594">CORE TOOLKIT</text>
+    <text x="126" y="1592" font-size="76" font-weight="750" letter-spacing="-3">Skills<tspan fill="#80b4ed">.</tspan></text>
+    <text x="130" y="1634" font-size="17" fill="#596b82">화면 개발과 그 밖의 개발, 운영에 쓰는 기술을 함께 보여줍니다.</text>
+
+    <g filter="url(#shadow)"><rect x="112" y="1684" width="590" height="344" rx="16" fill="#fff" stroke="#e2e8f0"/></g>
+    <text x="144" y="1725" font-size="11" font-weight="700" letter-spacing="1.4" fill="#4166d5">01 / FRONTEND</text>
+    <text x="144" y="1764" font-size="26" font-weight="700">사용자 경험을 구현합니다.</text>
+    <text x="144" y="1795" font-size="14" fill="#65758b">컴포넌트 설계, API 데이터 흐름, 반응형 UI</text>
+    <line x1="144" y1="1823" x2="670" y2="1823" stroke="#e4eaf2"/>
+    <g transform="translate(144 1852)">
+      <rect width="154" height="56" rx="9" fill="#f7f9fc" stroke="#e4eaf2"/><rect x="12" y="12" width="32" height="32" rx="8" fill="#e6f8fc"/><text x="28" y="33" text-anchor="middle" font-size="11" font-weight="800" fill="#149eca">R</text><text x="55" y="34" font-size="13" font-weight="650">React</text>
+      <rect x="166" width="166" height="56" rx="9" fill="#f7f9fc" stroke="#e4eaf2"/><rect x="178" y="12" width="32" height="32" rx="8" fill="#e8f0fb"/><text x="194" y="33" text-anchor="middle" font-size="10" font-weight="800" fill="#3178c6">TS</text><text x="221" y="34" font-size="13" font-weight="650">TypeScript</text>
+      <rect x="344" width="166" height="56" rx="9" fill="#f7f9fc" stroke="#e4eaf2"/><rect x="356" y="12" width="32" height="32" rx="8" fill="#e5f2f0"/><text x="372" y="33" text-anchor="middle" font-size="10" font-weight="800" fill="#3b8173">V3</text><text x="399" y="34" font-size="13" font-weight="650">Vue 3</text>
+      <rect y="68" width="154" height="56" rx="9" fill="#f7f9fc" stroke="#e4eaf2"/><rect x="12" y="80" width="32" height="32" rx="8" fill="#eef0f3"/><text x="28" y="101" text-anchor="middle" font-size="11" font-weight="800" fill="#111827">N</text><text x="55" y="102" font-size="13" font-weight="650">Next.js</text>
+      <rect x="166" y="68" width="166" height="56" rx="9" fill="#f7f9fc" stroke="#e4eaf2"/><rect x="178" y="80" width="32" height="32" rx="8" fill="#fff6cf"/><text x="194" y="101" text-anchor="middle" font-size="9" font-weight="800" fill="#665300">JS</text><text x="221" y="102" font-size="13" font-weight="650">JavaScript</text>
+      <rect x="344" y="68" width="166" height="56" rx="9" fill="#f7f9fc" stroke="#e4eaf2"/><rect x="356" y="80" width="32" height="32" rx="8" fill="#ffedf0"/><text x="372" y="101" text-anchor="middle" font-size="9" font-weight="800" fill="#d82f47">TQ</text><text x="399" y="102" font-size="13" font-weight="650">TanStack Query</text>
+    </g>
+    <text x="144" y="2004" font-size="11" fill="#7a899d">프로젝트 화면과 상세 사례에서 실제 적용을 연결</text>
+
+    <g filter="url(#shadow)"><rect x="738" y="1684" width="590" height="344" rx="16" fill="#f7f9fc" stroke="#d8e2ed"/></g>
+    <text x="770" y="1725" font-size="11" font-weight="700" letter-spacing="1.2" fill="#4166d5">02 / BEYOND FRONTEND</text>
+    <text x="770" y="1764" font-size="25" font-weight="700">코드와 운영을 함께 다룹니다.</text>
+    <text x="770" y="1795" font-size="14" fill="#65758b">Python, 인프라 운영, 장애 대응, 기술지원</text>
+    <line x1="770" y1="1823" x2="1296" y2="1823" stroke="#e1e7f0"/>
+    <g transform="translate(770 1852)">
+      <rect width="154" height="56" rx="9" fill="#fff" stroke="#e4eaf2"/><rect x="12" y="12" width="32" height="32" rx="8" fill="#e8f0fb"/><text x="28" y="33" text-anchor="middle" font-size="9" font-weight="800" fill="#326ce5">K8s</text><text x="55" y="34" font-size="13" font-weight="650">Kubernetes</text>
+      <rect x="166" width="166" height="56" rx="9" fill="#fff" stroke="#e4eaf2"/><rect x="178" y="12" width="32" height="32" rx="8" fill="#f2edff"/><text x="194" y="33" text-anchor="middle" font-size="8" font-weight="800" fill="#7952b3">CD</text><text x="221" y="34" font-size="13" font-weight="650">Argo CD</text>
+      <rect x="344" width="166" height="56" rx="9" fill="#fff" stroke="#e4eaf2"/><rect x="356" y="12" width="32" height="32" rx="8" fill="#eaf3ff"/><text x="372" y="33" text-anchor="middle" font-size="9" font-weight="800" fill="#4166d5">H</text><text x="399" y="34" font-size="13" font-weight="650">Harbor</text>
+      <rect y="68" width="154" height="56" rx="9" fill="#fff" stroke="#e4eaf2"/><rect x="12" y="80" width="32" height="32" rx="8" fill="#f4f0e9"/><text x="28" y="101" text-anchor="middle" font-size="9" font-weight="800" fill="#805b35">LIN</text><text x="55" y="102" font-size="13" font-weight="650">Linux</text>
+      <rect x="166" y="68" width="166" height="56" rx="9" fill="#fff" stroke="#e4eaf2"/><rect x="178" y="80" width="32" height="32" rx="8" fill="#eaf1ff"/><text x="194" y="101" text-anchor="middle" font-size="9" font-weight="800" fill="#4166d5">PY</text><text x="221" y="102" font-size="13" font-weight="650">Python</text>
+      <rect x="344" y="68" width="166" height="56" rx="9" fill="#fff" stroke="#e4eaf2"/><rect x="356" y="80" width="32" height="32" rx="8" fill="#e9f6ef"/><path d="m364 96 5 5 11-12" fill="none" stroke="#278354" stroke-width="2"/><text x="399" y="102" font-size="13" font-weight="650">Runbooks</text>
+    </g>
+    <text x="770" y="2004" font-size="11" fill="#7a899d">세부 범위는 실제 업무와 결과를 기준으로 사례에 연결</text>
+
+    <!-- Certificates -->
+    <text x="130" y="2145" font-size="14" font-weight="700" letter-spacing="3" fill="#5b7594">PROFESSIONAL CREDENTIALS</text>
+    <text x="126" y="2232" font-size="76" font-weight="750" letter-spacing="-3">Certificates<tspan fill="#80b4ed">.</tspan></text>
+    <text x="130" y="2274" font-size="17" fill="#596b82">취득한 자격을 운영과 개발 역량의 근거로 함께 둡니다.</text>
+    <line x1="130" y1="2320" x2="1310" y2="2320" stroke="#d8e2ed"/>
+    <g font-size="16">
+      <text x="150" y="2362" font-weight="700">ADsP</text><text x="1288" y="2362" text-anchor="end" fill="#596b82">2026.11</text><line x1="130" y1="2385" x2="1310" y2="2385" stroke="#e3eaf2"/>
+      <text x="150" y="2427" font-weight="700">CKA <tspan font-size="13" font-weight="400" fill="#596b82">Certified Kubernetes Administrator</tspan></text><text x="1288" y="2427" text-anchor="end" fill="#596b82">2026.01</text><line x1="130" y1="2450" x2="1310" y2="2450" stroke="#e3eaf2"/>
+      <text x="150" y="2492" font-weight="700">SQLD</text><text x="1288" y="2492" text-anchor="end" fill="#596b82">2025.04</text><line x1="130" y1="2515" x2="1310" y2="2515" stroke="#e3eaf2"/>
+      <text x="150" y="2557" font-weight="700">리눅스마스터 2급</text><text x="1288" y="2557" text-anchor="end" fill="#596b82">2023.06</text><line x1="130" y1="2580" x2="1310" y2="2580" stroke="#e3eaf2"/>
+      <text x="150" y="2622" font-weight="700">정보처리기사</text><text x="1288" y="2622" text-anchor="end" fill="#596b82">2021.08</text><line x1="130" y1="2645" x2="1310" y2="2645" stroke="#d8e2ed"/>
+    </g>
+    <text x="130" y="2760" font-size="12" font-weight="700" letter-spacing="2" fill="#5b7594">GET IN TOUCH</text>
+    <text x="126" y="2830" font-size="58" font-weight="750" letter-spacing="-2">Let’s talk<tspan fill="#80b4ed">.</tspan></text>
+    <text x="1310" y="2818" text-anchor="end" font-size="18" fill="#356fae">goodsosbva@naver.com ↗</text>
+  </g>
+</svg>

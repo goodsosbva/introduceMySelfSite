@@ -1,0 +1,35 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - paragraph [ref=e5]: COMMON TESTER 2.0.1
+    - heading "테스트 실행 작업 공간" [level=1] [ref=e6]
+    - paragraph [ref=e7]: 제품 문서의 근거를 모아 로컬 앱의 동작을 확인합니다.
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - heading "제품 문서" [level=2] [ref=e10]
+      - generic [ref=e11]: DOCX, Markdown, TXT
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - text: 제품과 버전
+        - combobox "제품과 버전" [ref=e14]:
+          - option "techup / v1" [selected]
+      - button "문서 임베딩" [ref=e15] [cursor=pointer]
+    - generic [ref=e16]:
+      - paragraph [ref=e17]:
+        - strong [ref=e18]: 폴더
+        - text: documents/techup/v1
+      - paragraph [ref=e19]:
+        - strong [ref=e20]: 상태
+        - text: 88개 조각 준비됨
+      - paragraph [ref=e21]:
+        - strong [ref=e22]: 검색 원문
+        - text: requirements.md
+      - paragraph [ref=e23]:
+        - strong [ref=e24]: 원본 PDF
+        - text: 테크업_요구사항 정의서 - 시트1.pdf
+  - generic [ref=e25]:
+    - generic [ref=e26]:
+      - heading "최근 실행" [level=2] [ref=e27]
+      - paragraph [ref=e28]: 아직 실행 기록이 없습니다.
+    - generic [ref=e29]:
+      - heading "실행 상세" [level=2] [ref=e30]
+      - paragraph [ref=e31]: 문서의 임베딩이 준비되면 테스트 생성과 실행 결과가 이곳에 표시됩니다.

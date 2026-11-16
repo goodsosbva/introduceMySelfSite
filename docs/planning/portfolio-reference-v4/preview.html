@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>권현성 포트폴리오 디자인 방향</title>
+  <style>
+    :root { --ink:#142844; --blue:#365fd6; --paper:#f6f5f1; --line:#cdd3da; --muted:#68768a; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1320px,calc(100% - 128px)); margin:auto; }
+    header { border-bottom:1px solid var(--line); }
+    header .wrap { height:84px; display:flex; align-items:center; justify-content:space-between; }
+    .brand { font-size:19px; font-weight:900; letter-spacing:-.08em; }
+    .brand b { color:var(--blue); }
+    .nav { display:flex; gap:43px; align-items:center; text-transform:uppercase; font-size:11px; font-weight:800; letter-spacing:.17em; }
+    .nav span:last-child { border-bottom:2px solid var(--blue); padding:0 0 7px; }
+    .hero { position:relative; overflow:hidden; min-height:940px; }
+    .hero .wrap { position:relative; height:940px; padding-top:145px; }
+    .eyebrow { font:700 12px/1.4 Georgia,serif; letter-spacing:.18em; text-transform:uppercase; color:var(--blue); }
+    .hero h1 { position:relative; z-index:2; margin:42px 0 24px; max-width:920px; font-size:clamp(56px,6.1vw,95px); line-height:1.15; letter-spacing:-.1em; font-weight:900; }
+    .hero h1 em { font-style:normal; color:var(--blue); }
+    .hero .lead { position:relative; z-index:2; width:620px; margin:30px 0 36px; font-size:19px; line-height:1.85; letter-spacing:-.045em; }
+    .cta { display:inline-flex; align-items:center; gap:28px; border-bottom:2px solid var(--ink); padding-bottom:8px; font-size:16px; font-weight:800; }
+    .cta .arr { font-size:27px; font-weight:400; line-height:0; }
+    .portrait { position:absolute; right:-5px; top:198px; width:350px; transform:rotate(6deg); padding:13px 13px 57px; background:#fff; box-shadow:16px 24px 40px #1b365724; z-index:1; }
+    .portrait img { display:block; width:100%; height:365px; object-fit:cover; object-position:54% 48%; filter:saturate(.85); }
+    .portrait .note { padding:17px 5px 0; font:italic 17px Georgia,serif; color:#52657f; }
+    .hero .orbit { position:absolute; width:455px; height:455px; border:1px solid #90a7c4; border-radius:50%; right:-90px; top:155px; }
+    .hero .stamp { position:absolute; right:2px; bottom:85px; color:var(--blue); border:1px solid var(--blue); padding:10px 15px; font:700 10px Georgia,serif; letter-spacing:.13em; transform:rotate(-8deg); }
+    .hero-foot { position:absolute; bottom:45px; left:0; right:0; display:flex; align-items:center; justify-content:space-between; border-top:1px solid var(--line); padding-top:18px; color:var(--muted); font:700 10px Georgia,serif; letter-spacing:.17em; text-transform:uppercase; }
+    .section-top { display:flex; justify-content:space-between; align-items:end; border-top:1px solid var(--line); padding-top:27px; }
+    .section-top h2 { margin:12px 0 0; font-size:56px; letter-spacing:-.07em; }
+    .section-top p { max-width:470px; margin:0 0 9px; color:#485b73; line-height:1.7; font-size:16px; }
+    .work { padding:150px 0 155px; }
+    .feature { display:grid; grid-template-columns:1.02fr .98fr; gap:90px; align-items:center; margin-top:110px; padding-bottom:125px; border-bottom:1px solid var(--line); }
+    .feature-image { background:#dce8f2; padding:32px; border:1px solid #c1ccda; transform:rotate(-1deg); box-shadow:14px 16px 0 #dce4ec; }
+    .feature-image img { display:block; width:100%; height:440px; object-fit:cover; object-position:top; background:#fff; }
+    .project-no { color:var(--blue); font:italic 25px Georgia,serif; }
+    .feature h3 { margin:16px 0 12px; font-size:48px; letter-spacing:-.07em; }
+    .feature .subtitle { font-size:19px; font-weight:700; letter-spacing:-.05em; }
+    .feature .desc { max-width:495px; color:#475b72; line-height:1.85; font-size:16px; }
+    .metadata { margin:30px 0 26px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:18px 0; display:grid; grid-template-columns:80px 1fr; gap:16px; font-size:13px; }
+    .metadata b { text-transform:uppercase; font:700 11px Georgia,serif; letter-spacing:.12em; }
+    .project-grid { display:grid; grid-template-columns:1fr; gap:110px; margin-top:125px; }
+    .small-project { border-top:2px solid var(--ink); padding-top:28px; max-width:920px; }
+    .small-project:nth-child(2) { margin-left:auto; }
+    .small-project .head { display:flex; justify-content:space-between; align-items:baseline; }
+    .small-project h3 { margin:10px 0 12px; font-size:31px; letter-spacing:-.07em; }
+    .small-project p { margin:0 0 26px; color:#56677b; font-size:14px; line-height:1.6; }
+    .small-project img { width:100%; height:430px; object-fit:cover; object-position:top; border:1px solid #bfc9d4; display:block; }
+    .small-project .tech { display:flex; justify-content:space-between; padding:15px 0; border-bottom:1px solid var(--line); color:#3d536d; font-size:13px; }
+    .dark { background:var(--ink); color:#f4f6fa; padding:125px 0 135px; }
+    .dark .section-top { border-color:#526480; }
+    .dark .section-top p { color:#c6d0dd; }
+    .dark .eyebrow { color:#a9c1ff; }
+    .skill-line { display:grid; grid-template-columns:250px 1fr; border-bottom:1px solid #526480; padding:24px 0; gap:20px; }
+    .skill-line:first-of-type { margin-top:44px; border-top:1px solid #526480; }
+    .skill-line strong { font:italic 27px Georgia,serif; font-weight:400; }
+    .skill-line span { font-size:17px; line-height:1.6; color:#d3ddec; }
+    .cert { padding:130px 0 145px; }
+    .cert .section-top h2 { font-size:49px; }
+    .cert-grid { display:grid; grid-template-columns:1fr 1fr; gap:0 64px; margin-top:39px; }
+    .cert-row { display:flex; justify-content:space-between; border-bottom:1px solid var(--line); padding:19px 0; font-size:16px; font-weight:700; }
+    .cert-row time { color:var(--muted); font:italic 15px Georgia,serif; }
+    footer { background:#e9edf1; padding:40px 0; }
+    footer .wrap { display:flex; justify-content:space-between; align-items:center; font-size:14px; }
+    footer strong { font-size:34px; letter-spacing:-.07em; }
+    @media (max-width:850px) { .wrap{width:min(100% - 36px,600px)} .nav{gap:12px;font-size:9px} .hero,.hero .wrap{height:auto;min-height:800px} .hero h1{font-size:55px} .hero .lead{width:auto;font-size:16px} .portrait{width:190px;top:475px;right:20px}.portrait img{height:200px}.hero .orbit{width:280px;height:280px;top:475px;right:-60px}.hero-foot{bottom:25px}.feature,.project-grid,.cert-grid{grid-template-columns:1fr}.feature{gap:28px}.feature-image img{height:230px}.section-top{display:block}.section-top h2{font-size:44px}.section-top p{margin-top:20px}.skill-line{grid-template-columns:1fr}.small-project{margin-bottom:20px} }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><div class="brand">KHS<b>.</b> / PORTFOLIO</div><nav class="nav"><span>Work</span><span>Expertise</span><span>About</span><span>Contact ↗</span></nav></div></header>
+  <main>
+    <section class="hero"><div class="wrap"><div class="orbit"></div><div class="eyebrow">Frontend developer / Seoul, KR</div><h1>복잡한 화면을<br><em>명확한 경험</em>으로.</h1><p class="lead">권현성은 여러 사람이 함께 쓰는 화면을 정리합니다.<br>공통 UI부터 운영 화면과 테스트 도구까지,<br>만드는 과정과 근거를 보여드립니다.</p><a class="cta" href="#work">프로젝트 살펴보기 <span class="arr">↗</span></a><div class="portrait"><img src="../../../이전 버전/2026-11-04_115812/html/assets/profile-photo.jpg" alt="권현성 프로필 사진"><div class="note">Kwon Hyunseong, 2026</div></div><div class="stamp">BUILT WITH PURPOSE<br>NO. 01 / 2026</div><div class="hero-foot"><span>Selected work / 2021—2026</span><span>Scroll to explore ↓</span></div></div></section>
+    <section class="work" id="work"><div class="wrap"><div class="section-top"><div><div class="eyebrow">01 / Selected work</div><h2>만든 것과 해결한 것.</h2></div><p>프로젝트마다 실제 화면을 먼저 보여주고, 맡은 역할과 문제 해결의 근거를 짧게 정리합니다.</p></div><article class="feature"><a class="feature-image" href="../../../이전 버전/2026-11-04_115812/html/case-common-table.html"><img src="../../../2026-11-03/screenshots/common-table-desktop.jpg" alt="공통 UI 사례 페이지 화면"></a><div><div class="project-no">01 / Featured project</div><h3>공통 UI</h3><div class="subtitle">함께 쓰는 화면의 기준을 만들다</div><p class="desc">여러 업무 화면에서 반복되던 테이블과 버튼을 공통 UI로 정리했습니다. 사용 방법과 사례를 한눈에 확인할 수 있도록 문서와 스토리를 구성했습니다.</p><div class="metadata"><b>Role</b><span>테이블과 버튼 개발 및 개선 참여</span><b>Stack</b><span>Vue 3, TypeScript, Ant Design Vue, Storybook</span></div><a class="cta" href="../../../이전 버전/2026-11-04_115812/html/case-common-table.html">사례 자세히 보기 <span class="arr">↗</span></a></div></article><div class="project-grid"><a class="small-project" href="../../../이전 버전/2026-11-04_115812/html/case-citywatch.html"><div class="head"><span class="project-no">02</span><span class="eyebrow">Personal project</span></div><h3>CityWatch FE Lab</h3><p>도시 안전 관제 화면에서 기술과 코드 연결을 탐색한 실험</p><img src="../../../2026-11-03/assets/citywatch-practice.png" alt="CityWatch 실제 화면"><div class="tech"><span>React, Next.js, OpenLayers</span><span>사례 보기 ↗</span></div></a><a class="small-project" href="../../../이전 버전/2026-11-04_115812/html/case-common-tester.html"><div class="head"><span class="project-no">03</span><span class="eyebrow">Team project</span></div><h3>Common Tester</h3><p>요구사항의 테스트 생성부터 실행 결과까지 이어지는 도구</p><img src="../../../2026-11-03/assets/common-tester-results.png" alt="Common Tester 실제 화면"><div class="tech"><span>React, Python, LangGraph, Playwright</span><span>사례 보기 ↗</span></div></a></div></div></section>
+    <section class="dark"><div class="wrap"><div class="section-top"><div><div class="eyebrow">02 / Expertise</div><h2>기술은 작업의 문맥과 함께.</h2></div><p>기술 이름을 나열하기보다, 어디에 적용했고 무엇을 개선했는지 보여드립니다.</p></div><div class="skill-line"><strong>Interfaces</strong><span>React, Vue 3, TypeScript, Ant Design Vue</span></div><div class="skill-line"><strong>Quality</strong><span>Storybook, Playwright, 테스트 시나리오와 재현</span></div><div class="skill-line"><strong>Tools & data</strong><span>Next.js, OpenLayers, Python, LangGraph</span></div></div></section>
+    <section class="cert"><div class="wrap"><div class="section-top"><div><div class="eyebrow">03 / Credentials</div><h2>배움의 기록.</h2></div><p>관련 자격은 간결하게 정리해 경력과 프로젝트를 읽는 흐름을 이어갑니다.</p></div><div class="cert-grid"><div class="cert-row"><span>ADsP</span><time>2026.11</time></div><div class="cert-row"><span>CKA</span><time>2026.01</time></div><div class="cert-row"><span>SQLD</span><time>2025.04</time></div><div class="cert-row"><span>리눅스마스터 2급</span><time>2023.07</time></div><div class="cert-row"><span>정보처리기사</span><time>2021.08</time></div></div></div></section>
+  </main><footer><div class="wrap"><strong>함께 만들 이야기가 있나요?</strong><span>Contact ↗ &nbsp; GitHub ↗</span></div></footer>
+</body>
+</html>

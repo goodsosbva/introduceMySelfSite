@@ -1,0 +1,446 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e9]:
+      - heading "Navigation Menu" [level=2] [ref=e10]
+      - generic [ref=e11]:
+        - link "Homepage" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e16]:
+          - navigation "Global" [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - button "Platform" [ref=e21] [cursor=pointer]
+              - listitem [ref=e24]:
+                - button "Solutions" [ref=e26] [cursor=pointer]
+              - listitem [ref=e29]:
+                - button "Resources" [ref=e31] [cursor=pointer]
+              - listitem [ref=e34]:
+                - button "Open Source" [ref=e36] [cursor=pointer]
+              - listitem [ref=e39]:
+                - button "Enterprise" [ref=e41] [cursor=pointer]
+              - listitem [ref=e44]:
+                - link "Pricing" [ref=e45] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=e46]:
+            - button "Search or jump to, type / to search" [ref=e48] [cursor=pointer]
+            - generic [ref=e54]:
+              - link "Sign in" [ref=e56] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fteobasaki%2Fseongjiduk%2Fblob%2Fdev%2F%25EA%25B8%25B0%25ED%259A%258D%2F03_%25EA%25B8%25B0%25EB%258A%25A5_%25EB%25AA%2585%25EC%2584%25B8.md
+              - link "Sign up" [ref=e59] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fblob%2Fshow&source=header-repo&source_repo=teobasaki%2Fseongjiduk
+              - button "Appearance settings" [ref=e62] [cursor=pointer]
+  - main [ref=e69]:
+    - generic "Global navigation menu" [ref=e72]:
+      - navigation "Breadcrumbs" [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "teobasaki" [ref=e78] [cursor=pointer]:
+              - /url: /teobasaki
+          - listitem [ref=e80]:
+            - link "seongjiduk" [ref=e81] [cursor=pointer]:
+              - /url: /teobasaki/seongjiduk
+      - heading "Repository navigation" [level=2] [ref=e84]
+      - navigation "Repository" [ref=e85]:
+        - list [ref=e86]:
+          - listitem [ref=e87]:
+            - link "Code" [ref=e88] [cursor=pointer]:
+              - /url: /teobasaki/seongjiduk
+          - listitem [ref=e93]:
+            - link "Issues (1)" [ref=e94] [cursor=pointer]:
+              - /url: /teobasaki/seongjiduk/issues
+              - generic [ref=e99]: Issues
+              - generic [ref=e100]:
+                - generic [aria-hidden] [ref=e101]: "1"
+                - generic [ref=e102]: (1)
+          - listitem [ref=e103]:
+            - link "Pull requests (1)" [ref=e104] [cursor=pointer]:
+              - /url: /teobasaki/seongjiduk/pulls
+              - generic [ref=e108]: Pull requests
+              - generic [ref=e109]:
+                - generic [aria-hidden] [ref=e110]: "1"
+                - generic [ref=e111]: (1)
+          - listitem [ref=e112]:
+            - link "Actions" [ref=e113] [cursor=pointer]:
+              - /url: /teobasaki/seongjiduk/actions
+          - listitem [ref=e118]:
+            - link "Security and quality" [ref=e119] [cursor=pointer]:
+              - /url: /teobasaki/seongjiduk/security
+          - listitem [ref=e124]:
+            - link "Insights" [ref=e125] [cursor=pointer]:
+              - /url: /teobasaki/seongjiduk/pulse
+    - generic [ref=e140]:
+      - generic [ref=e144]:
+        - generic [ref=e145]:
+          - heading "Expand file tree" [level=2] [ref=e147]:
+            - button "Expand file tree" [ref=e148] [cursor=pointer]
+          - button "dev branch" [ref=e153] [cursor=pointer]:
+            - generic [ref=e154]: dev
+          - generic [ref=e159]:
+            - navigation [ref=e160]:
+              - heading "Breadcrumbs" [level=2] [ref=e161]
+              - list [ref=e162]:
+                - listitem [ref=e163]:
+                  - link "seongjiduk" [ref=e164] [cursor=pointer]:
+                    - /url: /teobasaki/seongjiduk/tree/dev
+                - listitem [ref=e165]:
+                  - text: /
+                  - link "기획" [ref=e166] [cursor=pointer]:
+                    - /url: /teobasaki/seongjiduk/tree/dev/%EA%B8%B0%ED%9A%8D
+            - generic [ref=e167]:
+              - text: /
+              - heading "03_기능_명세.md" [level=1] [ref=e168]
+            - button "Copy path" [ref=e169] [cursor=pointer]
+        - generic [ref=e175]:
+          - combobox "Go to file" [ref=e182]
+          - button "More file actions" [ref=e183] [cursor=pointer]
+      - generic [ref=e186]:
+        - generic [ref=e188]:
+          - heading "Latest commit" [level=2] [ref=e189]
+          - generic [ref=e192]:
+            - heading "History" [level=2] [ref=e193]
+            - link "History" [ref=e194] [cursor=pointer]:
+              - /url: /teobasaki/seongjiduk/commits/dev/%EA%B8%B0%ED%9A%8D/03_%EA%B8%B0%EB%8A%A5_%EB%AA%85%EC%84%B8.md
+        - generic [ref=e198]:
+          - generic [ref=e200]:
+            - heading "File metadata and controls" [level=2] [ref=e201]
+            - generic [ref=e202]:
+              - list "File view" [ref=e203]:
+                - listitem [ref=e204]:
+                  - button "Preview" [pressed] [ref=e205] [cursor=pointer]
+                - listitem [ref=e208]:
+                  - button "Code" [ref=e209] [cursor=pointer]
+                - listitem [ref=e212]:
+                  - button "Blame" [ref=e213] [cursor=pointer]
+              - generic "4.43 KB" [ref=e218]: 139 lines (114 loc) · 4.43 KB
+            - generic [ref=e219]:
+              - generic [ref=e221]:
+                - link "Raw" [ref=e223] [cursor=pointer]:
+                  - /url: https://github.com/teobasaki/seongjiduk/raw/refs/heads/dev/%EA%B8%B0%ED%9A%8D/03_%EA%B8%B0%EB%8A%A5_%EB%AA%85%EC%84%B8.md
+                - button "Copy raw file" [ref=e227] [cursor=pointer]
+                - button "Download raw file" [ref=e232] [cursor=pointer]
+              - button "Outline" [ref=e236] [cursor=pointer]
+          - region [ref=e240]:
+            - article [ref=e242]:
+              - generic [ref=e243]:
+                - heading "03. 기능 명세" [level=1] [ref=e244]
+                - 'link "Permalink: 03. 기능 명세" [ref=e245] [cursor=pointer]':
+                  - /url: "#03-기능-명세"
+              - blockquote [ref=e248]:
+                - paragraph [ref=e249]: 요구사항 5대 필수 영역 기준. 각 기능에 ID를 부여하고 API/ERD와 교차참조한다.
+              - generic [ref=e250]:
+                - heading "F-1. 회원 기능" [level=2] [ref=e251]
+                - 'link "Permalink: F-1. 회원 기능" [ref=e252] [cursor=pointer]':
+                  - /url: "#f-1-회원-기능"
+              - generic [ref=e255]:
+                - heading "F-1-1. 회원가입" [level=3] [ref=e256]
+                - 'link "Permalink: F-1-1. 회원가입" [ref=e257] [cursor=pointer]':
+                  - /url: "#f-1-1-회원가입"
+              - list [ref=e260]:
+                - listitem [ref=e261]: 자체 회원가입/로그인 방식 사용
+                - listitem [ref=e262]: OAuth 2.0은 MVP 범위에서 제외
+                - listitem [ref=e263]: "필수 입력: 이메일, 비밀번호, 닉네임"
+                - listitem [ref=e264]: "선택 입력: 선호 작품, 선호 장르, 선호 여행 스타일"
+              - generic [ref=e265]:
+                - heading "F-1-2. 로그인/로그아웃" [level=3] [ref=e266]
+                - 'link "Permalink: F-1-2. 로그인/로그아웃" [ref=e267] [cursor=pointer]':
+                  - /url: "#f-1-2-로그인로그아웃"
+              - list [ref=e270]:
+                - listitem [ref=e271]: Spring Security 기반 인증/인가 적용
+                - listitem [ref=e272]: 인증 방식은 JWT 우선 검토
+                - listitem [ref=e273]: 비회원도 일정 생성은 가능하지만, 저장/공유/개인화 기능은 회원만 사용 가능
+              - generic [ref=e274]:
+                - heading "F-1-3. 권한" [level=3] [ref=e275]
+                - 'link "Permalink: F-1-3. 권한" [ref=e276] [cursor=pointer]':
+                  - /url: "#f-1-3-권한"
+              - list [ref=e279]:
+                - listitem [ref=e280]: "USER: 일정 생성, 저장, 공유, 방문 기록"
+                - listitem [ref=e281]: "ADMIN: 관리자 통계, 성지 데이터 관리"
+              - generic [ref=e282]:
+                - heading "F-2. 데이터 영속화" [level=2] [ref=e283]
+                - 'link "Permalink: F-2. 데이터 영속화" [ref=e284] [cursor=pointer]':
+                  - /url: "#f-2-데이터-영속화"
+              - generic [ref=e287]:
+                - heading "영속화 대상" [level=3] [ref=e288]
+                - 'link "Permalink: 영속화 대상" [ref=e289] [cursor=pointer]':
+                  - /url: "#영속화-대상"
+              - list [ref=e292]:
+                - listitem [ref=e293]: 회원
+                - listitem [ref=e294]: 작품/콘텐츠
+                - listitem [ref=e295]: 성지 스팟
+                - listitem [ref=e296]: 주변 일반 관광 스팟
+                - listitem [ref=e297]: 여행 조건
+                - listitem [ref=e298]: 여행 일정
+                - listitem [ref=e299]: 일정 상세 장소
+                - listitem [ref=e300]: 방문 인증/메모
+                - listitem [ref=e301]: 성지 제보
+                - listitem [ref=e302]: AI 호출 로그
+                - listitem [ref=e303]: 접속/이용 통계 이벤트
+              - generic [ref=e304]:
+                - heading "DB" [level=3] [ref=e305]
+                - 'link "Permalink: DB" [ref=e306] [cursor=pointer]':
+                  - /url: "#db"
+              - list [ref=e309]:
+                - listitem [ref=e310]: MySQL
+                - listitem [ref=e311]: 지도/거리 계산은 MVP에서 mock 좌표 기반
+                - listitem [ref=e312]: 실제 지도 API 및 외부 예약 API는 2차 범위
+              - generic [ref=e313]:
+                - heading "F-3. 사용자 UI" [level=2] [ref=e314]
+                - 'link "Permalink: F-3. 사용자 UI" [ref=e315] [cursor=pointer]':
+                  - /url: "#f-3-사용자-ui"
+              - generic [ref=e318]:
+                - heading "화면 목록" [level=3] [ref=e319]
+                - 'link "Permalink: 화면 목록" [ref=e320] [cursor=pointer]':
+                  - /url: "#화면-목록"
+              - table [ref=e324]:
+                - rowgroup [ref=e325]:
+                  - row [ref=e326]:
+                    - columnheader "화면" [ref=e327]
+                    - columnheader "설명" [ref=e328]
+                - rowgroup [ref=e329]:
+                  - row [ref=e330]:
+                    - cell "지도 기반 메인" [ref=e331]
+                    - cell "첫 화면. 지도와 작품 선택 필터 표시" [ref=e332]
+                  - row [ref=e333]:
+                    - cell "작품 선택" [ref=e334]
+                    - cell "MVP에서는 러브라이브! 뮤즈 중심" [ref=e335]
+                  - row [ref=e336]:
+                    - cell "조건 선택" [ref=e337]
+                    - cell "여행 기간, 예산, 출발지 선택" [ref=e338]
+                  - row [ref=e339]:
+                    - cell "루트 결과" [ref=e340]
+                    - cell "Day별 일정, 지도 경로, 예상 체류 시간" [ref=e341]
+                  - row [ref=e342]:
+                    - cell "루트 수정" [ref=e343]
+                    - cell "추가/제외 스팟 선택 후 AI 재생성" [ref=e344]
+                  - row [ref=e345]:
+                    - cell "일정 상세" [ref=e346]
+                    - cell "장소별 설명, 주소, 레퍼런스 링크, 추천 이유" [ref=e347]
+                  - row [ref=e348]:
+                    - cell "회원가입/로그인" [ref=e349]
+                    - cell "자체 계정 기반 인증" [ref=e350]
+                  - row [ref=e351]:
+                    - cell "마이페이지" [ref=e352]
+                    - cell "저장한 일정, 방문 기록, 선호 정보" [ref=e353]
+                  - row [ref=e354]:
+                    - cell "공유 화면" [ref=e355]
+                    - cell "일정 공유 링크 또는 공유용 텍스트" [ref=e356]
+                  - row [ref=e357]:
+                    - cell "관리자 대시보드" [ref=e358]
+                    - cell "접속자/서비스 이용 통계" [ref=e359]
+                  - row [ref=e360]:
+                    - cell "관리자 성지 관리" [ref=e361]
+                    - cell "성지 시드 데이터 등록/수정/삭제" [ref=e362]
+              - generic [ref=e363]:
+                - heading "UX 원칙" [level=3] [ref=e364]
+                - 'link "Permalink: UX 원칙" [ref=e365] [cursor=pointer]':
+                  - /url: "#ux-원칙"
+              - list [ref=e368]:
+                - listitem [ref=e369]: "사용자는 최소 입력으로 시작한다: 작품 -> 일정 -> 예산 -> 출발지"
+                - listitem [ref=e370]: 단계형 설문보다 지도와 필터를 함께 보여준다.
+                - listitem [ref=e371]: 사용자가 앞뒤 단계를 오가며 피로를 느끼지 않도록 같은 화면에서 조건 변경과 결과 비교가 가능해야 한다.
+              - generic [ref=e372]:
+                - heading "F-4. AI 에이전트 기능 (LangGraph)" [level=2] [ref=e373]
+                - 'link "Permalink: F-4. AI 에이전트 기능 (LangGraph)" [ref=e374] [cursor=pointer]':
+                  - /url: "#f-4-ai-에이전트-기능-langgraph"
+              - generic [ref=e377]:
+                - heading "기능 유형" [level=3] [ref=e378]
+                - 'link "Permalink: 기능 유형" [ref=e379] [cursor=pointer]':
+                  - /url: "#기능-유형"
+              - list [ref=e382]:
+                - listitem [ref=e383]:
+                  - checkbox "Completed task" [checked] [disabled] [ref=e384]
+                  - text: 여행 일정 생성
+                - listitem [ref=e385]:
+                  - checkbox "Completed task" [checked] [disabled] [ref=e386]
+                  - text: 일정 재조정
+                - listitem [ref=e387]:
+                  - checkbox "Completed task" [checked] [disabled] [ref=e388]
+                  - text: 추천 이유 생성
+                - listitem [ref=e389]:
+                  - checkbox "Completed task" [checked] [disabled] [ref=e390]
+                  - text: 공유용 요약 문구 생성
+                - listitem [ref=e391]:
+                  - checkbox "Incomplete task" [disabled] [ref=e392]
+                  - text: 실시간 예약 연동
+              - generic [ref=e393]:
+                - heading "입력" [level=3] [ref=e394]
+                - 'link "Permalink: 입력" [ref=e395] [cursor=pointer]':
+                  - /url: "#입력"
+              - list [ref=e398]:
+                - listitem [ref=e399]: 작품 ID
+                - listitem [ref=e400]: 여행 기간
+                - listitem [ref=e401]: 예산 태그
+                - listitem [ref=e402]: 출발지
+                - listitem [ref=e403]: 선택 스팟
+                - listitem [ref=e404]: 제외 스팟
+                - listitem [ref=e405]: 여행 스타일
+              - generic [ref=e406]:
+                - heading "출력" [level=3] [ref=e407]
+                - 'link "Permalink: 출력" [ref=e408] [cursor=pointer]':
+                  - /url: "#출력"
+              - list [ref=e411]:
+                - listitem [ref=e412]: Day별 여행 일정
+                - listitem [ref=e413]: 방문 순서
+                - listitem [ref=e414]: 장소별 추천 체류 시간
+                - listitem [ref=e415]: 추천 이유
+                - listitem [ref=e416]: 예산 태그 기준 안내
+                - listitem [ref=e417]: 공유용 요약 문구
+              - generic [ref=e418]:
+                - heading "백엔드 ↔ ai-service 연동" [level=3] [ref=e419]
+                - 'link "Permalink: 백엔드 ↔ ai-service 연동" [ref=e420] [cursor=pointer]':
+                  - /url: "#백엔드--ai-service-연동"
+              - list [ref=e423]:
+                - listitem [ref=e424]: 백엔드가 사용자 조건과 후보 스팟 목록을 ai-service로 전달
+                - listitem [ref=e425]: ai-service는 LangGraph로 루트 생성/재조정
+                - listitem [ref=e426]: 백엔드는 결과를 저장하고 사용자에게 반환
+              - generic [ref=e427]:
+                - heading "F-5. 관리자 기능" [level=2] [ref=e428]
+                - 'link "Permalink: F-5. 관리자 기능" [ref=e429] [cursor=pointer]':
+                  - /url: "#f-5-관리자-기능"
+              - generic [ref=e432]:
+                - heading "F-5-1. 접속자 통계" [level=3] [ref=e433]
+                - 'link "Permalink: F-5-1. 접속자 통계" [ref=e434] [cursor=pointer]':
+                  - /url: "#f-5-1-접속자-통계"
+              - list [ref=e437]:
+                - listitem [ref=e438]: 일자별 방문 수
+                - listitem [ref=e439]: 일자별 회원가입 수
+                - listitem [ref=e440]: 일자별 로그인 수
+                - listitem [ref=e441]: 비회원/회원 일정 생성 비율
+              - generic [ref=e442]:
+                - heading "F-5-2. 서비스 이용 통계" [level=3] [ref=e443]
+                - 'link "Permalink: F-5-2. 서비스 이용 통계" [ref=e444] [cursor=pointer]':
+                  - /url: "#f-5-2-서비스-이용-통계"
+              - list [ref=e447]:
+                - listitem [ref=e448]: 일정 생성 수
+                - listitem [ref=e449]: AI 호출 수
+                - listitem [ref=e450]: 인기 작품
+                - listitem [ref=e451]: 인기 도시/국가
+                - listitem [ref=e452]: 인기 성지 스팟
+                - listitem [ref=e453]: 평균 여행 기간
+                - listitem [ref=e454]: 예산 태그 분포
+                - listitem [ref=e455]: 저장/공유 수
+              - generic [ref=e456]:
+                - heading "F-5-3. 성지 데이터 관리" [level=3] [ref=e457]
+                - 'link "Permalink: F-5-3. 성지 데이터 관리" [ref=e458] [cursor=pointer]':
+                  - /url: "#f-5-3-성지-데이터-관리"
+              - list [ref=e461]:
+                - listitem [ref=e462]: 작품 등록/수정/삭제
+                - listitem [ref=e463]: 성지 스팟 등록/수정/삭제
+                - listitem [ref=e464]: 레퍼런스 링크 관리
+                - listitem [ref=e465]: 사용자 제보 확인 및 반영
+              - generic [ref=e466]:
+                - heading "F-6. 예약/외부 링크" [level=2] [ref=e467]
+                - 'link "Permalink: F-6. 예약/외부 링크" [ref=e468] [cursor=pointer]':
+                  - /url: "#f-6-예약외부-링크"
+              - generic [ref=e471]:
+                - heading "MVP" [level=3] [ref=e472]
+                - 'link "Permalink: MVP" [ref=e473] [cursor=pointer]':
+                  - /url: "#mvp"
+              - list [ref=e476]:
+                - listitem [ref=e477]: 항공권/숙소 직접 예약은 제외
+                - listitem [ref=e478]: 일정 상세에서 외부 예약 링크 또는 검색 키워드 제공
+              - generic [ref=e479]:
+                - heading "추후" [level=3] [ref=e480]
+                - 'link "Permalink: 추후" [ref=e481] [cursor=pointer]':
+                  - /url: "#추후"
+              - list [ref=e484]:
+                - listitem [ref=e485]: 항공권/숙소 API 연동
+                - listitem [ref=e486]: 구매/예약 플로우
+                - listitem [ref=e487]: 공동 구매 또는 동행 모집
+              - generic [ref=e488]:
+                - heading "기능 ID 인덱스" [level=2] [ref=e489]
+                - 'link "Permalink: 기능 ID 인덱스" [ref=e490] [cursor=pointer]':
+                  - /url: "#기능-id-인덱스"
+              - table [ref=e494]:
+                - rowgroup [ref=e495]:
+                  - row [ref=e496]:
+                    - columnheader "ID" [ref=e497]
+                    - columnheader "기능" [ref=e498]
+                    - columnheader "관련 API" [ref=e499]
+                    - columnheader "관련 엔티티" [ref=e500]
+                    - columnheader "상태" [ref=e501]
+                - rowgroup [ref=e502]:
+                  - row [ref=e503]:
+                    - cell "F-1" [ref=e504]
+                    - cell "회원가입/로그인" [ref=e505]
+                    - cell [ref=e506]:
+                      - code [ref=e507]: /api/auth/*
+                    - cell "User" [ref=e508]
+                    - cell "기획 확정" [ref=e509]
+                  - row [ref=e510]:
+                    - cell "F-2" [ref=e511]
+                    - cell "데이터 영속화" [ref=e512]
+                    - cell "-" [ref=e513]
+                    - cell "전체 엔티티" [ref=e514]
+                    - cell "기획 확정" [ref=e515]
+                  - row [ref=e516]:
+                    - cell "F-3" [ref=e517]
+                    - cell "지도 기반 사용자 UI" [ref=e518]
+                    - cell [ref=e519]:
+                      - code [ref=e520]: /api/contents
+                      - text: ","
+                      - code [ref=e521]: /api/spots
+                      - text: ","
+                      - code [ref=e522]: /api/trips
+                    - cell "Content, PilgrimageSpot, TripPlan" [ref=e523]
+                    - cell "기획 확정" [ref=e524]
+                  - row [ref=e525]:
+                    - cell "F-4" [ref=e526]
+                    - cell "AI 일정 생성/재조정" [ref=e527]
+                    - cell [ref=e528]:
+                      - code [ref=e529]: /api/trips/generate
+                      - text: ","
+                      - code [ref=e530]: "/api/trips/{id}/regenerate"
+                    - cell "TripPlan, TripDay, TripStop, AiRequestLog" [ref=e531]
+                    - cell "기획 확정" [ref=e532]
+                  - row [ref=e533]:
+                    - cell "F-5" [ref=e534]
+                    - cell "관리자 통계/성지 관리" [ref=e535]
+                    - cell [ref=e536]:
+                      - code [ref=e537]: /api/admin/*
+                    - cell "AdminStats, UsageEvent, PilgrimageSpot" [ref=e538]
+                    - cell "기획 확정" [ref=e539]
+                  - row [ref=e540]:
+                    - cell "F-6" [ref=e541]
+                    - cell "예약/외부 링크" [ref=e542]
+                    - cell [ref=e543]:
+                      - code [ref=e544]: /api/booking-links
+                    - cell "BookingLink" [ref=e545]
+                    - cell "MVP 일부" [ref=e546]
+  - contentinfo [ref=e548]:
+    - heading "Footer" [level=2] [ref=e549]
+    - generic [ref=e550]:
+      - generic [ref=e551]:
+        - link "GitHub Homepage" [ref=e552] [cursor=pointer]:
+          - /url: https://github.com
+        - generic [ref=e555]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e556]:
+        - heading "Footer navigation" [level=3] [ref=e557]
+        - list "Footer navigation" [ref=e558]:
+          - listitem [ref=e559]:
+            - link "Terms" [ref=e560] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e561]:
+            - link "Privacy" [ref=e562] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e563]:
+            - link "Security" [ref=e564] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e565]:
+            - link "Status" [ref=e566] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e567]:
+            - link "Community" [ref=e568] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e569]:
+            - link "Docs" [ref=e570] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e571]:
+            - link "Contact" [ref=e572] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e573]:
+            - button "Manage cookies" [ref=e575] [cursor=pointer]
+          - listitem [ref=e576]:
+            - button "Do not share my personal information" [ref=e578] [cursor=pointer]

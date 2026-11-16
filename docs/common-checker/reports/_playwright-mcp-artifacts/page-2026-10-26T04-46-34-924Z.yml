@@ -1,0 +1,68 @@
+- application [ref=e1]:
+  - iframe [aria-hidden] [ref=e2]
+  - iframe [aria-hidden] [ref=e3]
+  - banner "메뉴 바" [ref=e4]:
+    - generic [ref=e5]:
+      - complementary "저장용량이 가득 참" [ref=e11]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: 저장용량이 가득 참
+          - generic [ref=e20]: 파일을 수정할 수 없습니다. 지금 저장용량을 추가로 구매하거나 Drive, Google 포토, Gmail에서 파일을 삭제하세요.
+      - generic [ref=e22]:
+        - link "스프레드시트 홈" [ref=e24] [cursor=pointer]:
+          - /url: https://docs.google.com/spreadsheets/?usp=sheets_web
+        - generic [ref=e31]:
+          - generic "테크업_요구사항 정의서" [ref=e33]:
+            - 'button "문서 상태: 드라이브에 저장됨" [ref=e39]':
+              - generic [ref=e40] [cursor=pointer]
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - button "공유하기. 링크가 있는 모든 사용자에게 공개. 링크가 있는 모든 사용자가 액세스할 수 있습니다. 이 경우 로그인할 필요가 없습니다." [disabled] [ref=e48]: 공유
+              - button "빠른 공유 작업" [disabled] [ref=e50]
+            - link "로그인" [ref=e54] [cursor=pointer]:
+              - /url: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&osid=1&continue=https://docs.google.com/spreadsheets/d/1lb-SckwF90w3tpbJPMl18hdyDSESCkCRWy9koUEmFbI/edit&followup=https://docs.google.com/spreadsheets/d/1lb-SckwF90w3tpbJPMl18hdyDSESCkCRWy9koUEmFbI/edit&ltmpl=sheets&ec=GAZAmwI
+    - generic [ref=e55]:
+      - menubar [ref=e57]:
+        - menuitem "파일" [ref=e58] [cursor=pointer]
+        - menuitem "수정" [ref=e59] [cursor=pointer]
+        - menuitem "보기" [ref=e60] [cursor=pointer]
+        - menuitem "삽입" [disabled] [ref=e61]
+        - menuitem "서식" [disabled] [ref=e62]
+        - menuitem "데이터" [ref=e63] [cursor=pointer]
+        - menuitem "도구" [ref=e64] [cursor=pointer]
+        - menuitem "확장 프로그램" [disabled] [ref=e65]
+        - menuitem "도움말" [ref=e66] [cursor=pointer]
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - toolbar "메뉴 검색 (Alt+/)" [ref=e69]:
+            - combobox "메뉴" [ref=e71]
+          - toolbar "기본" [ref=e72]:
+            - button "인쇄 (Ctrl+P)" [ref=e73] [cursor=pointer]
+            - button "필터 보기" [ref=e78] [cursor=pointer]
+            - combobox "확대/축소" [ref=e87] [cursor=pointer]:
+              - option "확대/축소 목록입니다. 100%(이)가 선택되었습니다." [selected] [ref=e90]:
+                - textbox "확대/축소" [ref=e91]: 100%
+            - button "모드" [ref=e95] [cursor=pointer]:
+              - generic [ref=e96]: 보기 전용
+        - toolbar "모드 및 보기" [ref=e99]:
+          - button "메뉴 숨기기 (Ctrl+Shift+F)" [ref=e100] [cursor=pointer]
+    - generic [ref=e107]:
+      - generic "이름 상자 (Ctrl + J)" [ref=e108]:
+        - textbox [ref=e109]: A1
+        - button "이름 상자 메뉴 버튼입니다. 메뉴 항목 중 하나를 선택하여 해당하는 이름이 지정된 범위로 이동하세요." [ref=e111] [cursor=pointer]
+      - textbox [ref=e127]
+  - navigation "시트 탭 바" [ref=e159]:
+    - toolbar [ref=e160]:
+      - button "모든 시트" [ref=e161] [cursor=pointer]
+    - toolbar [ref=e168]:
+      - button "시트1" [ref=e169]
+    - toolbar [ref=e177]
+  - generic [ref=e178]:
+    - textbox [active]
+  - link "스크린 리더 지원 사용 설정" [ref=e179] [cursor=pointer]:
+    - /url: "#"
+  - textbox [ref=e180]
+  - region [ref=e181]: 스크린 리더 기능을 사용하려면 Ctrl+Alt+Z을(를) 누르세요. 키보드 단축키에 대해 알아보려면 Ctrl+슬래시을(를) 누르세요.
+  - generic [ref=e182]: 배너 숨겨짐
+  - region
+  - generic [ref=e183]: 저장용량이 가득 참파일을 수정할 수 없습니다. 지금 저장용량을 추가로 구매하거나 Drive, Google 포토, Gmail에서 파일을 삭제하세요.
+  - iframe [ref=e185]

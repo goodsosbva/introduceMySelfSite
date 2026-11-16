@@ -1,0 +1,98 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - navigation "주요 메뉴" [ref=f2e4]:
+        - link "관제 홈" [ref=f2e5] [cursor=pointer]:
+          - /url: /?xray=off
+        - link "사고 목록" [ref=f2e6] [cursor=pointer]:
+          - /url: /incidents?xray=off
+        - link "사고 등록" [ref=f2e7] [cursor=pointer]:
+          - /url: /incidents/new?xray=off
+        - link "지도 관제" [ref=f2e8] [cursor=pointer]:
+          - /url: /map?xray=off
+        - link "3D 위험 구역" [ref=f2e9] [cursor=pointer]:
+          - /url: /risk-3d?xray=off
+        - link "실시간 피드" [ref=f2e10] [cursor=pointer]:
+          - /url: /realtime?xray=off
+        - link "대량 관제" [ref=f2e11] [cursor=pointer]:
+          - /url: /performance?xray=off
+        - link "구현 상태" [ref=f2e12] [cursor=pointer]:
+          - /url: /status?xray=off
+      - generic [ref=f2e14]:
+        - generic [ref=f2e15]: X-Ray
+        - combobox "X-Ray 관점" [ref=f2e16]:
+          - option "X-Ray만 끄기" [selected]
+          - option "전체"
+          - option "FSD-style"
+          - option "Module Federation"
+          - option "Monorepo"
+          - option "OpenLayers"
+          - option "R3F / Three.js"
+          - option "WebSocket / Polling"
+          - option "REST API"
+          - option "Redux"
+          - option "Zod Validation"
+          - option "Large Data Performance"
+          - option "SSR / Hydration"
+  - alert [ref=f2e17]
+  - main [ref=f2e18]:
+    - generic [ref=f2e20]:
+      - paragraph [ref=f2e21]: Incident Detail
+      - heading "강남역 지하 보행로 침수 감지" [level=1] [ref=f2e22]
+    - region "사고 상세 관제" [ref=f2e23]:
+      - region [ref=f2e24]:
+        - generic [ref=f2e25]:
+          - paragraph [ref=f2e26]: INC-001
+          - heading "강남역 지하 보행로 침수 감지" [level=2] [ref=f2e27]
+          - paragraph [ref=f2e28]: 배수 센서 수위가 기준치를 초과했습니다.
+        - generic "사고 상태 요약" [ref=f2e29]:
+          - generic [ref=f2e30]: Critical
+          - generic [ref=f2e31]: 대응 중
+          - generic [ref=f2e32]: Redux 선택 INC-001
+          - generic [ref=f2e33]: 위험도 100
+      - region [ref=f2e34]:
+        - generic [ref=f2e35]:
+          - heading "상태 변경" [level=2] [ref=f2e36]
+          - generic [ref=f2e37]: PATCH
+        - generic [ref=f2e38]:
+          - generic [ref=f2e39]:
+            - generic [ref=f2e40]: 대응 상태
+            - combobox "대응 상태" [ref=f2e41]:
+              - option "접수"
+              - option "출동"
+              - option "대응 중" [selected]
+              - option "종결"
+              - option "오인 신고"
+          - button "상태 변경" [disabled] [ref=f2e42]
+      - region [ref=f2e43]:
+        - generic [ref=f2e44]:
+          - heading "상세 정보" [level=2] [ref=f2e45]
+          - generic [ref=f2e46]: REST API
+        - generic [ref=f2e47]:
+          - generic [ref=f2e48]:
+            - term [ref=f2e49]: 상태
+            - definition [ref=f2e50]: 대응 중
+          - generic [ref=f2e51]:
+            - term [ref=f2e52]: 위험도
+            - definition [ref=f2e53]: 심각 100
+          - generic [ref=f2e54]:
+            - term [ref=f2e55]: 분류
+            - definition [ref=f2e56]: 침수
+          - generic [ref=f2e57]:
+            - term [ref=f2e58]: 지역
+            - definition [ref=f2e59]: 서초구
+          - generic [ref=f2e60]:
+            - term [ref=f2e61]: 영향 인원
+            - definition [ref=f2e62]: 42명
+          - generic [ref=f2e63]:
+            - term [ref=f2e64]: 담당 팀
+            - definition [ref=f2e65]: Drainage-2
+          - generic [ref=f2e66]:
+            - term [ref=f2e67]: 좌표
+            - definition [ref=f2e68]: 37.4979, 127.0276
+          - generic [ref=f2e69]:
+            - term [ref=f2e70]: 접수 시각
+            - definition [ref=f2e71]: 2026. 7. 6. 오전 9:12
+          - generic [ref=f2e72]:
+            - term [ref=f2e73]: 갱신 시각
+            - definition [ref=f2e74]: 2026. 7. 6. 오전 9:18

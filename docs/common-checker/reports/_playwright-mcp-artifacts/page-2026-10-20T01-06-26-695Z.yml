@@ -1,0 +1,103 @@
+- generic [active] [ref=f4e1]:
+  - link "본문으로 바로가기" [ref=f4e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f4e3]:
+    - navigation "주요 메뉴" [ref=f4e4]:
+      - link "KHS." [ref=f4e5] [cursor=pointer]:
+        - /url: "#top"
+      - generic [ref=f4e6]:
+        - link "작업" [ref=f4e7] [cursor=pointer]:
+          - /url: "#work"
+        - link "경력" [ref=f4e8] [cursor=pointer]:
+          - /url: "#career"
+        - link "기술" [ref=f4e9] [cursor=pointer]:
+          - /url: "#skills"
+        - link "연락" [ref=f4e10] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=f4e11]:
+    - region [ref=f4e13]:
+      - generic [ref=f4e14]:
+        - paragraph [ref=f4e15]: FRONTEND DEVELOPER
+        - heading "권현성." [level=1] [ref=f4e16]
+        - paragraph [ref=f4e17]: 복잡한 운영 화면을예측 가능한 코드 구조로 만듭니다.
+        - generic [ref=f4e18]:
+          - link "구현 사례 보기" [ref=f4e19] [cursor=pointer]:
+            - /url: "#work"
+          - link "연락하기" [ref=f4e20] [cursor=pointer]:
+            - /url: mailto:goodsosbva@naver.com
+      - generic [aria-hidden] [ref=f4e21]: HS
+    - region [ref=f4e22]:
+      - generic [ref=f4e23]:
+        - generic [ref=f4e25]:
+          - paragraph [ref=f4e26]: 01 / WORK
+          - heading "고친 문제 세 가지" [level=2] [ref=f4e27]
+        - generic [ref=f4e28]:
+          - article [ref=f4e29]:
+            - paragraph [ref=f4e30]: 01 / TABLE
+            - heading "사이즈를 조절해도 폭이 튀지 않게" [level=3] [ref=f4e31]: 사이즈를 조절해도폭이 튀지 않게
+            - paragraph [ref=f4e32]: 브라우저가 그린 헤더 폭을 측정해 컬럼 상태와 colgroup에 함께 반영했습니다.
+          - article [ref=f4e33]:
+            - paragraph [ref=f4e34]: 02 / DATA
+            - heading "보지 않는 화면의 API 요청은 멈추도록" [level=3] [ref=f4e35]: 보지 않는 화면의API 요청은 멈추도록
+            - paragraph [ref=f4e36]: 화면의 활성 상태를 로그 Query의 enabled 조건에 연결했습니다.
+          - article [ref=f4e37]:
+            - paragraph [ref=f4e38]: 03 / ERROR
+            - heading "한 화면의 오류가 앱 전체로 번지지 않게" [level=3] [ref=f4e39]: 한 화면의 오류가앱 전체로 번지지 않게
+            - paragraph [ref=f4e40]: Boundary로 오류를 격리하고 경로가 바뀌면 오류 상태를 초기화했습니다.
+        - link "세 사례의 구현 과정 보기 →" [ref=f4e41] [cursor=pointer]:
+          - /url: career-portfolio.html
+    - region [ref=f4e42]:
+      - generic [ref=f4e43]:
+        - generic [ref=f4e45]:
+          - paragraph [ref=f4e46]: 02 / CAREER
+          - heading "경력" [level=2] [ref=f4e47]
+        - generic [ref=f4e48]:
+          - article [ref=f4e49]:
+            - time [ref=f4e50]: 2023.09 — 현재
+            - heading "오케스트로" [level=3] [ref=f4e51]
+            - paragraph [ref=f4e52]:
+              - text: 금융 및 공공기관용 클라우드 관리 플랫폼의 프론트엔드를 개발하고 있습니다.
+              - link "오케스트로 상세 보기 →" [ref=f4e53] [cursor=pointer]:
+                - /url: career-experience.html#okestro
+          - article [ref=f4e54]:
+            - time [ref=f4e55]: 2023.02 — 2023.08
+            - heading "카수리" [level=3] [ref=f4e56]
+            - paragraph [ref=f4e57]:
+              - text: 출장정비 예약 페이지를 아토믹 패턴으로 구현
+              - link "카수리 상세 보기 →" [ref=f4e58] [cursor=pointer]:
+                - /url: career-experience.html#casuri
+          - article [ref=f4e59]:
+            - time [ref=f4e60]: 2022.12 — 2023.01
+            - heading "뉴스젤리" [level=3] [ref=f4e61]
+            - paragraph [ref=f4e62]:
+              - text: 꼬맨틀 화면을 HTML, CSS, JavaScript에서 Vue로 리팩토링
+              - link "뉴스젤리 상세 보기 →" [ref=f4e63] [cursor=pointer]:
+                - /url: career-experience.html#newsjelly
+        - link "실무 경력 전체 보기 →" [ref=f4e64] [cursor=pointer]:
+          - /url: career-experience.html
+    - region [ref=f4e65]:
+      - generic [ref=f4e66]:
+        - generic [ref=f4e68]:
+          - paragraph [ref=f4e69]: 03 / TECH STACK
+          - heading "기술 스택" [level=2] [ref=f4e70]
+        - list [ref=f4e71]:
+          - listitem [ref=f4e72]: TypeScript
+          - listitem [ref=f4e73]: React
+          - listitem [ref=f4e74]: Vue 3
+          - listitem [ref=f4e75]: Next.js
+          - listitem [ref=f4e76]: Monorepo
+          - listitem [ref=f4e77]: Module Federation
+          - listitem [ref=f4e78]: FSD
+          - listitem [ref=f4e79]: SSR
+          - listitem [ref=f4e80]: RAG
+          - listitem [ref=f4e81]: LangChain
+          - listitem [ref=f4e82]: MCP
+          - listitem [ref=f4e83]: Function Calling
+    - region [ref=f4e84]:
+      - generic [ref=f4e85]:
+        - generic [ref=f4e86]:
+          - paragraph [ref=f4e87]: 04 / CONTACT
+          - heading "함께 일할 이야기가 있다면 연락 주세요." [level=2] [ref=f4e88]: 함께 일할 이야기가 있다면연락 주세요.
+        - link "goodsosbva@naver.com ↗" [ref=f4e89] [cursor=pointer]:
+          - /url: mailto:goodsosbva@naver.com
+  - contentinfo [ref=f4e90]: © 2026 권현성. Frontend Developer.

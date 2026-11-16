@@ -1,0 +1,731 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e9]:
+      - heading "Navigation Menu" [level=2] [ref=e10]
+      - generic [ref=e11]:
+        - link "Homepage" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e16]:
+          - navigation "Global" [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - button "Platform" [ref=e21] [cursor=pointer]
+              - listitem [ref=e24]:
+                - button "Solutions" [ref=e26] [cursor=pointer]
+              - listitem [ref=e29]:
+                - button "Resources" [ref=e31] [cursor=pointer]
+              - listitem [ref=e34]:
+                - button "Open Source" [ref=e36] [cursor=pointer]
+              - listitem [ref=e39]:
+                - button "Enterprise" [ref=e41] [cursor=pointer]
+              - listitem [ref=e44]:
+                - link "Pricing" [ref=e45] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=e46]:
+            - button "Search or jump to, type / to search" [ref=e48] [cursor=pointer]
+            - generic [ref=e54]:
+              - link "Sign in" [ref=e56] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fbeyond-sw-camp%2Fbe12-fin-404Found-Tech-Up-BE
+              - link "Sign up" [ref=e59] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=beyond-sw-camp%2Fbe12-fin-404Found-Tech-Up-BE
+              - button "Appearance settings" [ref=e62] [cursor=pointer]
+  - main [ref=e69]:
+    - generic "Global navigation menu" [ref=e72]:
+      - navigation "Breadcrumbs" [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "beyond-sw-camp" [ref=e78] [cursor=pointer]:
+              - /url: /beyond-sw-camp
+          - listitem [ref=e80]:
+            - link "be12-fin-404Found-Tech-Up-BE" [ref=e81] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE
+      - heading "Repository navigation" [level=2] [ref=e84]
+      - navigation "Repository" [ref=e85]:
+        - list [ref=e86]:
+          - listitem [ref=e87]:
+            - link "Code" [ref=e88] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE
+          - listitem [ref=e93]:
+            - link "Issues" [ref=e94] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/issues
+          - listitem [ref=e100]:
+            - link "Pull requests (1)" [ref=e101] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/pulls
+              - generic [ref=e105]: Pull requests
+              - generic [ref=e106]:
+                - generic [aria-hidden] [ref=e107]: "1"
+                - generic [ref=e108]: (1)
+          - listitem [ref=e109]:
+            - link "Actions" [ref=e110] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/actions
+          - listitem [ref=e115]:
+            - link "Projects" [ref=e116] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/projects
+          - listitem [ref=e121]:
+            - link "Wiki" [ref=e122] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/wiki
+          - listitem [ref=e127]:
+            - link "Security and quality" [ref=e128] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/security
+          - listitem [ref=e133]:
+            - link "Insights" [ref=e134] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/pulse
+    - generic [ref=e151]:
+      - generic [ref=e155]:
+        - generic [ref=e158]:
+          - img "beyond-sw-camp" [ref=e159]
+          - generic "be12-fin-404Found-Tech-Up-BE" [ref=e160]:
+            - strong [ref=e161]:
+              - link "be12-fin-404Found-Tech-Up-BE" [ref=e162] [cursor=pointer]:
+                - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE
+          - generic [ref=e163]: Public
+        - list [ref=e165]:
+          - listitem [ref=e166]:
+            - link "You must be signed in to change notification settings" [ref=e167] [cursor=pointer]:
+              - /url: /login?return_to=%2Fbeyond-sw-camp%2Fbe12-fin-404Found-Tech-Up-BE
+              - generic [ref=e168]: Notifications
+          - listitem [ref=e170]:
+            - link "You must be signed in to fork a repository" [ref=e171] [cursor=pointer]:
+              - /url: /login?return_to=%2Fbeyond-sw-camp%2Fbe12-fin-404Found-Tech-Up-BE
+              - generic [ref=e173]:
+                - text: Fork
+                - generic [aria-hidden] [ref=e174]: "3"
+                - generic [ref=e175]: (3)
+          - listitem [ref=e176]:
+            - link "Star (3)" [ref=e177] [cursor=pointer]:
+              - /url: /login?return_to=%2Fbeyond-sw-camp%2Fbe12-fin-404Found-Tech-Up-BE
+              - generic [ref=e179]:
+                - text: Star
+                - generic [aria-hidden] [ref=e180]: "3"
+                - generic [ref=e181]: (3)
+      - generic [ref=e182]:
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e187]:
+              - button "main branch" [ref=e189] [cursor=pointer]:
+                - generic [ref=e190]: main
+              - generic [ref=e194]:
+                - link [ref=e195] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/branches
+                  - generic [ref=e198]:
+                    - strong [ref=e199]: "38"
+                    - text: Branches
+                - link [ref=e200] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/tags
+                  - generic [ref=e203]:
+                    - strong [ref=e204]: "2"
+                    - text: Tags
+            - generic [ref=e205]:
+              - combobox "Go to file" [ref=e213]
+              - button "Code" [ref=e214] [cursor=pointer]
+          - generic [ref=e217]:
+            - generic [ref=e218]:
+              - generic [ref=e220]:
+                - heading "Latest commit" [level=2] [ref=e221]
+                - generic [ref=e222]:
+                  - generic [ref=e224]:
+                    - link [ref=e225] [cursor=pointer]:
+                      - /url: /museongkim0
+                      - img "museongkim0" [ref=e226]
+                    - link "commits by museongkim0" [ref=e227] [cursor=pointer]:
+                      - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/commits?author=museongkim0
+                      - text: museongkim0
+                  - generic [ref=e228]:
+                    - generic [ref=e230]:
+                      - link "Merge pull request" [ref=e231] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/commit/e50d23277d93738d51a418d7bf1dadf1da0ea15e
+                      - link "#258" [ref=e232] [cursor=pointer]:
+                        - /url: https://github.com/beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/pull/258
+                      - link "from beyond-sw-camp/dev" [ref=e233] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/commit/e50d23277d93738d51a418d7bf1dadf1da0ea15e
+                    - button "Open commit details" [ref=e234] [cursor=pointer]
+                - generic [ref=e237]:
+                  - generic [ref=e239]:
+                    - link "Commit e50d232" [ref=e240] [cursor=pointer]:
+                      - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/commit/e50d23277d93738d51a418d7bf1dadf1da0ea15e
+                      - text: e50d232
+                    - text: ·
+                    - generic "May 20, 2025, 5:34 PM GMT+9" [ref=e241]: May 20, 2025last year
+                  - generic [ref=e242]:
+                    - heading "History" [level=2] [ref=e243]
+                    - link "841 Commits" [ref=e244] [cursor=pointer]:
+                      - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/commits/main/
+              - heading "Folders and files" [level=2] [ref=e247]
+              - table "Folders and files" [ref=e249]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message"
+                    - columnheader "Last commit date"
+                - rowgroup [ref=e250]:
+                  - row [ref=e251]:
+                    - cell [ref=e252]:
+                      - link ".idea, (Directory)" [ref=e259] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/tree/main/.idea
+                        - text: .idea
+                    - cell [ref=e260]:
+                      - link "[feat] 재고 동시성 제어 테스트 코드 작성" [ref=e263] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/commit/c010bd3379fd8963cbecec286b68900590a17223
+                    - cell "May 8, 2025last year" [ref=e264]
+                  - row [ref=e266]:
+                    - cell [ref=e267]:
+                      - link "backend, (Directory)" [ref=e274] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/tree/main/backend
+                        - text: backend
+                    - cell [ref=e275]:
+                      - link "[Hotfix] 통계 API 긴급 분할 - 프론트 부작용 없음" [ref=e278] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/commit/252a87277d2b1edc80121731afe0f873c15e5bea
+                    - cell "May 16, 2025last year" [ref=e279]
+                  - row [ref=e281]:
+                    - cell [ref=e282]:
+                      - link "devops, (Directory)" [ref=e289] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/tree/main/devops
+                        - text: devops
+                    - cell [ref=e290]:
+                      - link "[Docs] Update README.md" [ref=e293] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/commit/362c769024dcf9ed00d36cfd8702bed954307473
+                    - cell "May 20, 2025last year" [ref=e294]
+                  - row [ref=e296]:
+                    - cell [ref=e297]:
+                      - link "images/readme, (Directory)" [ref=e304] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/tree/main/images/readme
+                        - text: images/readme
+                    - cell [ref=e305]:
+                      - link "[DOCS] 오타 수정" [ref=e308] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/commit/a8de0e8f9aa4eb15fbbeff2479d3a17d3934a5db
+                    - cell "May 20, 2025last year" [ref=e309]
+                  - row [ref=e311]:
+                    - cell [ref=e312]:
+                      - link "recommend, (Directory)" [ref=e319] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/tree/main/recommend
+                        - text: recommend
+                    - cell [ref=e320]:
+                      - link "spark추가" [ref=e323] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/commit/b148dde3237e8592215b0d15fc412b4c0266b374
+                    - cell "May 20, 2025last year" [ref=e324]
+                  - row [ref=e326]:
+                    - cell [ref=e327]:
+                      - link "README.md, (File)" [ref=e334] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/blob/main/README.md
+                        - text: README.md
+                    - cell [ref=e335]:
+                      - link "[DOCS] 오타 수정" [ref=e338] [cursor=pointer]:
+                        - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/commit/69a8e19c83d6b74cc1adfc34e15e9f88eb9498f8
+                    - cell "May 20, 2025last year" [ref=e339]
+            - generic [ref=e342]:
+              - generic [ref=e343]:
+                - heading "Repository files navigation" [level=2] [ref=e344]
+                - navigation "Repository files" [ref=e345]:
+                  - list [ref=e346]:
+                    - listitem [ref=e347]:
+                      - link "README" [ref=e348] [cursor=pointer]:
+                        - /url: "#"
+                - button "Outline" [ref=e353] [cursor=pointer]
+              - article [ref=e357]:
+                - link [ref=e359] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/blob/main/images/readme/techup_header_logo.png
+                - generic [ref=e361]:
+                  - heading "🎁팀원 소개" [level=2] [ref=e362]
+                  - 'link "Permalink: 🎁팀원 소개" [ref=e363] [cursor=pointer]':
+                    - /url: "#팀원-소개"
+                - blockquote [ref=e366]:
+                  - paragraph [ref=e367]:
+                    - strong [ref=e368]: "[한화시스템 BEYOND SW캠프 12기] Final Project"
+                    - strong [ref=e369]: 404Found팀 Tech-Up 프로젝트
+                - table [ref=e371]:
+                  - rowgroup [ref=e372]:
+                    - row [ref=e373]:
+                      - cell [ref=e374]:
+                        - link [ref=e375] [cursor=pointer]:
+                          - /url: https://github.com/GoodLeaf
+                      - cell [ref=e376]:
+                        - link [ref=e377] [cursor=pointer]:
+                          - /url: https://github.com/museongkim0
+                      - cell [ref=e378]:
+                        - link [ref=e379] [cursor=pointer]:
+                          - /url: https://github.com/gunha0405
+                      - cell [ref=e380]:
+                        - link [ref=e381] [cursor=pointer]:
+                          - /url: https://github.com/Xen-alpha
+                    - row [ref=e382]:
+                      - cell [ref=e383]:
+                        - text: 🐥
+                        - link "김정엽" [ref=e384] [cursor=pointer]:
+                          - /url: https://github.com/GoodLeaf
+                      - cell [ref=e385]:
+                        - text: 🦊
+                        - link "김무성" [ref=e386] [cursor=pointer]:
+                          - /url: https://github.com/museongkim0
+                      - cell [ref=e387]:
+                        - text: 😼
+                        - link "오건하" [ref=e388] [cursor=pointer]:
+                          - /url: https://github.com/gunha0405
+                      - cell [ref=e389]:
+                        - text: 🐰
+                        - link "황경윤" [ref=e390] [cursor=pointer]:
+                          - /url: https://github.com/Xen-alpha
+                - generic [ref=e391]:
+                  - heading "목차" [level=3] [ref=e392]
+                  - 'link "Permalink: 목차" [ref=e393] [cursor=pointer]':
+                    - /url: "#목차"
+                - list [ref=e396]:
+                  - listitem [ref=e397]:
+                    - link "🛠 기술 스택" [ref=e398] [cursor=pointer]:
+                      - /url: "#-%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D"
+                  - listitem [ref=e399]:
+                    - link "📚 Tech-Up 데모 사이트 링크" [ref=e400] [cursor=pointer]:
+                      - /url: "#-tech-up-%EB%8D%B0%EB%AA%A8-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0"
+                  - listitem [ref=e401]:
+                    - link "🎨 Tech-Up 서비스 소개" [ref=e402] [cursor=pointer]:
+                      - /url: "#-tech-up-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%86%8C%EA%B0%9C"
+                  - listitem [ref=e403]:
+                    - link "🏗️ 시스템 아키텍처" [ref=e404] [cursor=pointer]:
+                      - /url: "#%EF%B8%8F-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98"
+                  - listitem [ref=e405]:
+                    - link "📚 백엔드 프로젝트 목표" [ref=e406] [cursor=pointer]:
+                      - /url: "#-%EB%B0%B1%EC%97%94%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AA%A9%ED%91%9C"
+                  - listitem [ref=e407]:
+                    - link "📈 프로젝트 설계" [ref=e408] [cursor=pointer]:
+                      - /url: "#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%84%A4%EA%B3%84"
+                  - listitem [ref=e409]:
+                    - link "⚙️ 주요 기능 시연" [ref=e410] [cursor=pointer]:
+                      - /url: "#%EF%B8%8F-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%8B%9C%EC%97%B0"
+                  - listitem [ref=e411]:
+                    - link "🚀 핵심 로직 상세 설명" [ref=e412] [cursor=pointer]:
+                      - /url: "#-%ED%95%B5%EC%8B%AC-%EB%A1%9C%EC%A7%81-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85"
+                  - listitem [ref=e413]:
+                    - link "📂 프로젝트 폴더 바로가기" [ref=e414] [cursor=pointer]:
+                      - /url: "#-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-devops-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%8F%B4%EB%8D%94-%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0"
+                - paragraph [ref=e415]
+                - generic [ref=e416]:
+                  - heading "🛠 기술 스택" [level=2] [ref=e417]
+                  - 'link "Permalink: 🛠 기술 스택" [ref=e418] [cursor=pointer]':
+                    - /url: "#-기술-스택"
+                - generic [ref=e421]:
+                  - heading "[ Frontend ]" [level=4] [ref=e422]
+                  - 'link "Permalink: [ Frontend ]" [ref=e423] [cursor=pointer]':
+                    - /url: "#-frontend-"
+                - paragraph [ref=e426]:
+                  - link [ref=e427] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/60d77348d333190514b74c8d82c987489a63a30bc70fb68a4ee5952890d5e819/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f68746d6c352d4533344632363f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465
+                  - link [ref=e429] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/4c5168410d7220b144db332ccf290c171f798883957bc928f6fc12fe20efac23/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f637373332d3135373242363f7374796c653d666f722d7468652d6261646765266c6f676f3d63737333266c6f676f436f6c6f723d7768697465
+                  - link [ref=e431] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/83bb9f0b045a6dbd157f49f3906edc77844cd9f65fa2508e8b2c796be1e7e94b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d4637444631453f7374796c653d666f722d7468652d6261646765266c6f676f3d4a617661536372697074266c6f676f436f6c6f723d7768697465
+                  - link [ref=e433] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/2e955b0bb98a354851e79ad591e57d3c072570bc930f585253d2a997f486f9b4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7675656a732d2532333335343935652e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d767565646f746a73266c6f676f436f6c6f723d253233344643303844
+                  - link [ref=e435] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/3f19c347d1aed4c87b8ea5536b4062a435e32fa045f3c73b9b333fc85e41dd2d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6e67696e782d3030393633393f7374796c653d666f722d7468652d6261646765266c6f676f3d6e67696e78266c6f676f436f6c6f723d7768697465
+                  - link [ref=e437] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/b59f5061138e839b92e0bdf985402008b56616c343f5668392b58bddfe084b71/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f70696e69612d676f6c643f7374796c653d666f722d7468652d6261646765266c6f676f3d50696e6961266c6f676f436f6c6f723d7768697465
+                  - link [ref=e439] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/067db6baa3a9eff68a4399ead92673f26e785ad37560231d853aca4516dd8862/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6e7578742d2532333030444338323f7374796c653d666f722d7468652d6261646765266c6f676f3d6e757874266c6162656c436f6c6f723d253233464646464646
+                - generic [ref=e441]:
+                  - heading "[ Backend ]" [level=4] [ref=e442]
+                  - 'link "Permalink: [ Backend ]" [ref=e443] [cursor=pointer]':
+                    - /url: "#-backend-"
+                - paragraph [ref=e446]:
+                  - link [ref=e447] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/c40c14f1c1bba5b3aac3281799882be1612b4c217d0340623f26f071739aac84/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176612d2532334544384230302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6f70656e6a646b266c6f676f436f6c6f723d7768697465
+                  - link [ref=e449] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/8ae190a9065bd21995adeb0a640ccd5acdd457ddb255ad1a0e8dff76a6783f6a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f537072696e6720426f6f742d3644423333463f7374796c653d666f722d7468652d6261646765266c6f676f3d537072696e672d426f6f74266c6f676f436f6c6f723d7768697465
+                  - link [ref=e451] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/15c9cb597a084638817ef7533595950e1a570ae144f38a36d19d6a35933527db/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f537072696e675f53656375726974792d3644423333463f7374796c653d666f722d7468652d6261646765266c6f676f3d537072696e672d5365637572697479266c6f676f436f6c6f723d7768697465
+                  - link [ref=e453] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/83c81929d42b7e3e33a4736eb5d78be6d2bfb48d184f1873d5a3b2ebbedfa342/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f537072696e672064617461206a70612d3644423333463f7374796c653d666f722d7468652d6261646765266c6f676f3d537072696e672d426f6f74266c6f676f436f6c6f723d7768697465
+                  - link [ref=e455] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/37c5026e41a7a9613ecbc9983abd8926bd02a227d9f3dc2942a4ddf4e08f8812/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f534d54502d4544384230303f7374796c653d666f722d7468652d6261646765266c6f676f3d6f70656e6a646b266c6f676f436f6c6f723d7768697465
+                  - link [ref=e457] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/bf96881b287fd460bfef64af2a37c3a4cfa167bfd5e2680b16b29408809facf4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d2532333033373743432e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465
+                - generic [ref=e459]:
+                  - heading "[ DB ]" [level=4] [ref=e460]
+                  - 'link "Permalink: [ DB ]" [ref=e461] [cursor=pointer]':
+                    - /url: "#-db-"
+                - paragraph [ref=e464]:
+                  - link [ref=e465] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/097a0395b157241cb1a04f3cece724e60b75f5d233aacc48e21ef5fbc1f0f6b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6172696144422d3030333534353f7374796c653d666f722d7468652d6261646765266c6f676f3d6d617269616462266c6f676f436f6c6f723d7768697465
+                  - link [ref=e467] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/02ffe5950b9909fc412d7cfea79db03cb36ef46aa5ee669d79ed3d055d5922dc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f416d617a6f6e53332d6530353234323f7374796c653d666f722d7468652d6261646765266c6f676f3d416d617a6f6e5333266c6f676f436f6c6f723d7768697465
+                  - link [ref=e469] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/9b8560a962bb7509c29691b95482aa7ed5b6ba73eb35c01956aec491d75253a2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f656c61737469637365617263682d2532333033373743432e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d656c6173746963736561726368266c6f676f436f6c6f723d7768697465
+                  - link [ref=e471] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/25ed459cd9b693a1f484eee6c02024f9951a703ab224d171c32f18237bda1baf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656469732d4533344632363f7374796c653d666f722d7468652d6261646765266c6f676f3d7265646973266c6f676f436f6c6f723d7768697465
+                - generic [ref=e473]:
+                  - heading "[ CI/CD ]" [level=4] [ref=e474]
+                  - 'link "Permalink: [ CI/CD ]" [ref=e475] [cursor=pointer]':
+                    - /url: "#-cicd-"
+                - paragraph [ref=e478]:
+                  - link [ref=e479] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/a7dfef554afa4a384788bb87c246f094f7048362db9c835b50ac92e605ce4999/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6b756265726e657465732d2532333332366365352e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6b756265726e65746573266c6f676f436f6c6f723d7768697465
+                  - link [ref=e481] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/42b2a65ea53577756b69977344ceacfa1cd308ce13996629d34f8a7e9efa5830/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f636b65722d3234393645443f7374796c653d666f722d7468652d6261646765266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465
+                  - link [ref=e483] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/a19b6d3749e3d5d4793b510b9d6181980f9d7769044701f4e80de5f28b70412a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a656e6b696e732d4432343933393f7374796c653d666f722d7468652d6261646765266c6f676f3d6a656e6b696e73266c6f676f436f6c6f723d7768697465
+                - generic [ref=e485]:
+                  - heading "[ Etc ]" [level=4] [ref=e486]
+                  - 'link "Permalink: [ Etc ]" [ref=e487] [cursor=pointer]':
+                    - /url: "#-etc-"
+                - paragraph [ref=e490]:
+                  - link [ref=e491] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/21a650f7785ed7b2170148d9eb5dc3f9f1cf471d8eb5132303ce4a2ce27c7f44/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6b61666b612d3233314632303f7374796c653d666f722d7468652d6261646765266c6f676f3d6170616368656b61666b61266c6f676f436f6c6f723d7768697465
+                  - link [ref=e493] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/95349dacd63d2c6db47ae17b32cc19725e6ba26adf77db4eb700be2d62a0782a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7a6f6f6b65657065722d3030393633393f7374796c653d666f722d7468652d6261646765266c6f676f3d7a6f6f6b6565706572266c6f676f436f6c6f723d7768697465
+                  - link [ref=e495] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/0e58a9d3f9fe14fa784afb56b4c29a7f58ada96eaec098c30a59c918ce8fd48d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6f6773746173682d6633626431393f7374796c653d666f722d7468652d6261646765266c6f676f3d6c6f677374617368266c6f676f436f6c6f723d7768697465
+                - generic [ref=e497]:
+                  - heading "[ Communication ]" [level=4] [ref=e498]
+                  - 'link "Permalink: [ Communication ]" [ref=e499] [cursor=pointer]':
+                    - /url: "#-communication-"
+                - paragraph [ref=e502]:
+                  - link [ref=e503] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/255e799128e0ca1a8990d58ac0b2317fecb67511b1875a26c01967e7f3e52991/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646973636f72642d3332364345353f7374796c653d666f722d7468652d6261646765266c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465
+                  - link [ref=e505] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/e9b449ad3e40ee0a399a5cc62d4e5f504b2ac6f86a173ff674cbc04e415068c4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769742d4630353033323f7374796c653d666f722d7468652d6261646765266c6f676f3d676974266c6f676f436f6c6f723d7768697465
+                  - link [ref=e507] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/1bf494fcc215280f5962d6398c7893cd5af6e01f52c33f4ecef063148dab197f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769746875622d3138313731373f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465
+                  - link [ref=e509] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/ded5a90ec5f59b6c1bb2225c7fa178f525b32d786ef0ef9ce30fc31072195fb4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6972612d2532333030353243433f7374796c653d666f722d7468652d6261646765266c6f676f3d6a697261
+                  - link [ref=e511] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/872b1319867c9f065a0914702bb545feff703196f7e9510d15300c6085d1054d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f6e666c75656e63652d2532333137324234443f7374796c653d666f722d7468652d6261646765266c6f676f3d636f6e666c75656e6365
+                - paragraph [ref=e513]
+                - generic [ref=e514]:
+                  - heading "📚 Tech-Up 데모 사이트 바로가기" [level=2] [ref=e515]
+                  - 'link "Permalink: 📚 Tech-Up 데모 사이트 바로가기" [ref=e516] [cursor=pointer]':
+                    - /url: "#-tech-up-데모-사이트-바로가기"
+                - generic [ref=e519]:
+                  - heading [level=3] [ref=e520]:
+                    - link "공개 버전 링크" [ref=e521] [cursor=pointer]:
+                      - /url: http://techup.p-e.kr
+                  - 'link "Permalink: 공개 버전 링크" [ref=e522] [cursor=pointer]':
+                    - /url: "#공개-버전-링크"
+                - paragraph [ref=e525]
+                - generic [ref=e526]:
+                  - heading "🎨 Tech-Up 서비스 소개" [level=2] [ref=e527]
+                  - 'link "Permalink: 🎨 Tech-Up 서비스 소개" [ref=e528] [cursor=pointer]':
+                    - /url: "#-tech-up-서비스-소개"
+                - link [ref=e532] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/blob/main/images/readme/테크업_이미지.png
+                - generic [ref=e534]:
+                  - heading "프로젝트 배경" [level=4] [ref=e535]
+                  - 'link "Permalink: 프로젝트 배경" [ref=e536] [cursor=pointer]':
+                    - /url: "#프로젝트-배경"
+                - list [ref=e539]:
+                  - listitem [ref=e540]: 사용자 맞춤 부품 추천 쇼핑몰
+                  - listitem [ref=e541]: 고사양을 요하지 않는 일반 PC 사용자들은 기기 전체를 바꾸는 것보다 필요한 부분만 간단히 업그레이드하는 것이 가격적인 측면에서 이득이 있다. 하지만 부품의 호환성, 업그레이드 범위, 관련된 추가 제품을 파악하는 일은 일반 사용자에게 쉽지 않다. “Tech-Up”은 그런 사용자들을 위한 가벼운 업그레이드 추천 중심의 서비스이다. 고객이 등록한 본인 제품 정보 및 사용자 행동(제품 구매, 위시리스트, 장바구니 등)을 바탕으로 연관된 상품을 제공한다.
+                - list [ref=e542]:
+                  - listitem [ref=e543]:
+                    - code [ref=e544]: 연관성 높은 제품 추천
+                    - text: ": 사용자가 등록하거나 사이트에서 구매한 자신의 제품에 관한 데이터를 분석하여 연관 제품을 제안하고, 사용자의 현재 제품 사양에 기반하여 간단한 업그레이드(예: RAM 용량 증가, SSD 용량 확장, CPU 코어 수 증가 등) 중심으로 추천하는 데 중점을 둔다."
+                    - list [ref=e545]:
+                      - listitem [ref=e546]: 대략적인 제품 간 호환성 자동 판단을 제공하며, 더 자세한 사항은 커뮤니티 게시글 기능을 통해 찾아갈 수 있다.
+                  - listitem [ref=e547]:
+                    - code [ref=e548]: 즉각적인 추천 제품 구매
+                    - text: ": 다른 사이트와 달리 제품 간 비교 페이지에서 추천받은 제품은 즉시 장바구니에 담아 주문할 수 있다."
+                  - listitem [ref=e549]:
+                    - code [ref=e550]: 커뮤니티 형성
+                    - text: ": 회원 간의 부품 호환성에 관한 지식 공유를 통해 협력 문화를 조성한다."
+                - generic [ref=e551]:
+                  - heading "세부 기능" [level=4] [ref=e552]
+                  - 'link "Permalink: 세부 기능" [ref=e553] [cursor=pointer]':
+                    - /url: "#세부-기능"
+                - list [ref=e556]:
+                  - listitem [ref=e557]:
+                    - code [ref=e558]: 제품 목록/상세 조회
+                    - text: 검색, 제품 카테고리 및 필터로 목록을 조회하고 상세 정보를 확인할 수 있는 기능
+                  - listitem [ref=e559]:
+                    - code [ref=e560]: 기기 등록
+                    - text: 사용자가 본인의 기기를 등록하고 관리할 수 있는 기능
+                  - listitem [ref=e561]:
+                    - code [ref=e562]: 장바구니 & 위시리스트
+                    - text: 사용자가 관심있는 제품을 담고 취소하며 관리할 수 있는 기능
+                  - listitem [ref=e563]:
+                    - code [ref=e564]: 주문/결제
+                    - text: 사용자가 원하는 제품을 주문하고 결제할 수 있는 기능
+                  - listitem [ref=e565]:
+                    - code [ref=e566]: 상품 리뷰
+                    - text: 사용자가 제품에 대해 별점과 리뷰를 남길 수 있는 기능
+                  - listitem [ref=e567]:
+                    - code [ref=e568]: 마이페이지
+                    - text: 사용자가 개인 정보 및 활동 내역을 조회하고 관리할 수 있는 기능
+                  - listitem [ref=e569]:
+                    - code [ref=e570]: 알림
+                    - text: 사용자에게 공통 알림, 개인 알림(주문 완료, 재입고, 품절임박 등)을 제공하는 기능
+                  - listitem [ref=e571]:
+                    - code [ref=e572]: 추천
+                    - text: 사용자가 등록한 제품과 유사한 제품, 유사한 사용자가 관심있어한 제품 등 사용자 행동 기반 개인화 추천 기능
+                  - listitem [ref=e573]:
+                    - code [ref=e574]: 쿠폰 이벤트
+                    - text: 선착순 쿠폰 및 사용자 지정 쿠폰을 제공하는 기능
+                  - listitem [ref=e575]:
+                    - code [ref=e576]: 기타 지식을 공유하는 커뮤니티
+                    - text: 사용자가 개인의 경험 및 지식을 공유할 수 있는 공간을 제공하는 기능
+                  - listitem [ref=e577]:
+                    - code [ref=e578]: 어드민
+                    - text: 매출, 판매량, TOP위시리스트 등 통계량을 확인할 수 있는 대시보드와 쿠폰 발급, 알림 발행, 사용자/제품 관리 등의 관리 기능 제공
+                - generic [ref=e579]:
+                  - heading "🏗️ 시스템 아키텍처" [level=2] [ref=e580]
+                  - 'link "Permalink: 🏗️ 시스템 아키텍처" [ref=e581] [cursor=pointer]':
+                    - /url: "#️-시스템-아키텍처"
+                - link [ref=e585] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/blob/main/images/readme/techup_final_sys_arch.png
+                - generic [ref=e587]:
+                  - heading "📚 백엔드 프로젝트 목표" [level=2] [ref=e588]
+                  - 'link "Permalink: 📚 백엔드 프로젝트 목표" [ref=e589] [cursor=pointer]':
+                    - /url: "#-백엔드-프로젝트-목표"
+                - list [ref=e592]:
+                  - listitem [ref=e593]:
+                    - code [ref=e594]: API 설계 및 개발
+                    - list [ref=e595]:
+                      - listitem [ref=e596]: 클라이언트(프론트엔드)에서 호출할 수 있도록 RESTful API를 설계하고 개발합니다.
+                      - listitem [ref=e597]: HTTP 메서드를 명확히 구분하여 표준에 맞는 엔드포인트 구조를 구성합니다.
+                      - listitem [ref=e598]: Swagger를 활용해 API 문서화를 지원하며, 프론트엔드와의 협업을 원활하게 합니다.
+                  - listitem [ref=e599]:
+                    - code [ref=e600]: 추천 시스템 구현
+                    - list [ref=e601]:
+                      - listitem [ref=e602]: 추천 결과는 Python, Kafka, ElasticSearch를 이용하여 실시간으로 데이터를 전처리 및 적재하여 빠르게 유사도 검색을 가능하도록 설계합니다.
+                  - listitem [ref=e603]:
+                    - code [ref=e604]: 성능 최적화
+                    - list [ref=e605]:
+                      - listitem [ref=e606]:
+                        - code [ref=e607]: Redis
+                        - list [ref=e608]:
+                          - listitem [ref=e609]: 선착순 처리 로직 (재고 관리 및 선착순 쿠폰 발급)에 Redis를 사용해 빠른 읽기/쓰기 처리를 지원합니다.
+                          - listitem [ref=e610]: 캐싱(유저의 장바구니 담기)에 Redis를 활용하여 DB 부하를 줄입니다.
+                      - listitem [ref=e611]:
+                        - code [ref=e612]: ElasticSearch
+                        - list [ref=e613]:
+                          - listitem [ref=e614]: 대용량 데이터에서 빠르고 유연한 검색 기능을 제공합니다.
+                      - listitem [ref=e615]: 배치를 통한 N+1 문제 예방을 통해 자원 낭비를 방지합니다.
+                - generic [ref=e616]:
+                  - heading "📈 프로젝트 설계" [level=2] [ref=e617]
+                  - 'link "Permalink: 📈 프로젝트 설계" [ref=e618] [cursor=pointer]':
+                    - /url: "#-프로젝트-설계"
+                - generic [ref=e621]:
+                  - heading [level=3] [ref=e622]:
+                    - link "1. 기획서 바로가기" [ref=e623] [cursor=pointer]:
+                      - /url: https://docs.google.com/document/d/16gP1yR5g0CdxHhqj8PXJoByyoDGGJnpJ/edit?usp=sharing&ouid=114636369401934471820&rtpof=true&sd=true
+                  - 'link "Permalink: 1. 기획서 바로가기" [ref=e624] [cursor=pointer]':
+                    - /url: "#1-기획서-바로가기"
+                - generic [ref=e627]:
+                  - heading [level=3] [ref=e628]:
+                    - link "2. 요구사항 정의서" [ref=e629] [cursor=pointer]:
+                      - /url: https://docs.google.com/spreadsheets/d/1lb-SckwF90w3tpbJPMl18hdyDSESCkCRWy9koUEmFbI/edit?usp=sharing
+                  - 'link "Permalink: 2. 요구사항 정의서" [ref=e630] [cursor=pointer]':
+                    - /url: "#2-요구사항-정의서"
+                - generic [ref=e633]:
+                  - heading [level=3] [ref=e634]:
+                    - link "3. WBS" [ref=e635] [cursor=pointer]:
+                      - /url: https://docs.google.com/spreadsheets/d/1ZyTxJWcncdOwUFm7sC4lPoY8Tqr1N9bT/edit?usp=sharing&ouid=114636369401934471820&rtpof=true&sd=true
+                  - 'link "Permalink: 3. WBS" [ref=e636] [cursor=pointer]':
+                    - /url: "#3-wbs"
+                - generic [ref=e639]:
+                  - heading [level=3] [ref=e640]:
+                    - link "4. API 명세서 데이터 보기" [ref=e641] [cursor=pointer]:
+                      - /url: https://techup.p-e.kr/api/swagger-ui/index.html
+                  - 'link "Permalink: 4. API 명세서 데이터 보기" [ref=e642] [cursor=pointer]':
+                    - /url: "#4-api-명세서-데이터-보기"
+                - generic [ref=e645]:
+                  - heading [level=3] [ref=e646]:
+                    - link "5. ERD" [ref=e647] [cursor=pointer]:
+                      - /url: https://www.erdcloud.com/d/gWGKoNHQ3a37hbP2Q
+                  - 'link "Permalink: 5. ERD" [ref=e648] [cursor=pointer]':
+                    - /url: "#5-erd"
+                - paragraph [ref=e651]
+                - generic [ref=e652]:
+                  - heading "⚙️ 주요 기능 시연" [level=2] [ref=e653]
+                  - 'link "Permalink: ⚙️ 주요 기능 시연" [ref=e654] [cursor=pointer]':
+                    - /url: "#️-주요-기능-시연"
+                - group [ref=e657]:
+                  - generic "회원가입 & 탈퇴" [ref=e658] [cursor=pointer]
+                - group [ref=e659]:
+                  - generic "로그인 & 로그아웃" [ref=e660] [cursor=pointer]
+                - group [ref=e661]:
+                  - generic "검색" [ref=e662] [cursor=pointer]
+                - group [ref=e663]:
+                  - generic "제품 상세 조회" [ref=e664] [cursor=pointer]
+                - group [ref=e665]:
+                  - generic "제품 추천" [ref=e666] [cursor=pointer]
+                - group [ref=e667]:
+                  - generic "내 제품 등록" [ref=e668] [cursor=pointer]
+                - group [ref=e669]:
+                  - generic "제품 주문 및 환불" [ref=e670] [cursor=pointer]
+                - group [ref=e671]:
+                  - generic "관리자" [ref=e672] [cursor=pointer]
+                - group [ref=e673]:
+                  - generic "커뮤니티" [ref=e674] [cursor=pointer]
+                - group [ref=e675]:
+                  - generic "쿠폰 기능" [ref=e676] [cursor=pointer]
+                - generic [ref=e677]:
+                  - heading "🚀 핵심 로직 상세 설명" [level=2] [ref=e678]
+                  - 'link "Permalink: 🚀 핵심 로직 상세 설명" [ref=e679] [cursor=pointer]':
+                    - /url: "#-핵심-로직-상세-설명"
+                - generic [ref=e682]:
+                  - heading [level=3] [ref=e683]:
+                    - link "📃 프로젝트 Wiki" [ref=e684] [cursor=pointer]:
+                      - /url: https://github.com/beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/wiki
+                  - 'link "Permalink: 📃 프로젝트 Wiki" [ref=e685] [cursor=pointer]':
+                    - /url: "#-프로젝트-wiki-"
+                - generic [ref=e688]:
+                  - heading "📂 프론트엔드, DevOps 프로젝트 폴더 바로가기" [level=2] [ref=e689]
+                  - 'link "Permalink: 📂 프론트엔드, DevOps 프로젝트 폴더 바로가기" [ref=e690] [cursor=pointer]':
+                    - /url: "#-프론트엔드-devops-프로젝트-폴더-바로가기"
+                - generic [ref=e693]:
+                  - heading [level=3] [ref=e694]:
+                    - link "📃 Frontend" [ref=e695] [cursor=pointer]:
+                      - /url: https://github.com/beyond-sw-camp/be12-fin-404Found-Tech-Up-FE/blob/main/README.md
+                  - 'link "Permalink: 📃 Frontend" [ref=e696] [cursor=pointer]':
+                    - /url: "#-frontend--1"
+                - generic [ref=e699]:
+                  - heading [level=3] [ref=e700]:
+                    - link "📃 Devops" [ref=e701] [cursor=pointer]:
+                      - /url: https://github.com/beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/blob/main/devops/README.md
+                  - 'link "Permalink: 📃 Devops" [ref=e702] [cursor=pointer]':
+                    - /url: "#-devops"
+        - generic [ref=e707]:
+          - generic [ref=e708]:
+            - heading "About" [level=2] [ref=e709]
+            - generic [ref=e710]: No description, website, or topics provided.
+            - heading "Resources" [level=3] [ref=e711]
+            - link "Readme" [ref=e713] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+            - generic [ref=e716]:
+              - generic [ref=e717]:
+                - link "Activity" [ref=e719] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/activity
+                - link "Custom properties" [ref=e723] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/custom-properties
+              - generic [ref=e726]:
+                - heading "Stars" [level=3] [ref=e727]
+                - generic [ref=e729]:
+                  - strong [ref=e732]: "3"
+                  - text: stars
+                - heading "Watchers" [level=3] [ref=e733]
+                - generic [ref=e735]:
+                  - strong [ref=e738]: "0"
+                  - text: watching
+                - heading "Forks" [level=3] [ref=e739]
+                - link [ref=e741] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/forks
+                  - strong [ref=e745]: "3"
+                  - text: forks
+            - link "Report repository" [ref=e747] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fbeyond-sw-camp%2Fbe12-fin-404Found-Tech-Up-BE&report=beyond-sw-camp+%28user%29
+          - generic [ref=e748]:
+            - heading "Releases (2)" [level=2] [ref=e749]:
+              - generic [ref=e750]:
+                - link "Releases" [ref=e751] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/releases
+                - generic [aria-hidden] [ref=e752]: "2"
+                - generic [ref=e753]: (2)
+            - link "1.0.1 수정 버전 Latest May 20, 2025last year" [ref=e754] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/releases/tag/v1.0.1
+              - generic [ref=e757]:
+                - generic [ref=e758]:
+                  - generic "1.0.1 수정 버전" [ref=e759]
+                  - generic [ref=e760]: Latest
+                - generic [ref=e761]: May 20, 2025last year
+            - link "+ 1 release" [ref=e763] [cursor=pointer]:
+              - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/releases
+          - generic [ref=e764]:
+            - heading "Contributors (4)" [level=2] [ref=e765]:
+              - generic [ref=e766]:
+                - link "Contributors" [ref=e767] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/graphs/contributors
+                - generic [aria-hidden] [ref=e768]: "4"
+                - generic [ref=e769]: (4)
+            - list [ref=e770]:
+              - listitem [ref=e771]:
+                - link [ref=e772] [cursor=pointer]:
+                  - /url: /Xen-alpha
+                  - img "@Xen-alpha" [ref=e773]
+                - generic "Xen-alpha Xenα" [ref=e774]:
+                  - link [ref=e775] [cursor=pointer]:
+                    - /url: /Xen-alpha
+                    - strong [ref=e776]: Xen-alpha
+                    - text: Xenα
+              - listitem [ref=e777]:
+                - link [ref=e778] [cursor=pointer]:
+                  - /url: /GoodleaF
+                  - img "@GoodleaF" [ref=e779]
+                - generic "GoodleaF jungyub kim" [ref=e780]:
+                  - link [ref=e781] [cursor=pointer]:
+                    - /url: /GoodleaF
+                    - strong [ref=e782]: GoodleaF
+                    - text: jungyub kim
+              - listitem [ref=e783]:
+                - link [ref=e784] [cursor=pointer]:
+                  - /url: /gunha0405
+                  - img "@gunha0405" [ref=e785]
+                - generic "gunha0405 오건하" [ref=e786]:
+                  - link [ref=e787] [cursor=pointer]:
+                    - /url: /gunha0405
+                    - strong [ref=e788]: gunha0405
+                    - text: 오건하
+              - listitem [ref=e789]:
+                - link [ref=e790] [cursor=pointer]:
+                  - /url: /museongkim0
+                  - img "@museongkim0" [ref=e791]
+                - generic "museongkim0 Museong Kim" [ref=e792]:
+                  - link [ref=e793] [cursor=pointer]:
+                    - /url: /museongkim0
+                    - strong [ref=e794]: museongkim0
+                    - text: Museong Kim
+          - generic [ref=e795]:
+            - heading "Languages" [level=2] [ref=e796]
+            - generic [ref=e798]:
+              - 'progressbar "Java: 92%" [ref=e799]'
+              - 'progressbar "Python: 7.8%" [ref=e800]'
+              - 'progressbar "Dockerfile: 0.2%" [ref=e801]'
+            - list [ref=e802]:
+              - listitem [ref=e803]:
+                - link "Java 92%" [ref=e804] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/search?l=java
+                  - generic [ref=e806]: Java
+                  - generic [ref=e807]: 92%
+              - listitem [ref=e808]:
+                - link "Python 7.8%" [ref=e809] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/search?l=python
+                  - generic [ref=e811]: Python
+                  - generic [ref=e812]: 7.8%
+              - listitem [ref=e813]:
+                - link "Dockerfile 0.2%" [ref=e814] [cursor=pointer]:
+                  - /url: /beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/search?l=dockerfile
+                  - generic [ref=e816]: Dockerfile
+                  - generic [ref=e817]: 0.2%
+  - contentinfo [ref=e819]:
+    - heading "Footer" [level=2] [ref=e820]
+    - generic [ref=e821]:
+      - generic [ref=e822]:
+        - link "GitHub Homepage" [ref=e823] [cursor=pointer]:
+          - /url: https://github.com
+        - generic [ref=e826]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e827]:
+        - heading "Footer navigation" [level=3] [ref=e828]
+        - list "Footer navigation" [ref=e829]:
+          - listitem [ref=e830]:
+            - link "Terms" [ref=e831] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e832]:
+            - link "Privacy" [ref=e833] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e834]:
+            - link "Security" [ref=e835] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e836]:
+            - link "Status" [ref=e837] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e838]:
+            - link "Community" [ref=e839] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e840]:
+            - link "Docs" [ref=e841] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e842]:
+            - link "Contact" [ref=e843] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e844]:
+            - button "Manage cookies" [ref=e846] [cursor=pointer]
+          - listitem [ref=e847]:
+            - button "Do not share my personal information" [ref=e849] [cursor=pointer]

@@ -1,0 +1,54 @@
+- main [ref=f3e3]:
+  - generic [ref=f3e4]:
+    - paragraph [ref=f3e5]: COMMON TESTER 2.0.0
+    - heading "테스트 실행 작업 공간" [level=1] [ref=f3e6]
+    - paragraph [ref=f3e7]: 문서 근거로 테스트 계획을 만들고 검토한 뒤 로컬 앱에서 실행합니다.
+  - region [ref=f3e8]:
+    - generic [ref=f3e9]:
+      - heading "문서 관리" [level=2] [ref=f3e10]
+      - generic [ref=f3e11]: .docx, .md, .txt / 버전별 저장
+    - generic [ref=f3e12]:
+      - generic [ref=f3e13]:
+        - text: 문서 ID
+        - textbox "문서 ID" [ref=f3e14]:
+          - /placeholder: service-policy
+      - generic [ref=f3e15]:
+        - text: 버전
+        - textbox "버전" [ref=f3e16]: 1.0.0
+      - generic [ref=f3e17]:
+        - text: 제목
+        - textbox "제목" [ref=f3e18]
+      - generic [ref=f3e19]:
+        - text: 파일
+        - button "파일" [ref=f3e20]
+      - button "문서 등록" [ref=f3e21] [cursor=pointer]
+    - paragraph [ref=f3e22]: "등록된 문서: 없음"
+  - region [ref=f3e23]:
+    - generic [ref=f3e24]:
+      - heading "새 실행" [level=2] [ref=f3e25]
+      - generic [ref=f3e26]: 로컬 다국어 임베딩, 코사인 유사도, 상위 5문단
+    - generic [ref=f3e27]:
+      - generic [ref=f3e28]:
+        - text: 문서 버전
+        - combobox "문서 버전" [ref=f3e29]:
+          - option "문서 등록 필요" [selected]
+      - generic [ref=f3e30]:
+        - text: 로컬 앱 URL
+        - textbox "로컬 앱 URL" [ref=f3e31]:
+          - /placeholder: http://127.0.0.1:8765/signup.html
+      - generic [ref=f3e32]:
+        - text: 테스트 수
+        - spinbutton "테스트 수" [ref=f3e33]: "6"
+      - button "계획 생성" [disabled] [ref=f3e34]
+      - generic [ref=f3e35]:
+        - text: 검사 목적
+        - textbox "검사 목적" [ref=f3e36]:
+          - /placeholder: "예: 회원가입 입력값과 오류 안내 검증"
+  - generic [ref=f3e37]:
+    - region [ref=f3e38]:
+      - heading "최근 실행" [level=2] [ref=f3e39]
+      - list
+      - paragraph [ref=f3e40]: 실행 기록이 없습니다.
+    - region [ref=f3e41]:
+      - heading "실행 상세" [level=2] [ref=f3e43]
+      - paragraph [ref=f3e44]: 실행을 만들면 문서 근거와 테스트 계획이 여기에 표시됩니다.
