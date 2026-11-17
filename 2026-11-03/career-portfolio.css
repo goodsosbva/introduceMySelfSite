@@ -1,0 +1,138 @@
+        :root {
+            --bg: #344158;
+            --panel: #40516b;
+            --deep: #27364c;
+            --text: #f3f5f7;
+            --muted: #d2dbe6;
+            --line: #70829a;
+            --accent: #bdd8ff;
+            --width: 1180px;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font: 16px/1.65 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+        }
+        a { color: inherit; text-decoration: none; }
+        a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+        .skip {
+            position: absolute; top: -60px; left: 16px; z-index: 10;
+            padding: 10px 14px; background: var(--accent); color: #101827;
+        }
+        .skip:focus { top: 16px; }
+        .wrap { width: min(var(--width), calc(100% - 48px)); margin: auto; }
+        .header { border-bottom: 1px solid var(--line); background: #4b566d; }
+        .nav { min-height: 72px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+        .brand { font-size: 22px; font-weight: 900; letter-spacing: -.06em; }
+        .brand span, .accent { color: var(--accent); }
+        .nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; font-size: 14px; font-weight: 700; }
+        .nav-links a:hover, .text-link:hover { color: var(--accent); }
+        .back { padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; }
+        .page-return { display: flex; }
+        .page-return-top { padding-top: 18px; }
+        .page-return-bottom { padding: 20px 0; border-top: 1px solid var(--line); }
+        .page-return-link { padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); font-size: 14px; font-weight: 700; }
+        .page-return-link:hover { background: var(--panel); }
+        section { padding: 76px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 24px; }
+        .eyebrow, .number { margin: 0; color: var(--accent); font-size: 12px; font-weight: 800; letter-spacing: .1em; }
+        h1, h2, h3, p { overflow-wrap: break-word; }
+        h1, h2, h3 { line-height: 1.15; letter-spacing: -.045em; }
+        h1 { margin: 12px 0 22px; font-size: clamp(42px, 6vw, 76px); }
+        h2 { margin: 10px 0 14px; font-size: clamp(30px, 4vw, 48px); }
+        h3 { margin: 0 0 9px; font-size: 20px; }
+        p { margin: 0; }
+        .lead { max-width: 760px; color: var(--muted); font-size: clamp(17px, 2vw, 20px); }
+        .hero { padding-top: 92px; padding-bottom: 62px; }
+        .hero .role { margin-bottom: 20px; color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .08em; }
+        .hero h1 .name { display: block; margin-bottom: 18px; font-size: clamp(54px, 8vw, 100px); }
+        .hero-points { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 55px; padding-top: 22px; border-top: 1px solid var(--line); }
+        .hero-points div, .hero-points a { display: flex; align-items: baseline; gap: 14px; font-size: 21px; font-weight: 800; }
+        .hero-points a:hover { color: var(--accent); }
+        .hero-points span { color: var(--accent); font-size: 13px; }
+        .section-intro { max-width: 840px; margin-bottom: 32px; }
+        .section-intro > p:last-child { color: var(--muted); }
+        .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .cards a, .cards article { display: block; padding: 25px; border: 1px solid var(--line); background: var(--panel); }
+        .cards a { min-height: 235px; transition: background .15s ease, transform .15s ease; }
+        .cards a:hover { background: #4a5d79; transform: translateY(-3px); }
+        .cards h3 { margin-top: 20px; }
+        .cards p { color: var(--muted); }
+        .cards p + p { margin-top: 10px; }
+        .cards p strong { color: var(--accent); }
+        .cards .jump { display: block; margin-top: 22px; color: var(--accent); font-size: 13px; font-weight: 800; }
+        .perspective { display: flex; gap: 25px; margin-top: 26px; padding-top: 21px; border-top: 1px solid var(--line); }
+        .perspective strong { color: var(--accent); white-space: nowrap; }
+        .perspective p { color: var(--muted); }
+        .case-head { margin-bottom: 30px; }
+        .case-head .lead { margin-top: 14px; }
+        .cause { display: grid; grid-template-columns: 150px 1fr; gap: 20px; margin-bottom: 22px; padding: 20px 22px; border: 1px solid var(--line); border-left: 4px solid var(--accent); background: var(--panel); }
+        .cause strong { color: var(--accent); }
+        .cause p { color: var(--text); }
+        .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 0 0 28px; }
+        .flow.three { grid-template-columns: repeat(3, 1fr); }
+        .flow article { min-height: 122px; padding: 19px; border: 1px solid var(--line); background: var(--deep); }
+        .flow h3 { color: var(--accent); font-size: 15px; letter-spacing: 0; }
+        .flow p { color: var(--muted); font-size: 14px; }
+        .details { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 24px; }
+        .details article { padding-top: 13px; border-top: 1px solid var(--line); }
+        .details h3 { color: var(--accent); font-size: 15px; }
+        .details p { color: var(--muted); }
+        .note { display: grid; grid-template-columns: 150px 1fr; gap: 20px; margin-bottom: 24px; padding: 19px 22px; border: 1px solid var(--line); background: var(--panel); }
+        .note strong { color: var(--accent); }
+        .note p { color: var(--muted); }
+        pre { overflow-x: auto; margin: 26px 0 0; padding: 18px 20px; border: 1px solid var(--line); background: var(--deep); color: var(--accent); font: 13px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+        .tags span { padding: 5px 10px; border: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+        .boundary { padding: 24px; border: 1px solid var(--line); background: var(--deep); }
+        .boundary > strong { display: block; margin-bottom: 18px; }
+        .boundary-row { display: grid; grid-template-columns: 2fr 1fr; gap: 18px; }
+        .boundary-row div { padding: 18px; border: 1px solid var(--line); background: var(--panel); }
+        .boundary-row b { color: var(--accent); }
+        .boundary-row p { margin-top: 5px; color: var(--muted); }
+        .career-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; }
+        .career-grid .lead { margin: 16px 0 28px; }
+        .career-grid h3 { margin-bottom: 12px; }
+        .mini-flow { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--line); }
+        .mini-flow p { margin-top: 9px; color: var(--muted); }
+        .scope { display: grid; gap: 12px; }
+        .scope article { padding: 20px; border: 1px solid var(--line); background: var(--panel); }
+        .scope h3 { color: var(--accent); font-size: 17px; }
+        .scope p { color: var(--muted); }
+        .scope-list { display: grid; gap: 7px; margin: 0; padding-left: 20px; color: var(--muted); }
+        .scope-list li::marker { color: var(--accent); }
+        .text-link { display: inline-block; margin-top: 24px; color: var(--accent); font-weight: 800; }
+        .experience { display: grid; grid-template-columns: 240px 1fr; gap: 36px; padding: 28px 0; border-top: 1px solid var(--line); }
+        .experience h3 { margin: 10px 0; font-size: 30px; }
+        .experience .job { color: var(--muted); }
+        .experience .summary { color: var(--muted); }
+        .experience .summary h4 { margin: 0 0 12px; color: var(--text); font-size: 22px; }
+        .toolkit { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+        .toolkit article { padding: 20px 24px; border: 1px solid var(--line); background: var(--panel); }
+        .toolkit h3 { color: var(--accent); font-size: 14px; letter-spacing: .04em; }
+        .toolkit p { color: var(--muted); }
+        .contact { display: flex; justify-content: space-between; align-items: end; gap: 30px; }
+        .contact h2 { margin-bottom: 0; }
+        .email { color: var(--accent); font-weight: 800; white-space: nowrap; }
+        footer { padding: 28px 0 40px; color: var(--muted); font-size: 13px; }
+        @media (max-width: 850px) {
+            section { padding: 60px 0; }
+            .hero { padding-top: 70px; }
+            .hero-points, .cards, .flow, .flow.three, .details, .career-grid, .toolkit { grid-template-columns: 1fr; }
+            .hero-points { gap: 10px; }
+            .cards a { min-height: 0; }
+            .flow article { min-height: 0; }
+            .boundary-row, .experience { grid-template-columns: 1fr; gap: 15px; }
+            .contact { display: block; }
+            .email { display: inline-block; margin-top: 22px; }
+        }
+        @media (max-width: 560px) {
+            .nav { align-items: flex-start; padding: 16px 0; }
+            .nav-links { justify-content: flex-end; gap: 10px; }
+            .nav-links a:not(.back) { display: none; }
+            .hero-points div, .hero-points a { font-size: 18px; }
+            .cause, .note { grid-template-columns: 1fr; gap: 5px; }
+        }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .cards a { transition: none; } }

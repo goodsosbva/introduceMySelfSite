@@ -1,0 +1,11 @@
+.git
+.codex-temp
+.local
+.venv
+.env
+.env.*
+**/__pycache__
+**/*.pyc
+**/node_modules
+web/dist
+docs

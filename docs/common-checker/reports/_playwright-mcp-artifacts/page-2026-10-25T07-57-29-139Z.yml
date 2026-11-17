@@ -1,0 +1,45 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - paragraph [ref=e5]: COMMON TESTER
+    - heading "테스트 실행 작업 공간" [level=1] [ref=e6]
+    - paragraph [ref=e7]: 대상과 정책 버전을 정하고 실행을 생성합니다.
+  - region [ref=e8]:
+    - heading "새 실행" [level=2] [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - text: 프로젝트 ID
+        - textbox "프로젝트 ID" [ref=e12]: demo-orders
+      - generic [ref=e13]:
+        - text: 화면 경로
+        - textbox "화면 경로" [ref=e14]: /orders/new
+      - generic [ref=e15]:
+        - text: 정책 버전
+        - textbox "정책 버전" [ref=e16]: v1
+      - button "실행 생성" [ref=e17] [cursor=pointer]
+  - generic [ref=e18]:
+    - region [ref=e19]:
+      - heading "최근 실행" [level=2] [ref=e20]
+      - list [ref=e25]:
+        - listitem [ref=e31]:
+          - button "/orders/new demo-orders / v1 2026. 10. 25. 오후 4:57:28" [ref=e32] [cursor=pointer]:
+            - strong [ref=e33]: /orders/new
+            - generic [ref=e34]: demo-orders / v1
+            - generic [ref=e35]: 2026. 10. 25. 오후 4:57:28
+        - listitem [ref=e26]:
+          - button "/orders/new demo-orders / v1 2026. 10. 25. 오후 4:55:15" [ref=e27] [cursor=pointer]:
+            - strong [ref=e28]: /orders/new
+            - generic [ref=e29]: demo-orders / v1
+            - generic [ref=e30]: 2026. 10. 25. 오후 4:55:15
+    - region [ref=e22]:
+      - heading "실행 상세" [level=2] [ref=e23]
+      - generic [ref=e36]:
+        - term [ref=e37]: 실행 ID
+        - definition [ref=e38]: 9c696c85-b410-4498-ba2e-42b97117b731
+        - term [ref=e39]: 대상
+        - definition [ref=e40]: demo-orders / /orders/new
+        - term [ref=e41]: 정책 버전
+        - definition [ref=e42]: v1
+        - term [ref=e43]: 상태
+        - definition [ref=e44]: created
+        - term [ref=e45]: 실행계획
+        - definition [ref=e46]: 작성 전

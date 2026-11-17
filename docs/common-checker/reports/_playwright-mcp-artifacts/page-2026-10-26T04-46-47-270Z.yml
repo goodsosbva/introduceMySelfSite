@@ -1,0 +1,1470 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e9]:
+      - heading "Navigation Menu" [level=2] [ref=e10]
+      - generic [ref=e11]:
+        - link "Homepage" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e16]:
+          - navigation "Global" [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - button "Platform" [ref=e21] [cursor=pointer]
+              - listitem [ref=e24]:
+                - button "Solutions" [ref=e26] [cursor=pointer]
+              - listitem [ref=e29]:
+                - button "Resources" [ref=e31] [cursor=pointer]
+              - listitem [ref=e34]:
+                - button "Open Source" [ref=e36] [cursor=pointer]
+              - listitem [ref=e39]:
+                - button "Enterprise" [ref=e41] [cursor=pointer]
+              - listitem [ref=e44]:
+                - link "Pricing" [ref=e45] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=e46]:
+            - button "Search or jump to, type / to search" [ref=e48] [cursor=pointer]
+            - generic [ref=e54]:
+              - link "Sign in" [ref=e56] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FPNU-2026-AI-Hackathon%2Fpnuai-c-07-finfin2
+              - link "Sign up" [ref=e59] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=PNU-2026-AI-Hackathon%2Fpnuai-c-07-finfin2
+              - button "Appearance settings" [ref=e62] [cursor=pointer]
+  - main [ref=e69]:
+    - generic "Global navigation menu" [ref=e72]:
+      - navigation "Breadcrumbs" [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "PNU-2026-AI-Hackathon" [ref=e78] [cursor=pointer]:
+              - /url: /PNU-2026-AI-Hackathon
+          - listitem [ref=e80]:
+            - link "pnuai-c-07-finfin2" [ref=e81] [cursor=pointer]:
+              - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2
+      - heading "Repository navigation" [level=2] [ref=e86]
+      - navigation "Repository" [ref=e87]:
+        - list [ref=e88]:
+          - listitem [ref=e89]:
+            - link "Code" [ref=e90] [cursor=pointer]:
+              - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2
+          - listitem [ref=e95]:
+            - link "Issues (5)" [ref=e96] [cursor=pointer]:
+              - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/issues
+              - generic [ref=e101]: Issues
+              - generic [ref=e102]:
+                - generic [aria-hidden] [ref=e103]: "5"
+                - generic [ref=e104]: (5)
+          - listitem [ref=e105]:
+            - link "Pull requests (1)" [ref=e106] [cursor=pointer]:
+              - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/pulls
+              - generic [ref=e110]: Pull requests
+              - generic [ref=e111]:
+                - generic [aria-hidden] [ref=e112]: "1"
+                - generic [ref=e113]: (1)
+          - listitem [ref=e114]:
+            - link "Actions" [ref=e115] [cursor=pointer]:
+              - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/actions
+          - listitem [ref=e120]:
+            - link "Projects" [ref=e121] [cursor=pointer]:
+              - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/projects
+          - listitem [ref=e126]:
+            - link "Security and quality" [ref=e127] [cursor=pointer]:
+              - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/security
+          - listitem [ref=e132]:
+            - link "Insights" [ref=e133] [cursor=pointer]:
+              - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/pulse
+    - generic [ref=e150]:
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - generic [ref=e157]:
+            - img "PNU-2026-AI-Hackathon" [ref=e158]
+            - generic "pnuai-c-07-finfin2" [ref=e159]:
+              - strong [ref=e160]:
+                - link "pnuai-c-07-finfin2" [ref=e161] [cursor=pointer]:
+                  - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2
+            - generic [ref=e162]: Public
+          - generic [ref=e164]:
+            - text: forked from
+            - link "PNU-2026-AI-Hackathon/StarterTemplate" [ref=e165] [cursor=pointer]:
+              - /url: /PNU-2026-AI-Hackathon/StarterTemplate
+        - list [ref=e167]:
+          - listitem [ref=e168]:
+            - link "You must be signed in to change notification settings" [ref=e169] [cursor=pointer]:
+              - /url: /login?return_to=%2FPNU-2026-AI-Hackathon%2Fpnuai-c-07-finfin2
+              - generic [ref=e170]: Notifications
+          - listitem [ref=e172]:
+            - link "You must be signed in to fork a repository" [ref=e173] [cursor=pointer]:
+              - /url: /login?return_to=%2FPNU-2026-AI-Hackathon%2Fpnuai-c-07-finfin2
+              - generic [ref=e175]:
+                - text: Fork
+                - generic [aria-hidden] [ref=e176]: "0"
+                - generic [ref=e177]: (0)
+          - listitem [ref=e178]:
+            - link "Star (4)" [ref=e179] [cursor=pointer]:
+              - /url: /login?return_to=%2FPNU-2026-AI-Hackathon%2Fpnuai-c-07-finfin2
+              - generic [ref=e181]:
+                - text: Star
+                - generic [aria-hidden] [ref=e182]: "4"
+                - generic [ref=e183]: (4)
+      - generic [ref=e184]:
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - button "main branch" [ref=e191] [cursor=pointer]:
+                - generic [ref=e192]: main
+              - generic [ref=e196]:
+                - link [ref=e197] [cursor=pointer]:
+                  - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/branches
+                  - generic [ref=e200]:
+                    - strong [ref=e201]: "5"
+                    - text: Branches
+                - link [ref=e202] [cursor=pointer]:
+                  - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/tags
+                  - generic [ref=e205]:
+                    - strong [ref=e206]: "0"
+                    - text: Tags
+            - generic [ref=e207]:
+              - combobox "Go to file" [ref=e215]
+              - button "Code" [ref=e216] [cursor=pointer]
+          - generic [ref=e219]:
+            - generic [ref=e220]:
+              - text: This branch is
+              - link "178 commits ahead of" [ref=e221] [cursor=pointer]:
+                - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/compare/PNU-2026-AI-Hackathon%3AStarterTemplate%3Amain...main
+              - generic [ref=e222]: PNU-2026-AI-Hackathon/StarterTemplate:main
+              - text: .
+            - link "#1" [ref=e224] [cursor=pointer]:
+              - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/pull/1
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - generic [ref=e230]:
+                - heading "Latest commit" [level=2] [ref=e231]
+                - generic [ref=e232]:
+                  - generic [ref=e233]:
+                    - generic [ref=e235]:
+                      - img "zwo-n" [ref=e236]
+                      - img "yuyeol3" [ref=e237]
+                      - img "Seobin-Lee" [ref=e238]
+                    - button "Show 3 authors" [ref=e239] [cursor=pointer]: 3 people
+                  - generic [ref=e240]:
+                    - generic [ref=e242]:
+                      - 'link "feat: prd A1 ~ A3 반영 (" [ref=e243] [cursor=pointer]':
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/33a2b2cef5b988fa8f551ca592960ab78132adaf
+                      - link "#42" [ref=e244] [cursor=pointer]:
+                        - /url: https://github.com/PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/pull/42
+                      - link ")" [ref=e245] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/33a2b2cef5b988fa8f551ca592960ab78132adaf
+                    - button "Open commit details" [ref=e246] [cursor=pointer]
+                - generic [ref=e249]:
+                  - generic [ref=e251]:
+                    - link "Commit 33a2b2c" [ref=e252] [cursor=pointer]:
+                      - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/33a2b2cef5b988fa8f551ca592960ab78132adaf
+                      - text: 33a2b2c
+                    - text: ·
+                    - generic "Oct 18, 2026, 7:18 PM GMT+9" [ref=e253]: Oct 18, 2026last week
+                  - generic [ref=e254]:
+                    - heading "History" [level=2] [ref=e255]
+                    - link "185 Commits" [ref=e256] [cursor=pointer]:
+                      - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commits/main/
+              - heading "Folders and files" [level=2] [ref=e259]
+              - table "Folders and files" [ref=e261]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message"
+                    - columnheader "Last commit date"
+                - rowgroup [ref=e262]:
+                  - row [ref=e263]:
+                    - cell [ref=e264]:
+                      - link ".github, (Directory)" [ref=e271] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/tree/main/.github
+                        - text: .github
+                    - cell [ref=e272]:
+                      - link "GitHub Classroom Feedback" [ref=e275] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/10e7bfe1966a1b224b414c71a95a069877ac23cf
+                    - cell "Jun 1, 20265 months ago" [ref=e276]
+                  - row [ref=e278]:
+                    - cell [ref=e279]:
+                      - link "api, (Directory)" [ref=e286] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/tree/main/api
+                        - text: api
+                    - cell [ref=e287]:
+                      - generic [ref=e289]:
+                        - 'link "feat: prd A1 ~ A3 반영 (" [ref=e290] [cursor=pointer]':
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/33a2b2cef5b988fa8f551ca592960ab78132adaf
+                        - link "#42" [ref=e291] [cursor=pointer]:
+                          - /url: https://github.com/PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/pull/42
+                        - link ")" [ref=e292] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/33a2b2cef5b988fa8f551ca592960ab78132adaf
+                    - cell "Oct 18, 2026last week" [ref=e293]
+                  - row [ref=e295]:
+                    - cell [ref=e296]:
+                      - link "backend, (Directory)" [ref=e303] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/tree/main/backend
+                        - text: backend
+                    - cell [ref=e304]:
+                      - generic [ref=e306]:
+                        - 'link "feat: prd A1 ~ A3 반영 (" [ref=e307] [cursor=pointer]':
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/33a2b2cef5b988fa8f551ca592960ab78132adaf
+                        - link "#42" [ref=e308] [cursor=pointer]:
+                          - /url: https://github.com/PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/pull/42
+                        - link ")" [ref=e309] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/33a2b2cef5b988fa8f551ca592960ab78132adaf
+                    - cell "Oct 18, 2026last week" [ref=e310]
+                  - row [ref=e312]:
+                    - cell [ref=e313]:
+                      - link "database/db/migration, (Directory)" [ref=e320] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/tree/main/database/db/migration
+                        - text: database/db/migration
+                    - cell [ref=e321]:
+                      - generic [ref=e323]:
+                        - 'link "feat: prd A1 ~ A3 반영 (" [ref=e324] [cursor=pointer]':
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/33a2b2cef5b988fa8f551ca592960ab78132adaf
+                        - link "#42" [ref=e325] [cursor=pointer]:
+                          - /url: https://github.com/PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/pull/42
+                        - link ")" [ref=e326] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/33a2b2cef5b988fa8f551ca592960ab78132adaf
+                    - cell "Oct 18, 2026last week" [ref=e327]
+                  - row [ref=e329]:
+                    - cell [ref=e330]:
+                      - link "docs, (Directory)" [ref=e337] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/tree/main/docs
+                        - text: docs
+                    - cell [ref=e338]:
+                      - generic [ref=e340]:
+                        - link "[문서] 최종보고서(README) 작성 (" [ref=e341] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/cc1455854d3decdceaae29c52e35f85f5a82a177
+                        - link "#37" [ref=e342] [cursor=pointer]:
+                          - /url: https://github.com/PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/pull/37
+                        - link ")" [ref=e343] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/cc1455854d3decdceaae29c52e35f85f5a82a177
+                    - cell "Aug 27, 20262 months ago" [ref=e344]
+                  - row [ref=e346]:
+                    - cell [ref=e347]:
+                      - link "frontend, (Directory)" [ref=e354] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/tree/main/frontend
+                        - text: frontend
+                    - cell [ref=e355]:
+                      - link "Merge commit '0653c166242d51d1a23fe492c47e3edaba3f2acb'" [ref=e358] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/e44a6583d54dc7bfa72791db5ddfb1dfd1e0a10a
+                    - cell "Sep 13, 2026last month" [ref=e359]
+                  - row [ref=e361]:
+                    - cell [ref=e362]:
+                      - link ".gitignore, (File)" [ref=e369] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/.gitignore
+                        - text: .gitignore
+                    - cell [ref=e370]:
+                      - generic [ref=e372]:
+                        - 'link "feat: prd A1 ~ A3 반영 (" [ref=e373] [cursor=pointer]':
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/33a2b2cef5b988fa8f551ca592960ab78132adaf
+                        - link "#42" [ref=e374] [cursor=pointer]:
+                          - /url: https://github.com/PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/pull/42
+                        - link ")" [ref=e375] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/33a2b2cef5b988fa8f551ca592960ab78132adaf
+                    - cell "Oct 18, 2026last week" [ref=e376]
+                  - row [ref=e378]:
+                    - cell [ref=e379]:
+                      - link "AGENTS.md, (File)" [ref=e386] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/AGENTS.md
+                        - text: AGENTS.md
+                    - cell [ref=e387]:
+                      - 'link "docs : CLAUDE.md, AGENTS.md 추가 (프로젝트 가이드)" [ref=e390] [cursor=pointer]':
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/b93ef787c927a6fa369d918c9288afbd69d6412c
+                    - cell "Jul 21, 20263 months ago" [ref=e391]
+                  - row [ref=e393]:
+                    - cell [ref=e394]:
+                      - link "CLAUDE.md, (File)" [ref=e401] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/CLAUDE.md
+                        - text: CLAUDE.md
+                    - cell [ref=e402]:
+                      - 'link "feat : url 수집기 api-collector에 통합" [ref=e405] [cursor=pointer]':
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/49e712d57f4e2f73c5257e01672e2357b63ddf93
+                    - cell "Sep 14, 2026last month" [ref=e406]
+                  - row [ref=e408]:
+                    - cell [ref=e409]:
+                      - link "README.md, (File)" [ref=e416] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/README.md
+                        - text: README.md
+                    - cell [ref=e417]:
+                      - generic [ref=e419]:
+                        - link "[문서] 최종보고서(README) 작성 (" [ref=e420] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/cc1455854d3decdceaae29c52e35f85f5a82a177
+                        - link "#37" [ref=e421] [cursor=pointer]:
+                          - /url: https://github.com/PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/pull/37
+                        - link ")" [ref=e422] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/cc1455854d3decdceaae29c52e35f85f5a82a177
+                    - cell "Aug 27, 20262 months ago" [ref=e423]
+                  - row [ref=e425]:
+                    - cell [ref=e426]:
+                      - link "Y-Fin_개발계획서_수정.pdf, (File)" [ref=e433] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/Y-Fin_%EA%B0%9C%EB%B0%9C%EA%B3%84%ED%9A%8D%EC%84%9C_%EC%88%98%EC%A0%95.pdf
+                        - text: Y-Fin_개발계획서_수정.pdf
+                    - cell [ref=e434]:
+                      - link "Y-Fin._개발계획서_수정.pdf 업로드" [ref=e437] [cursor=pointer]:
+                        - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/commit/b413dde110960c2ef9962c8b79b8137560e88147
+                    - cell "Jun 10, 20264 months ago" [ref=e438]
+            - generic [ref=e441]:
+              - generic [ref=e442]:
+                - heading "Repository files navigation" [level=2] [ref=e443]
+                - navigation "Repository files" [ref=e444]:
+                  - list [ref=e445]:
+                    - listitem [ref=e446]:
+                      - link "README" [ref=e447] [cursor=pointer]:
+                        - /url: "#"
+                - button "Outline" [ref=e452] [cursor=pointer]
+              - article [ref=e456]:
+                - generic [ref=e457]:
+                  - generic [ref=e458]:
+                    - heading "Y-Fin." [level=1] [ref=e459]
+                    - 'link "Permalink: Y-Fin." [ref=e460] [cursor=pointer]':
+                      - /url: "#y-fin"
+                  - paragraph [ref=e463]:
+                    - strong [ref=e464]: 청년(Youth)들의 금융(Finance) 고민을 끝(Finish)내다
+                  - paragraph [ref=e465]: 금융초보 청년을 위한 개인 맞춤 저축상품 추천 서비스
+                  - link [ref=e466] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/0e7490f5a1da26ca03be08c83ed504b189ef00f0d3196128b65548f35e39db4f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f504e552532303230323625323041492532304861636b6174686f6e2d53746172747570253230547261636b253230432d2d30372d324537443332
+                - blockquote [ref=e468]:
+                  - paragraph [ref=e469]:
+                    - text: Y-Fin.은 흩어져 있는 정부·은행 저축상품을 한곳에 모으고,
+                    - strong [ref=e470]: 자격요건 자동 필터링
+                    - text: 과
+                    - strong [ref=e471]: 적합도 및 세후 실수령액 정렬
+                    - text: 로 청년이 자신에게 맞는 상품을 찾아 신청까지 이어가도록 돕는 서비스임.
+                  - paragraph [ref=e472]:
+                    - strong [ref=e473]: 개발 성과 - P0 핵심 기능(Y1~Y5) 전체 개발 완료, 내부 QA 완료, 실서비스 배포 완료
+                - paragraph [ref=e474]: 기획서에 머무는 아이디어가 아니라 지금 동작하는 서비스로 증명함.
+                - separator [ref=e475]
+                - generic [ref=e476]:
+                  - heading "목차" [level=2] [ref=e477]
+                  - 'link "Permalink: 목차" [ref=e478] [cursor=pointer]':
+                    - /url: "#목차"
+                - list [ref=e481]:
+                  - listitem [ref=e482]:
+                    - link "프로젝트 소개" [ref=e483] [cursor=pointer]:
+                      - /url: "#1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8C%EA%B0%9C"
+                  - listitem [ref=e484]:
+                    - link "상세설계" [ref=e485] [cursor=pointer]:
+                      - /url: "#2-%EC%83%81%EC%84%B8%EC%84%A4%EA%B3%84"
+                  - listitem [ref=e486]:
+                    - link "개발결과" [ref=e487] [cursor=pointer]:
+                      - /url: "#3-%EA%B0%9C%EB%B0%9C%EA%B2%B0%EA%B3%BC"
+                  - listitem [ref=e488]:
+                    - link "설치 및 사용 방법" [ref=e489] [cursor=pointer]:
+                      - /url: "#4-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95"
+                  - listitem [ref=e490]:
+                    - link "소개 및 시연영상" [ref=e491] [cursor=pointer]:
+                      - /url: "#5-%EC%86%8C%EA%B0%9C-%EB%B0%8F-%EC%8B%9C%EC%97%B0%EC%98%81%EC%83%81"
+                  - listitem [ref=e492]:
+                    - link "사업화 및 향후 계획" [ref=e493] [cursor=pointer]:
+                      - /url: "#6-%EC%82%AC%EC%97%85%ED%99%94-%EB%B0%8F-%ED%96%A5%ED%9B%84-%EA%B3%84%ED%9A%8D"
+                  - listitem [ref=e494]:
+                    - link "팀 소개" [ref=e495] [cursor=pointer]:
+                      - /url: "#7-%ED%8C%80-%EC%86%8C%EA%B0%9C"
+                  - listitem [ref=e496]:
+                    - link "해커톤 참여 후기" [ref=e497] [cursor=pointer]:
+                      - /url: "#8-%ED%95%B4%EC%BB%A4%ED%86%A4-%EC%B0%B8%EC%97%AC-%ED%9B%84%EA%B8%B0"
+                - separator [ref=e498]
+                - generic [ref=e499]:
+                  - heading "1. 프로젝트 소개" [level=2] [ref=e500]
+                  - 'link "Permalink: 1. 프로젝트 소개" [ref=e501] [cursor=pointer]':
+                    - /url: "#1-프로젝트-소개"
+                - generic [ref=e504]:
+                  - heading "1.1. 개발 배경 및 필요성" [level=3] [ref=e505]
+                  - 'link "Permalink: 1.1. 개발 배경 및 필요성" [ref=e506] [cursor=pointer]':
+                    - /url: "#11-개발-배경-및-필요성"
+                - paragraph [ref=e509]:
+                  - text: 청년에게 저축은 습관이 아니라
+                  - strong [ref=e510]: 선택의 문제
+                  - text: 임. 같은 돈을 넣어도 어떤 상품을 고르느냐에 따라 결과가 크게 갈리기 때문임. 실제로 월 50만 원을 3년간 납입할 때, 청년미래적금의 정부 기여금은
+                  - strong [ref=e511]: 최대 216만 원
+                  - text: 에 달하고, 같은 적금이라도 금리 차이에 따라 이자가 연 약 10만 원 벌어짐. 상품 하나를 제대로 고르면
+                  - strong [ref=e512]: 3년간 200만 원 이상
+                  - text: 을 더 받는 것임.
+                - paragraph [ref=e513]:
+                  - text: 그리고 지금은 그 선택의 가치가 가장 큰 시점임.
+                  - strong [ref=e514]: 금리·정책·수요 세 축이 동시에 오르며
+                  - text: 저축상품 시장이 구조적인 진입 적기에 들어섰기 때문임.
+                - paragraph [ref=e515]:
+                  - link [ref=e516] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/market-3axis.png
+                    - img "금리·정책·수요 3축 동시 상승" [ref=e517]
+                  - subscript [ref=e518]: ▲ 금리·정책·수요 3축 동시 상승 (한국은행·금융위·서민금융진흥원 2024~2026)
+                - table [ref=e520]:
+                  - rowgroup [ref=e521]:
+                    - row [ref=e522]:
+                      - columnheader "축" [ref=e523]
+                      - columnheader "현황" [ref=e524]
+                      - columnheader "출처" [ref=e525]
+                  - rowgroup [ref=e526]:
+                    - row [ref=e527]:
+                      - cell "금리" [ref=e528]
+                      - cell [ref=e529]:
+                        - text: 기준금리 2.5% 동결(2026.4)에도 저축은행 평균 예금금리가 2.92% →
+                        - strong [ref=e530]: 3.74%
+                        - text: 로 오르고, 인터넷·지방은행에서
+                        - strong [ref=e531]: 연 4%대
+                        - text: (최고 4.3~4.35%) 특판이 재등장
+                      - cell "한국은행, 한국경제 2026.6" [ref=e532]
+                    - row [ref=e533]:
+                      - cell "정책" [ref=e534]
+                      - cell [ref=e535]:
+                        - text: 정부가 2026년 청년 자산형성 지원에 6개 부처 사업으로
+                        - strong [ref=e536]: 3조 227억 원
+                        - text: 을 편성하고, 기여금 6~12%·만기 3년의 청년미래적금을 신설
+                      - cell "정책브리핑 2026, 금융위" [ref=e537]
+                    - row [ref=e538]:
+                      - cell "수요" [ref=e539]
+                      - cell [ref=e540]:
+                        - text: 청년 저축·투자 참여율이
+                        - strong [ref=e541]: 76.5%
+                        - text: ", 월 평균 저축액이 94.1만 원이며,"
+                        - strong [ref=e542]: 청년 10명 중 8명(84%)
+                        - text: 이 적금에 가입 중
+                      - cell "서민금융진흥원 『2024 청년금융 실태조사』(2025.3)" [ref=e543]
+                - paragraph [ref=e544]:
+                  - text: 이 세 축을 종합하면 청년 연간 저축시장은 약
+                  - strong [ref=e545]: 89.84조 원
+                  - text: 규모임(청년 인구 1,040만 × 참여율 76.5% × 월 94.1만 × 12개월)
+                - paragraph [ref=e546]:
+                  - text: 정책적인 수요도 실측되었는데, 2026.6.22 출시된 청년미래적금에는
+                  - strong [ref=e547]: 신청 234만·가입 138.5만 명
+                  - text: 이 몰렸고, 갈 곳을 찾지 못한 단기 자금은 저축은행 파킹통장으로 몰려 2024년 말 잔액이
+                  - strong [ref=e548]: 10조 62억 원
+                  - text: 을 넘어섬(79개 은행 합산, 토스뱅크)
+                - paragraph [ref=e549]:
+                  - text: 문제는 기회가 커진 만큼 선택이 어려워졌다는 점임. 청년이 가입할 수 있는 저축상품은
+                  - strong [ref=e550]: 398개 이상
+                  - text: 으로 늘었고, Y-Fin.은 이 중 정부 63개와 은행 328개를 합쳐
+                  - strong [ref=e551]: 391개를 정규화 완료
+                  - text: 한 상태임.
+                - blockquote [ref=e552]:
+                  - paragraph [ref=e553]:
+                    - text: 결국 지금 부족한 것은 저축상품이 아니라, 398개 중
+                    - strong [ref=e554]: 내가 실제로 받을 수 있는 것을 가려내 보여주는 비교 도구
+                    - text: 임. Y-Fin.이 존재해야 하는 이유가 여기에 있음.
+                - generic [ref=e555]:
+                  - heading "1.2. 문제 정의" [level=3] [ref=e556]
+                  - 'link "Permalink: 1.2. 문제 정의" [ref=e557] [cursor=pointer]':
+                    - /url: "#12-문제-정의"
+                - paragraph [ref=e560]:
+                  - text: 상품이 늘어난 만큼, 청년의 상품 가입을 가로막는 장벽도 뚜렷해짐. Y-Fin. 팀은 시장조사를 통해 3개의 문제를 가설로 세우고,
+                  - strong [ref=e561]: 19~34세 청년 61명
+                  - text: 을 대상으로 1차 설문조사(2026.04, 14문항)를 실시해 이를 검증함. 그 결과 3문제 모두 현재 청년들이 실제로 겪고있는 문제로 확인됨.
+                - paragraph [ref=e562]:
+                  - link [ref=e563] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/survey-painpoints.png
+                    - img "설문 탐색 페인포인트" [ref=e564]
+                  - subscript [ref=e565]: ▲ 1차 설문조사 탐색 단계 상위 3개 페인포인트 (n=61, 2026.04)
+                - table [ref=e567]:
+                  - rowgroup [ref=e568]:
+                    - row [ref=e569]:
+                      - columnheader "문제점" [ref=e570]
+                      - columnheader "설문 응답률" [ref=e571]
+                      - columnheader "내용" [ref=e572]
+                  - rowgroup [ref=e573]:
+                    - row [ref=e574]:
+                      - cell "① 정보 과부하·분산" [ref=e575]
+                      - cell [ref=e576]:
+                        - strong [ref=e577]: 75%
+                      - cell "정부·은행 상품이 채널마다 흩어져 있고, 토스·카카오페이조차 통합해 보여주지 않음. 정보를 얻는 경로도 가족·커뮤니티 등으로 분산됨" [ref=e578]
+                    - row [ref=e579]:
+                      - cell "② 우대금리 불투명" [ref=e580]
+                      - cell [ref=e581]:
+                        - strong [ref=e582]: 48%
+                      - cell "광고하는 최고금리와 실제 달성 금리가 평균 1~3%p 차이 남. 우대조건을 모두 충족해야만 최고금리가 적용됨" [ref=e583]
+                    - row [ref=e584]:
+                      - cell "③ 금융 용어 장벽" [ref=e585]
+                      - cell [ref=e586]:
+                        - strong [ref=e587]: 57%
+                      - cell "20대 금융이해력이 70대와 함께 최하위권이며(2024 전국민 금융이해력 조사), 상품 약관 완독률은 5%에 그침" [ref=e588]
+                - paragraph [ref=e589]:
+                  - text: 이 문제점들은 곧바로 이탈로 이어짐. 청년의
+                  - strong [ref=e590]: 64%가 비교만 하다 신청 전에 포기
+                  - text: 하고, 가입한 뒤에도
+                  - strong [ref=e591]: 26%가 상품을 중도에 해지
+                  - text: 함(설문 이탈률 응답, 청년도약계좌 중도해지율 2026.5 기준). 개선이 가장 필요한 단계로도 비교(46%)와 탐색(33%)이 꼽혀,
+                  - strong [ref=e592]: 79%의 청년이 탐색-비교 구간의 병목
+                  - text: 을 지목함.
+                - blockquote [ref=e593]:
+                  - paragraph [ref=e594]:
+                    - strong [ref=e595]: 핵심 문제 정의
+                    - text: "- 저축상품을 처음 가입하거나 갈아타려는 청년은, 정보 과부하·우대금리 불투명·용어 장벽 때문에 비교에 많은 시간을 쓰고도 받을 수 있는 이자와 정부 기여금을 놓친 채 이탈함."
+                    - strong [ref=e596]: 탐색-비교 단계의 정보 비효율이 실제 가입 전환의 가장 큰 병목
+                    - text: 임.
+                - generic [ref=e597]:
+                  - heading "1.3. 핵심 목표 및 주요 내용" [level=3] [ref=e598]
+                  - 'link "Permalink: 1.3. 핵심 목표 및 주요 내용" [ref=e599] [cursor=pointer]':
+                    - /url: "#13-핵심-목표-및-주요-내용"
+                - paragraph [ref=e602]:
+                  - text: Y-Fin.의 핵심 목표는 청년의 저축상품 탐색-비교 과정을 자격요건 필터링과 개인 맞춤 정렬로 간편하게 만들고,
+                  - strong [ref=e603]: 실제 가입 신청까지 이어주는 것
+                  - text: 임. 이를 위해 먼저 상단 대분류에서 저축 목적을 나눠, 목적에 맞는 상품군만 비교하도록 설계함.
+                - table [ref=e605]:
+                  - rowgroup [ref=e606]:
+                    - row [ref=e607]:
+                      - columnheader "대분류" [ref=e608]
+                      - columnheader "포함 상품" [ref=e609]
+                  - rowgroup [ref=e610]:
+                    - row [ref=e611]:
+                      - cell "단기예치" [ref=e612]
+                      - cell "파킹통장 · 초단기 예적금" [ref=e613]
+                    - row [ref=e614]:
+                      - cell "목돈만들기" [ref=e615]
+                      - cell "예적금 · 정책저축" [ref=e616]
+                    - row [ref=e617]:
+                      - cell "내집마련" [ref=e618]
+                      - cell "주택청약 · 주거정책" [ref=e619]
+                - paragraph [ref=e620]:
+                  - text: 각 기능은 앞서 정의한 문제와 설문으로 검증된 요구에 1:1로 대응함. 추측이 아니라
+                  - strong [ref=e621]: 청년의 응답 데이터에서 기능을 도출
+                  - text: 했음.
+                - table [ref=e623]:
+                  - rowgroup [ref=e624]:
+                    - row [ref=e625]:
+                      - columnheader "검증된 요구 (설문)" [ref=e626]
+                      - columnheader "대응 기능" [ref=e627]
+                  - rowgroup [ref=e628]:
+                    - row [ref=e629]:
+                      - cell [ref=e630]:
+                        - text: 수익률 계산기 필요
+                        - strong [ref=e631]: 97%
+                        - text: (Q8, 전 기능 유용성 1위)
+                      - cell "세후 실수령액 수익률 계산기" [ref=e632]
+                    - row [ref=e633]:
+                      - cell [ref=e634]:
+                        - text: 키워드 기반 탐색 유용
+                        - strong [ref=e635]: 95%
+                        - text: (Q4)
+                      - 'cell "정보 입력 1단계: 키워드 선택" [ref=e636]'
+                    - row [ref=e637]:
+                      - cell "비교 시 금리 84%·세후 실수령액 51% 중시 (Q5)" [ref=e638]
+                      - cell "세후 실수령액 순 정렬" [ref=e639]
+                    - row [ref=e640]:
+                      - cell [ref=e641]:
+                        - text: 아웃링크 연동 유용
+                        - strong [ref=e642]: 89%
+                        - text: (Q11)
+                      - cell "공식 채널 신청 아웃링크" [ref=e643]
+                    - row [ref=e644]:
+                      - cell "용어 이해 어려움 57%·약관 미독 43% (Q6)" [ref=e645]
+                      - cell "서비스 전역 금융 용어 풀이" [ref=e646]
+                - generic [ref=e647]:
+                  - heading "1.4. 세부 내용 - 3단계 추천 로직" [level=3] [ref=e648]
+                  - 'link "Permalink: 1.4. 세부 내용 - 3단계 추천 로직" [ref=e649] [cursor=pointer]':
+                    - /url: "#14-세부-내용---3단계-추천-로직"
+                - paragraph [ref=e652]:
+                  - text: Y-Fin.의 추천은 상품을
+                  - strong [ref=e653]: 모으고·거르고·정렬하는 단 3단계
+                  - text: 로 작동함. 복잡한 탐색 과정을 3단계 추천 로직으로 압축해, 금융상품에 대해 잘 모르는 청년도 자기에게 맞는 순서로 상품을 확인할 수 있음.
+                - paragraph [ref=e654]:
+                  - link [ref=e655] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/flow-3step.png
+                    - img "3단계 추천 로직" [ref=e656]
+                  - subscript [ref=e657]: ▲ 정보 입력 - 자격요건 필터링 - 세후 실수령액 정렬의 3단계 로직
+                - list [ref=e658]:
+                  - listitem [ref=e659]:
+                    - strong [ref=e660]: 정보 입력
+                    - text: "- 키워드를 선택해 선호를 반영하고, 수동 입력으로 자격 요건을 받음. 이때 동적 폼이 불필요한 질문을 스스로 걷어냄(예: #미취업을 고르면 근속 기간 항목이 자동으로 사라짐)"
+                  - listitem [ref=e661]:
+                    - strong [ref=e662]: 자격요건 자동 필터링
+                    - text: "- 입력값을 상품별 자격 룰과 대조해 가입 불가 상품을 자동 제외하고,"
+                    - strong [ref=e663]: 총 OO개 중 자격 미충족 XX개 제외
+                    - text: 로 필터가 작동한 근거를 투명하게 보여줌
+                  - listitem [ref=e664]:
+                    - strong [ref=e665]: 정렬
+                    - text: "- 광고 최고금리가 아니라"
+                    - strong [ref=e666]: 적합도
+                    - text: 와
+                    - strong [ref=e667]: 세후 실수령액
+                    - text: 을 기준으로 구성하여 남은 상품을 줄 세움
+                - paragraph [ref=e668]: 정렬된 추천 결과는 대분류를 선택하여 탭으로 볼 수 있음. 목돈만들기는 탭 A(적합도 순)와 탭 B(세후 실수령액 순)로, 단기예치는 탭 C(초단기 예적금 실수령액 순)와 탭 D(파킹통장 최고금리 순)로 비교함. 이 정렬을 뒷받침하는 두 가지 기준은 다음과 같음.
+                - list [ref=e669]:
+                  - listitem [ref=e670]:
+                    - strong [ref=e671]: 적합도
+                    - text: "- 유저가 선택한 키워드와 상품 속성을 매칭해 100점 만점으로 산출함. 배점은 상품 데이터 특성을 반영한 고정 배점(고특성 30점·일반 20점)이며, 구조가 다른 정부·은행 상품은 배점 체계를 분리해 각각 계산함."
+                  - listitem [ref=e672]:
+                    - strong [ref=e673]: 세후 실수령액
+                    - text: "- 내가 받을 수 있는 금리만으로는 비교가 왜곡됨. 정부 상품은 금리가 공시되지 않고, 은행은 광고 최고금리와 실제 금리가 1~3%p 차이 나며,"
+                    - strong [ref=e674]: 같은 금리라도 예금이 적금보다 실수령이 약 1.8배
+                    - text: 크기 때문임. Y-Fin.은 정부 기여금을 연환산 수익률로 변환하고, 은행은 기본금리에 실제 충족 가능한 우대금리만 더한 세후 실수령액으로 모든 상품을 같은 선상에서 비교함.
+                - generic [ref=e675]:
+                  - heading "1.5. 기존 서비스 대비 차별성" [level=3] [ref=e676]
+                  - 'link "Permalink: 1.5. 기존 서비스 대비 차별성" [ref=e677] [cursor=pointer]':
+                    - /url: "#15-기존-서비스-대비-차별성"
+                - paragraph [ref=e680]:
+                  - text: 기존 서비스는 두 축 중 하나만 채움. 공공 서비스는 상품 범위는 넓으나 개인화가 부재하고, 핀테크 서비스는 개인화는 일부 지원하나 정책상품 커버리지가 부족함. 은행 서비스들은 자행 상품 추천에 편향되어 있음. Y-Fin.은
+                  - strong [ref=e681]: 정부·은행 통합 + 청년 맞춤 추천이라는, 어떤 경쟁사도 서 있지 않은 화이트 스페이스
+                  - text: 에 위치함.
+                - paragraph [ref=e682]:
+                  - link [ref=e683] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/positioning.png
+                    - img "포지셔닝 맵 및 경쟁사 기능 비교" [ref=e684]
+                  - subscript [ref=e685]: ▲ 포지셔닝 맵과 경쟁사 기능별 비교 (O 제공 · △ 부분 · X 미제공)
+                - paragraph [ref=e686]:
+                  - text: 특히
+                  - strong [ref=e687]: 적합도 순 정렬과 세후 실수령액 순 정렬은 어떤 경쟁사도 제공하지 않는 Y-Fin.만의 고유 기능
+                  - text: 임.
+                - paragraph [ref=e688]:
+                  - text: 대형 플랫폼의 후속 진입에도 경쟁우위가 지속되는 이유는 크게 두 가지임. 첫째, 추천 로직의 청년 자격 판정 정밀도가 높아지고 데이터가 쌓일수록
+                  - strong [ref=e689]: 청년을 타겟으로 한 추천이 정확해지는 선순환 구조
+                  - text: 가 형성됨. 둘째, 저축 상품은 중개 수수료가 낮아 빅테크 기업에게는 후순위 시장이라,
+                  - strong [ref=e690]: 본격적으로 진입할 인센티브가 구조적으로 약함
+                  - text: .
+                - generic [ref=e691]:
+                  - heading "1.6. 사회적 가치 도입 계획" [level=3] [ref=e692]
+                  - 'link "Permalink: 1.6. 사회적 가치 도입 계획" [ref=e693] [cursor=pointer]':
+                    - /url: "#16-사회적-가치-도입-계획"
+                - paragraph [ref=e696]: Y-Fin.은 금융위 2026 정책 기조 「생산적·포용·신뢰받는 금융」과 직접 연계됨.
+                - list [ref=e697]:
+                  - listitem [ref=e698]:
+                    - strong [ref=e699]: 정책 효과성 제고
+                    - text: "- 청년들이 자격을 몰라서 놓치는 정부 사업의 실제 가입률을 높임. 청년미래적금은 예산 대비 약"
+                    - strong [ref=e700]: 86만 명분이 미신청
+                    - text: 상태로, 정책은 있으나 대상 청년에게 도달하지 못하고 있음. Y-Fin.이 이러한 발견과 신청 격차를 좁힘.
+                  - listitem [ref=e701]:
+                    - strong [ref=e702]: 포용금융 실현
+                    - text: "- 금융 정보 비대칭을 용어 풀이로 완화하고, 광고금리가 아닌"
+                    - strong [ref=e703]: 세후 실수령액을 표시해 다크패턴에 따른 금리 오인 가입을 차단
+                    - text: 함. 영남권 청년 우선 접근으로 지역 격차에도 대응함.
+                  - listitem [ref=e704]:
+                    - strong [ref=e705]: 신뢰 보호·중립
+                    - text: "- 추천 정렬에 광고비를 반영하지 않고, 광고는 별도 영역으로 격리·명시함. 판매·중개가 아닌 정보 제공 서비스로서 신청은 공식 채널 아웃링크로 연결함."
+                - separator [ref=e706]
+                - generic [ref=e707]:
+                  - heading "2. 상세설계" [level=2] [ref=e708]
+                  - 'link "Permalink: 2. 상세설계" [ref=e709] [cursor=pointer]':
+                    - /url: "#2-상세설계"
+                - generic [ref=e712]:
+                  - heading "2.1. 시스템 구성도" [level=3] [ref=e713]
+                  - 'link "Permalink: 2.1. 시스템 구성도" [ref=e714] [cursor=pointer]':
+                    - /url: "#21-시스템-구성도"
+                - paragraph [ref=e717]:
+                  - text: AWS EC2 위에 Frontend·Core Backend·Data Pipeline을 올리고, RDS(PostgreSQL)를 공용 저장소로 사용함. 전 구간은
+                  - strong [ref=e718]: Security Layer
+                  - text: (TLS 1.3·JWT·bcrypt)로 보호함.
+                - paragraph [ref=e719]:
+                  - link [ref=e720] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/architecture.png
+                    - img "시스템 아키텍처" [ref=e721]
+                  - subscript [ref=e722]: ▲ 프론트엔드 - 백엔드 - 데이터베이스 - 데이터 수집기 - 공공 API 구성
+                - paragraph [ref=e723]:
+                  - text: 데이터는
+                  - strong [ref=e724]: 공공 API → 정기 수집·정제(Spring Batch) → DB 적재 → 필터링·계산 → 맞춤 추천
+                  - text: 의 5단계로 흐름. 수집·가공·서빙 계층을 분리했기에, 대출이나 마이데이터 2.0 API가 추가돼도
+                  - strong [ref=e725]: 기존 구조를 훼손하지 않고 확장
+                  - text: 할 수 있음.
+                - paragraph [ref=e726]:
+                  - link [ref=e727] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/data-pipeline.png
+                    - img "5단계 데이터 파이프라인" [ref=e728]
+                  - subscript [ref=e729]: ▲ 수집 - 정제 - 적재 - 연산 - 서빙 5단계 데이터 파이프라인
+                - generic [ref=e730]:
+                  - heading "2.2. 사용 기술" [level=3] [ref=e731]
+                  - 'link "Permalink: 2.2. 사용 기술" [ref=e732] [cursor=pointer]':
+                    - /url: "#22-사용-기술"
+                - table [ref=e736]:
+                  - rowgroup [ref=e737]:
+                    - row [ref=e738]:
+                      - columnheader "구분" [ref=e739]
+                      - columnheader "스택" [ref=e740]
+                      - columnheader "선정 근거" [ref=e741]
+                  - rowgroup [ref=e742]:
+                    - row [ref=e743]:
+                      - cell "Frontend (Fin-FE)" [ref=e744]
+                      - cell "JavaScript, React 19.2 + Vite 7.3, Tailwind 4, framer-motion, axios" [ref=e745]
+                      - cell "복잡한 금융 입력폼 상태 관리" [ref=e746]
+                    - row [ref=e747]:
+                      - cell "Backend (Fin-BE)" [ref=e748]
+                      - cell "Java 21, Spring Boot 4.0.3, Spring Data JPA·Security·Validation, JWT·bcrypt" [ref=e749]
+                      - cell "도메인 로직 분리·트랜잭션·복합 조건 검색" [ref=e750]
+                    - row [ref=e751]:
+                      - cell "Collector (Fin-API)" [ref=e752]
+                      - cell "Spring Boot 4, Spring Batch, 금감원·온통청년 API, Gemini 2.5 Flash-Lite" [ref=e753]
+                      - cell "공공 데이터 정기 수집·정규화" [ref=e754]
+                    - row [ref=e755]:
+                      - cell "Infra / DB" [ref=e756]
+                      - cell "AWS EC2 + RDS, PostgreSQL 16 + pgvector, Docker Compose, Sentry·GA4" [ref=e757]
+                      - cell "애플리케이션/DB 분리 운영·모니터링" [ref=e758]
+                    - row [ref=e759]:
+                      - cell "보안" [ref=e760]
+                      - cell "HTTPS/TLS 1.3, JWT, bcrypt" [ref=e761]
+                      - cell "금융 서비스 신뢰도 확보" [ref=e762]
+                - generic [ref=e763]:
+                  - heading "2.3. 활용 생성형 AI (제품 내장)" [level=3] [ref=e764]
+                  - 'link "Permalink: 2.3. 활용 생성형 AI (제품 내장)" [ref=e765] [cursor=pointer]':
+                    - /url: "#23-활용-생성형-ai-제품-내장"
+                - blockquote [ref=e768]:
+                  - paragraph [ref=e769]:
+                    - text: 전체 문서는
+                    - link [ref=e770] [cursor=pointer]:
+                      - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/ai-usage.md
+                      - code [ref=e771]: docs/ai-usage.md
+                    - text: 참고
+                - generic [ref=e772]:
+                  - heading "활용 도구와 범위" [level=4] [ref=e773]
+                  - 'link "Permalink: 활용 도구와 범위" [ref=e774] [cursor=pointer]':
+                    - /url: "#활용-도구와-범위"
+                - table [ref=e778]:
+                  - rowgroup [ref=e779]:
+                    - row [ref=e780]:
+                      - columnheader "구분" [ref=e781]
+                      - columnheader "도구" [ref=e782]
+                      - columnheader "활용 범위" [ref=e783]
+                  - rowgroup [ref=e784]:
+                    - row [ref=e785]:
+                      - cell "서비스 핵심 기능" [ref=e786]
+                      - cell [ref=e787]:
+                        - strong [ref=e788]: Gemini API 2.5 Flash-Lite
+                      - cell "FSS 상품 원문의 비정형 조건을 비교·추천용 데이터로 구조화" [ref=e789]
+                    - row [ref=e790]:
+                      - cell "개발 지원" [ref=e791]
+                      - cell [ref=e792]:
+                        - strong [ref=e793]: Claude Code
+                      - cell "요구사항·설계, 백엔드·수집기·프론트 구현, 테스트·디버깅" [ref=e794]
+                    - row [ref=e795]:
+                      - cell "개발 지원" [ref=e796]
+                      - cell [ref=e797]:
+                        - strong [ref=e798]: Codex
+                      - cell "배포, 코드 리뷰, 오류 분석, 문서 점검" [ref=e799]
+                - paragraph [ref=e800]:
+                  - text: AI가 결과를 단독으로 결정하지 않도록,
+                  - strong [ref=e801]: 제품에서는 규칙과 검증 코드로 LLM을 통제하고 개발에서는 팀원이 검토·테스트한 뒤 반영
+                  - text: 함.
+                - generic [ref=e802]:
+                  - heading "핵심 성과 - LLM을 결합한 금융상품 데이터 수집" [level=4] [ref=e803]
+                  - 'link "Permalink: 핵심 성과 - LLM을 결합한 금융상품 데이터 수집" [ref=e804] [cursor=pointer]':
+                    - /url: "#핵심-성과---llm을-결합한-금융상품-데이터-수집"
+                - paragraph [ref=e807]:
+                  - text: 금감원 API의 가입대상·우대조건은 은행마다 자연어 표현이 달라 단순 규칙만으로는 동일하게 비교하기 어려움. 이를 해결하기 위해
+                  - code [ref=e808]: api/
+                  - text: Spring Batch 수집기에
+                  - strong [ref=e809]: 규칙 기반 + LLM 하이브리드 정규화
+                  - text: 를 구현함.
+                - paragraph [ref=e810]:
+                  - link [ref=e811] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/llm-normalization.png
+                    - img "LLM 보강 정규화 흐름" [ref=e812]
+                  - subscript [ref=e813]: ▲ 규칙 기반 + LLM 하이브리드 정규화 흐름
+                - list [ref=e814]:
+                  - listitem [ref=e815]:
+                    - strong [ref=e816]: 원문 보존
+                    - text: "- API 응답을"
+                    - code [ref=e817]: ProductRaw
+                    - text: 에 저장해 원문 대조와 재처리를 가능하게 함
+                  - listitem [ref=e818]:
+                    - strong [ref=e819]: 1차 정규화
+                    - text: "- 코드가 상품명·은행·기본/최고금리·기간 등 명확한 값을 먼저 추출함"
+                  - listitem [ref=e820]:
+                    - strong [ref=e821]: LLM 보강
+                    - text: "- 원문과 1차 결과에서 요약, 연령·소득·월 납입 조건, 가입 필수/제외 조건, 조건별 우대금리를 Structured JSON으로 추출함. 기본/최고금리·기간·상품코드·은행·URL은 LLM 생성 대상에서 제외함"
+                  - listitem [ref=e822]:
+                    - strong [ref=e823]: 검증·병합
+                    - text: "- 규칙값을 우선하고 원문 근거와"
+                    - code [ref=e824]: HIGH
+                    - text: 신뢰도를 만족한 값만 보수적으로 반영함
+                  - listitem [ref=e825]:
+                    - strong [ref=e826]: 저장
+                    - text: "- 검증된 보강값 또는 실패 시의 규칙 결과를 공통 스키마에 저장해 정부·은행 상품을 같은 기준으로 추천함"
+                - paragraph [ref=e827]:
+                  - text: 신뢰성은
+                  - code [ref=e828]: temperature=0
+                  - text: ", 동시 요청 수를 제한한 비동기 배치, 원문·모델·프롬프트·스키마 버전 기반 캐시로 확보함."
+                  - code [ref=e829]: NORMALIZE_ONLY
+                  - text: 모드에서는 외부 API 재호출 없이 저장된 원문을 재정규화함.
+                - generic [ref=e830]:
+                  - heading "LLM 응답 검증·실패 대응" [level=4] [ref=e831]
+                  - 'link "Permalink: LLM 응답 검증·실패 대응" [ref=e832] [cursor=pointer]':
+                    - /url: "#llm-응답-검증실패-대응"
+                - list [ref=e835]:
+                  - listitem [ref=e836]:
+                    - strong [ref=e837]: 형식·값 검증
+                    - text: "- JSON Schema로 응답 구조와 enum을 제한하고, 연령("
+                    - code [ref=e838]: 0~100
+                    - text: )·금리(
+                    - code [ref=e839]: 0~100%
+                    - text: )·음수 금액·최소·최대 역전·키워드 조합을 검사함
+                  - listitem [ref=e840]:
+                    - strong [ref=e841]: 원문 근거 검증
+                    - text: "- 소득 문구가 있을 때만 소득 상한을 수용하고, 예금의 월 납입한도와 근거 없는 자격 키워드 등 실제 오분류를 병합 가드로 제거함"
+                  - listitem [ref=e842]:
+                    - strong [ref=e843]: 폴백·관측
+                    - text: "- 호출·파싱·검증 실패 시 규칙 결과를 유지함. 실패는 6시간 재호출하지 않고 캐시 적중·호출·실패·쿨다운 수를 로그로 집계함"
+                  - listitem [ref=e844]:
+                    - strong [ref=e845]: 회귀 테스트
+                    - text: "- 프롬프트·스키마·파서·검증·캐시·폴백·병합을 다루는"
+                    - strong [ref=e846]: 45개 단위 테스트
+                    - text: 로 오분류·캐시 불일치·API 실패를 재현함
+                - separator [ref=e847]
+                - generic [ref=e848]:
+                  - heading "3. 개발결과" [level=2] [ref=e849]
+                  - 'link "Permalink: 3. 개발결과" [ref=e850] [cursor=pointer]':
+                    - /url: "#3-개발결과"
+                - blockquote [ref=e853]:
+                  - paragraph [ref=e854]:
+                    - strong [ref=e855]: MVP P0 전 기능(Y1~Y5)을 개발 완료하고, 내부 QA를 마친 뒤 실서비스로 배포했음.
+                    - text: 아래 화면들은 전부 실제 동작 중인 기능임.
+                - generic [ref=e856]:
+                  - heading "3.1. 전체 시스템 흐름도" [level=3] [ref=e857]
+                  - 'link "Permalink: 3.1. 전체 시스템 흐름도" [ref=e858] [cursor=pointer]':
+                    - /url: "#31-전체-시스템-흐름도"
+                - paragraph [ref=e861]:
+                  - text: 서비스는 회원가입에서 추천, 상세, 마이페이지까지 하나의 플로우로 이어짐. 전역 금융 용어 풀이는 특정 단계가 아니라
+                  - strong [ref=e862]: 모든 화면을 가로지르는 공통 레이어
+                  - text: 로 동작함.
+                - region "mermaid rendered output container" [ref=e863]:
+                  - generic [ref=e864]:
+                    - generic [ref=e865]:
+                      - group [ref=e866]:
+                        - button "Open dialog" [ref=e867] [cursor=pointer]
+                      - button "Copy mermaid code" [ref=e870] [cursor=pointer]
+                    - iframe [ref=e875]:
+                      - generic [ref=f1e7]:
+                        - button "Zoom in" [ref=f1e8] [cursor=pointer]
+                        - button "Zoom out" [ref=f1e12] [cursor=pointer]
+                        - button "Reset view" [ref=f1e16] [cursor=pointer]
+                        - button "Pan up" [ref=f1e19] [cursor=pointer]
+                        - button "Pan down" [ref=f1e22] [cursor=pointer]
+                        - button "Pan left" [ref=f1e25] [cursor=pointer]
+                        - button "Pan right" [ref=f1e28] [cursor=pointer]
+                  - generic [ref=e876]: Loading
+                - generic [ref=e881]:
+                  - heading "3.2. 기능 설명" [level=3] [ref=e882]
+                  - 'link "Permalink: 3.2. 기능 설명" [ref=e883] [cursor=pointer]':
+                    - /url: "#32-기능-설명"
+                - table [ref=e887]:
+                  - rowgroup [ref=e888]:
+                    - row [ref=e889]:
+                      - columnheader "기능" [ref=e890]
+                      - columnheader "핵심 구현 내용" [ref=e891]
+                      - columnheader "현황" [ref=e892]
+                  - rowgroup [ref=e893]:
+                    - row [ref=e894]:
+                      - cell "Y1 회원가입/로그인" [ref=e895]
+                      - cell "SNS OAuth 2.0 3초 가입, JWT 세션·자동 로그인, 최소 약관 동의" [ref=e896]
+                      - cell "✅" [ref=e897]
+                    - row [ref=e898]:
+                      - cell "Y2 서비스 소개·탐색" [ref=e899]
+                      - cell "스크롤 랜딩, 비로그인 권한 분기 모달" [ref=e900]
+                      - cell "✅" [ref=e901]
+                    - row [ref=e902]:
+                      - cell "Y3-1 정보 입력" [ref=e903]
+                      - cell "키워드 + 수동 입력, 동적 폼(미취업 시 근속 항목 숨김)" [ref=e904]
+                      - cell "✅" [ref=e905]
+                    - row [ref=e906]:
+                      - cell "Y3-2 리스트" [ref=e907]
+                      - cell "자격요건 Hard Filter, 제외 수 노출, 탭 A·B 정렬" [ref=e908]
+                      - cell "✅" [ref=e909]
+                    - row [ref=e910]:
+                      - cell "Y4-1 수익률 계산기" [ref=e911]
+                      - cell "세전·세후 실수령액 시뮬레이션, 과세/비과세 분기" [ref=e912]
+                      - cell "✅" [ref=e913]
+                    - row [ref=e914]:
+                      - cell "Y4-2 신청 아웃링크" [ref=e915]
+                      - cell "외부 신청 페이지 직결, 서류 안내 모달, GA4 트래킹" [ref=e916]
+                      - cell "✅" [ref=e917]
+                    - row [ref=e918]:
+                      - cell "Y5 찜해둔 Fin.·개인정보" [ref=e919]
+                      - cell "관심 상품 저장·비교·만기 알림, 재추천 프리필" [ref=e920]
+                      - cell "✅" [ref=e921]
+                    - row [ref=e922]:
+                      - cell "전역 금융 용어 풀이" [ref=e923]
+                      - cell "Y1~Y5 공통 레이어, 어려운 용어를 쉬운 말로 풀이(필요 시 LLM)" [ref=e924]
+                      - cell "✅" [ref=e925]
+                - paragraph [ref=e926]:
+                  - text: 데이터는 은행(FSS) 328건과 정부(온통청년) 63건을 합쳐
+                  - strong [ref=e927]: 391건을 정규화 완료
+                  - text: 함. 아래는 실제 동작 화면임.
+                - table [ref=e929]:
+                  - rowgroup [ref=e930]:
+                    - row [ref=e931]:
+                      - cell [ref=e932]:
+                        - link [ref=e933] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-login.png
+                          - img "회원가입 랜딩" [ref=e934]
+                        - subscript [ref=e935]: Y1 회원가입·로그인 - 카카오·구글 OAuth로 3초 만에 가입
+                      - cell [ref=e936]:
+                        - link [ref=e937] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-terms.png
+                          - img "약관 동의" [ref=e938]
+                        - subscript [ref=e939]: Y1 약관 동의 - 추천에 필요한 최소 항목만 동의받음
+                    - row [ref=e940]:
+                      - cell [ref=e941]:
+                        - link [ref=e942] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-input-1.png
+                          - img "정보 입력 키워드" [ref=e943]
+                        - subscript [ref=e944]: Y3-1 정보 입력 ① - 목표·금액·기간·조건을 키워드로 선택
+                      - cell [ref=e945]:
+                        - link [ref=e946] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-input-2.png
+                          - img "정보 입력 수동" [ref=e947]
+                        - subscript [ref=e948]: Y3-1 정보 입력 ② - 자격 요건 수동 입력, 동적 폼이 불필요한 질문을 숨김
+                    - row [ref=e949]:
+                      - cell [ref=e950]:
+                        - link [ref=e951] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-list-1.png
+                          - img "리스트 적합도순" [ref=e952]
+                        - subscript [ref=e953]: Y3-2 리스트 ① - 최상단에 뜨는 TOP3 카드
+                      - cell [ref=e954]:
+                        - link [ref=e955] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-list-2.png
+                          - img "리스트 실수령액순" [ref=e956]
+                        - subscript [ref=e957]: Y3-2 리스트 ② - 아래로 스크롤하면 뜨는 리스트 카드
+                    - row [ref=e958]:
+                      - cell [ref=e959]:
+                        - link [ref=e960] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-detail-gov.png
+                          - img "상세 정부상품" [ref=e961]
+                        - subscript [ref=e962]: Y4 상세 (정부상품) - 기여금 환산 수익률과 자격조건 표시
+                      - cell [ref=e963]:
+                        - link [ref=e964] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-detail-bank.png
+                          - img "상세 은행상품" [ref=e965]
+                        - subscript [ref=e966]: Y4 상세 (은행상품) - 기본·최고·내가 받을 수 있는 금리와 우대조건 표시
+                    - row [ref=e967]:
+                      - cell [ref=e968]:
+                        - link [ref=e969] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-calc-deposit.png
+                          - img "예금 계산기" [ref=e970]
+                        - subscript [ref=e971]: Y4-1 수익률 계산기 (예금) - 거치식 세후 실수령액 자동 계산
+                      - cell [ref=e972]:
+                        - link [ref=e973] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-calc-installment.png
+                          - img "적금 계산기" [ref=e974]
+                        - subscript [ref=e975]: Y4-1 수익률 계산기 (적금) - 적립식 세후 실수령액 자동 계산
+                    - row [ref=e976]:
+                      - cell [ref=e977]:
+                        - link [ref=e978] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-mypage-fav.png
+                          - img "찜해둔 Fin." [ref=e979]
+                        - subscript [ref=e980]: Y5 찜해둔 Fin. - 관심 상품 저장·비교 뷰
+                      - cell [ref=e981]:
+                        - link [ref=e982] [cursor=pointer]:
+                          - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/screen-mypage-info.png
+                          - img "개인정보 수정" [ref=e983]
+                        - subscript [ref=e984]: Y5 개인정보 수정 - 저장된 정보로 입력 없이 다시 추천
+                - generic [ref=e985]:
+                  - heading "3.3. 핵심 기능 명세" [level=3] [ref=e986]
+                  - 'link "Permalink: 3.3. 핵심 기능 명세" [ref=e987] [cursor=pointer]':
+                    - /url: "#33-핵심-기능-명세"
+                - list [ref=e990]:
+                  - listitem [ref=e991]:
+                    - strong [ref=e992]: 자격요건 필터링(Hard Filter)
+                    - text: "- 수동 입력값을 상품 자격 룰과 대조해 가입 불가 상품을 제외하고, 제외 근거를 문구로 노출함"
+                  - listitem [ref=e993]:
+                    - strong [ref=e994]: 탭 A 적합도
+                    - text: "- 정부·은행 배점을 분리해 100점 만점으로 산출함(상품 데이터 특성 기반 고정 배점, 고특성 30·일반 20)"
+                  - listitem [ref=e995]:
+                    - strong [ref=e996]: 탭 B 세후 실수령액
+                    - text: "- 정부 기여금을 연환산 수익률로, 은행은 기본금리에 충족 가능한 우대금리를 더해 세후 실수령액을 산출함"
+                  - listitem [ref=e997]:
+                    - strong [ref=e998]: 수익률 계산기
+                    - text: "- 세전·세후 실수령액을 단리/복리·과세/비과세로 분기해 계산함"
+                  - listitem [ref=e999]:
+                    - strong [ref=e1000]: 4계층 검증
+                    - text: "- 자격 필터(오판정률 0% 목표), 적합도 점수/달성 가능 금리(금감원 공시값 오차 0 목표), 용어 풀이(LLM 환각 검출)를 단계별로 검증함"
+                - generic [ref=e1001]:
+                  - heading "3.4. 디렉토리 구조" [level=3] [ref=e1002]
+                  - 'link "Permalink: 3.4. 디렉토리 구조" [ref=e1003] [cursor=pointer]':
+                    - /url: "#34-디렉토리-구조"
+                - generic [ref=e1006]:
+                  - code [ref=e1008]: "pnuai-c-07-finfin2/ ├── frontend/ # Fin-FE : React + Vite 웹 클라이언트 ├── backend/ # Fin-BE : Spring Boot API 서버 (auth·user·search·calculator·myfin·category·provider) ├── api/ # Fin-API : Spring Batch 수집기 (batch·client·normalize·llm·product·raw) └── docs/ # 보고서·ai-usage.md"
+                  - button "Copy code to clipboard" [ref=e1010] [cursor=pointer]
+                - generic [ref=e1014]:
+                  - heading "3.5. AI 도구 활용 (개발 보조)" [level=3] [ref=e1015]
+                  - 'link "Permalink: 3.5. AI 도구 활용 (개발 보조)" [ref=e1016] [cursor=pointer]':
+                    - /url: "#35-ai-도구-활용-개발-보조"
+                - blockquote [ref=e1019]:
+                  - paragraph [ref=e1020]:
+                    - text: 전체 문서는
+                    - link [ref=e1021] [cursor=pointer]:
+                      - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/ai-usage.md
+                      - code [ref=e1022]: docs/ai-usage.md
+                    - text: 참고
+                - paragraph [ref=e1023]:
+                  - text: 전 개발 단계에서 AI 코딩 도구를
+                  - strong [ref=e1024]: 페어 프로그래밍 도구
+                  - text: 로 활용함.
+                - table [ref=e1026]:
+                  - rowgroup [ref=e1027]:
+                    - row [ref=e1028]:
+                      - columnheader "단계" [ref=e1029]
+                      - columnheader "주요 도구" [ref=e1030]
+                      - columnheader "활용 내용" [ref=e1031]
+                  - rowgroup [ref=e1032]:
+                    - row [ref=e1033]:
+                      - cell "기획" [ref=e1034]
+                      - cell "Claude" [ref=e1035]
+                      - cell "자격요건 필터·정렬 기준 설계, 수익률 계산 로직 검증" [ref=e1036]
+                    - row [ref=e1037]:
+                      - cell "설계" [ref=e1038]
+                      - cell "Claude" [ref=e1039]
+                      - cell "아키텍처 설계, 시퀀스 다이어그램 구축" [ref=e1040]
+                    - row [ref=e1041]:
+                      - cell "백엔드" [ref=e1042]
+                      - cell "Codex / Claude" [ref=e1043]
+                      - cell "DTO·Entity·Repository 로직, 테스트 코드 작성" [ref=e1044]
+                    - row [ref=e1045]:
+                      - cell "프론트" [ref=e1046]
+                      - cell "Claude" [ref=e1047]
+                      - cell "컴포넌트 개발, 반응형 UI 작업, UX 개선" [ref=e1048]
+                    - row [ref=e1049]:
+                      - cell "데이터" [ref=e1050]
+                      - cell "Codex / Claude" [ref=e1051]
+                      - cell "공공 API 연동, 스키마 정규화 설정" [ref=e1052]
+                    - row [ref=e1053]:
+                      - cell "배포·기타" [ref=e1054]
+                      - cell "Codex" [ref=e1055]
+                      - cell "EC2·Docker Compose 스크립트 생성, 코드 리뷰" [ref=e1056]
+                - paragraph [ref=e1057]:
+                  - strong [ref=e1058]: 생성 코드는 그대로 채택하지 않음.
+                  - text: 팀원이 요구사항과 기존 구조에 맞는지 diff를 리뷰하고 비즈니스 규칙·보안·예외 처리를 보완한 뒤,
+                  - strong [ref=e1059]: 단위·Testcontainers 통합 테스트를 통과한 코드만 반영
+                  - text: 함. Git 이력에는 최초 LLM 보강 후 JSON 파싱·스키마·비동기 호출·캐시·폴백·오분류 가드·테스트를 반복 개선한 과정이 남아 있으며, 프로젝트 제약은
+                  - link [ref=e1060] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/CLAUDE.md
+                    - code [ref=e1061]: CLAUDE.md
+                  - text: ·
+                  - link [ref=e1062] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/AGENTS.md
+                    - code [ref=e1063]: AGENTS.md
+                  - text: 로 공유함.
+                - generic [ref=e1064]:
+                  - heading "3.6. 개발 마일스톤 (26.02~08)" [level=3] [ref=e1065]
+                  - 'link "Permalink: 3.6. 개발 마일스톤 (26.02~08)" [ref=e1066] [cursor=pointer]':
+                    - /url: "#36-개발-마일스톤-260208"
+                - table [ref=e1070]:
+                  - rowgroup [ref=e1071]:
+                    - row [ref=e1072]:
+                      - columnheader "시기" [ref=e1073]
+                      - columnheader "내용" [ref=e1074]
+                  - rowgroup [ref=e1075]:
+                    - row [ref=e1076]:
+                      - cell "02" [ref=e1077]
+                      - cell "팀 결성 · PRD · 와이어프레임" [ref=e1078]
+                    - row [ref=e1079]:
+                      - cell "03" [ref=e1080]
+                      - cell "시장조사 · API 연결 · Y1·Y2 완료" [ref=e1081]
+                    - row [ref=e1082]:
+                      - cell "04~05" [ref=e1083]
+                      - cell "1차 설문 · Y3 완료" [ref=e1084]
+                    - row [ref=e1085]:
+                      - cell "06~07" [ref=e1086]
+                      - cell "Y4·Y5 완료" [ref=e1087]
+                    - row [ref=e1088]:
+                      - cell "08" [ref=e1089]
+                      - cell [ref=e1090]:
+                        - strong [ref=e1091]: 내부 QA 완료 · 실서비스 배포 완료 · SW 저작등록
+                - generic [ref=e1092]:
+                  - heading "3.7. 멘토링·피드백 반영" [level=3] [ref=e1093]
+                  - 'link "Permalink: 3.7. 멘토링·피드백 반영" [ref=e1094] [cursor=pointer]':
+                    - /url: "#37-멘토링피드백-반영"
+                - paragraph [ref=e1097]: 해커톤 예선과 여러 경진대회에서 받은 피드백을 개발에 반영함.
+                - table [ref=e1099]:
+                  - rowgroup [ref=e1100]:
+                    - row [ref=e1101]:
+                      - columnheader "소스" [ref=e1102]
+                      - columnheader "피드백" [ref=e1103]
+                      - columnheader "반영" [ref=e1104]
+                  - rowgroup [ref=e1105]:
+                    - row [ref=e1106]:
+                      - cell "이지스·팀미팅" [ref=e1107]
+                      - cell "시장 규모는 틈새 중심으로, 설문 신뢰도 보완" [ref=e1108]
+                      - cell "SOM 중심 재설계, 표본 편향 명시" [ref=e1109]
+                    - row [ref=e1110]:
+                      - cell "멘토·예선발표" [ref=e1111]
+                      - cell "독점시장 아님, 알고리즘 검증 필요" [ref=e1112]
+                      - cell "경쟁사 분석 진행하여 포지셔닝 수립, 4계층 검증 구조 설계" [ref=e1113]
+                    - row [ref=e1114]:
+                      - cell "샌드버그 CTO" [ref=e1115]
+                      - cell "추천 기능만으로는 리텐션에 한계" [ref=e1116]
+                      - cell "정부상품 캘린더 및 출시·만기 알림 기능 개발" [ref=e1117]
+                    - row [ref=e1118]:
+                      - cell "중간보고회" [ref=e1119]
+                      - cell "저축시장 선택 이유 보강" [ref=e1120]
+                      - cell "금리·정책·수요 3축 확장 시장임을 리서치 기반 보강" [ref=e1121]
+                - separator [ref=e1122]
+                - generic [ref=e1123]:
+                  - heading "4. 설치 및 사용 방법" [level=2] [ref=e1124]
+                  - 'link "Permalink: 4. 설치 및 사용 방법" [ref=e1125] [cursor=pointer]':
+                    - /url: "#4-설치-및-사용-방법"
+                - paragraph [ref=e1128]:
+                  - strong [ref=e1129]: 요구 사항
+                  - text: "- Node.js 22.x·pnpm 10.x, Java 21, Docker / Docker Compose, PostgreSQL 16(+pgvector, Docker Compose 자동 구동)"
+                - generic [ref=e1130]:
+                  - generic [ref=e1131]:
+                    - generic [ref=e1132]: "# Backend (Fin-BE)"
+                    - text: cd backend && docker compose up -d && ./gradlew bootRun
+                    - generic [ref=e1133]: "# Collector (Fin-API) - 상품 데이터 수집"
+                    - text: cd api && ./gradlew bootRun
+                    - generic [ref=e1134]: "# Frontend (Fin-FE)"
+                    - text: cd frontend && pnpm install && pnpm dev
+                  - button "Copy code to clipboard" [ref=e1136] [cursor=pointer]
+                - blockquote [ref=e1140]:
+                  - paragraph [ref=e1141]:
+                    - text: 외부 API 키·DB 접속 정보 등 환경 변수는 각 모듈의
+                    - code [ref=e1142]: .env
+                    - text: 예시를 참고함. 배포본은
+                    - link "https://fin-qa.yuyeol3.uk/" [ref=e1143] [cursor=pointer]:
+                      - /url: https://fin-qa.yuyeol3.uk/
+                    - text: 에서 바로 확인할 수 있음.
+                - separator [ref=e1144]
+                - generic [ref=e1145]:
+                  - heading "5. 소개 및 시연영상" [level=2] [ref=e1146]
+                  - 'link "Permalink: 5. 소개 및 시연영상" [ref=e1147] [cursor=pointer]':
+                    - /url: "#5-소개-및-시연영상"
+                - list [ref=e1150]:
+                  - listitem [ref=e1151]:
+                    - text: "서비스 시연 영상:"
+                    - link "https://www.youtube.com/watch?v=Ujk2gfQ6XRs" [ref=e1152] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=Ujk2gfQ6XRs
+                    - list [ref=e1153]:
+                      - listitem [ref=e1154]: 흐름 - 로그인 → 정보 입력 → 리스트 → 상세정보 → 수익률 계산기 → 마이페이지
+                  - listitem [ref=e1155]:
+                    - text: "배포 서비스:"
+                    - link "https://fin-qa.yuyeol3.uk/" [ref=e1156] [cursor=pointer]:
+                      - /url: https://fin-qa.yuyeol3.uk/
+                  - listitem [ref=e1157]:
+                    - text: "프로젝트 배너(포스터):"
+                    - link "docs/img/banner.png" [ref=e1158] [cursor=pointer]:
+                      - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/banner.png
+                - separator [ref=e1159]
+                - generic [ref=e1160]:
+                  - heading "6. 사업화 및 향후 계획" [level=2] [ref=e1161]
+                  - 'link "Permalink: 6. 사업화 및 향후 계획" [ref=e1162] [cursor=pointer]':
+                    - /url: "#6-사업화-및-향후-계획"
+                - generic [ref=e1165]:
+                  - heading "6.1. 상품군 / 기능 확장" [level=3] [ref=e1166]
+                  - 'link "Permalink: 6.1. 상품군 / 기능 확장" [ref=e1167] [cursor=pointer]':
+                    - /url: "#61-상품군--기능-확장"
+                - paragraph [ref=e1170]:
+                  - text: Y-Fin.은 저축상품 추천에서 멈추지 않고
+                  - strong [ref=e1171]: 청년 금융 슈퍼앱
+                  - text: 으로 나아감. 확장은 상품군과 기능 두 축으로 진행함.
+                - list [ref=e1172]:
+                  - listitem [ref=e1173]:
+                    - strong [ref=e1174]: 상품군
+                    - text: "- 먼저 단기예치(파킹통장·초단기 예적금, 개발 진행 중) 상품군을 추가하고, 출시 이후 주거 상품(주택청약·주거정책)으로 넓히고, 최종적으로 마이데이터를 연동해 입력 단계 없는 자동 맞춤 추천을 제공함"
+                  - listitem [ref=e1175]:
+                    - strong [ref=e1176]: 기능
+                    - text: "- 가입 기간이 정해진 정부상품의 캘린더와 신청 일정 알림으로 재방문을 유도하고, 청년 금융의 44.4%가 오가는 커뮤니티를 정확한 정보 위에서 다루는 뉴스·커뮤니티로 확장할 예정임"
+                - generic [ref=e1177]:
+                  - heading "6.2. 목표 시장 (TAM-SAM-SOM)" [level=3] [ref=e1178]
+                  - 'link "Permalink: 6.2. 목표 시장 (TAM-SAM-SOM)" [ref=e1179] [cursor=pointer]':
+                    - /url: "#62-목표-시장-tam-sam-som"
+                - paragraph [ref=e1182]:
+                  - text: 전체 시장은 배경으로 두고, Y-Fin.이 실제로 점유할
+                  - strong [ref=e1183]: 틈새 시장(SOM)을 핵심 지표
+                  - text: 로 제시함.
+                - paragraph [ref=e1184]:
+                  - link [ref=e1185] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/target-market.png
+                    - img "목표 시장 TAM-SAM-SOM-LAM" [ref=e1186]
+                  - subscript [ref=e1187]: ▲ 전체 시장(TAM)에서 실제 점유할 시장(SOM)으로 좁혀가는 시장 규모
+                - table [ref=e1189]:
+                  - rowgroup [ref=e1190]:
+                    - row [ref=e1191]:
+                      - columnheader "구분" [ref=e1192]
+                      - columnheader "규모" [ref=e1193]
+                      - columnheader "정의" [ref=e1194]
+                  - rowgroup [ref=e1195]:
+                    - row [ref=e1196]:
+                      - cell "TAM" [ref=e1197]
+                      - cell "89.84조 원 / 1,040만 명" [ref=e1198]
+                      - cell "청년(19~34세) 전체의 연간 저축 잠재 시장" [ref=e1199]
+                    - row [ref=e1200]:
+                      - cell "SAM" [ref=e1201]
+                      - cell "67.92조 원 / 786만 명" [ref=e1202]
+                      - cell "예적금 가입 의향이 있고 모바일 채널을 이용하는 청년" [ref=e1203]
+                    - row [ref=e1204]:
+                      - cell [ref=e1205]:
+                        - strong [ref=e1206]: SOM
+                      - cell [ref=e1207]:
+                        - strong [ref=e1208]: 847억 원 / 5만 명
+                      - cell "MVP 출시 후 3년 내 확보 가능한 시장 (신청 전환 기준)" [ref=e1209]
+                    - row [ref=e1210]:
+                      - cell "LAM" [ref=e1211]
+                      - cell "11.29억 원 / 100명" [ref=e1212]
+                      - cell "클로즈드 베타로 검증할 시장" [ref=e1213]
+                - generic [ref=e1214]:
+                  - heading "6.3. 시장 진입 로드맵" [level=3] [ref=e1215]
+                  - 'link "Permalink: 6.3. 시장 진입 로드맵" [ref=e1216] [cursor=pointer]':
+                    - /url: "#63-시장-진입-로드맵"
+                - paragraph [ref=e1219]:
+                  - strong [ref=e1220]: PMF를 먼저 확보하고 수익화는 나중에 진행
+                  - text: 함. 초기 수익화 압박이 추천 품질을 훼손하지 않도록 단계를 분리함.
+                - paragraph [ref=e1221]:
+                  - link [ref=e1222] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/roadmap.png
+                    - img "시장 진입 로드맵" [ref=e1223]
+                  - subscript [ref=e1224]: ▲ PMF 우선, 수익화 후행의 3단계 시장 진입 로드맵
+                - table [ref=e1226]:
+                  - rowgroup [ref=e1227]:
+                    - row [ref=e1228]:
+                      - columnheader "단계" [ref=e1229]
+                      - columnheader "기간" [ref=e1230]
+                      - columnheader "목표" [ref=e1231]
+                      - columnheader "핵심 활동" [ref=e1232]
+                  - rowgroup [ref=e1233]:
+                    - row [ref=e1234]:
+                      - cell "PHASE 1 진입" [ref=e1235]
+                      - cell "26.06~09" [ref=e1236]
+                      - cell "LAM · 베타 100명" [ref=e1237]
+                      - cell "상품군/기능 확장, 베타 테스트, MVP 출시, SW 저작등록" [ref=e1238]
+                    - row [ref=e1239]:
+                      - cell "PHASE 2 안착" [ref=e1240]
+                      - cell "26.10~27.06" [ref=e1241]
+                      - cell "SOM 진입 · 누적 5천 명" [ref=e1242]
+                      - cell "본격 마케팅 진행, 광고 BM 도입, MAU 1,000 달성 목표" [ref=e1243]
+                    - row [ref=e1244]:
+                      - cell "PHASE 3 확장" [ref=e1245]
+                      - cell "27.07~29.06" [ref=e1246]
+                      - cell "SOM 달성 · 누적 5만 명" [ref=e1247]
+                      - cell "마이데이터 연동, 구독 BM 및 데이터 BM 도입, MAU 5,000 달성 목표" [ref=e1248]
+                - generic [ref=e1249]:
+                  - heading "6.4. 수익 모델" [level=3] [ref=e1250]
+                  - 'link "Permalink: 6.4. 수익 모델" [ref=e1251] [cursor=pointer]':
+                    - /url: "#64-수익-모델"
+                - paragraph [ref=e1254]:
+                  - strong [ref=e1255]: 추천 정렬에 광고비를 반영하지 않는다는 원칙
+                  - text: 아래, 서비스가 안착한 뒤 광고 → 구독 → 데이터 BM 순으로 수익화함. 판매·중개 수수료 모델은 금융소비자보호법상 등록 의무가 발생해, 라이선스 취득 전까지 채택하지 않음. 아래 매출은
+                  - strong [ref=e1256]: SOM 달성(성숙기 MAU 5만) 기준 추정
+                  - text: 임. 예상 매출은 MAU에 정비례하며, 3년 진입기 지표는 6.5 KPI를 참고함.
+                - paragraph [ref=e1257]:
+                  - link [ref=e1258] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/bm-model.png
+                    - img "수익 모델 관계도" [ref=e1259]
+                  - subscript [ref=e1260]: ▲ 광고 · 데이터 · 구독 세 수익원과 Y-Fin.의 관계 (SOM 달성, MAU 5만 기준)
+                - table [ref=e1262]:
+                  - rowgroup [ref=e1263]:
+                    - row [ref=e1264]:
+                      - columnheader "모델" [ref=e1265]
+                      - columnheader "유형 · 도입" [ref=e1266]
+                      - columnheader "내용" [ref=e1267]
+                      - columnheader "예상 매출" [ref=e1268]
+                  - rowgroup [ref=e1269]:
+                    - row [ref=e1270]:
+                      - cell [ref=e1271]:
+                        - strong [ref=e1272]: 광고 (서브)
+                      - cell "B2B · Phase 2" [ref=e1273]
+                      - cell "추천과 분리된 별도 영역에 이미지 광고 게재, 광고임을 명시" [ref=e1274]
+                      - cell [ref=e1275]:
+                        - strong [ref=e1276]: 월 약 650만~3,000만 원
+                        - text: (연 0.8억~3.7억)
+                    - row [ref=e1277]:
+                      - cell [ref=e1278]:
+                        - strong [ref=e1279]: 구독 (서브)
+                      - cell "B2C · Phase 3" [ref=e1280]
+                      - cell "Plus(월 1,900원) · ALL(월 4,900원), 알림·챗봇·분석 리포트" [ref=e1281]
+                      - cell [ref=e1282]:
+                        - strong [ref=e1283]: 월 약 140만~420만 원
+                        - text: (전환율 1~3%)
+                    - row [ref=e1284]:
+                      - cell [ref=e1285]:
+                        - strong [ref=e1286]: 데이터 (메인)
+                      - cell "B2G·B2B · Phase 3" [ref=e1287]
+                      - cell "익명·집계 청년 금융 행동 인사이트 리포트 제공" [ref=e1288]
+                      - cell [ref=e1289]:
+                        - strong [ref=e1290]: 연 약 2,000만~1.2억 원
+                - blockquote [ref=e1291]:
+                  - paragraph [ref=e1292]:
+                    - text: 산정 근거 - 광고는 MAU 1명당 월 노출 약 21.6회 × 금융 버티컬 eCPM 6,000원(카카오페이·토스 실측 단가)에 MAU 5만을 적용함. 구독은 유료 전환율 1~3%·가중 ARPU 2,800원, 데이터는 소비자 리포트 단가 1건 500만~1,500만 원을 적용함. 세 수익원 합산 시
+                    - strong [ref=e1293]: 연 약 1.7억~5.4억 원
+                    - text: 규모임.
+                - generic [ref=e1294]:
+                  - heading "6.5. 정량 목표 (KPI)" [level=3] [ref=e1295]
+                  - 'link "Permalink: 6.5. 정량 목표 (KPI)" [ref=e1296] [cursor=pointer]':
+                    - /url: "#65-정량-목표-kpi"
+                - paragraph [ref=e1299]:
+                  - link [ref=e1300] [cursor=pointer]:
+                    - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/blob/main/docs/img/kpi.png
+                    - img "정량 목표 KPI" [ref=e1301]
+                  - subscript [ref=e1302]: ▲ 다짐이 아닌 실제 수치로 검증할 핵심 지표
+                - table [ref=e1304]:
+                  - rowgroup [ref=e1305]:
+                    - row [ref=e1306]:
+                      - columnheader "구분" [ref=e1307]
+                      - columnheader "지표" [ref=e1308]
+                      - columnheader "목표" [ref=e1309]
+                      - columnheader "측정 방법" [ref=e1310]
+                  - rowgroup [ref=e1311]:
+                    - row [ref=e1312]:
+                      - cell "Primary" [ref=e1313]
+                      - cell "정보 입력 완료율" [ref=e1314]
+                      - cell [ref=e1315]:
+                        - strong [ref=e1316]: 80% 이상
+                      - cell "퍼널 분석" [ref=e1317]
+                    - row [ref=e1318]:
+                      - cell "Secondary" [ref=e1319]
+                      - cell "추천 상품 실제 신청률" [ref=e1320]
+                      - cell [ref=e1321]:
+                        - strong [ref=e1322]: 15% 이상
+                      - cell "아웃링크 클릭률" [ref=e1323]
+                    - row [ref=e1324]:
+                      - cell "Secondary" [ref=e1325]
+                      - cell "회원가입 후 7일 리텐션" [ref=e1326]
+                      - cell "7% 이상" [ref=e1327]
+                      - cell "코호트 분석" [ref=e1328]
+                    - row [ref=e1329]:
+                      - cell "Secondary" [ref=e1330]
+                      - cell "누적 MAU" [ref=e1331]
+                      - cell "5,000명 (3년 내)" [ref=e1332]
+                      - cell "GA4" [ref=e1333]
+                    - row [ref=e1334]:
+                      - cell "Guardrail" [ref=e1335]
+                      - cell "API 오류율" [ref=e1336]
+                      - cell "1% 미만" [ref=e1337]
+                      - cell "Sentry" [ref=e1338]
+                - separator [ref=e1339]
+                - generic [ref=e1340]:
+                  - heading "7. 팀 소개" [level=2] [ref=e1341]
+                  - 'link "Permalink: 7. 팀 소개" [ref=e1342] [cursor=pointer]':
+                    - /url: "#7-팀-소개"
+                - blockquote [ref=e1345]:
+                  - paragraph [ref=e1346]: 핀핀이팀 (창업트랙 C-07)
+                - table [ref=e1348]:
+                  - rowgroup [ref=e1349]:
+                    - row [ref=e1350]:
+                      - columnheader "구분" [ref=e1351]
+                      - columnheader "이름" [ref=e1352]
+                      - columnheader "역할" [ref=e1353]
+                      - columnheader "담당" [ref=e1354]
+                  - rowgroup [ref=e1355]:
+                    - row [ref=e1356]:
+                      - cell "팀장" [ref=e1357]
+                      - cell "이서빈" [ref=e1358]
+                      - cell "기획" [ref=e1359]
+                      - cell "서비스 기획·PRD·시장 분석·설문 설계" [ref=e1360]
+                    - row [ref=e1361]:
+                      - cell "팀원" [ref=e1362]
+                      - cell "강지원" [ref=e1363]
+                      - cell "Backend" [ref=e1364]
+                      - cell "User·Term·Category·Search 도메인(자격 필터·정렬 로직)" [ref=e1365]
+                    - row [ref=e1366]:
+                      - cell "팀원" [ref=e1367]
+                      - cell "최유렬" [ref=e1368]
+                      - cell "Backend" [ref=e1369]
+                      - cell "Auth·Data 도메인(OAuth2·JWT·외부 API 전처리·저장)" [ref=e1370]
+                    - row [ref=e1371]:
+                      - cell "팀원" [ref=e1372]
+                      - cell "안지원" [ref=e1373]
+                      - cell "Frontend" [ref=e1374]
+                      - cell "Fin-FE 화면 개발(React 19 + Vite)" [ref=e1375]
+                    - row [ref=e1376]:
+                      - cell "팀원" [ref=e1377]
+                      - cell "정예담" [ref=e1378]
+                      - cell "Design" [ref=e1379]
+                      - cell "UX/UI 디자인" [ref=e1380]
+                - separator [ref=e1381]
+                - generic [ref=e1382]:
+                  - heading "8. 해커톤 참여 후기" [level=2] [ref=e1383]
+                  - 'link "Permalink: 8. 해커톤 참여 후기" [ref=e1384] [cursor=pointer]':
+                    - /url: "#8-해커톤-참여-후기"
+                - list [ref=e1387]:
+                  - listitem [ref=e1388]:
+                    - strong [ref=e1389]: 이서빈 (팀장·기획)
+                    - text: "- 어떻게 AI를 서비스와 기능에 유의미하게 사용할 수 있을지 고민할 수 있는 해커톤이었습니다. 다양한 특강, 멘토링, 네트워킹에 참여하며, 초기 서비스를 AI 흐름에 발맞춰 고도화할 수 있었습니다."
+                  - listitem [ref=e1390]:
+                    - strong [ref=e1391]: 강지원 (백엔드)
+                    - text: "- AI를 활용하여 이전에는 오래 걸리거나 할 수 없었던 개발을 진행해볼 수 있어서 뜻 깊었고, 다양한 팀과 멘토님의 의견을 들어볼 수 있어서 좋았습니다."
+                  - listitem [ref=e1392]:
+                    - strong [ref=e1393]: 최유렬 (백엔드)
+                    - text: "- AI 해커톤이 제공하는 특강을 통해 프로젝트를 다양한 측면에서 고민해볼 수 있어 좋았고, 더 좋은 제품을 만들기 위해 LLM을 어떻게 사용할 수 있을지 고민하고 도입해본 경험이 유익했던 것 같습니다."
+                  - listitem [ref=e1394]:
+                    - strong [ref=e1395]: 안지원 (프론트엔드)
+                    - text: "- 잘 맞는 팀원들과 함께 AI를 활용해 아이디어를 구현해보는 과정이 즐거웠습니다. 멘토링을 통해 프로젝트에 대한 피드백을 받고 부족한 부분을 보완할 수 있어 유익했습니다."
+                  - listitem [ref=e1396]:
+                    - strong [ref=e1397]: 정예담 (디자인)
+                    - text: "- AI 해커톤을 통해 팀원들과 함께 프로젝트를 완성해 나가는 과정에서 팀워크의 중요성을 배울 수 있었습니다. 그리고 해커톤 프로그램을 통해 다양한 피드백을 받아보며 프로젝트를 발전시킬 수 있어 유익한 경험이었습니다."
+                - separator [ref=e1398]
+                - subscript [ref=e1400]: PNU 2026 AI Hackathon · Startup Track · Team C-07 · Y-Fin.
+        - generic [ref=e1403]:
+          - generic [ref=e1404]:
+            - heading "About" [level=2] [ref=e1405]
+            - paragraph [ref=e1406]: Y-Fin. 청년(Youth)들의 금융(Finance) 고민을 끝(Finish)내다.
+            - heading "Resources" [level=3] [ref=e1407]
+            - link "Readme" [ref=e1409] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+            - generic [ref=e1412]:
+              - generic [ref=e1413]:
+                - link "Activity" [ref=e1415] [cursor=pointer]:
+                  - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/activity
+                - link "Custom properties" [ref=e1419] [cursor=pointer]:
+                  - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/custom-properties
+              - generic [ref=e1422]:
+                - heading "Stars" [level=3] [ref=e1423]
+                - generic [ref=e1425]:
+                  - strong [ref=e1428]: "4"
+                  - text: stars
+                - heading "Watchers" [level=3] [ref=e1429]
+                - generic [ref=e1431]:
+                  - strong [ref=e1434]: "0"
+                  - text: watching
+                - heading "Forks" [level=3] [ref=e1435]
+                - link [ref=e1437] [cursor=pointer]:
+                  - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/forks
+                  - strong [ref=e1441]: "0"
+                  - text: forks
+            - link "Report repository" [ref=e1443] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FPNU-2026-AI-Hackathon%2Fpnuai-c-07-finfin2&report=PNU-2026-AI-Hackathon+%28user%29
+          - generic [ref=e1444]:
+            - heading [level=2] [ref=e1445]:
+              - link "Releases" [ref=e1447] [cursor=pointer]:
+                - /url: /PNU-2026-AI-Hackathon/pnuai-c-07-finfin2/releases
+            - generic [ref=e1448]: No releases published
+          - generic [ref=e1449]:
+            - heading "Contributors" [level=2] [ref=e1450]
+            - generic [ref=e1451]: No contributors
+          - generic [ref=e1452]:
+            - heading "Languages" [level=2] [ref=e1453]
+            - generic [ref=e1455]:
+              - 'progressbar "Java: 83.4%" [ref=e1456]'
+              - 'progressbar "JavaScript: 16.5%" [ref=e1457]'
+              - 'progressbar "Other: 0.1%" [ref=e1458]'
+            - list [ref=e1459]:
+              - listitem [ref=e1460]:
+                - generic [ref=e1461]:
+                  - generic [ref=e1463]: Java
+                  - generic [ref=e1464]: 83.4%
+              - listitem [ref=e1465]:
+                - generic [ref=e1466]:
+                  - generic [ref=e1468]: JavaScript
+                  - generic [ref=e1469]: 16.5%
+              - listitem [ref=e1470]:
+                - generic [ref=e1471]:
+                  - generic [ref=e1473]: Other
+                  - generic [ref=e1474]: 0.1%
+  - contentinfo [ref=e1476]:
+    - heading "Footer" [level=2] [ref=e1477]
+    - generic [ref=e1478]:
+      - generic [ref=e1479]:
+        - link "GitHub Homepage" [ref=e1480] [cursor=pointer]:
+          - /url: https://github.com
+        - generic [ref=e1483]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e1484]:
+        - heading "Footer navigation" [level=3] [ref=e1485]
+        - list "Footer navigation" [ref=e1486]:
+          - listitem [ref=e1487]:
+            - link "Terms" [ref=e1488] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e1489]:
+            - link "Privacy" [ref=e1490] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e1491]:
+            - link "Security" [ref=e1492] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e1493]:
+            - link "Status" [ref=e1494] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e1495]:
+            - link "Community" [ref=e1496] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e1497]:
+            - link "Docs" [ref=e1498] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e1499]:
+            - link "Contact" [ref=e1500] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e1501]:
+            - button "Manage cookies" [ref=e1503] [cursor=pointer]
+          - listitem [ref=e1504]:
+            - button "Do not share my personal information" [ref=e1506] [cursor=pointer]

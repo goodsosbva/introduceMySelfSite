@@ -1,0 +1,137 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: 정상 모드
+    - heading "부품 스토어 QA" [level=1] [ref=e4]
+    - paragraph [ref=e5]: 회원가입, 상품 탐색, 장바구니, 쿠폰, 주문, 환불, 관리자 등록을 확인하는 로컬 테스트 앱
+    - navigation "화면 이동" [ref=e6]:
+      - link "회원가입" [ref=e7] [cursor=pointer]:
+        - /url: "#member"
+      - link "상품 검색" [ref=e8] [cursor=pointer]:
+        - /url: "#catalog"
+      - link "주문" [ref=e9] [cursor=pointer]:
+        - /url: "#cart"
+      - link "관리자" [ref=e10] [cursor=pointer]:
+        - /url: "#admin"
+  - main [ref=e11]:
+    - region [ref=e12]:
+      - heading "회원가입" [level=2] [ref=e13]
+      - paragraph [ref=e14]: "기존 계정: existing@example.com / 닉네임 기존회원"
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - text: 이메일
+          - textbox "이메일" [ref=e17]
+        - generic [ref=e18]:
+          - text: 닉네임
+          - textbox "닉네임" [ref=e19]
+        - generic [ref=e20]:
+          - text: 비밀번호
+          - textbox "비밀번호" [ref=e21]
+        - generic [ref=e22]:
+          - checkbox "이메일 인증 완료" [ref=e23]
+          - text: 이메일 인증 완료
+        - button "회원가입" [ref=e24] [cursor=pointer]
+      - status [ref=e25]
+    - region [ref=e26]:
+      - heading "상품 검색" [level=2] [ref=e27]
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - text: 상품명 검색
+          - textbox "상품명 검색" [ref=e30]
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - text: 검색 카테고리
+            - combobox "검색 카테고리" [ref=e33]:
+              - option "전체" [selected]
+              - option "CPU"
+              - option "GPU"
+              - option "RAM"
+              - option "SSD"
+              - option "HDD"
+          - generic [ref=e34]:
+            - text: 최대 가격 (원)
+            - textbox "최대 가격 (원)" [ref=e35]
+        - generic [ref=e36]:
+          - text: 가격 정렬
+          - combobox "가격 정렬" [ref=e37]:
+            - option "기본순" [selected]
+            - option "낮은 가격순"
+            - option "높은 가격순"
+        - button "검색" [ref=e38] [cursor=pointer]
+      - status [ref=e39]
+      - list "검색 결과" [ref=e40]:
+        - listitem [ref=e41]:
+          - strong [ref=e42]: CPU 기본형
+          - text: CPU / 100,000원 / 재고 3개
+        - listitem [ref=e43]:
+          - strong [ref=e44]: GPU 중급형
+          - text: GPU / 300,000원 / 재고 1개
+        - listitem [ref=e45]:
+          - strong [ref=e46]: RAM 16GB
+          - text: RAM / 50,000원 / 재고 100개
+        - listitem [ref=e47]:
+          - strong [ref=e48]: SSD 1TB
+          - text: SSD / 120,000원 / 재고 2개
+        - listitem [ref=e49]:
+          - strong [ref=e50]: HDD 2TB
+          - text: HDD / 80,000원 / 재고 4개
+    - region [ref=e51]:
+      - heading "장바구니와 주문" [level=2] [ref=e52]
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - text: 상품 선택
+          - combobox "상품 선택" [ref=e55]:
+            - option "CPU 기본형 (100,000원, 재고 3개)" [selected]
+            - option "GPU 중급형 (300,000원, 재고 1개)"
+            - option "RAM 16GB (50,000원, 재고 100개)"
+            - option "SSD 1TB (120,000원, 재고 2개)"
+            - option "HDD 2TB (80,000원, 재고 4개)"
+        - generic [ref=e56]:
+          - text: 담을 수량
+          - textbox "담을 수량" [ref=e57]: "1"
+        - button "장바구니 담기" [ref=e58] [cursor=pointer]
+      - status [ref=e59]
+      - list "장바구니 상품"
+      - paragraph [ref=e60]: "장바구니: 0종 / 총 0개 / 상품 금액 0원"
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - text: 쿠폰 코드
+          - textbox "쿠폰 코드" [ref=e64]
+        - button "쿠폰 적용" [ref=e65] [cursor=pointer]
+      - paragraph [ref=e66]: "WELCOME10: 전체 10%, CPU10: CPU 상품 10%"
+      - status [ref=e67]
+      - button "주문 결제" [ref=e68] [cursor=pointer]
+      - status [ref=e69]
+      - paragraph [ref=e70]: "최근 주문: 없음"
+      - button "환불 요청" [ref=e71] [cursor=pointer]
+    - region [ref=e72]:
+      - heading "관리자 작업" [level=2] [ref=e73]
+      - generic [ref=e74]:
+        - text: 현재 권한
+        - combobox "현재 권한" [ref=e75]:
+          - option "일반 회원" [selected]
+          - option "관리자"
+      - paragraph [ref=e76]: 권한 선택은 테스트용 상태입니다. 실제 인증을 대신하지 않습니다.
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - text: 등록 상품명
+          - textbox "등록 상품명" [ref=e79]
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - text: 등록 카테고리
+            - combobox "등록 카테고리" [ref=e82]:
+              - option "선택" [selected]
+              - option "CPU"
+              - option "GPU"
+              - option "RAM"
+              - option "SSD"
+              - option "HDD"
+          - generic [ref=e83]:
+            - text: 등록 가격 (원)
+            - textbox "등록 가격 (원)" [ref=e84]
+        - generic [ref=e85]:
+          - text: 상품 이미지 수
+          - textbox "상품 이미지 수" [ref=e86]: "0"
+        - button "상품 등록" [ref=e87] [cursor=pointer]
+      - status [ref=e88]
+      - button "환불 승인" [ref=e89] [cursor=pointer]
+      - status [ref=e90]

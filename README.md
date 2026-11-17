@@ -1,46 +1,33 @@
-# 권현성 | 프론트엔드 개발자
+# 권현성 자기소개 사이트
 
-사용하기 쉬운 화면과 함께 개발하기 좋은 구조를 고민합니다.
-프론트엔드를 중심으로 필요한 기술을 배우고 직접 적용하며 개발의 폭을 넓혀가고 있습니다.
+프론트엔드 개발자 권현성의 경력과 작업을 소개하는 사이트입니다. 저장소 루트에는 Next.js 앱이 있고, HTML 개편본에는 Kubernetes 운영과 배포 대응 업무도 담았습니다.
 
-## 소개
+## HTML 개편본 구성
 
-클라우드 관리 화면과 여러 팀이 사용하는 공통 UI 개발에 참여했습니다.
-이 저장소에는 회사에서 맡았던 일과 기술을 직접 적용하며 만든 프로젝트를 정리했습니다.
-
-## 프로젝트
-
-### [공통 UI](html/case-common-table.html)
-
-공통 UI TF에서 테이블과 버튼의 개발과 개선에 참여했습니다. 여러 업무 화면에서 공통 테이블을 사용하는 방식과 Storybook 사용 가이드를 소개합니다.
-
-### [CityWatch FE Lab](html/case-citywatch.html)
-
-도시 안전 관제를 주제로 여러 프론트엔드 기술을 직접 적용한 개인 학습 프로젝트입니다. 상태 관리, 지도, 실시간 통신, 모노레포와 Module Federation 등의 구현 구조를 살펴볼 수 있습니다.
-
-### [Common Tester](html/case-common-tester.html)
-
-협업에서 테스트 생성에 사용한 도구입니다. 요구사항의 근거부터 Playwright 테스트와 실행 결과까지 연결하는 흐름을 소개합니다.
-
-## 경력
-
-- **오케스트로**: 모니터링, 인프라 관리, 서비스 신청 화면과 공통 UI 개발 참여
-- **카수리**: 정비 서비스 선택과 예약 화면 개발
-- **뉴스젤리**: 꼬맨틀 화면의 Vue 전환
-
-[회사별 경력 살펴보기](html/career-experience.html)
+- **Profile:** 소개와 이력
+- **Experience:** 오케스트로, 카수리, 뉴스젤리에서 맡은 업무
+- **Projects:** 프론트엔드 프로젝트 3개와 프론트엔드 외 업무 사례 3개. 각 카드를 누르면 상세 내용을 볼 수 있습니다.
+- **Skills:** 화면 개발과 운영 업무에 사용한 주요 기술
+- **Certificates:** ADsP, CKA, SQLD, 리눅스마스터 2급, 정보처리기사
+- **Contact:** 이메일과 GitHub
 
 ## 사이트 실행
 
-별도 설치 없이 [html/index.html](html/index.html)을 브라우저에서 열 수 있습니다. 로컬 서버를 사용하려면 저장소 루트에서 다음 명령을 실행합니다.
+루트의 Next.js 앱은 다음 명령으로 실행합니다.
 
 ```bash
-python -m http.server 8000 --directory html
+pnpm install
+pnpm dev
 ```
 
-브라우저에서 `http://localhost:8000`으로 접속합니다. 사이트는 HTML, CSS, JavaScript로 구성되어 있습니다.
+브라우저에서 `http://localhost:3000`으로 접속합니다.
 
-## 연락
+[HTML 개편본 열기](이전%20버전/2026-11-04_115812/html/index.html)
 
-- GitHub: [goodsosbva](https://github.com/goodsosbva)
-- 이메일: [goodsosbva@naver.com](mailto:goodsosbva@naver.com)
+별도 설치 없이 위 파일을 브라우저에서 열 수 있습니다. 로컬 서버가 필요하면 저장소 루트에서 실행합니다.
+
+```bash
+python -m http.server 8000 --directory "이전 버전/2026-11-04_115812/html"
+```
+
+HTML 개편본을 서버로 열었을 때는 `http://localhost:8000`으로 접속합니다.

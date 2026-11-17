@@ -1,0 +1,25 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - paragraph [ref=e5]: COMMON TESTER
+    - heading "테스트 실행 작업 공간" [level=1] [ref=e6]
+    - paragraph [ref=e7]: 대상과 정책 버전을 정하고 실행을 생성합니다.
+  - region [ref=e8]:
+    - heading "새 실행" [level=2] [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - text: 프로젝트 ID
+        - textbox "프로젝트 ID" [ref=e12]: demo-orders
+      - generic [ref=e13]:
+        - text: 화면 경로
+        - textbox "화면 경로" [ref=e14]: /orders/new
+      - generic [ref=e15]:
+        - text: 정책 버전
+        - textbox "정책 버전" [ref=e16]: v1
+      - button "실행 생성" [ref=e17] [cursor=pointer]
+  - generic [ref=e18]:
+    - region [ref=e19]:
+      - heading "최근 실행" [level=2] [ref=e20]
+      - paragraph [ref=e21]: 생성한 실행이 없습니다.
+    - region [ref=e22]:
+      - heading "실행 상세" [level=2] [ref=e23]
+      - paragraph [ref=e24]: 왼쪽에서 실행을 선택하십시오.

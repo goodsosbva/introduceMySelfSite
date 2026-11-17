@@ -1,0 +1,90 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - navigation "주요 메뉴" [ref=e4]:
+        - link "관제 홈" [ref=e5] [cursor=pointer]:
+          - /url: /?xray=all
+        - link "사고 목록" [ref=e6] [cursor=pointer]:
+          - /url: /incidents?xray=all
+        - link "사고 등록" [ref=e7] [cursor=pointer]:
+          - /url: /incidents/new?xray=all
+        - link "지도 관제" [ref=e8] [cursor=pointer]:
+          - /url: /map?xray=all
+        - link "3D 위험 구역" [ref=e9] [cursor=pointer]:
+          - /url: /risk-3d?xray=all
+        - link "실시간 피드" [ref=e10] [cursor=pointer]:
+          - /url: /realtime?xray=all
+        - link "대량 관제" [ref=e11] [cursor=pointer]:
+          - /url: /performance?xray=all
+        - link "구현 상태" [ref=e12] [cursor=pointer]:
+          - /url: /status?xray=all
+      - generic [ref=e14]:
+        - generic [ref=e15]: X-Ray
+        - combobox "X-Ray 관점" [ref=e16]:
+          - option "X-Ray만 끄기"
+          - option "전체" [selected]
+          - option "FSD-style"
+          - option "Module Federation"
+          - option "Monorepo"
+          - option "OpenLayers"
+          - option "R3F / Three.js"
+          - option "WebSocket / Polling"
+          - option "REST API"
+          - option "Redux"
+          - option "Zod Validation"
+          - option "Large Data Performance"
+          - option "SSR / Hydration"
+  - main [ref=e17]:
+    - generic [ref=e19]:
+      - paragraph [ref=e20]: CityWatch FE Lab
+      - heading "도시 안전 관제 X-Ray Shell" [level=1] [ref=e21]
+    - generic "app/home/HomePage apps/web Next App Router · React · TypeScript" [ref=e22]:
+      - region "도시 안전 관제 요약" [ref=e23]:
+        - generic "widget/SafetyOverview apps/web React · CSS Grid" [ref=e24]:
+          - generic [ref=e25]:
+            - article [ref=e26]:
+              - generic [ref=e27]: 전체 사고
+              - strong [ref=e28]: "0"
+            - article [ref=e29]:
+              - generic [ref=e30]: 긴급 사고
+              - strong [ref=e31]: "0"
+            - article [ref=e32]:
+              - generic [ref=e33]: 대응 중
+              - strong [ref=e34]: "0"
+            - article [ref=e35]:
+              - generic [ref=e36]: 영향 인원
+              - strong [ref=e37]: "0"
+        - generic "widget/RecentIncidents apps/web React · Shared Types" [ref=e38]:
+          - region [ref=e39]:
+            - generic [ref=e40]:
+              - generic [ref=e41]:
+                - heading "최근 사고" [level=2] [ref=e42]
+                - generic [ref=e43]: loading
+              - link "전체 보기" [ref=e44] [cursor=pointer]:
+                - /url: /incidents
+            - generic "feature/incident/FetchIncidentList apps/web fetch · REST API" [ref=e45]:
+              - status [ref=e46]: REST API에서 사고 데이터를 불러오는 중입니다.
+  - region [ref=e47]:
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: All X-Ray
+          - heading "현재 화면 기술 요약" [level=2] [ref=e52]
+        - generic [ref=e53]: 7 technologies
+      - paragraph [ref=e54]: 전체 모드는 경계를 겹치지 않고 현재 렌더링된 화면의 기술만 요약합니다. 실제 코드 경계와 값의 흐름은 위 X-Ray에서 기술 하나를 선택해 확인합니다.
+      - generic [ref=e55]:
+        - region "기술" [ref=e56]:
+          - heading "기술" [level=3] [ref=e57]
+          - list [ref=e58]:
+            - listitem [ref=e59]: CSS Grid
+            - listitem [ref=e60]: Next App Router
+            - listitem [ref=e61]: REST API
+            - listitem [ref=e62]: React
+            - listitem [ref=e63]: Shared Types
+            - listitem [ref=e64]: TypeScript
+            - listitem [ref=e65]: fetch
+        - region "실행 패키지" [ref=e66]:
+          - heading "실행 패키지" [level=3] [ref=e67]
+          - list [ref=e68]:
+            - listitem [ref=e69]: apps/web
+  - alert [ref=e70]

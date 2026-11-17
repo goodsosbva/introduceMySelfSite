@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2580" viewBox="0 0 1440 2580">
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f9ff"/><stop offset="1" stop-color="#eaf0ff"/></linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfe9ff"/><stop offset="1" stop-color="#f7f9fd"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1c3153" flood-opacity=".08"/></filter>
+  </defs>
+  <rect width="1440" height="1900" fill="#fff"/>
+  <g font-family="Arial, 'Malgun Gothic', sans-serif" fill="#142744">
+    <text x="112" y="78" font-size="16" font-weight="700" letter-spacing="4" fill="#4166d5">SELECTED WORK</text>
+    <text x="108" y="176" font-size="84" font-weight="750" letter-spacing="-4">Projects<tspan fill="#4166d5">.</tspan></text>
+    <text x="112" y="223" font-size="21" fill="#62728a">화면을 만들고, 문제를 풀고, 팀과 함께 개선한 기록입니다.</text>
+    <text x="1295" y="87" font-size="14" fill="#66748a">01 — 03</text>
+
+    <!-- Project one -->
+    <g filter="url(#shadow)"><rect x="96" y="280" width="1248" height="350" rx="22" fill="#fff" stroke="#e2e8f2"/></g>
+    <text x="132" y="328" font-size="14" letter-spacing="2" fill="#4166d5" font-weight="700">01 / PRODUCT UI</text>
+    <text x="132" y="383" font-size="37" font-weight="700">공통 UI</text>
+    <text x="132" y="422" font-size="17" fill="#5b6b82">테이블과 버튼의 사용성을 개선하고</text>
+    <text x="132" y="450" font-size="17" fill="#5b6b82">팀에서 함께 쓰는 기준을 정리했습니다.</text>
+    <text x="132" y="505" font-size="14" fill="#344a6a">담당  공통 컴포넌트 개선 · 가이드 정리</text>
+    <rect x="132" y="546" width="105" height="34" rx="17" fill="#edf2ff"/><text x="153" y="569" font-size="14" fill="#3559bd">Vue 3</text>
+    <rect x="247" y="546" width="130" height="34" rx="17" fill="#edf2ff"/><text x="266" y="569" font-size="14" fill="#3559bd">TypeScript</text>
+    <rect x="387" y="546" width="126" height="34" rx="17" fill="#edf2ff"/><text x="405" y="569" font-size="14" fill="#3559bd">Storybook</text>
+    <rect x="700" y="310" width="600" height="280" rx="14" fill="url(#screen)"/>
+    <rect x="728" y="337" width="544" height="34" rx="7" fill="#fff"/><circle cx="750" cy="354" r="5" fill="#4868d7"/><rect x="770" y="349" width="170" height="9" rx="4" fill="#d2dbea"/>
+    <rect x="728" y="390" width="544" height="158" rx="9" fill="#fff"/>
+    <g fill="#edf1f8"><rect x="750" y="412" width="500" height="24" rx="4"/><rect x="750" y="450" width="500" height="26" rx="4"/><rect x="750" y="490" width="500" height="26" rx="4"/></g>
+    <g fill="#c8d4e8"><rect x="766" y="420" width="90" height="7" rx="3"/><rect x="900" y="420" width="120" height="7" rx="3"/><rect x="1080" y="420" width="90" height="7" rx="3"/></g>
+    <text x="1200" y="608" font-size="14" font-weight="700" fill="#4166d5">자세히 보기 ↗</text>
+
+    <!-- Project two -->
+    <g filter="url(#shadow)"><rect x="96" y="666" width="1248" height="350" rx="22" fill="#fff" stroke="#e2e8f2"/></g>
+    <text x="132" y="714" font-size="14" letter-spacing="2" fill="#4166d5" font-weight="700">02 / MAP &amp; DATA</text>
+    <text x="132" y="769" font-size="37" font-weight="700">CityWatch FE Lab</text>
+    <text x="132" y="808" font-size="17" fill="#5b6b82">관제 데이터와 지도 화면을 연결하고</text>
+    <text x="132" y="836" font-size="17" fill="#5b6b82">모듈 연동 흐름을 직접 검증했습니다.</text>
+    <text x="132" y="891" font-size="14" fill="#344a6a">담당  화면 구조 · 지도 기반 데이터 탐색</text>
+    <rect x="132" y="932" width="105" height="34" rx="17" fill="#edf2ff"/><text x="153" y="955" font-size="14" fill="#3559bd">React</text>
+    <rect x="247" y="932" width="130" height="34" rx="17" fill="#edf2ff"/><text x="266" y="955" font-size="14" fill="#3559bd">TypeScript</text>
+    <rect x="387" y="932" width="130" height="34" rx="17" fill="#edf2ff"/><text x="406" y="955" font-size="14" fill="#3559bd">OpenLayers</text>
+    <rect x="700" y="696" width="600" height="280" rx="14" fill="url(#screen)"/>
+    <rect x="722" y="718" width="556" height="38" rx="8" fill="#182943"/><text x="742" y="743" font-size="12" fill="#fff">CITYWATCH   관제 현황     사고 목록     지도     X-Ray</text>
+    <rect x="722" y="770" width="556" height="182" rx="10" fill="#fff"/>
+    <rect x="742" y="790" width="330" height="142" rx="7" fill="#e5efff"/><path d="M760 908 L820 838 865 876 917 811 967 846 1045 794" fill="none" stroke="#5f82df" stroke-width="5"/>
+    <circle cx="822" cy="838" r="8" fill="#f29646"/><circle cx="920" cy="811" r="8" fill="#4166d5"/>
+    <rect x="1090" y="790" width="166" height="62" rx="8" fill="#f5f7fb"/><text x="1106" y="815" font-size="11" fill="#66748a">활성 이벤트</text><text x="1106" y="839" font-size="22" font-weight="700">67</text>
+    <rect x="1090" y="867" width="166" height="65" rx="8" fill="#f5f7fb"/><text x="1106" y="892" font-size="11" fill="#66748a">대응 중</text><text x="1106" y="917" font-size="22" font-weight="700">12</text>
+    <text x="1200" y="994" font-size="14" font-weight="700" fill="#4166d5">자세히 보기 ↗</text>
+
+    <!-- Project three -->
+    <g filter="url(#shadow)"><rect x="96" y="1052" width="1248" height="350" rx="22" fill="#fff" stroke="#e2e8f2"/></g>
+    <text x="132" y="1100" font-size="14" letter-spacing="2" fill="#4166d5" font-weight="700">03 / TEST AUTOMATION</text>
+    <text x="132" y="1155" font-size="37" font-weight="700">Common Tester</text>
+    <text x="132" y="1194" font-size="17" fill="#5b6b82">요구사항 근거부터 테스트 실행 결과까지</text>
+    <text x="132" y="1222" font-size="17" fill="#5b6b82">한 흐름으로 확인하는 도구입니다.</text>
+    <text x="132" y="1277" font-size="14" fill="#344a6a">담당  테스트 생성 흐름 · 결과 검토</text>
+    <rect x="132" y="1318" width="105" height="34" rx="17" fill="#edf2ff"/><text x="153" y="1341" font-size="14" fill="#3559bd">React</text>
+    <rect x="247" y="1318" width="105" height="34" rx="17" fill="#edf2ff"/><text x="268" y="1341" font-size="14" fill="#3559bd">Python</text>
+    <rect x="362" y="1318" width="130" height="34" rx="17" fill="#edf2ff"/><text x="382" y="1341" font-size="14" fill="#3559bd">Playwright</text>
+    <rect x="700" y="1082" width="600" height="280" rx="14" fill="url(#screen)"/>
+    <rect x="726" y="1108" width="548" height="226" rx="12" fill="#fff" stroke="#e5eaf2"/>
+    <text x="750" y="1144" font-size="12" letter-spacing="2" fill="#4166d5" font-weight="700">RUN SUMMARY</text>
+    <text x="750" y="1180" font-size="22" font-weight="700">실행 결과를 한 화면에서 확인</text>
+    <g><rect x="750" y="1200" width="500" height="52" rx="8" fill="#f5f7fb"/><text x="772" y="1233" font-size="13" fill="#5b6b82">전체 테스트</text><text x="1003" y="1234" font-size="18" font-weight="700">6</text><text x="1091" y="1233" font-size="13" fill="#5b6b82">통과</text><text x="1175" y="1234" font-size="18" font-weight="700" fill="#2b8b65">6</text></g>
+    <rect x="750" y="1270" width="500" height="38" rx="8" fill="#edf2ff"/><rect x="750" y="1270" width="500" height="38" rx="8" fill="#78a0ee" opacity=".22"/><text x="770" y="1295" font-size="12" fill="#4166d5">요구 근거  →  테스트  →  실행 결과</text>
+    <text x="1200" y="1380" font-size="14" font-weight="700" fill="#4166d5">자세히 보기 ↗</text>
+
+    <!-- Skills -->
+    <text x="110" y="1504" font-size="14" letter-spacing="3" fill="#4166d5" font-weight="700">TECH STACK</text>
+    <text x="108" y="1570" font-size="52" font-weight="700">Skills<tspan fill="#4166d5">.</tspan></text>
+    <text x="113" y="1607" font-size="17" fill="#66748a">프로젝트에서 사용한 핵심 기술</text>
+    <rect x="96" y="1650" width="1248" height="202" rx="20" fill="#f7f9fd" stroke="#e2e8f2"/>
+    <g font-family="Arial, 'Malgun Gothic', sans-serif" text-anchor="middle">
+      <image href="https://cdn.simpleicons.org/react/61DAFB" x="164" y="1682" width="54" height="54"/><text x="191" y="1764" font-size="16" font-weight="600">React</text>
+      <image href="https://cdn.simpleicons.org/typescript/3178C6" x="310" y="1682" width="54" height="54"/><text x="337" y="1764" font-size="16" font-weight="600">TypeScript</text>
+      <image href="https://cdn.simpleicons.org/javascript/F7DF1E" x="456" y="1682" width="54" height="54"/><text x="483" y="1764" font-size="16" font-weight="600">JavaScript</text>
+      <image href="https://cdn.simpleicons.org/vuedotjs/4FC08D" x="602" y="1682" width="54" height="54"/><text x="629" y="1764" font-size="16" font-weight="600">Vue 3</text>
+      <image href="https://cdn.simpleicons.org/nextdotjs/111111" x="748" y="1682" width="54" height="54"/><text x="775" y="1764" font-size="16" font-weight="600">Next.js</text>
+      <image href="https://cdn.simpleicons.org/redux/764ABC" x="894" y="1682" width="54" height="54"/><text x="921" y="1764" font-size="16" font-weight="600">Redux</text>
+      <image href="https://cdn.simpleicons.org/playwright/2EAD33" x="1040" y="1682" width="54" height="54"/><text x="1067" y="1764" font-size="16" font-weight="600">Playwright</text>
+      <image href="https://cdn.simpleicons.org/storybook/FF4785" x="1186" y="1682" width="54" height="54"/><text x="1213" y="1764" font-size="16" font-weight="600">Storybook</text>
+    </g>
+    <text x="110" y="1934" font-size="14" letter-spacing="3" fill="#4166d5" font-weight="700">CERTIFICATIONS</text>
+    <text x="108" y="1998" font-size="48" font-weight="700">Certificates<tspan fill="#4166d5">.</tspan></text>
+    <rect x="96" y="2030" width="1248" height="1" fill="#e3e9f2"/>
+    <text x="120" y="2074" font-size="19" font-weight="700">ADsP</text><text x="1300" y="2074" font-size="16" fill="#61718a" text-anchor="end">2026.11</text>
+    <rect x="96" y="2090" width="1248" height="1" fill="#e3e9f2"/>
+    <text x="120" y="2132" font-size="19" font-weight="700">CKA</text><text x="1300" y="2132" font-size="16" fill="#61718a" text-anchor="end">2026.01</text>
+    <rect x="96" y="2148" width="1248" height="1" fill="#e3e9f2"/>
+    <text x="120" y="2190" font-size="19" font-weight="700">SQL개발자 (SQLD)</text><text x="1300" y="2190" font-size="16" fill="#61718a" text-anchor="end">2025.04</text>
+    <rect x="96" y="2206" width="1248" height="1" fill="#e3e9f2"/>
+    <text x="120" y="2248" font-size="19" font-weight="700">리눅스마스터 2급</text><text x="1300" y="2248" font-size="16" fill="#61718a" text-anchor="end">2023.07</text>
+    <rect x="96" y="2264" width="1248" height="1" fill="#e3e9f2"/>
+    <text x="120" y="2306" font-size="19" font-weight="700">정보처리기사</text><text x="1300" y="2306" font-size="16" fill="#61718a" text-anchor="end">2021.08</text>
+    <rect x="96" y="2322" width="1248" height="1" fill="#e3e9f2"/>
+    <text x="110" y="2390" font-size="14" letter-spacing="3" fill="#4166d5" font-weight="700">GET IN TOUCH</text>
+    <text x="108" y="2450" font-size="29" font-weight="700">함께 만들 이야기를 기다립니다.</text>
+    <text x="110" y="2492" font-size="16" fill="#4166d5">goodsosbva@naver.com ↗</text>
+  </g>
+</svg>

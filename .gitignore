@@ -21,3 +21,14 @@ dist/
 build/
 *.log
 
+# Separate local repository
+git-simulation/
+
+# Next.js
+.next/
+out/
+.vercel/
+.env*
+*.tsbuildinfo
+next-env.d.ts
+

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Beyond Frontend 작업 기록 | 권현성</title>
+        <meta name="description" content="Kubernetes 운영, GitOps 배포 대응, 운영 문서와 기술지원 작업 기록" />
+        <link rel="icon" href="assets/favicon-smile.ico" sizes="any" />
+        <link rel="stylesheet" href="career-portfolio.css" />
+        <link rel="stylesheet" href="assets/renewal.css?v=20261103-3" />
+        <link rel="stylesheet" href="assets/beyond-case.css?v=20261116-2" />
+    </head>
+    <body class="inner">
+        <a class="skip" href="#main">본문으로 바로가기</a>
+        <header class="header">
+            <nav class="nav wrap" aria-label="주요 메뉴">
+                <a class="brand" href="index.html">KHS<span>.</span></a>
+                <div class="nav-links">
+                    <a href="index.html#work">프로젝트</a>
+                    <a href="index.html#skills">기술</a>
+                    <a href="index.html#contact">연락</a>
+                </div>
+            </nav>
+        </header>
+        <main id="main" tabindex="-1">
+            <section class="hero beyond-hero">
+                <div class="wrap">
+                    <a class="text-link" href="index.html?view=beyond#work">← 프로젝트로</a>
+                    <p class="eyebrow">BEYOND FRONTEND</p>
+                    <h1>Kubernetes 운영과<br /><span class="accent">배포 대응.</span></h1>
+                    <p class="lead">Kubernetes 이미지 패치, GitOps 배포 대응, 운영 가이드 작성과 기술지원을 맡았습니다.</p>
+                    <nav class="beyond-jump" aria-label="사례 바로가기">
+                        <a href="#kubernetes">Kubernetes 이미지 패치</a>
+                        <a href="#gitops">GitOps 배포 복구</a>
+                        <a href="#support">운영 문서와 기술지원</a>
+                    </nav>
+                </div>
+            </section>
+            <div class="wrap beyond-cases">
+                <article id="kubernetes" class="beyond-case">
+                    <div class="beyond-case-intro">
+                        <p class="eyebrow">01 / KUBERNETES OPERATIONS</p>
+                        <h2>폐쇄망 Kubernetes<br />이미지 패치</h2>
+                        <p>폐쇄망에 이미지 아티팩트를 반입해 워크로드 이미지를 교체했습니다. 재배포 상태를 확인하고 롤백 절차를 정리했습니다.</p>
+                        <div class="beyond-tags"><span>Kubernetes</span><span>Linux</span><span>Container Image</span></div>
+                    </div>
+                    <div class="beyond-case-body">
+                        <div class="beyond-steps" aria-label="이미지 패치 작업 흐름">
+                            <div><small>01</small><strong>아티팩트 반입</strong><span>대상 이미지 파일과 버전을 확인하고 폐쇄망에 반입했습니다.</span></div>
+                            <div><small>02</small><strong>워크로드 교체</strong><span>대상 워크로드의 이미지 변경 절차를 진행했습니다.</span></div>
+                            <div><small>03</small><strong>상태 확인</strong><span>재배포 상태를 검증하고 롤백 절차를 정리했습니다.</span></div>
+                        </div>
+                    </div>
+                </article>
+                <article id="gitops" class="beyond-case">
+                    <div class="beyond-case-intro">
+                        <p class="eyebrow">02 / DEPLOYMENT RESPONSE</p>
+                        <h2>GitOps 배포 복구</h2>
+                        <p>Argo CD 저장소 연결 문제와 Harbor 이미지 Pull 401 오류를 확인하고 배포 상태를 다시 점검했습니다.</p>
+                        <div class="beyond-tags"><span>Argo CD</span><span>Harbor</span><span>Kubernetes</span></div>
+                    </div>
+                    <div class="beyond-case-body">
+                        <div class="beyond-steps" aria-label="배포 문제 확인 흐름">
+                            <div><small>01</small><strong>저장소 연결</strong><span>Argo CD 저장소 연결 상태를 확인했습니다.</span></div>
+                            <div><small>02</small><strong>이미지 Pull</strong><span>Harbor 이미지 Pull 401 오류를 확인했습니다.</span></div>
+                            <div><small>03</small><strong>배포 상태</strong><span>연결과 인증 문제를 조치한 뒤 배포 상태를 점검했습니다.</span></div>
+                        </div>
+                    </div>
+                </article>
+                <article id="support" class="beyond-case">
+                    <div class="beyond-case-intro">
+                        <p class="eyebrow">03 / OPERATIONS DOCUMENTATION</p>
+                        <h2>운영 문서와 기술지원</h2>
+                        <p>폐쇄망 이미지 패치 절차를 실행 가이드로 작성하고, 배포 문제의 원인과 조치 내용을 기술지원 보고서로 남겼습니다.</p>
+                        <div class="beyond-tags"><span>Runbook</span><span>Deployment</span><span>Technical Support</span></div>
+                    </div>
+                    <div class="beyond-case-body">
+                        <div class="beyond-steps" aria-label="운영 문서 작성 흐름">
+                            <div><small>01</small><strong>절차 확인</strong><span>작업 순서와 사전 조건, 검증 항목을 구분했습니다.</span></div>
+                            <div><small>02</small><strong>실행 가이드</strong><span>이미지 패치 절차를 단계별 가이드로 작성했습니다.</span></div>
+                            <div><small>03</small><strong>지원 보고</strong><span>배포 문제의 원인과 조치 내용을 보고서에 남겼습니다.</span></div>
+                        </div>
+                    </div>
+                </article>
+                <a class="beyond-back" href="index.html?view=beyond#work">← 프로젝트 목록으로</a>
+            </div>
+        </main>
+        <footer class="wrap site-footer">© 2026 권현성.<a href="index.html">메인으로 ↑</a></footer>
+    </body>
+</html>
