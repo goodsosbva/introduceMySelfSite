@@ -1,10 +1,10 @@
 # 권현성 포트폴리오 개선 기획안
 
-작성 기준: `이전 버전/2026-11-04_115812/html`의 `index.html`, `assets/editorial-home.css`, 세 프로젝트 상세 페이지. 2026-11-16 기준. 개발은 Ponytail full 기준을 따르고 기존 정적 HTML, CSS, 필요한 만큼의 JavaScript로 진행한다.
+작성 기준: `legacy/html`의 `index.html`, `assets/editorial-home.css`, 세 프로젝트 상세 페이지. 2026-11-16 기준. 개발은 Ponytail full 기준을 따르고 기존 정적 HTML, CSS, 필요한 만큼의 JavaScript로 진행한다.
 
 ## 1. 이번 방향
 
-현재 열어 둔 `이전 버전/2026-11-04_115812/html/index.html`을 기준으로 한다. **Projects 섹션 직전까지의 모든 화면과 내용은 그대로 둔다.** `Profile`과 경력 목록도 수정하지 않는다. 개선은 `Projects` 섹션부터 페이지 아래쪽의 프로젝트, Skills, 자격증, 연락처에만 적용한다.
+현재 열어 둔 `legacy/html/index.html`을 기준으로 한다. **Projects 섹션 직전까지의 모든 화면과 내용은 그대로 둔다.** `Profile`과 경력 목록도 수정하지 않는다. 개선은 `Projects` 섹션부터 페이지 아래쪽의 프로젝트, Skills, 자격증, 연락처에만 적용한다.
 
 앞서 만든 편집형 전면 재배치 시안은 이번 구현 기준이 아니다. 첫 화면을 좌우로 나누거나 프로젝트를 큰 잡지형 카드로 바꾸지 않는다.
 

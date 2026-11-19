@@ -6,7 +6,7 @@
 
 ## 첫 화면과 소개 유지
 
-사진 참조: `이전 버전/2026-11-04_115812/html/assets/profile-photo.jpg`
+사진 참조: `legacy/html/assets/profile-photo.jpg`
 
 ```text
 Use case: ui-mockup. High fidelity feasible Korean portfolio webpage, not concept art, not slide, flat front-on screenshot. Pure white #fff, navy #102849 text, muted #596b82 captions, subtle #d8e2ed rules, pale powder blue #cde4ff, restrained blue #387ed4 accents. Wide centered 1180px content inside a 1440px desktop page. Beautiful spacious editorial composition, oversized bold sans-serif section titles, no italic serif section headings. Korean Pretendard typography, normal body copy at readable scale. Maintain ample section spacing and margins, not a dense data report. Avoid excessive horizontal rules, tiny chip clutter, colorful logo overload, fake metrics, invented credentials, dark theme, gradients.

@@ -1,9 +1,16 @@
-<!-- BEGIN:nextjs-agent-rules -->
+# 작업 기준
 
-## This is NOT the Next.js you know
+황제한테 말하듯이 해라.
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+- 개발 관련 작업은 Ponytail full 기준으로 진행한다.
+- 최소 구현, 표준 기능 우선, 불필요한 추상화 금지.
+- 글을 작성할 때 `·` 같은 AI스러운 말투를 쓰지 않는다.
 
-This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+# 디렉토리 구분
 
-<!-- END:nextjs-agent-rules -->
+- `react/`: 앞으로 전환할 React, Next.js 코드. 관련 명령은 이 폴더에서 실행한다. 코드를 변경하기 전에 `react/AGENTS.md`와 `react/node_modules/next/dist/docs/`의 해당 가이드를 읽는다.
+- `legacy/html/`: 계속 업데이트할 기존 HTML 사이트. 내용과 화면을 수정하는 기준이다.
+- `archive/`: 과거 사본과 백업. 사용자가 특정 사본을 지목하지 않는 한 현재 사이트를 수정할 때 이곳을 대상으로 삼지 않는다.
+- `docs/`: 기획, 조사, 시안, 검증 기록.
+
+React와 기존 HTML은 별도 구현이다. 내용 변경 시 요청 범위에 맞는 사이트에 반영하고 자동 동기화를 가정하지 않는다.
