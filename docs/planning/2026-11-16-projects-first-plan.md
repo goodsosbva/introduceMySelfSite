@@ -2,7 +2,7 @@
 
 ## 기준
 
-작업 기준은 `이전 버전/2026-11-04_115812/html/index.html`이다. **Projects 섹션 직전까지의 화면, 내용, 간격, 색, 동작은 고정한다.** Profile과 Experience는 그대로 둔다. 개선 범위는 Projects, Skills, Certificates, Contact와 프로젝트 상세 페이지다.
+작업 기준은 `legacy/html/index.html`이다. **Projects 섹션 직전까지의 화면, 내용, 간격, 색, 동작은 고정한다.** Profile과 Experience는 그대로 둔다. 개선 범위는 Projects, Skills, Certificates, Contact와 프로젝트 상세 페이지다.
 
 ## 디자인 방향
 
