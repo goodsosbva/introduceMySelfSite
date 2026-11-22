@@ -32,31 +32,31 @@
   if(!root||!root.querySelector('[data-demo-controls]'))return;
   const parts={
     device:{
-      title:'장비 목록',group:'usage',lead:'bodyCell 슬롯에 화면별 상태 셀을 넣습니다.',source:'DeviceTable.vue 2–41행, SharedTable.vue 138–153행'
+      title:'장비 목록',group:'usage',lead:'bodyCell 슬롯에 화면별 상태 셀을 넣습니다.',source:'DeviceTable.vue, SharedTable.vue'
     },
     log:{
-      title:'로그 조회',group:'usage',lead:'sort-change를 서버 조회 조건으로 연결합니다.',source:'LogTable.vue 31–45, 232–262, 502–505행'
+      title:'로그 조회',group:'usage',lead:'sort-change를 서버 조회 조건으로 연결합니다.',source:'LogTable.vue, SharedTable.vue'
     },
     table:{
-      title:'SharedTable.vue',group:'usage',lead:'props, 슬롯, 이벤트를 한 진입점에 연결합니다.',source:'SharedTable.vue 14–175, 338–339, 602–612행, DeviceTable.vue 2–11행, LogTable.vue 31–45행'
+      title:'SharedTable.vue',group:'usage',lead:'props, 슬롯, 이벤트를 한 진입점에 연결합니다.',source:'SharedTable.vue, DeviceTable.vue, LogTable.vue'
     },
     filter:{
-      title:'검색과 필터',group:'flow',lead:'원본 행을 거른 뒤 정렬과 표시 행 계산으로 넘깁니다.',source:'SharedTable.vue 14–43, 338–339, 542–544행'
+      title:'검색과 필터',group:'flow',lead:'원본 행을 거른 뒤 정렬과 표시 행 계산으로 넘깁니다.',source:'SharedTable.vue'
     },
     render:{
-      title:'표 렌더링',group:'flow',lead:'가공한 열과 표시 행을 a-table에 전달합니다.',source:'SharedTable.vue 84–95, 307–339행'
+      title:'표 렌더링',group:'flow',lead:'가공한 열과 표시 행을 a-table에 전달합니다.',source:'SharedTable.vue'
     },
     rows:{
-      title:'표시할 행',group:'flow',lead:'서버 데이터, 페이지 UI 설정, 현재 페이지 순으로 분기합니다.',source:'SharedTable.vue 338–339, 355–382행'
+      title:'표시할 행',group:'flow',lead:'서버 데이터, 페이지 UI 설정, 현재 페이지 순으로 분기합니다.',source:'SharedTable.vue'
     },
     page:{
-      title:'페이지 이동',group:'flow',lead:'공통 페이지 UI가 현재 페이지와 페이지 크기를 갱신합니다.',source:'SharedTable.vue 169–175, 355–382행'
+      title:'페이지 이동',group:'flow',lead:'공통 페이지 UI가 현재 페이지와 페이지 크기를 갱신합니다.',source:'SharedTable.vue'
     },
     cell:{
-      title:'셀 렌더링',group:'presentation',lead:'셀 타입의 기본 표현을 통일하고 custom 슬롯을 열어 둡니다.',source:'TableBodyCell.vue 2–20행, DeviceTable.vue 30–36행'
+      title:'셀 렌더링',group:'presentation',lead:'셀 타입의 기본 표현을 통일하고 custom 슬롯을 열어 둡니다.',source:'TableBodyCell.vue, DeviceTable.vue'
     },
     style:{
-      title:'공통 스타일',group:'presentation',lead:'테이블 SCSS의 간격, 경계선, 배경 토큰을 공통으로 적용합니다.',source:'SharedTable.vue 854행, shared-table.scss 118–126, 241–250행'
+      title:'공통 스타일',group:'presentation',lead:'테이블 SCSS의 간격, 경계선, 배경 토큰을 공통으로 적용합니다.',source:'SharedTable.vue, shared-table.scss'
     }
   };
   const state={
@@ -67,6 +67,29 @@
   const readout=root.querySelector('[data-demo-readout]');
   const note=root.querySelector('[data-demo-note]');
   const code=root.querySelector('[data-code]');
+  const codeTokens=/\/\/[^\n]*|<\/?[A-Za-z][\w-]*|--[\w-]+|[:#@A-Za-z][\w:-]*(?==)|@use\b|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\b(?:const|return|if|true|false|undefined|null)\b/g;
+  function highlightCode(){
+    const source=code.textContent;
+    const fragment=document.createDocumentFragment();
+    let cursor=0;
+    for(const match of source.matchAll(codeTokens)){
+      const token=match[0];
+      if(match.index>cursor)fragment.append(document.createTextNode(source.slice(cursor,match.index)));
+      const span=document.createElement('span');
+      span.className=token.startsWith('//')?'syntax-comment'
+        :token.startsWith('<')?'syntax-tag'
+        :token.startsWith('--')?'syntax-token'
+        :source[match.index+token.length]==='='?'syntax-attribute'
+        :token==='@use'?'syntax-directive'
+        :token.startsWith('"')||token.startsWith("'")?'syntax-string'
+        :'syntax-keyword';
+      span.textContent=token;
+      fragment.append(span);
+      cursor=match.index+token.length;
+    }
+    fragment.append(document.createTextNode(source.slice(cursor)));
+    code.replaceChildren(fragment);
+  }
   function table(headers,rows){
     const head=headers.map(value=>`<th scope="col">${value}</th>`).join('');
     const body=rows.map(row=>`<tr>${row.map(value=>`<td>${value}</td>`).join('')}</tr>`).join('');
@@ -114,8 +137,8 @@
     }
     else{
       root.querySelector('[data-demo-title]').textContent='로그 시간 정렬';
-      const logs=state.logDesc?[['09:24','경고','응답 지연'],['09:12','정보','상태 변경']]:[['09:12','정보','상태 변경'],['09:24','경고','응답 지연']];
-      view.innerHTML=table([`발생 시간 ${state.logDesc?'↓':'↑'}`,'심각도','내용'],logs);
+      const logs=state.logDesc?[['09:24','응답 지연','플랫폼 A'],['09:12','상태 변경','플랫폼 B']]:[['09:12','상태 변경','플랫폼 B'],['09:24','응답 지연','플랫폼 A']];
+      view.innerHTML=table([`발생 시간 ${state.logDesc?'↓':'↑'}`,'이벤트명','플랫폼'],logs);
       readout.innerHTML=`<strong>서버 조회 조건</strong> sort: timestampEpoch, sortOrder: ${state.logDesc?'Desc':'Asc'}`;
       code.textContent=state.part==='table'
         ? `<SharedTable :columns="columns" :data="data"
@@ -223,13 +246,13 @@ const computedData = computed(() =>
       const target=view.querySelector(state.styleFocus==='header'?'th':state.styleFocus==='row'?'td':state.styleFocus==='spacing'?'td':'tr');
       target.style.boxShadow='inset 0 0 0 2px #f29b70';
       const info={
-        header:['헤더 배경','--layer-02','shared-table.scss 123행'],
-        row:['행 배경','--layer-01','shared-table.scss 187행'],
-        spacing:['셀 간격','--spacing-16','shared-table.scss 118, 245행'],
-        border:['경계선','--border-subtle-01','shared-table.scss 250행']
+        header:['헤더 배경','--layer-02','shared-table.scss'],
+        row:['행 배경','--layer-01','shared-table.scss'],
+        spacing:['셀 간격','--spacing-16','shared-table.scss'],
+        border:['경계선','--border-subtle-01','shared-table.scss']
       }[state.styleFocus];
       readout.innerHTML=`<strong>${info[0]}</strong> ${info[1]} / ${info[2]}`;
-      code.textContent=`// SharedTable.vue 854행\n@use './shared-table.scss';\n\n// ${info[2]}\n${info[0]} → var(${info[1]})`;
+      code.textContent=`// SharedTable.vue\n@use './shared-table.scss';\n\n// ${info[2]}\n${info[0]} → var(${info[1]})`;
     }
     note.hidden=true;
   }
@@ -237,7 +260,8 @@ const computedData = computed(() =>
     const group=parts[state.part].group;
     if(group==='usage')renderUsage();
     else if(group==='flow')renderFlow();
-    else renderPresentation()
+    else renderPresentation();
+    highlightCode();
   }
   function selectPart(part){
     if(!parts[part])return;

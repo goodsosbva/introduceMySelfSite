@@ -193,42 +193,42 @@
                     <a class="showcase-card showcase-common" data-project-group="frontend" href="case-common-table.html">
                         <div class="component-screen" aria-hidden="true">
                             <div class="screen-heading">
-                                <div><span class="screen-eyebrow">CMP / INFRASTRUCTURE</span><strong>인프라 현황</strong></div>
-                                <span class="screen-primary">＋ 인프라 등록</span>
+                                <div><span class="screen-eyebrow">DEVICE INVENTORY</span><strong>장비 목록</strong></div>
+                                <span class="screen-primary">＋ 장비 등록</span>
                             </div>
                             <div class="screen-summary">
-                                <div><span>전체 인프라</span><strong>24</strong><i>항목 요약</i></div>
-                                <div><span>운영 상태</span><strong>18</strong><i>운영 중</i></div>
-                                <div><span>점검 필요</span><strong>06</strong><i>상태 요약</i></div>
+                                <div><span>전체 장비</span><strong>24</strong><i>샘플 데이터</i></div>
+                                <div><span>사용 상태</span><strong>18</strong><i>사용 중</i></div>
+                                <div><span>미사용</span><strong>06</strong><i>상태 요약</i></div>
                             </div>
                             <div class="screen-workspace">
                                 <aside class="screen-filters">
                                     <strong>필터</strong>
-                                    <span>플랫폼</span><b>전체 플랫폼　⌄</b>
-                                    <span>상태</span><div class="screen-pills"><i>전체</i><i>운영</i></div>
+                                    <span>장비 종류</span><b>전체 종류　⌄</b>
+                                    <span>상태</span><div class="screen-pills"><i>전체</i><i>사용</i></div>
                                     <em>조건 초기화</em>
                                 </aside>
                                 <div class="screen-results">
                                     <div class="screen-toolbar">
-                                        <b>⌕　이름으로 검색</b><i>기간 선택　⌄</i><i>새로고침</i><i class="screen-query">조회하기</i>
+                                        <b>⌕　장비명 검색</b><i>종류 선택　⌄</i><i>새로고침</i><i class="screen-query">조회하기</i>
                                     </div>
                                     <div class="screen-table">
-                                        <div class="screen-table-head"><span>이름</span><span>플랫폼</span><span>유형</span><span>상태</span><span>작업</span></div>
-                                        <div class="screen-table-row"><span>샘플 자원 A</span><span>Kubernetes</span><span>서버</span><span><i class="status-pill status-live">운영</i></span><span>•••</span></div>
-                                        <div class="screen-table-row"><span>샘플 자원 B</span><span>OpenShift</span><span>서버</span><span><i class="status-pill status-check">점검</i></span><span>•••</span></div>
-                                        <div class="screen-table-row"><span>샘플 자원 C</span><span>Kubernetes</span><span>가상머신</span><span><i class="status-pill status-idle">대기</i></span><span>•••</span></div>
+                                        <div class="screen-table-head"><span>장비명</span><span>종류</span><span>제조사</span><span>상태</span><span>작업</span></div>
+                                        <div class="screen-table-row"><span>샘플 장비 A</span><span>호스트</span><span>제조사 A</span><span><i class="status-pill status-live">사용</i></span><span>•••</span></div>
+                                        <div class="screen-table-row"><span>샘플 장비 B</span><span>스토리지</span><span>제조사 B</span><span><i class="status-pill status-idle">미사용</i></span><span>•••</span></div>
+                                        <div class="screen-table-row"><span>샘플 장비 C</span><span>네트워크</span><span>제조사 C</span><span><i class="status-pill status-live">사용</i></span><span>•••</span></div>
                                     </div>
                                     <div class="screen-pagination"><span>전체 24건</span><span>페이지당 10개</span><b>1</b><i>2</i><i>3</i></div>
                                 </div>
                             </div>
-                            <span class="screen-note">CMP 화면 예시</span>
+                            <span class="screen-note">장비 목록 화면 재구성</span>
                         </div>
                         <div class="showcase-copy">
                             <span class="showcase-index">01 / SHARED UI</span>
-                            <h3>공통 UI</h3>
-                            <p>인프라 현황 화면에 쓰이는 테이블과 검색, 필터, 상태 표시를 살펴보세요.</p>
+                            <h3>공통 컴포넌트 설계</h3>
+                            <p>반복되는 UI를 공통으로 설계하는 방식을, 장비 목록과 로그 조회에 적용한 테이블 사례로 소개합니다.</p>
                             <div class="showcase-stack"><span>Vue 3</span><span>TypeScript</span><span>Storybook</span></div>
-                            <span class="showcase-link">기여 내용 자세히 보기 <b aria-hidden="true">↗</b></span>
+                            <span class="showcase-link">구현 사례 자세히 보기 <b aria-hidden="true">↗</b></span>
                         </div>
                     </a>
 
