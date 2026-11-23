@@ -32,3 +32,5 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 
+#etc
+docs

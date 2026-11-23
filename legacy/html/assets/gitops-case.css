@@ -1,0 +1,303 @@
+.gitops-detail {
+    background: #eef2f8;
+    color: #17243b;
+}
+.gitops-detail .header {
+    background: #101c32;
+    border-color: #223450;
+}
+.gitops-detail .header .brand,
+.gitops-detail .header .nav-links a {
+    color: #f5f8ff;
+}
+.gitops-detail .header .brand {
+    border-color: #f5f8ff;
+}
+.gitops-detail .header .nav-links a:hover {
+    color: #b8caff;
+}
+.gitops-detail .hero {
+    padding: 62px 0 64px;
+    border: 0;
+    background: #101c32;
+    color: #f5f8ff;
+}
+.gitops-detail .hero .text-link {
+    display: inline-block;
+    margin-bottom: 34px;
+    color: #b8caff;
+}
+.gitops-detail .hero .eyebrow,
+.gitops-detail .gitops-card .eyebrow {
+    display: inline-block;
+    width: fit-content;
+    padding: 7px 13px;
+    border-radius: 999px;
+    background: #263a67;
+    color: #d6e0ff;
+    font-size: 13px;
+    letter-spacing: 0;
+}
+.gitops-detail .hero h1 {
+    margin: 24px 0 18px;
+    font-size: clamp(42px, 5.5vw, 68px);
+    line-height: 1.17;
+}
+.gitops-detail .hero .lead {
+    max-width: 970px;
+    color: #d9e2f3;
+    font-size: clamp(18px, 2vw, 22px);
+}
+.gitops-detail .beyond-local-nav {
+    margin-top: 32px;
+}
+.gitops-detail .beyond-local-nav a {
+    border-color: #4d6287;
+    color: #d6e0ff;
+}
+.gitops-detail .beyond-local-nav a:hover {
+    background: #263a67;
+}
+.gitops-detail .beyond-content {
+    padding-top: 38px;
+    padding-bottom: 74px;
+}
+.gitops-detail .beyond-visual {
+    margin-bottom: 28px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+.gitops-detail .beyond-visual figcaption {
+    margin-bottom: 18px;
+    color: #17243b;
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -.03em;
+}
+.gitops-detail .beyond-flow {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+.gitops-detail .beyond-flow li {
+    position: relative;
+    min-height: 128px;
+    gap: 8px;
+    padding: 19px;
+    border-color: #dbe3ed;
+    border-radius: 13px;
+    background: #f8faff;
+}
+.gitops-detail .beyond-flow li:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    top: 42%;
+    right: -21px;
+    color: #335de7;
+    font-size: 24px;
+    font-weight: 700;
+}
+.gitops-detail .beyond-flow span {
+    color: #335de7;
+    font-size: 15px;
+}
+.gitops-detail .beyond-flow strong {
+    font-size: 18px;
+}
+.gitops-detail .beyond-flow small {
+    color: #66758d;
+    font-size: 13px;
+}
+.gitops-detail .beyond-content > section {
+    margin-bottom: 26px;
+    padding: clamp(25px, 3.5vw, 42px);
+    border: 1px solid #dbe3ed;
+    border-radius: 18px;
+    scroll-margin-top: 24px;
+}
+.gitops-detail .gitops-card {
+    background: #fff;
+}
+.gitops-detail .gitops-card .eyebrow {
+    background: #eff3ff;
+    color: #335de7;
+}
+.gitops-detail .beyond-content > section h2 {
+    max-width: 900px;
+    margin: 18px 0 24px;
+    font-size: clamp(27px, 3vw, 38px);
+}
+.gitops-detail .gitops-card > p:not(.eyebrow),
+.gitops-detail .gitops-repo-copy > p {
+    max-width: none;
+    color: #34435b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.gitops-repo-grid,
+.gitops-evidence-grid,
+.gitops-command-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 22px;
+    align-items: stretch;
+}
+.gitops-action {
+    margin-top: 24px;
+    padding: 20px 22px;
+    border-radius: 12px;
+    background: #f4f7fc;
+}
+.gitops-action h3,
+.gitops-auth h3 {
+    margin: 0 0 8px;
+    color: #335de7;
+    font-size: 17px;
+    letter-spacing: 0;
+}
+.gitops-action p {
+    color: #34435b;
+    line-height: 1.75;
+}
+.gitops-status {
+    min-width: 0;
+    margin: 0;
+    padding: 22px;
+    border-radius: 12px;
+    background: #101c32;
+    color: #e4edff;
+}
+.gitops-status figcaption {
+    margin-bottom: 14px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.gitops-status > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 18px 0;
+    border-top: 1px solid #34445e;
+    font-size: 15px;
+}
+.gitops-status strong {
+    flex: none;
+    padding: 5px 11px;
+    border-radius: 999px;
+    font-size: 13px;
+}
+.gitops-failed {
+    background: #4a202d;
+    color: #ffb1b9;
+}
+.gitops-success {
+    background: #163e37;
+    color: #9de3c9;
+}
+.gitops-status > p {
+    margin-top: 16px;
+    color: #afbdd4;
+    font-size: 13px;
+}
+.gitops-evidence-grid {
+    margin-top: 24px;
+}
+.gitops-detail .beyond-code {
+    min-width: 0;
+    margin: 0;
+    border-color: #dbe3ed;
+    background: #f4f7fc;
+}
+.gitops-detail .beyond-code figcaption {
+    color: #335de7;
+    font-size: 14px;
+}
+.gitops-detail .beyond-code pre {
+    font-size: 14px;
+    line-height: 1.7;
+}
+.gitops-detail .gitops-event {
+    border-color: #101c32;
+    background: #101c32;
+}
+.gitops-detail .gitops-event figcaption {
+    border-color: #34445e;
+    color: #aac2eb;
+}
+.gitops-detail .gitops-event pre {
+    color: #e4edff;
+}
+.gitops-auth {
+    min-width: 0;
+    padding: 20px 22px;
+    border-radius: 12px;
+    background: #f4f7fc;
+}
+.gitops-auth p {
+    margin-top: 8px;
+    color: #34435b;
+    line-height: 1.6;
+}
+.gitops-finding {
+    margin: 24px 0;
+    padding-top: 16px;
+    border-top: 1px solid #dbe3ed;
+}
+.gitops-finding p {
+    display: flex;
+    gap: 18px;
+    margin: 10px 0;
+    line-height: 1.7;
+}
+.gitops-finding strong {
+    flex: 0 0 34px;
+    color: #b73749;
+}
+.gitops-finding p + p strong {
+    color: #158061;
+}
+.gitops-command-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.gitops-detail .gitops-result {
+    background: #17294c;
+    color: #f5f8ff;
+}
+.gitops-detail .gitops-result .eyebrow {
+    color: #b8caff;
+}
+.gitops-detail .gitops-result h2 {
+    margin: 8px 0 18px;
+    font-size: 30px;
+}
+.gitops-detail .gitops-result > p:not(.eyebrow) {
+    max-width: none;
+    margin: 0 0 10px;
+    color: #d9e2f3;
+    font-size: 16px;
+    line-height: 1.7;
+}
+.gitops-detail .gitops-result .gitops-takeaway {
+    margin-top: 22px !important;
+    color: #b8caff !important;
+}
+.gitops-detail .beyond-next {
+    padding-top: 12px;
+}
+@media (max-width: 900px) {
+    .gitops-detail .beyond-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .gitops-detail .beyond-flow li:nth-child(2)::after { content: none; }
+    .gitops-repo-grid, .gitops-evidence-grid, .gitops-command-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+    .gitops-detail .hero { padding: 40px 0 46px; }
+    .gitops-detail .hero h1 { font-size: clamp(36px, 9vw, 46px); }
+    .gitops-detail .beyond-flow { grid-template-columns: 1fr; gap: 12px; }
+    .gitops-detail .beyond-flow li { min-height: 0; }
+    .gitops-detail .beyond-flow li::after { content: none !important; }
+    .gitops-detail .beyond-content > section { padding: 22px; }
+    .gitops-status > div { align-items: flex-start; flex-direction: column; }
+    .gitops-finding p { display: block; }
+    .gitops-finding strong { display: inline-block; margin-right: 10px; }
+}

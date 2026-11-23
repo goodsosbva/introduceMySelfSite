@@ -193,42 +193,42 @@
                     <a class="showcase-card showcase-common" data-project-group="frontend" href="case-common-table.html">
                         <div class="component-screen" aria-hidden="true">
                             <div class="screen-heading">
-                                <div><span class="screen-eyebrow">CMP / INFRASTRUCTURE</span><strong>인프라 현황</strong></div>
-                                <span class="screen-primary">＋ 인프라 등록</span>
+                                <div><span class="screen-eyebrow">DEVICE INVENTORY</span><strong>장비 목록</strong></div>
+                                <span class="screen-primary">＋ 장비 등록</span>
                             </div>
                             <div class="screen-summary">
-                                <div><span>전체 인프라</span><strong>24</strong><i>항목 요약</i></div>
-                                <div><span>운영 상태</span><strong>18</strong><i>운영 중</i></div>
-                                <div><span>점검 필요</span><strong>06</strong><i>상태 요약</i></div>
+                                <div><span>전체 장비</span><strong>24</strong><i>샘플 데이터</i></div>
+                                <div><span>사용 상태</span><strong>18</strong><i>사용 중</i></div>
+                                <div><span>미사용</span><strong>06</strong><i>상태 요약</i></div>
                             </div>
                             <div class="screen-workspace">
                                 <aside class="screen-filters">
                                     <strong>필터</strong>
-                                    <span>플랫폼</span><b>전체 플랫폼　⌄</b>
-                                    <span>상태</span><div class="screen-pills"><i>전체</i><i>운영</i></div>
+                                    <span>장비 종류</span><b>전체 종류　⌄</b>
+                                    <span>상태</span><div class="screen-pills"><i>전체</i><i>사용</i></div>
                                     <em>조건 초기화</em>
                                 </aside>
                                 <div class="screen-results">
                                     <div class="screen-toolbar">
-                                        <b>⌕　이름으로 검색</b><i>기간 선택　⌄</i><i>새로고침</i><i class="screen-query">조회하기</i>
+                                        <b>⌕　장비명 검색</b><i>종류 선택　⌄</i><i>새로고침</i><i class="screen-query">조회하기</i>
                                     </div>
                                     <div class="screen-table">
-                                        <div class="screen-table-head"><span>이름</span><span>플랫폼</span><span>유형</span><span>상태</span><span>작업</span></div>
-                                        <div class="screen-table-row"><span>샘플 자원 A</span><span>Kubernetes</span><span>서버</span><span><i class="status-pill status-live">운영</i></span><span>•••</span></div>
-                                        <div class="screen-table-row"><span>샘플 자원 B</span><span>OpenShift</span><span>서버</span><span><i class="status-pill status-check">점검</i></span><span>•••</span></div>
-                                        <div class="screen-table-row"><span>샘플 자원 C</span><span>Kubernetes</span><span>가상머신</span><span><i class="status-pill status-idle">대기</i></span><span>•••</span></div>
+                                        <div class="screen-table-head"><span>장비명</span><span>종류</span><span>제조사</span><span>상태</span><span>작업</span></div>
+                                        <div class="screen-table-row"><span>샘플 장비 A</span><span>호스트</span><span>제조사 A</span><span><i class="status-pill status-live">사용</i></span><span>•••</span></div>
+                                        <div class="screen-table-row"><span>샘플 장비 B</span><span>스토리지</span><span>제조사 B</span><span><i class="status-pill status-idle">미사용</i></span><span>•••</span></div>
+                                        <div class="screen-table-row"><span>샘플 장비 C</span><span>네트워크</span><span>제조사 C</span><span><i class="status-pill status-live">사용</i></span><span>•••</span></div>
                                     </div>
                                     <div class="screen-pagination"><span>전체 24건</span><span>페이지당 10개</span><b>1</b><i>2</i><i>3</i></div>
                                 </div>
                             </div>
-                            <span class="screen-note">CMP 화면 예시</span>
+                            <span class="screen-note">장비 목록 화면 재구성</span>
                         </div>
                         <div class="showcase-copy">
                             <span class="showcase-index">01 / SHARED UI</span>
-                            <h3>공통 UI</h3>
-                            <p>인프라 현황 화면에 쓰이는 테이블과 검색, 필터, 상태 표시를 살펴보세요.</p>
+                            <h3>공통 컴포넌트 설계</h3>
+                            <p>반복되는 UI를 공통으로 설계하는 방식을, 장비 목록과 로그 조회에 적용한 테이블 사례로 소개합니다.</p>
                             <div class="showcase-stack"><span>Vue 3</span><span>TypeScript</span><span>Storybook</span></div>
-                            <span class="showcase-link">기여 내용 자세히 보기 <b aria-hidden="true">↗</b></span>
+                            <span class="showcase-link">구현 사례 자세히 보기 <b aria-hidden="true">↗</b></span>
                         </div>
                     </a>
 
@@ -259,46 +259,46 @@
                             <span class="showcase-link">프로젝트 자세히 보기 <b aria-hidden="true">↗</b></span>
                         </div>
                     </a>
-                    <a class="showcase-card" data-project-group="beyond" href="case-beyond-frontend.html#kubernetes" hidden>
+                    <a class="showcase-card" data-project-group="beyond" href="case-kubernetes-image-patch.html" hidden>
                         <div class="engineering-preview" aria-hidden="true">
-                            <div class="engineering-preview-head"><span>KUBERNETES / CLOSED NETWORK</span><b>01</b></div>
-                            <div class="engineering-preview-flow"><span>이미지 반입</span><i>→</i><span>워크로드 교체</span><i>→</i><span>배포 확인</span></div>
-                            <div class="engineering-preview-foot"><span>이미지 패치</span><span>검증과 롤백 절차</span></div>
+                            <div class="engineering-preview-head"><span>KUBERNETES / CLOSED NETWORK</span></div>
+                            <div class="engineering-preview-flow"><span>SFTP 반입</span><i>→</i><span>Nexus Push</span><i>→</i><span>이미지 교체</span></div>
+                            <div class="engineering-preview-foot"><span>Push :50000</span><span>Pull :55000</span></div>
                         </div>
                         <div class="showcase-copy">
-                            <span class="showcase-index">01 / KUBERNETES OPERATIONS</span>
+                            <span class="showcase-index">KUBERNETES OPERATIONS</span>
                             <h3>폐쇄망 Kubernetes 이미지 패치</h3>
-                            <p>이미지 아티팩트 반입부터 워크로드 교체, 배포 확인과 롤백 절차까지 정리했습니다.</p>
+                            <p>폐쇄망에서 두 이미지를 반입해 Nexus에 등록하고, Push와 Pull 포트가 다른 환경의 Deployment를 교체했습니다.</p>
                             <div class="showcase-stack"><span>Kubernetes</span><span>Linux</span><span>Container Image</span></div>
-                            <span class="showcase-link">업무 흐름 자세히 보기 <b aria-hidden="true">↗</b></span>
+                            <span class="showcase-link">사례 자세히 보기 <b aria-hidden="true">↗</b></span>
                         </div>
                     </a>
-                    <a class="showcase-card" data-project-group="beyond" href="case-beyond-frontend.html#gitops" hidden>
+                    <a class="showcase-card" data-project-group="beyond" href="case-gitops-recovery.html" hidden>
                         <div class="engineering-preview engineering-preview-gitops" aria-hidden="true">
-                            <div class="engineering-preview-head"><span>GITOPS / DEPLOYMENT RECOVERY</span><b>02</b></div>
-                            <div class="engineering-preview-flow"><span>저장소 연결</span><i>→</i><span>이미지 Pull</span><i>→</i><span>배포 상태</span></div>
-                            <div class="engineering-preview-foot"><span>Argo CD</span><span>Harbor</span></div>
+                            <div class="engineering-preview-head"><span>GITOPS / DEPLOYMENT RECOVERY</span></div>
+                            <div class="engineering-preview-flow"><span>GitLab 인증 갱신</span><i>→</i><span>Pull 401 분석</span><i>→</i><span>노드 인증 갱신</span></div>
+                            <div class="engineering-preview-foot"><span>Argo CD 연결</span><span>Harbor 인증</span></div>
                         </div>
                         <div class="showcase-copy">
-                            <span class="showcase-index">02 / DEPLOYMENT RESPONSE</span>
+                            <span class="showcase-index">DEPLOYMENT RESPONSE</span>
                             <h3>GitOps 배포 복구</h3>
-                            <p>Argo CD 저장소 연결과 Harbor 이미지 Pull 오류를 각각 확인하고 배포 상태를 점검했습니다.</p>
+                            <p>GitLab 연결의 오래된 비밀번호를 갱신한 뒤, 워커 노드의 Harbor Pull 401을 별도로 해결했습니다.</p>
                             <div class="showcase-stack"><span>Argo CD</span><span>Harbor</span><span>Kubernetes</span></div>
-                            <span class="showcase-link">대응 흐름 자세히 보기 <b aria-hidden="true">↗</b></span>
+                            <span class="showcase-link">사례 자세히 보기 <b aria-hidden="true">↗</b></span>
                         </div>
                     </a>
-                    <a class="showcase-card" data-project-group="beyond" href="case-beyond-frontend.html#support" hidden>
+                    <a class="showcase-card" data-project-group="beyond" href="case-security-patch-plan.html" hidden>
                         <div class="engineering-preview engineering-preview-support" aria-hidden="true">
-                            <div class="engineering-preview-head"><span>TECHNICAL SUPPORT / RUNBOOK</span><b>03</b></div>
-                            <div class="engineering-preview-flow"><span>절차 확인</span><i>→</i><span>실행 가이드</span><i>→</i><span>지원 보고</span></div>
-                            <div class="engineering-preview-foot"><span>운영 문서</span><span>기술지원</span></div>
+                            <div class="engineering-preview-head"><span>SECURITY PATCH / JAVA &amp; NGINX</span></div>
+                            <div class="engineering-preview-flow"><span>JVM 설정</span><i>→</i><span>이미지 변경</span><i>→</i><span>실행 옵션 확인</span></div>
+                            <div class="engineering-preview-foot"><span>Jenkins / SonarQube</span><span>Node / NGINX</span></div>
                         </div>
                         <div class="showcase-copy">
-                            <span class="showcase-index">03 / OPERATIONS DOCUMENTATION</span>
-                            <h3>운영 문서와 기술지원</h3>
-                            <p>폐쇄망 패치 절차와 배포 복구 내용을 실행 가이드와 기술지원 보고서로 정리했습니다.</p>
-                            <div class="showcase-stack"><span>Runbook</span><span>Deployment</span><span>Support</span></div>
-                            <span class="showcase-link">기록 자세히 보기 <b aria-hidden="true">↗</b></span>
+                            <span class="showcase-index">SECURITY PATCH PLANNING</span>
+                            <h3>보안 패치 대응 설계</h3>
+                            <p>Jenkins와 SonarQube의 JVM 옵션, Java와 React의 기반 이미지 변경안을 실행 위치별로 설계했습니다.</p>
+                            <div class="showcase-stack"><span>Helm</span><span>Java</span><span>NGINX</span></div>
+                            <span class="showcase-link">사례 자세히 보기 <b aria-hidden="true">↗</b></span>
                         </div>
                     </a>
                 </div>
