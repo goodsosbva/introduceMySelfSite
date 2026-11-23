@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>폐쇄망 Kubernetes 이미지 패치 | 권현성</title>
+        <meta name="description" content="SFTP 이미지 반입, nerdctl 이미지 적재와 Nexus Push, Deployment 이미지 교체 기록" />
+        <link rel="icon" href="assets/favicon-smile.ico" sizes="any" />
+        <link rel="stylesheet" href="career-portfolio.css" />
+        <link rel="stylesheet" href="assets/renewal.css?v=20261103-3" />
+        <link rel="stylesheet" href="assets/beyond-case.css?v=20261123-2" />
++        <style>
+            .beyond-detail .beyond-code { border-color: #253b5c; background: #101c31; }
+            .beyond-detail .beyond-code figcaption {
+                display: flex; justify-content: space-between; align-items: center; gap: 12px;
+                border-color: #344a68; background: #192b47; color: #eef5ff; font-size: 14px;
+            }
+            .beyond-detail .beyond-code figcaption::after {
+                content: attr(data-language); flex: none; padding: 3px 8px;
+                border: 1px solid #6a88b0; border-radius: 4px; color: #d3e2ff;
+                font: 700 12px/1.4 Consolas, monospace;
+            }
+            .beyond-detail .beyond-code pre,
+            .beyond-detail .beyond-code pre code {
+                background: #101c31; color: #eef5ff; font: 14px/1.8 Consolas, monospace;
+            }
+            .beyond-detail .beyond-code pre { tab-size: 2; }
+            .beyond-detail .beyond-code .tok-comment { color: #a9b9d0; }
+            .beyond-detail .beyond-code .tok-key,
+            .beyond-detail .beyond-code .tok-keyword,
+            .beyond-detail .beyond-code .tok-command { color: #7ac4ff; }
+            .beyond-detail .beyond-code .tok-string { color: #a7e98e; }
+            .beyond-detail .beyond-code .tok-variable { color: #e8b0ff; }
+            .beyond-detail .beyond-code .tok-flag { color: #ffd080; }
+            .patch-route { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+            .patch-route > div { padding: 22px; border: 1px solid #d8e2ed; border-radius: 10px; background: #fff; }
+            .patch-route span { display: block; color: #5276a0; font-size: 13px; font-weight: 800; }
+            .patch-route strong { display: block; margin: 10px 0 5px; color: #17314f; font-size: 24px; }
+            .patch-route p { color: #596b82; font-size: 14px; }
+            @media (max-width: 700px) { .patch-route { grid-template-columns: 1fr; } }
+        </style>
+    </head>
+    <body class="inner beyond-detail">
+        <a class="skip" href="#main">본문으로 바로가기</a>
+        <header class="header">
+            <nav class="nav wrap" aria-label="주요 메뉴">
+                <a class="brand" href="index.html">KHS<span>.</span></a>
+                <div class="nav-links"><a href="index.html#work">프로젝트</a><a href="index.html#skills">기술</a><a href="index.html#contact">연락</a></div>
+            </nav>
+        </header>
+        <main id="main" tabindex="-1">
+            <section class="hero">
+                <div class="wrap">
+                    <a class="text-link" href="index.html?view=beyond#work">← Beyond Frontend 목록</a>
+                    <p class="eyebrow">KUBERNETES OPERATIONS</p>
+                    <h1>폐쇄망 Kubernetes<br /><span class="accent">이미지 패치</span></h1>
+                    <p class="lead">폐쇄망에 반입한 두 이미지를 Nexus에 등록하고, Push 주소와 Pod의 Pull 주소가 다른 환경에서 두 Deployment를 새 이미지로 교체했습니다.</p>
+                    <dl class="beyond-meta">
+                        <div><dt>제가 한 일</dt><dd>이미지 반입, Nexus 등록, Deployment 교체</dd></div>
+                        <div><dt>대상</dt><dd>trb-app의 pipeline-api, react-app</dd></div>
+                        <div><dt>기술</dt><dd>SFTP, nerdctl, kubectl, Nexus</dd></div>
+                    </dl>
+                    <nav class="beyond-local-nav" aria-label="이 사례의 내용">
+                        <a href="#transfer">이미지 반입</a><a href="#registry">Nexus 등록</a><a href="#rollout">이미지 교체</a><a href="#recovery">배포 결과</a>
+                    </nav>
+                </div>
+            </section>
+            <div class="wrap beyond-content">
+                <figure class="beyond-visual">
+                    <figcaption>같은 이미지, 서로 다른 레지스트리 주소</figcaption>
+                    <div class="patch-route">
+                        <div><span>작업 노드에서 Nexus로</span><strong>Push :50000</strong><p><code>nerdctl tag</code>와 <code>nerdctl push</code>에 사용한 주소</p></div>
+                        <div><span>Nexus에서 Kubernetes Pod로</span><strong>Pull :55000</strong><p>두 Deployment의 <code>image</code>에 지정한 주소</p></div>
+                    </div>
+                </figure>
+
+                <section id="transfer">
+                    <p class="eyebrow">01 / IMAGE TRANSFER</p>
+                    <h2>이미지 tar를 반입하고<br />기존 Deployment를 확인했습니다</h2>
+                    <p><code>pipeline-api.tar</code>와 <code>react-app.tar</code>를 SFTP로 반입했습니다. 작업 대상 클러스터를 확인한 뒤 두 Deployment의 YAML을 저장해 기존 이미지 주소도 함께 남겼습니다.</p>
+                    <figure class="beyond-code">
+                        <figcaption data-language="SHELL / SFTP">이미지 반입과 변경 전 백업</figcaption>
+                        <pre><code><span class="tok-comment"># 서버 셸</span>
+<span class="tok-command">mkdir</span> <span class="tok-flag">-p</span> <span class="tok-string">/root/smg</span>
+
+<span class="tok-comment"># SFTP 세션</span>
+<span class="tok-command">cd</span> /root/smg
+<span class="tok-command">put</span> <span class="tok-string">"pipeline-api.tar"</span>
+<span class="tok-command">put</span> <span class="tok-string">"react-app.tar"</span>
+<span class="tok-command">ls</span>
+
+<span class="tok-comment"># 서버 셸: 파일과 변경 전 Deployment 확인</span>
+<span class="tok-command">ls</span> <span class="tok-flag">-lh</span> /root/smg/pipeline-api.tar /root/smg/react-app.tar
+<span class="tok-command">kubectl</span> config current-context
+<span class="tok-command">kubectl</span> get deployment <span class="tok-flag">-n</span> trb-app \
+  trb-app-pipeline-api trb-app-react-app \
+  <span class="tok-flag">-o</span> yaml &gt; <span class="tok-string">/root/smg/deployment-before-patch.yaml</span></code></pre>
+                    </figure>
+                </section>
+
+                <section id="registry">
+                    <p class="eyebrow">02 / IMAGE REGISTRY</p>
+                    <h2>tar 안의 실제 이미지 이름을 확인하고<br />Nexus 주소로 재태깅했습니다</h2>
+                    <p><code>nerdctl load</code> 뒤 <code>nerdctl images</code>로 tar 안에 저장된 원본 이미지 이름을 확인했습니다. tar 파일명은 이미지 이름과 같지 않을 수 있어, 출력된 Harbor 주소를 원본으로 삼아 Nexus Push 주소로 재태깅했습니다.</p>
+                    <figure class="beyond-code">
+                        <figcaption data-language="SHELL">tar 적재, 재태깅, Nexus 업로드</figcaption>
+                        <pre><code><span class="tok-command">cd</span> /root/smg
+<span class="tok-command">nerdctl</span> load <span class="tok-flag">-i</span> pipeline-api.tar
+<span class="tok-command">nerdctl</span> load <span class="tok-flag">-i</span> react-app.tar
+<span class="tok-command">nerdctl</span> images | <span class="tok-command">grep</span> 20261006
+
+<span class="tok-command">nerdctl</span> tag <span class="tok-string">harbor.console.bok-trb.okestro.cloud/trb/pipeline-api:20261006-164837</span> \
+  <span class="tok-string">nexus.okestro-k8s.com:50000/trb-app/pipeline-api:20261006-164837</span>
+<span class="tok-command">nerdctl</span> tag <span class="tok-string">harbor.console.bok-trb.okestro.cloud/trb/react-app:20261006-164836</span> \
+  <span class="tok-string">nexus.okestro-k8s.com:50000/trb-app/react-app:20261006-164836</span>
+
+<span class="tok-command">nerdctl</span> login <span class="tok-string">nexus.okestro-k8s.com:50000</span>
+<span class="tok-command">nerdctl</span> push <span class="tok-string">nexus.okestro-k8s.com:50000/trb-app/pipeline-api:20261006-164837</span>
+<span class="tok-command">nerdctl</span> push <span class="tok-string">nexus.okestro-k8s.com:50000/trb-app/react-app:20261006-164836</span></code></pre>
+                    </figure>
+                </section>
+
+                <section id="rollout">
+                    <p class="eyebrow">03 / DEPLOYMENT UPDATE</p>
+                    <h2>Push 포트가 아닌 Pull 포트를<br />Deployment에 지정했습니다</h2>
+                    <p>Nexus 업로드에는 <code>:50000</code>, Kubernetes Deployment에는 Pull 주소인 <code>:55000</code>을 사용했습니다. 업로드 성공과 Pod의 이미지 수신은 다른 경로이므로, <code>kubectl set image</code>에서 두 Deployment의 Pull 주소를 각각 지정했습니다.</p>
+                    <figure class="beyond-code">
+                        <figcaption data-language="SHELL">두 Deployment의 이미지 주소 교체</figcaption>
+                        <pre><code><span class="tok-command">kubectl</span> set image deployment/trb-app-pipeline-api \
+  pipeline-api=<span class="tok-string">nexus.okestro-k8s.com:55000/trb-app/pipeline-api:20261006-164837</span> \
+  <span class="tok-flag">-n</span> trb-app
+
+<span class="tok-command">kubectl</span> set image deployment/trb-app-react-app \
+  react-app=<span class="tok-string">nexus.okestro-k8s.com:55000/trb-app/react-app:20261006-164836</span> \
+  <span class="tok-flag">-n</span> trb-app</code></pre>
+                    </figure>
+                    <p><code>kubectl set image</code>가 Rolling Update를 시작하므로, 두 컨테이너에 지정한 Pull 주소와 태그가 변경의 핵심입니다.</p>
+                </section>
+
+                <section id="recovery">
+                    <p class="eyebrow">04 / DEPLOYMENT RESULT</p>
+                    <h2>두 서비스가 새 이미지를<br />사용하는지 확인했습니다</h2>
+                    <p>두 Deployment의 롤아웃 상태를 확인하고 실제 <code>IMAGE</code> 필드가 <code>:55000</code> 주소와 새 태그를 가리키는지 대조했습니다. 이어 새 Pod의 상태와 애플리케이션 로그까지 확인해 이미지 교체가 배포로 이어졌는지 봤습니다.</p>
+                    <figure class="beyond-code">
+                        <figcaption data-language="SHELL">롤아웃, 이미지 태그, Pod와 로그 확인</figcaption>
+                        <pre><code><span class="tok-command">kubectl</span> rollout status deployment/trb-app-pipeline-api <span class="tok-flag">-n</span> trb-app
+<span class="tok-command">kubectl</span> rollout status deployment/trb-app-react-app <span class="tok-flag">-n</span> trb-app
+
+<span class="tok-command">kubectl</span> get deployment <span class="tok-flag">-n</span> trb-app \
+  trb-app-pipeline-api trb-app-react-app \
+  <span class="tok-flag">-o</span> <span class="tok-string">'custom-columns=NAME:.metadata.name,IMAGE:.spec.template.spec.containers[*].image'</span>
+<span class="tok-command">kubectl</span> get pods <span class="tok-flag">-n</span> trb-app <span class="tok-flag">-o</span> wide
+<span class="tok-command">kubectl</span> logs <span class="tok-flag">-n</span> trb-app deployment/trb-app-pipeline-api <span class="tok-flag">--tail</span>=100
+<span class="tok-command">kubectl</span> logs <span class="tok-flag">-n</span> trb-app deployment/trb-app-react-app <span class="tok-flag">--tail</span>=100</code></pre>
+                    </figure>
+                    <div class="beyond-source-links" aria-label="관련 공개 기록">
+                        <a href="https://goodsosbva.tistory.com/474" target="_blank" rel="noopener noreferrer">이미지 패치 작업 글 ↗</a>
+                    </div>
+                </section>
+                <nav class="beyond-next" aria-label="다른 사례"><a href="index.html?view=beyond#work">← Beyond Frontend 목록</a><a href="case-gitops-recovery.html">다음 사례: GitOps 배포 복구 →</a></nav>
+            </div>
+        </main>
+        <footer class="wrap site-footer">© 2026 권현성.<a href="index.html">메인으로 ↑</a></footer>
+    </body>
+</html>

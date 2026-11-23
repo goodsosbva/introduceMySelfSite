@@ -259,46 +259,46 @@
                             <span class="showcase-link">프로젝트 자세히 보기 <b aria-hidden="true">↗</b></span>
                         </div>
                     </a>
-                    <a class="showcase-card" data-project-group="beyond" href="case-beyond-frontend.html#kubernetes" hidden>
+                    <a class="showcase-card" data-project-group="beyond" href="case-kubernetes-image-patch.html" hidden>
                         <div class="engineering-preview" aria-hidden="true">
-                            <div class="engineering-preview-head"><span>KUBERNETES / CLOSED NETWORK</span><b>01</b></div>
-                            <div class="engineering-preview-flow"><span>이미지 반입</span><i>→</i><span>워크로드 교체</span><i>→</i><span>배포 확인</span></div>
-                            <div class="engineering-preview-foot"><span>이미지 패치</span><span>검증과 롤백 절차</span></div>
+                            <div class="engineering-preview-head"><span>KUBERNETES / CLOSED NETWORK</span></div>
+                            <div class="engineering-preview-flow"><span>SFTP 반입</span><i>→</i><span>Nexus Push</span><i>→</i><span>이미지 교체</span></div>
+                            <div class="engineering-preview-foot"><span>Push :50000</span><span>Pull :55000</span></div>
                         </div>
                         <div class="showcase-copy">
-                            <span class="showcase-index">01 / KUBERNETES OPERATIONS</span>
+                            <span class="showcase-index">KUBERNETES OPERATIONS</span>
                             <h3>폐쇄망 Kubernetes 이미지 패치</h3>
-                            <p>이미지 아티팩트 반입부터 워크로드 교체, 배포 확인과 롤백 절차까지 정리했습니다.</p>
+                            <p>폐쇄망에서 두 이미지를 반입해 Nexus에 등록하고, Push와 Pull 포트가 다른 환경의 Deployment를 교체했습니다.</p>
                             <div class="showcase-stack"><span>Kubernetes</span><span>Linux</span><span>Container Image</span></div>
-                            <span class="showcase-link">업무 흐름 자세히 보기 <b aria-hidden="true">↗</b></span>
+                            <span class="showcase-link">사례 자세히 보기 <b aria-hidden="true">↗</b></span>
                         </div>
                     </a>
-                    <a class="showcase-card" data-project-group="beyond" href="case-beyond-frontend.html#gitops" hidden>
+                    <a class="showcase-card" data-project-group="beyond" href="case-gitops-recovery.html" hidden>
                         <div class="engineering-preview engineering-preview-gitops" aria-hidden="true">
-                            <div class="engineering-preview-head"><span>GITOPS / DEPLOYMENT RECOVERY</span><b>02</b></div>
-                            <div class="engineering-preview-flow"><span>저장소 연결</span><i>→</i><span>이미지 Pull</span><i>→</i><span>배포 상태</span></div>
-                            <div class="engineering-preview-foot"><span>Argo CD</span><span>Harbor</span></div>
+                            <div class="engineering-preview-head"><span>GITOPS / DEPLOYMENT RECOVERY</span></div>
+                            <div class="engineering-preview-flow"><span>GitLab 인증 갱신</span><i>→</i><span>Pull 401 분석</span><i>→</i><span>노드 인증 갱신</span></div>
+                            <div class="engineering-preview-foot"><span>Argo CD 연결</span><span>Harbor 인증</span></div>
                         </div>
                         <div class="showcase-copy">
-                            <span class="showcase-index">02 / DEPLOYMENT RESPONSE</span>
+                            <span class="showcase-index">DEPLOYMENT RESPONSE</span>
                             <h3>GitOps 배포 복구</h3>
-                            <p>Argo CD 저장소 연결과 Harbor 이미지 Pull 오류를 각각 확인하고 배포 상태를 점검했습니다.</p>
+                            <p>GitLab 연결의 오래된 비밀번호를 갱신한 뒤, 워커 노드의 Harbor Pull 401을 별도로 해결했습니다.</p>
                             <div class="showcase-stack"><span>Argo CD</span><span>Harbor</span><span>Kubernetes</span></div>
-                            <span class="showcase-link">대응 흐름 자세히 보기 <b aria-hidden="true">↗</b></span>
+                            <span class="showcase-link">사례 자세히 보기 <b aria-hidden="true">↗</b></span>
                         </div>
                     </a>
-                    <a class="showcase-card" data-project-group="beyond" href="case-beyond-frontend.html#support" hidden>
+                    <a class="showcase-card" data-project-group="beyond" href="case-security-patch-plan.html" hidden>
                         <div class="engineering-preview engineering-preview-support" aria-hidden="true">
-                            <div class="engineering-preview-head"><span>TECHNICAL SUPPORT / RUNBOOK</span><b>03</b></div>
-                            <div class="engineering-preview-flow"><span>절차 확인</span><i>→</i><span>실행 가이드</span><i>→</i><span>지원 보고</span></div>
-                            <div class="engineering-preview-foot"><span>운영 문서</span><span>기술지원</span></div>
+                            <div class="engineering-preview-head"><span>SECURITY PATCH / JAVA &amp; NGINX</span></div>
+                            <div class="engineering-preview-flow"><span>JVM 설정</span><i>→</i><span>이미지 변경</span><i>→</i><span>실행 옵션 확인</span></div>
+                            <div class="engineering-preview-foot"><span>Jenkins / SonarQube</span><span>Node / NGINX</span></div>
                         </div>
                         <div class="showcase-copy">
-                            <span class="showcase-index">03 / OPERATIONS DOCUMENTATION</span>
-                            <h3>운영 문서와 기술지원</h3>
-                            <p>폐쇄망 패치 절차와 배포 복구 내용을 실행 가이드와 기술지원 보고서로 정리했습니다.</p>
-                            <div class="showcase-stack"><span>Runbook</span><span>Deployment</span><span>Support</span></div>
-                            <span class="showcase-link">기록 자세히 보기 <b aria-hidden="true">↗</b></span>
+                            <span class="showcase-index">SECURITY PATCH PLANNING</span>
+                            <h3>보안 패치 대응 설계</h3>
+                            <p>Jenkins와 SonarQube의 JVM 옵션, Java와 React의 기반 이미지 변경안을 실행 위치별로 설계했습니다.</p>
+                            <div class="showcase-stack"><span>Helm</span><span>Java</span><span>NGINX</span></div>
+                            <span class="showcase-link">사례 자세히 보기 <b aria-hidden="true">↗</b></span>
                         </div>
                     </a>
                 </div>
